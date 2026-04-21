@@ -3,9 +3,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build kinto-pitch.md",
-    "dev": "slidev --open kinto-pitch.md",
-    "export": "slidev export kinto-pitch.md"
+    "build": "slidev build kinto-pitch.md random-pitch.md",
+    "dev": "slidev --open kinto-pitch.md random-pitch.md",
+    "export": "slidev export kinto-pitch.md random-pitch.md"
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.102",
