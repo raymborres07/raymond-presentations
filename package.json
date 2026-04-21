@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build kinto-pitch.md --base /kinto-pitch/ --out dist/kinto-pitch && slidev build random-pitch.md --base /random-pitch/ --out dist/random-pitch && node -e \"require('fs').copyFileSync('landing.html', 'dist/index.html')\"",
+    "build": "slidev build kinto-pitch.md --base /kinto-pitch/ --out dist/kinto-pitch --download && slidev build random-pitch.md --base /random-pitch/ --out dist/random-pitch --download && node -e \"require('fs').copyFileSync('landing.html', 'dist/index.html')\"",
     "dev": "slidev --open kinto-pitch.md random-pitch.md",
     "export": "slidev export kinto-pitch.md random-pitch.md"
   },
@@ -14,5 +14,8 @@
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
     "vue": "^3.5.29"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.59.1"
   }
 }
