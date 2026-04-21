@@ -1,7 +1,11 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
   "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "routes": [
+    { "src": "/kinto-pitch/kinto-pitch.pdf", "dest": "/kinto-pitch/kinto-pitch.pdf" },
+    { "src": "/random-pitch/random-pitch.pdf", "dest": "/random-pitch/random-pitch.pdf" },
+    { "src": "/kinto-pitch/(.*)", "dest": "/kinto-pitch/index.html" },
+    { "src": "/random-pitch/(.*)", "dest": "/random-pitch/index.html" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }

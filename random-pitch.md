@@ -9,7 +9,7 @@ css: unocss
 fonts:
   sans: 'Outfit'
   serif: 'Playfair Display'
-download: '/random-pitch.pdf'
+download: '/random-pitch/random-pitch.pdf'
 ---
 
 <div class="flex flex-col items-center justify-center h-full relative z-10 w-full">

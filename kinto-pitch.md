@@ -10,7 +10,7 @@ fonts:
   sans: 'Outfit'
   serif: 'Playfair Display'
   mono: 'Fira Code'
-download: '/kinto-pitch.pdf'
+download: '/kinto-pitch/kinto-pitch.pdf'
 ---
 
 <div class="flex flex-col items-center justify-center h-full relative z-10 w-full pb-12">
