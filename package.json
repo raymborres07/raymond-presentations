@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build kinto-pitch.md random-pitch.md",
+    "build": "slidev build kinto-pitch.md random-pitch.md && node -e \"require('fs').copyFileSync('landing.html', 'dist/index.html')\"",
     "dev": "slidev --open kinto-pitch.md random-pitch.md",
     "export": "slidev export kinto-pitch.md random-pitch.md"
   },
