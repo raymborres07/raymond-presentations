@@ -45,6 +45,12 @@ download: '/kinto-pitch/kinto-pitch.pdf'
 <div class="absolute bottom-[0%] -right-[10%] w-[60%] h-[60%] rounded-full bg-[#d1b066] opacity-[0.02] blur-[150px]"></div>
 </div>
 
+<!--
+Slide 1: Title & Introduction | Action: Smile, keep it professional.
+
+Script: "Good afternoon Dr. Nakano and Sugishita-san. Thank you so much for making the time. We are Team KINTO. Today, we want to share our approach to solving the compliance problem in remote elderly monitoring, and discuss a potential clinical research partnership with your clinic."
+-->
+
 ---
 layout: default
 class: px-10 pt-4
@@ -79,6 +85,12 @@ The Compliance Problem <span class="px-2 text-[#d1b066]/30">|</span> <span class
 </div>
 </div>
 </div>
+
+<!--
+Slide 2: The Compliance Problem | Action: Speak to the psychological reality of aging.
+
+Script: "As a cardiologist, you know that the best remote monitoring device is useless if the patient refuses to wear it. Panic buttons carry heavy visual stigma — patients reject them because they feel like a burden. Relying on smartphones leaves dangerous gaps, like a fall in the bathroom when the phone is on the nightstand."
+-->
 
 ---
 layout: default
@@ -137,6 +149,12 @@ The KINTO Solution <span class="px-2 text-[#d1b066]/30">|</span> <span class="te
 </div>
 </div>
 
+<!--
+Slide 3: The KINTO Solution (Omamori) | Action: Show your passion. This is your core differentiator.
+
+Script: "Our solution is KINTO. We have taken medical-grade tracking and disguised it inside the traditional, culturally familiar form of an Omamori. By shifting the psychology from a 'medical necessity' to a 'family connection,' we preserve the wearer's dignity. They wear it not because they are sick, but because it connects them to their loved ones."
+-->
+
 ---
 layout: default
 background: '#08090C'
@@ -192,6 +210,14 @@ Clinical-Grade Architecture <span class="px-2 text-[#d1b066]/30">|</span> <span 
 </div>
 </div>
 
+<!--
+Slide 4: Clinical-Grade Architecture | Action: Shift to serious engineering tone. Prove this isn't a toy.
+
+Script: "While the outside is cultural, the inside is clinical. We are transitioning to automated PCBA manufacturing for our V2 pod. This integrates the MAX86150 for continuous SpO2 and Spot-Check ECG, alongside a 3-axis accelerometer for instant fall detection, and digital skin temperature tracking."
+
+Q&A PREP — If asked about accuracy: "You are exactly right. Wrist motion is our biggest hurdle. We use the MAX86150 (FDA-cleared), but our goal is baseline anomaly detection, not diagnostic perfection. Phase 3 is where we calibrate against your Holter monitors to define our error margins before we ever make medical claims."
+-->
+
 ---
 layout: default
 background: '#08090C'
@@ -238,6 +264,12 @@ The "Amulet" UX (Spot-Check ECG) <span class="px-2 text-[#d1b066]/30">|</span> <
 </div>
 </div>
 </div>
+
+<!--
+Slide 5: The "Amulet" UX | Action: If you have a prototype, hold it up to the webcam and demonstrate the touch.
+
+Script: "Because a wrist-based ECG requires a closed electrical loop, the user must physically touch the top of the device with their opposite hand. We realized this perfectly mirrors the natural, comforting behavior of holding an amulet when feeling anxious. We are merging a required medical action with a deeply ingrained cultural behavior."
+-->
 
 ---
 layout: default
@@ -293,6 +325,12 @@ Our Clinical Research Strategy <span class="px-2 text-[#d1b066]/30">|</span> <sp
 </div>
 </div>
 </div>
+
+<!--
+Slide 6: Clinical Research Strategy | Action: Transition into the "Ask".
+
+Script: "We want to build KINTO with patients, not just for them. To ensure we are building something they will actually tolerate, we have decoupled our hardware development from our UX testing. We are executing a 3-Phase user research study to eliminate any assumptions we have about their pain points."
+-->
 
 ---
 layout: default
@@ -357,6 +395,15 @@ ZERO ELECTRONICS
 </div>
 </div>
 
+<!--
+Slide 7: Phase 1 | Action: Point to the screen showing the dummy bands.
+
+Script: "Phase 1 focuses entirely on physical comfort. We have 3D-printed weighted, non-functional dummy prototypes. We want to see which form factor feels most natural, if the clasps aggravate arthritic hands, and most importantly, if they remember to put it back on after bathing."
+
+Q&A PREP — Safety/liability: "Phase 1 has ZERO electronics — zero electronic or data-privacy risk. It's 5-7 days of wearing TPU plastic or fabric. We provide all consent forms and feedback surveys. Our only goal is to see if they naturally keep it on."
+Q&A PREP — Hygiene: "The pod and TPU strap are fully waterproof and alcohol-wipeable. The Omamori fabric is a removable 'sleeve' — slide out the hardware, machine-wash the fabric, slide back in."
+-->
+
 ---
 layout: default
 background: '#08090C'
@@ -412,6 +459,15 @@ Phase 2 & 3 <span class="px-2 text-[#d1b066]/30">|</span> <span class="text-[0.5
 </div>
 </div>
 
+<!--
+Slide 8: Phase 2 & 3 | Action: Keep this brief. Focus the meeting on Phase 1.
+
+Script: "Once we validate the physical form, Phase 2 tests our digital interface on tablets to ensure the health data reduces family anxiety rather than causing it. Finally, Phase 3 is where we deploy the functional V2 pod to validate our sensor streams against real-world clinical baselines."
+
+Q&A PREP — Fall detection liability: "KINTO is an informational tool for families, not an emergency dispatch device. Alerts go to the paired family member's smartphone. This keeps liability within the family unit while drastically reducing response time vs. a scheduled phone call."
+Q&A PREP — Battery life: "Screenless design = far lower power than an Apple Watch. ESP32 deep-sleep + intermittent polling targets 4-7 days per charge. The magnetic pogo-pin connector makes it foolproof for arthritic hands."
+-->
+
 ---
 layout: default
 background: '#08090C'
@@ -447,6 +503,14 @@ Discussion & Partnership Ask <span class="px-2 text-[#d1b066]/30">|</span> <span
 </div>
 </div>
 </div>
+
+<!--
+Slide 9: Discussion & Partnership Ask | Action: PAUSE. Look directly at the camera before speaking.
+
+Script: "Dr. Nakano, Sugishita-san mentioned that you run a Smart Device Outpatient Clinic. We would love to partner with you to facilitate Phase 1 with a small group of your patients. To start our discussion: What specific demographic variables or clinical histories do you think we should isolate for this initial materials testing group?"
+
+Then STOP TALKING. Let him answer. This is the most important moment of the entire pitch.
+-->
 
 ---
 layout: default
@@ -500,3 +564,25 @@ Behind the Innovation <span class="px-2 text-[#d1b066]/30">|</span> <span class=
 </div>
 </div>
 </div>
+<!-- 
+Slide 10: Team KINTO
+Action: Leave this slide up while Dr. Nakano answers your question from Slide 9. It shows your team's specific competencies while you transition into Q&A.
+
+=== ANTICIPATED Q&A CHEAT SHEET ===
+
+Q1 — "ECG/SpO2 accuracy with motion artifacts?"
+Do NOT claim perfection. Acknowledge the limitation. Doctors respect founders who know their tech limits.
+Answer: "You are exactly right. Wrist motion is our biggest hurdle. We use the MAX86150 (FDA-cleared), but our goal is baseline anomaly detection, not diagnostic perfection. Phase 3 exists to calibrate against your Holter monitors and define error margins before we ever make medical claims."
+
+Q2 — "Phase 1 safety/liability?"
+Answer: "Phase 1 has ZERO electronics — zero electronic or data-privacy risk. It's 5-7 days of wearing TPU plastic or fabric. We provide all consent forms and feedback surveys. We just want to see if they naturally keep it on."
+
+Q3 — "Hygiene for long-term daily wear?"
+Answer: "The pod and TPU strap are fully waterproof, alcohol-wipeable. The Omamori fabric is a removable 'sleeve' — slide out the hardware, machine-wash the fabric, slide back in."
+
+Q4 — "Fall detection → ambulance? What if it fails?"
+Answer: "KINTO is an informational tool for families, not an emergency dispatch device. Alerts go to the paired family member's smartphone. This keeps liability within the family unit while drastically reducing response time vs. a scheduled phone call."
+
+Q5 — "Elderly forget to charge. Battery life?"
+Answer: "Screenless design = far lower power than an Apple Watch. ESP32 deep-sleep + intermittent sensor polling targets 4-7 days per charge. The magnetic pogo-pin connector makes it foolproof for arthritic hands."
+-->
