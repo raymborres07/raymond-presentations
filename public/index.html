@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raymond's Presentations</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #08090C;
+            font-family: 'Inter', -apple-system, sans-serif;
+            color: #E1D1AA;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            color: #8A8F9E;
+            margin-bottom: 3rem;
+            letter-spacing: 0.05em;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 800px;
+            padding: 0 2rem;
+        }
+        .card {
+            background: linear-gradient(145deg, #121319, #0a0a0d);
+            border: 1px solid #1C1E26;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(209, 176, 102, 0.4);
+            box-shadow: 0 15px 40px rgba(209, 176, 102, 0.1);
+        }
+        .card h2 {
+            font-size: 1.25rem;
+            color: #d1b066;
+            margin: 0 0 0.5rem 0;
+            font-weight: 500;
+        }
+        .card p {
+            margin: 0;
+            font-size: 0.85rem;
+            color: #9CA3AF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Raymond's Presentations</h1>
+    <p>A repository of cinematic slide decks.</p>
+    
+    <div class="grid">
+        <a href="/kinto-pitch/" class="card">
+            <h2>Kinto Project Pitch</h2>
+            <p>Clinical Integration & User Research Proposal</p>
+        </a>
+        <!-- Add future presentations here! -->
+        <!-- <a href="/startup/" class="card">
+            <h2>Startup Deck</h2>
+            <p>Series A Pitch</p>
+        </a> -->
+    </div>
+</body>
+</html>
