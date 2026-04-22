@@ -3,7 +3,8 @@
   "outputDirectory": "dist",
   "rewrites": [
     { "source": "/kinto-pitch/((?!.*\\.).*)", "destination": "/kinto-pitch/index.html" },
-    { "source": "/random-pitch/((?!.*\\.).*)", "destination": "/random-pitch/index.html" },
+    { "source": "/portfolio/((?!.*\\.).*)", "destination": "/portfolio/index.html" },
+    { "source": "/rspai-week2/((?!.*\\.).*)", "destination": "/rspai-week2/index.html" },
     { "source": "/((?!.*\\.).*)", "destination": "/index.html" }
   ]
 }

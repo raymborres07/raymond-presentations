@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raymond's Presentations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
-            margin: 0;
-            padding: 0;
             background-color: #08090C;
             font-family: 'Inter', -apple-system, sans-serif;
             color: #E1D1AA;
@@ -16,68 +17,116 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
+            padding: 3rem 2rem;
+        }
+        .logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #d1b066, #A68A56);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0 30px rgba(209,176,102,0.3);
+            font-size: 1.5rem;
         }
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 300;
-            letter-spacing: 0.1em;
-            margin-bottom: 0.5rem;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.4rem;
+            text-align: center;
         }
-        p {
+        .subtitle {
             color: #8A8F9E;
             margin-bottom: 3rem;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.08em;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+        .divider {
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #d1b066, transparent);
+            margin: 0 auto 3rem;
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.25rem;
             width: 100%;
-            max-width: 800px;
-            padding: 0 2rem;
+            max-width: 900px;
         }
         .card {
-            background: linear-gradient(145deg, #121319, #0a0a0d);
+            background: linear-gradient(145deg, #121319, #0d0f14);
             border: 1px solid #1C1E26;
-            border-radius: 12px;
-            padding: 2rem;
-            text-align: center;
+            border-radius: 14px;
+            padding: 1.75rem;
+            text-align: left;
             text-decoration: none;
             color: inherit;
             transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+            position: relative;
+            overflow: hidden;
         }
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(209, 176, 102, 0.4);
-            box-shadow: 0 15px 40px rgba(209, 176, 102, 0.1);
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--accent, #d1b066), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
         }
-        .card h2 {
-            font-size: 1.25rem;
-            color: #d1b066;
-            margin: 0 0 0.5rem 0;
-            font-weight: 500;
+        .card:hover { transform: translateY(-4px); border-color: rgba(209,176,102,0.3); box-shadow: 0 16px 40px rgba(0,0,0,0.5); }
+        .card:hover::before { opacity: 1; }
+        .card.purple { --accent: #7C3AED; }
+        .card.purple:hover { border-color: rgba(124,58,237,0.3); box-shadow: 0 16px 40px rgba(124,58,237,0.1); }
+        .tag {
+            display: inline-block;
+            font-size: 0.58rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--accent, #d1b066);
+            margin-bottom: 0.65rem;
         }
-        .card p {
-            margin: 0;
-            font-size: 0.85rem;
-            color: #9CA3AF;
-        }
+        .card h2 { font-size: 1.05rem; color: #F3E8C1; margin-bottom: 0.4rem; font-weight: 600; }
+        .card p { font-size: 0.78rem; color: #6D6A8A; line-height: 1.5; }
+        .arrow { position: absolute; right: 1.5rem; bottom: 1.5rem; color: var(--accent, #d1b066); opacity: 0.4; font-size: 1rem; transition: all 0.3s; }
+        .card:hover .arrow { opacity: 1; transform: translateX(3px); }
+        footer { margin-top: 3rem; font-size: 0.7rem; color: #3A3C4A; letter-spacing: 0.1em; }
     </style>
 </head>
 <body>
+    <div class="logo">⚡</div>
     <h1>Raymond's Presentations</h1>
-    <p>A repository of cinematic slide decks.</p>
-    
+    <p class="subtitle">A repository of slide decks.</p>
+    <div class="divider"></div>
+
     <div class="grid">
         <a href="/kinto-pitch/" class="card">
-            <h2>Kinto Project Pitch</h2>
-            <p>Clinical Integration & User Research Proposal</p>
+            <span class="tag">Research Pitch</span>
+            <h2>KINTO Project Pitch</h2>
+            <p>Clinical Integration & User Research Proposal — wearable health monitoring for elderly patients.</p>
+            <span class="arrow">→</span>
         </a>
-        <a href="/random-pitch/" class="card">
-            <h2>Project Vanguard</h2>
-            <p>2027 Strategy Plan</p>
+        <a href="/portfolio/" class="card">
+            <span class="tag">Portfolio</span>
+            <h2>Raymond Borres</h2>
+            <p>Power Electronics Researcher — MEng at Nagoya University. SiC & GaN converter design.</p>
+            <span class="arrow">→</span>
+        </a>
+        <a href="/rspai-week2/" class="card purple">
+            <span class="tag" style="color:#A78BFA">Research Skills</span>
+            <h2>Mapping with ResearchRabbit</h2>
+            <p>AI-powered literature mapping — using citation networks as a visual mindmap to find research gaps.</p>
+            <span class="arrow" style="color:#7C3AED">→</span>
         </a>
     </div>
+
+    <footer>raymborres07@gmail.com · Nagoya, Japan</footer>
 </body>
 </html>

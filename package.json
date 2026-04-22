@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build kinto-pitch.md --base /kinto-pitch/ --out dist/kinto-pitch && slidev build random-pitch.md --base /random-pitch/ --out dist/random-pitch && node -e \"require('fs').copyFileSync('landing.html', 'dist/index.html'); require('fs').copyFileSync('public/kinto-pitch.pdf', 'dist/kinto-pitch/kinto-pitch.pdf'); require('fs').copyFileSync('public/random-pitch.pdf', 'dist/random-pitch/random-pitch.pdf');\"",
+    "build": "slidev build kinto-pitch.md --base /kinto-pitch/ --out dist/kinto-pitch && slidev build random-pitch.md --base /portfolio/ --out dist/portfolio && slidev build rspai_week2.md --base /rspai-week2/ --out dist/rspai-week2 && node -e \"const fs=require('fs'); fs.copyFileSync('landing.html','dist/index.html'); fs.copyFileSync('public/kinto-pitch.pdf','dist/kinto-pitch/kinto-pitch.pdf'); ['rr-logo.png','rr-network.png','rr-deepdive.png'].forEach(f=>{try{fs.copyFileSync('public/'+f,'dist/rspai-week2/'+f);}catch(e){}});\"",
     "dev": "slidev --open kinto-pitch.md random-pitch.md",
     "export": "slidev export kinto-pitch.md random-pitch.md"
   },
