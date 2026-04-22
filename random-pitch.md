@@ -9,7 +9,7 @@ css: unocss
 fonts:
   sans: 'Outfit'
   serif: 'Playfair Display'
-title: "Raymond Borres — Portfolio"
+title: "Raymond Borres  EPortfolio"
 ---
 
 <div class="flex items-center justify-center h-full relative z-10 w-full gap-10">
@@ -34,7 +34,7 @@ title: "Raymond Borres — Portfolio"
 
 </div>
 
-<div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-1 pointer-events-none">
+<div class="absolute top-0 left-0 w-full h-full overflow-y-auto -z-1 pointer-events-none">
 <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-[#d1b066] opacity-[0.04] blur-[120px]"></div>
 <div class="absolute bottom-[0%] -right-[10%] w-[60%] h-[60%] rounded-full bg-[#d1b066] opacity-[0.03] blur-[150px]"></div>
 </div>
@@ -45,7 +45,7 @@ background: '#08090C'
 class: px-10 pt-3
 ---
 
-<div class="w-full flex flex-col h-full overflow-hidden">
+<div class="w-full flex flex-col h-full overflow-y-auto">
 <div class="mb-2">
 <p class="text-[0.5rem] font-semibold text-[#d1b066] tracking-[0.3em] uppercase">Who I Am</p>
 <h1 class="text-xl font-serif text-[#E1D1AA] leading-tight">About Me</h1>
@@ -122,7 +122,7 @@ background: '#08090C'
 class: px-10 pt-3
 ---
 
-<div class="w-full flex flex-col h-full overflow-hidden">
+<div class="w-full flex flex-col h-full overflow-y-auto">
 <div class="mb-2">
 <p class="text-[0.5rem] font-semibold text-[#d1b066] tracking-[0.3em] uppercase">Research & Engineering</p>
 <h1 class="text-xl font-serif text-[#E1D1AA] leading-tight">Key Projects</h1>
@@ -183,7 +183,7 @@ background: '#08090C'
 class: px-10 pt-3
 ---
 
-<div class="w-full flex flex-col h-full overflow-hidden">
+<div class="w-full flex flex-col h-full overflow-y-auto">
 <div class="mb-2">
 <p class="text-[0.5rem] font-semibold text-[#d1b066] tracking-[0.3em] uppercase">Work History</p>
 <h1 class="text-xl font-serif text-[#E1D1AA] leading-tight">Professional Experience</h1>
@@ -196,7 +196,7 @@ class: px-10 pt-3
 <h3 class="font-semibold text-[#E1D1AA] text-xs">Graduate Research Assistant</h3>
 <p class="text-[0.52rem] text-[#d1b066]">Nagoya University · Yamamoto Lab</p>
 </div>
-<span class="text-[0.48rem] text-[#8A8F9E] flex-shrink-0">Oct 2025 – Present</span>
+<span class="text-[0.48rem] text-[#8A8F9E] flex-shrink-0">Oct 2025  EPresent</span>
 </div>
 <p class="text-[0.55rem] text-[#8A8F9E] leading-relaxed">Conducting collaborative power electronics research. Analyzing semiconductor characteristics and thermal management. Contributing to a digest for <strong class="text-[#E1D1AA]">ECCE submission</strong>.</p>
 </div>
@@ -204,10 +204,10 @@ class: px-10 pt-3
 <div class="bg-[#121319] border border-[#1C1E26] rounded-lg p-2.5">
 <div class="flex items-start justify-between mb-0.5">
 <div>
-<h3 class="font-semibold text-[#E1D1AA] text-xs">Teaching Assistant — G30 Program</h3>
+<h3 class="font-semibold text-[#E1D1AA] text-xs">Teaching Assistant  EG30 Program</h3>
 <p class="text-[0.52rem] text-[#d1b066]">Nagoya University</p>
 </div>
-<span class="text-[0.48rem] text-[#8A8F9E] flex-shrink-0">Oct 2023 – Present</span>
+<span class="text-[0.48rem] text-[#8A8F9E] flex-shrink-0">Oct 2023  EPresent</span>
 </div>
 <p class="text-[0.55rem] text-[#8A8F9E] leading-relaxed">Managed tutorials for <strong class="text-[#E1D1AA]">Power Electronics and NUCreations</strong> (Python & Microcomputers). Created handouts and taught lab safety to international students.</p>
 </div>
@@ -238,7 +238,7 @@ class: px-10 pt-3
 <div class="bg-[#121319] border border-[#1C1E26] rounded-lg p-2.5">
 <div class="flex items-start justify-between mb-0.5">
 <div>
-<h3 class="font-semibold text-[#E1D1AA] text-[0.62rem]">Summer Research Intern — Yamamoto Lab</h3>
+<h3 class="font-semibold text-[#E1D1AA] text-[0.62rem]">Summer Research Intern  EYamamoto Lab</h3>
 <p class="text-[0.5rem] text-[#d1b066]">Nagoya University</p>
 </div>
 <span class="text-[0.45rem] text-[#8A8F9E]">Aug 2023</span>
@@ -254,7 +254,7 @@ background: '#08090C'
 class: px-10 pt-3
 ---
 
-<div class="w-full flex flex-col h-full overflow-hidden">
+<div class="w-full flex flex-col h-full overflow-y-auto">
 <div class="mb-2">
 <p class="text-[0.5rem] font-semibold text-[#d1b066] tracking-[0.3em] uppercase">Credentials & Beyond</p>
 <h1 class="text-xl font-serif text-[#E1D1AA] leading-tight">Education, Awards & Leadership</h1>
@@ -266,20 +266,20 @@ class: px-10 pt-3
 <div class="bg-[#121319] border border-[#1C1E26] rounded-lg p-2.5 border-l-2 border-l-[#d1b066]">
 <div class="flex justify-between items-start">
 <div>
-<h4 class="font-semibold text-[#E1D1AA] text-[0.62rem]">MEng — Electrical Engineering</h4>
+<h4 class="font-semibold text-[#E1D1AA] text-[0.62rem]">MEng  EElectrical Engineering</h4>
 <p class="text-[0.5rem] text-[#d1b066]">Nagoya University · G30 Scholarship Recipient</p>
 </div>
-<span class="text-[0.45rem] text-[#8A8F9E]">2025–2027</span>
+<span class="text-[0.45rem] text-[#8A8F9E]">2025 E027</span>
 </div>
 <p class="text-[0.5rem] text-[#8A8F9E] mt-0.5">Full tuition scholarship | Electrical/Electronics Engineering</p>
 </div>
 <div class="bg-[#121319] border border-[#1C1E26] rounded-lg p-2.5">
 <div class="flex justify-between items-start">
 <div>
-<h4 class="font-semibold text-[#E1D1AA] text-[0.62rem]">BEng — Automotive Engineering</h4>
+<h4 class="font-semibold text-[#E1D1AA] text-[0.62rem]">BEng  EAutomotive Engineering</h4>
 <p class="text-[0.5rem] text-[#d1b066]">Nagoya University · G30 Program</p>
 </div>
-<span class="text-[0.45rem] text-[#8A8F9E]">2021–2025</span>
+<span class="text-[0.45rem] text-[#8A8F9E]">2021 E025</span>
 </div>
 <p class="text-[0.5rem] text-[#8A8F9E] mt-0.5">Specialization: Electrical/Electronics & Information Engineering</p>
 </div>
@@ -287,9 +287,9 @@ class: px-10 pt-3
 <div class="flex justify-between items-start">
 <div>
 <h4 class="font-semibold text-[#E1D1AA] text-[0.62rem]">High School Diploma</h4>
-<p class="text-[0.5rem] text-[#d1b066]">Philippine Science High School — W. Visayas</p>
+<p class="text-[0.5rem] text-[#d1b066]">Philippine Science High School  EW. Visayas</p>
 </div>
-<span class="text-[0.45rem] text-[#8A8F9E]">2015–2021</span>
+<span class="text-[0.45rem] text-[#8A8F9E]">2015 E021</span>
 </div>
 <p class="text-[0.5rem] text-[#8A8F9E] mt-0.5">Physics, Engineering & Computer Science track</p>
 </div>
@@ -302,7 +302,7 @@ class: px-10 pt-3
 <div class="bg-[#121319] border border-[#1C1E26] rounded-lg p-2 flex items-start gap-1.5">
 <div class="i-lucide:star text-[#d1b066] text-xs flex-shrink-0 mt-0.5"></div>
 <div>
-<p class="text-[0.58rem] text-[#E1D1AA] font-semibold">Winner — EntreCamp Finland</p>
+<p class="text-[0.58rem] text-[#E1D1AA] font-semibold">Winner  EEntreCamp Finland</p>
 <p class="text-[0.5rem] text-[#8A8F9E]">International entrepreneurship competition</p>
 </div>
 </div>
@@ -328,7 +328,7 @@ class: px-10 pt-3
 <div class="bg-[#121319] border border-[#1C1E26] rounded-lg p-2 flex items-start gap-1.5">
 <div class="i-lucide:globe text-[#d1b066] text-xs flex-shrink-0 mt-0.5"></div>
 <div>
-<p class="text-[0.58rem] text-[#E1D1AA] font-semibold">NUMUN — Head of IT & Design</p>
+<p class="text-[0.58rem] text-[#E1D1AA] font-semibold">NUMUN  EHead of IT & Design</p>
 <p class="text-[0.5rem] text-[#8A8F9E]">Organized 200+ participant conference. Built official website (WordPress & JavaScript).</p>
 </div>
 </div>
@@ -336,7 +336,7 @@ class: px-10 pt-3
 <div class="i-lucide:rocket text-[#d1b066] text-xs flex-shrink-0 mt-0.5"></div>
 <div>
 <p class="text-[0.58rem] text-[#E1D1AA] font-semibold">NU Aerospace & Flight Technologies</p>
-<p class="text-[0.5rem] text-[#8A8F9E]">Rocket Team + Space Balloon — designed electrical systems for high-altitude balloon payload.</p>
+<p class="text-[0.5rem] text-[#8A8F9E]">Rocket Team + Space Balloon  Edesigned electrical systems for high-altitude balloon payload.</p>
 </div>
 </div>
 </div>
@@ -379,7 +379,7 @@ class: text-center
 </div>
 </div>
 
-<div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-1 pointer-events-none">
+<div class="absolute top-0 left-0 w-full h-full overflow-y-auto -z-1 pointer-events-none">
 <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-[#d1b066] opacity-[0.04] blur-[120px]"></div>
 <div class="absolute bottom-[0%] -right-[10%] w-[60%] h-[60%] rounded-full bg-[#d1b066] opacity-[0.03] blur-[150px]"></div>
 </div>

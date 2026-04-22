@@ -17,11 +17,11 @@ title: "Mapping the Literature with ResearchRabbit"
 <h1 class="text-5xl font-bold text-white mb-1 tracking-tight">ResearchRabbit</h1>
 <p class="text-lg text-[#A78BFA] mb-1 font-light tracking-widest uppercase">AI-Powered Literature Mapping</p>
 <div class="w-20 h-px bg-gradient-to-r from-transparent via-[#7C3AED] to-transparent mx-auto my-4"></div>
-<p class="text-sm text-[#C4B5FD] font-light">Research Skills P: AI — Week 2 Homework</p>
+<p class="text-sm text-[#C4B5FD] font-light">Research Skills P: AI  EWeek 2 Homework</p>
 <p class="text-xs text-[#6D6A8A] mt-1">Presenter: Raymond Tenorio Borres</p>
 </div>
 
-<div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-1 pointer-events-none">
+<div class="absolute top-0 left-0 w-full h-full overflow-y-auto -z-1 pointer-events-none">
 <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-[#7C3AED] opacity-[0.07] blur-[120px]"></div>
 <div class="absolute bottom-[0%] -right-[10%] w-[60%] h-[60%] rounded-full bg-[#4F46E5] opacity-[0.05] blur-[150px]"></div>
 </div>
@@ -32,7 +32,7 @@ background: '#0D0B21'
 class: px-10 pt-3
 ---
 
-<div class="w-full flex flex-col h-full overflow-hidden">
+<div class="w-full flex flex-col h-full overflow-y-auto">
 <div class="mb-2 flex items-center gap-2">
 <img src="/rr-logo.png" class="w-5 h-5 rounded object-cover" />
 <div>
@@ -50,7 +50,7 @@ class: px-10 pt-3
 </div>
 <h3 class="font-bold text-white text-[0.65rem]">"Spotify for Research Papers"</h3>
 </div>
-<p class="text-[0.58rem] text-[#A78BFA] leading-relaxed">A <strong class="text-white">free AI-powered academic discovery platform</strong> that transforms literature exploration — from linear keyword searches to dynamic, visual citation networks.</p>
+<p class="text-[0.58rem] text-[#A78BFA] leading-relaxed">A <strong class="text-white">free AI-powered academic discovery platform</strong> that transforms literature exploration  Efrom linear keyword searches to dynamic, visual citation networks.</p>
 </div>
 <div class="bg-[#13102B] border border-[#2D2650] rounded-lg p-3">
 <div class="flex items-center mb-1.5">
@@ -67,15 +67,15 @@ class: px-10 pt-3
 <div class="bg-gradient-to-br from-[#7C3AED]/10 to-transparent border border-[#7C3AED]/30 rounded-lg p-3">
 <h3 class="font-semibold text-[#C4B5FD] text-[0.6rem] mb-1.5 flex items-center gap-1"><div class="i-lucide:sparkles text-[0.6rem] text-[#7C3AED]"></div>Core Capabilities</h3>
 <div class="space-y-1">
-<div class="flex items-center text-[0.58rem] text-[#A78BFA] gap-1.5"><div class="w-1 h-1 rounded-full bg-[#7C3AED] flex-shrink-0"></div><span><strong class="text-white">Citation Graph Visualization</strong> — see every paper connection</span></div>
-<div class="flex items-center text-[0.58rem] text-[#A78BFA] gap-1.5"><div class="w-1 h-1 rounded-full bg-[#7C3AED] flex-shrink-0"></div><span><strong class="text-white">Seeded Discovery</strong> — one paper seeds the AI's full exploration</span></div>
-<div class="flex items-center text-[0.58rem] text-[#A78BFA] gap-1.5"><div class="w-1 h-1 rounded-full bg-[#7C3AED] flex-shrink-0"></div><span><strong class="text-white">Personalized Feed</strong> — smarter recommendations over time</span></div>
-<div class="flex items-center text-[0.58rem] text-[#A78BFA] gap-1.5"><div class="w-1 h-1 rounded-full bg-[#7C3AED] flex-shrink-0"></div><span><strong class="text-white">Zotero / Mendeley Sync</strong> — integrates with your reference manager</span></div>
+<div class="flex items-center text-[0.58rem] text-[#A78BFA] gap-1.5"><div class="w-1 h-1 rounded-full bg-[#7C3AED] flex-shrink-0"></div><span><strong class="text-white">Citation Graph Visualization</strong>  Esee every paper connection</span></div>
+<div class="flex items-center text-[0.58rem] text-[#A78BFA] gap-1.5"><div class="w-1 h-1 rounded-full bg-[#7C3AED] flex-shrink-0"></div><span><strong class="text-white">Seeded Discovery</strong>  Eone paper seeds the AI's full exploration</span></div>
+<div class="flex items-center text-[0.58rem] text-[#A78BFA] gap-1.5"><div class="w-1 h-1 rounded-full bg-[#7C3AED] flex-shrink-0"></div><span><strong class="text-white">Personalized Feed</strong>  Esmarter recommendations over time</span></div>
+<div class="flex items-center text-[0.58rem] text-[#A78BFA] gap-1.5"><div class="w-1 h-1 rounded-full bg-[#7C3AED] flex-shrink-0"></div><span><strong class="text-white">Zotero / Mendeley Sync</strong>  Eintegrates with your reference manager</span></div>
 </div>
 </div>
 <div class="bg-[#13102B] border border-[#2D2650] rounded-lg p-2.5 flex items-center gap-2">
 <div class="i-lucide:users text-sm text-[#7C3AED] flex-shrink-0"></div>
-<p class="text-[0.55rem] text-[#A78BFA]">Used at <strong class="text-white">90+ universities</strong> — MIT, Stanford, Tokyo University. <strong class="text-white">100% free.</strong></p>
+<p class="text-[0.55rem] text-[#A78BFA]">Used at <strong class="text-white">90+ universities</strong>  EMIT, Stanford, Tokyo University. <strong class="text-white">100% free.</strong></p>
 </div>
 </div>
 </div>
@@ -87,7 +87,7 @@ background: '#0D0B21'
 class: px-10 pt-3
 ---
 
-<div class="w-full flex flex-col h-full overflow-hidden">
+<div class="w-full flex flex-col h-full overflow-y-auto">
 <div class="mb-2 flex items-center gap-2">
 <img src="/rr-logo.png" class="w-5 h-5 rounded object-cover" />
 <div>
@@ -116,7 +116,7 @@ class: px-10 pt-3
 <div class="i-lucide:git-branch text-xs text-[#A78BFA]"></div>
 </div>
 <h3 class="font-bold text-white text-[0.62rem] mb-1">Shows Field History</h3>
-<p class="text-[0.55rem] text-[#8B8AAE] leading-relaxed">Timeline view traces intellectual lineage — see which foundational paper sparked an entire field.</p>
+<p class="text-[0.55rem] text-[#8B8AAE] leading-relaxed">Timeline view traces intellectual lineage  Esee which foundational paper sparked an entire field.</p>
 </div>
 </div>
 
@@ -138,7 +138,7 @@ background: '#0D0B21'
 class: px-10 pt-3
 ---
 
-<div class="w-full flex flex-col h-full overflow-hidden">
+<div class="w-full flex flex-col h-full overflow-y-auto">
 <div class="mb-2 flex items-center gap-2">
 <img src="/rr-logo.png" class="w-5 h-5 rounded object-cover" />
 <div>
@@ -155,33 +155,33 @@ class: px-10 pt-3
 </div>
 <div class="bg-[#13102B] border-l-2 border-[#7C3AED] rounded-r-lg p-2">
 <h3 class="font-bold text-white text-[0.6rem] mb-0.5 flex items-center gap-1.5"><span class="w-3.5 h-3.5 rounded-full bg-[#7C3AED] text-white text-[0.4rem] flex items-center justify-center flex-shrink-0 font-bold">2</span>Discovering Foundational Work</h3>
-<p class="text-[0.55rem] text-[#8B8AAE] leading-relaxed ml-5">The "Earlier Work" filter revealed 1990s-era papers my recent references built upon — invisible to keyword searches.</p>
+<p class="text-[0.55rem] text-[#8B8AAE] leading-relaxed ml-5">The "Earlier Work" filter revealed 1990s-era papers my recent references built upon  Einvisible to keyword searches.</p>
 </div>
 <div class="bg-[#13102B] border-l-2 border-[#7C3AED] rounded-r-lg p-2">
 <h3 class="font-bold text-white text-[0.6rem] mb-0.5 flex items-center gap-1.5"><span class="w-3.5 h-3.5 rounded-full bg-[#7C3AED] text-white text-[0.4rem] flex items-center justify-center flex-shrink-0 font-bold">3</span>Paper Deep Dive</h3>
-<p class="text-[0.55rem] text-[#8B8AAE] leading-relaxed ml-5">Clicking any node opens the paper's abstract, metadata, and authors instantly — no extra tabs.</p>
+<p class="text-[0.55rem] text-[#8B8AAE] leading-relaxed ml-5">Clicking any node opens the paper's abstract, metadata, and authors instantly  Eno extra tabs.</p>
 </div>
 <div class="bg-[#13102B] border-l-2 border-[#4F46E5] rounded-r-lg p-2">
 <h3 class="font-bold text-white text-[0.6rem] mb-0.5 flex items-center gap-1.5"><span class="w-3.5 h-3.5 rounded-full bg-[#4F46E5] text-white text-[0.4rem] flex items-center justify-center flex-shrink-0 font-bold">4</span>Tracking "Later Work"</h3>
-<p class="text-[0.55rem] text-[#8B8AAE] leading-relaxed ml-5">Shows most recent papers citing my seeds — a live frontier feed, faster than any Google Scholar alert.</p>
+<p class="text-[0.55rem] text-[#8B8AAE] leading-relaxed ml-5">Shows most recent papers citing my seeds  Ea live frontier feed, faster than any Google Scholar alert.</p>
 </div>
 <div class="bg-gradient-to-r from-[#7C3AED]/15 to-transparent border border-[#7C3AED]/30 rounded-lg p-1.5">
-<p class="text-[0.55rem] text-[#A78BFA] italic">"Within 20 minutes I found 4 highly relevant 1980s papers cited across my collection — none in any keyword search."</p>
+<p class="text-[0.55rem] text-[#A78BFA] italic">"Within 20 minutes I found 4 highly relevant 1980s papers cited across my collection  Enone in any keyword search."</p>
 </div>
 </div>
 
 <div class="flex flex-col gap-2">
-<div class="bg-[#13102B] border border-[#2D2650] rounded-lg overflow-hidden">
+<div class="bg-[#13102B] border border-[#2D2650] rounded-lg overflow-y-auto">
 <div class="bg-[#1E1A3A] px-2 py-1 flex items-center gap-1.5 border-b border-[#2D2650]">
 <img src="/rr-logo.png" class="w-3 h-3 rounded object-cover" />
 <span class="text-[0.4rem] text-[#A78BFA] font-semibold">Network Graph View</span>
 </div>
 <img src="/rr-network.png" class="w-full h-[7.5rem] object-cover object-top" />
 </div>
-<div class="bg-[#13102B] border border-[#2D2650] rounded-lg overflow-hidden">
+<div class="bg-[#13102B] border border-[#2D2650] rounded-lg overflow-y-auto">
 <div class="bg-[#1E1A3A] px-2 py-1 flex items-center gap-1.5 border-b border-[#2D2650]">
 <img src="/rr-logo.png" class="w-3 h-3 rounded object-cover" />
-<span class="text-[0.4rem] text-[#A78BFA] font-semibold">Paper Deep Dive — Abstract & Metadata</span>
+<span class="text-[0.4rem] text-[#A78BFA] font-semibold">Paper Deep Dive  EAbstract & Metadata</span>
 </div>
 <img src="/rr-deepdive.png" class="w-full h-[7.5rem] object-cover object-top" />
 </div>
@@ -195,7 +195,7 @@ background: '#0D0B21'
 class: px-10 pt-3
 ---
 
-<div class="w-full flex flex-col h-full overflow-hidden">
+<div class="w-full flex flex-col h-full overflow-y-auto">
 <div class="mb-2 flex items-center gap-2">
 <img src="/rr-logo.png" class="w-5 h-5 rounded object-cover" />
 <div>
@@ -223,7 +223,7 @@ class: px-10 pt-3
 </div>
 <div>
 <h4 class="font-semibold text-white text-[0.58rem]">Edges = Citation Links</h4>
-<p class="text-[0.5rem] text-[#6D6A8A]">Lines between papers that cite each other — clusters reveal sub-fields.</p>
+<p class="text-[0.5rem] text-[#6D6A8A]">Lines between papers that cite each other  Eclusters reveal sub-fields.</p>
 </div>
 </div>
 <div class="bg-[#13102B] border border-[#2D2650] rounded-lg p-2 flex items-center gap-2">
@@ -242,7 +242,7 @@ class: px-10 pt-3
 </div>
 
 <div class="flex flex-col gap-2">
-<div class="bg-[#13102B] border border-[#2D2650] rounded-lg overflow-hidden flex-1">
+<div class="bg-[#13102B] border border-[#2D2650] rounded-lg overflow-y-auto flex-1">
 <div class="bg-[#1E1A3A] px-2 py-1 flex items-center justify-between border-b border-[#2D2650]">
 <div class="flex items-center gap-1.5">
 <img src="/rr-logo.png" class="w-3 h-3 rounded object-cover" />
@@ -269,7 +269,7 @@ background: '#0D0B21'
 class: px-10 pt-3
 ---
 
-<div class="w-full flex flex-col h-full overflow-hidden">
+<div class="w-full flex flex-col h-full overflow-y-auto">
 <div class="mb-2 flex items-center gap-2">
 <img src="/rr-logo.png" class="w-5 h-5 rounded object-cover" />
 <div>
@@ -280,22 +280,22 @@ class: px-10 pt-3
 
 <div class="grid grid-cols-[1fr_1fr] gap-3 flex-1">
 <div class="flex flex-col gap-2">
-<p class="text-[0.58rem] text-[#A78BFA]">A research gap is a question no one has answered yet. ResearchRabbit makes gaps <strong class="text-white">structurally visible on the map</strong> — not just conceptually implied.</p>
+<p class="text-[0.58rem] text-[#A78BFA]">A research gap is a question no one has answered yet. ResearchRabbit makes gaps <strong class="text-white">structurally visible on the map</strong>  Enot just conceptually implied.</p>
 
 <div class="bg-[#13102B] border border-[#2D2650] rounded-lg p-2.5">
 <h3 class="text-[0.6rem] font-bold text-white mb-2 flex items-center gap-1"><div class="i-lucide:search text-[0.6rem] text-[#7C3AED]"></div>How to Spot a Gap</h3>
 <div class="space-y-1.5">
 <div class="flex items-start gap-1.5">
 <div class="w-1 h-1 rounded-full bg-[#7C3AED] mt-1.5 flex-shrink-0"></div>
-<p class="text-[0.55rem] text-[#8B8AAE]"><strong class="text-[#C4B5FD]">Isolated nodes</strong> — highly-cited paper with no "Later Work" = topic never followed up on.</p>
+<p class="text-[0.55rem] text-[#8B8AAE]"><strong class="text-[#C4B5FD]">Isolated nodes</strong>  Ehighly-cited paper with no "Later Work" = topic never followed up on.</p>
 </div>
 <div class="flex items-start gap-1.5">
 <div class="w-1 h-1 rounded-full bg-[#7C3AED] mt-1.5 flex-shrink-0"></div>
-<p class="text-[0.55rem] text-[#8B8AAE]"><strong class="text-[#C4B5FD]">Disconnected clusters</strong> — two groups that don't cite each other = bridge not yet built.</p>
+<p class="text-[0.55rem] text-[#8B8AAE]"><strong class="text-[#C4B5FD]">Disconnected clusters</strong>  Etwo groups that don't cite each other = bridge not yet built.</p>
 </div>
 <div class="flex items-start gap-1.5">
 <div class="w-1 h-1 rounded-full bg-[#7C3AED] mt-1.5 flex-shrink-0"></div>
-<p class="text-[0.55rem] text-[#8B8AAE]"><strong class="text-[#C4B5FD]">Activity drop-offs</strong> — busy cluster that stopped = solved or abandoned without resolution.</p>
+<p class="text-[0.55rem] text-[#8B8AAE]"><strong class="text-[#C4B5FD]">Activity drop-offs</strong>  Ebusy cluster that stopped = solved or abandoned without resolution.</p>
 </div>
 </div>
 </div>
@@ -303,8 +303,8 @@ class: px-10 pt-3
 <div class="bg-gradient-to-r from-[#7C3AED]/15 to-transparent border border-[#7C3AED]/30 rounded-lg p-2.5">
 <h4 class="text-[0.58rem] font-semibold text-[#C4B5FD] mb-1.5 flex items-center gap-1"><div class="i-lucide:target text-[0.58rem] text-[#7C3AED]"></div>Gap Hunting Workflow</h4>
 <div class="space-y-0.5 text-[0.55rem] text-[#8B8AAE]">
-<div class="flex gap-1.5"><span class="text-[#7C3AED] font-bold">①</span> Add 3–5 core papers as seeds</div>
-<div class="flex gap-1.5"><span class="text-[#7C3AED] font-bold">②</span> Let the AI expand to 50–100 connected papers</div>
+<div class="flex gap-1.5"><span class="text-[#7C3AED] font-bold">①</span> Add 3 E core papers as seeds</div>
+<div class="flex gap-1.5"><span class="text-[#7C3AED] font-bold">②</span> Let the AI expand to 50 E00 connected papers</div>
 <div class="flex gap-1.5"><span class="text-[#7C3AED] font-bold">③</span> Inspect the map for sparse / isolated zones</div>
 <div class="flex gap-1.5"><span class="text-[#7C3AED] font-bold">④</span> Use "Earlier Work" to confirm the gap is not historical</div>
 <div class="flex gap-1.5"><span class="text-[#7C3AED] font-bold">⑤</span> That sparse zone = <strong class="text-white">our research proposal</strong></div>
@@ -313,7 +313,7 @@ class: px-10 pt-3
 </div>
 
 <div class="flex flex-col gap-2">
-<div class="bg-[#13102B] border border-[#2D2650] rounded-lg overflow-hidden">
+<div class="bg-[#13102B] border border-[#2D2650] rounded-lg overflow-y-auto">
 <div class="bg-gradient-to-r from-[#7C3AED]/20 to-transparent px-2 py-1 border-b border-[#2D2650] flex items-center gap-1.5">
 <img src="/rr-logo.png" class="w-3 h-3 rounded object-cover" />
 <span class="text-[0.4rem] text-[#A78BFA] font-semibold uppercase tracking-widest">Spotting Sparse Zones</span>
@@ -322,7 +322,7 @@ class: px-10 pt-3
 </div>
 <div class="bg-[#13102B] border border-[#2D2650] rounded-lg p-2.5">
 <h4 class="text-[0.58rem] font-semibold text-white mb-1">Why This Matters for Our Lab</h4>
-<p class="text-[0.55rem] text-[#8B8AAE] leading-relaxed">Instead of <em>hoping</em> to find a gap at the end, ResearchRabbit lets us see it <strong class="text-white">visually on the map</strong> — making new research direction justifications concrete and defensible.</p>
+<p class="text-[0.55rem] text-[#8B8AAE] leading-relaxed">Instead of <em>hoping</em> to find a gap at the end, ResearchRabbit lets us see it <strong class="text-white">visually on the map</strong>  Emaking new research direction justifications concrete and defensible.</p>
 </div>
 <div class="grid grid-cols-2 gap-2">
 <div class="bg-[#1E1A3A] rounded-lg p-2 text-center">
@@ -356,7 +356,7 @@ class: text-center
 </a>
 </div>
 
-<div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-1 pointer-events-none">
+<div class="absolute top-0 left-0 w-full h-full overflow-y-auto -z-1 pointer-events-none">
 <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-[#7C3AED] opacity-[0.07] blur-[120px]"></div>
 <div class="absolute bottom-[0%] -right-[10%] w-[60%] h-[60%] rounded-full bg-[#4F46E5] opacity-[0.05] blur-[150px]"></div>
 </div>
