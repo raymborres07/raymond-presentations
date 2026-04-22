@@ -40,6 +40,10 @@ class: px-10 pt-3
 <h1 class="text-xl font-bold text-white leading-tight">ResearchRabbit: The AI Tool</h1>
 </div>
 </div>
+<div class="bg-gradient-to-r from-[#7C3AED]/20 to-[#4F46E5]/10 border border-[#7C3AED]/40 rounded-lg px-3 py-2 mb-2 flex items-center gap-2">
+<div class="i-lucide:target text-sm text-[#A78BFA] flex-shrink-0"></div>
+<p class="text-[0.58rem] text-[#C4B5FD] italic leading-snug"><strong class="text-white not-italic">Thesis:</strong> ResearchRabbit turns literature review from a manual linear search into an AI-assisted visual map &mdash; letting our lab find and justify research gaps in ~20 minutes.</p>
+</div>
 
 <div class="grid grid-cols-2 gap-3 flex-1">
 <div class="flex flex-col gap-2">
@@ -167,6 +171,10 @@ class: px-10 pt-3
 </div>
 <div class="bg-gradient-to-r from-[#7C3AED]/15 to-transparent border border-[#7C3AED]/30 rounded-lg p-1.5">
 <p class="text-[0.55rem] text-[#A78BFA] italic">"Within 20 minutes I found 4 highly relevant 1980s papers cited across my collection &mdash; none in any keyword search."</p>
+</div>
+<div class="bg-[#1E1A3A] border border-[#4F46E5]/30 rounded-lg p-1.5 flex items-start gap-1.5">
+<div class="i-lucide:lightbulb text-xs text-[#7C3AED] flex-shrink-0 mt-0.5"></div>
+<p class="text-[0.52rem] text-[#C4B5FD] leading-relaxed"><strong class="text-white">Reflection:</strong> This changed how I define my thesis direction &mdash; I can now visually see which sub-areas in SiC power electronics are over-saturated and where there is room for new work.</p>
 </div>
 </div>
 
@@ -301,7 +309,7 @@ class: px-10 pt-3
 </div>
 
 <div class="bg-gradient-to-r from-[#7C3AED]/15 to-transparent border border-[#7C3AED]/30 rounded-lg p-2.5">
-<h4 class="text-[0.58rem] font-semibold text-[#C4B5FD] mb-1.5 flex items-center gap-1"><div class="i-lucide:target text-[0.58rem] text-[#7C3AED]"></div>Gap Hunting Workflow</h4>
+<h4 class="text-[0.58rem] font-semibold text-[#C4B5FD] mb-1.5 flex items-center gap-1"><div class="i-lucide:target text-[0.58rem] text-[#7C3AED]"></div>A 5-Step Repeatable Protocol <span class="text-[0.45rem] text-[#7C3AED] bg-[#7C3AED]/10 px-1.5 py-0.5 rounded-full ml-1 font-bold uppercase tracking-widest">For Any Field</span></h4>
 <div class="space-y-0.5 text-[0.55rem] text-[#8B8AAE]">
 <div class="flex gap-1.5"><span class="text-[#7C3AED] font-bold">&#9312;</span> Add 3&ndash;5 core papers as seeds</div>
 <div class="flex gap-1.5"><span class="text-[#7C3AED] font-bold">&#9313;</span> Let the AI expand to 50&ndash;100 connected papers</div>
