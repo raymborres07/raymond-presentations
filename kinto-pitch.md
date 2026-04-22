@@ -48,7 +48,9 @@ download: '/kinto-pitch/kinto-pitch.pdf'
 <!--
 Slide 1: Title & Introduction | Action: Smile, keep it professional.
 
-Script: "Good afternoon Dr. Nakano and Sugishita-san. Thank you so much for making the time. We are Team KINTO. Today, we want to share our approach to solving the compliance problem in remote elderly monitoring, and discuss a potential clinical research partnership with your clinic."
+[EN] "Good afternoon Dr. Nakano and Sugishita-san. Thank you so much for making the time. We are Team KINTO. Today, we want to share our approach to solving the compliance problem in remote elderly monitoring, and discuss a potential clinical research partnership with your clinic."
+
+[JP] 「中野先生、杉下様、本日はお忙しい中お時間をいただき、誠にありがとうございます。私たちは名古屋大学のチームKINTOです。本日は、高齢者の遠隔見守りにおける「継続着用（コンプライアンス）」の課題に対する私たちのアプローチと、貴院での臨床研究パートナーシップの可能性についてお話しさせていただきます。」
 -->
 
 ---
@@ -89,7 +91,9 @@ The Compliance Problem <span class="px-2 text-[#d1b066]/30">|</span> <span class
 <!--
 Slide 2: The Compliance Problem | Action: Speak to the psychological reality of aging.
 
-Script: "As a cardiologist, you know that the best remote monitoring device is useless if the patient refuses to wear it. Panic buttons carry heavy visual stigma — patients reject them because they feel like a burden. Relying on smartphones leaves dangerous gaps, like a fall in the bathroom when the phone is on the nightstand."
+[EN] "As a cardiologist, you know that the best remote monitoring device is useless if the patient refuses to wear it. Panic buttons carry heavy visual stigma — patients reject them because they feel like a burden. Relying on smartphones leaves dangerous gaps, like a fall in the bathroom when the phone is on the nightstand."
+
+[JP] 「先生方もよくご存知の通り、どれほど優れた見守り機器でも、患者様に毎日着用していただけなければ意味がありません。現状のナースコール型のデバイスは視覚的な抵抗感が強く、「病人扱いされている」と感じて着用を拒まれることが多々あります。一方で、スマートフォンだけに頼ると、別の部屋に置き忘れた際にお風呂場で転倒してしまうなど、危険な空白の時間が生まれてしまいます。」
 -->
 
 ---
@@ -152,7 +156,9 @@ The KINTO Solution <span class="px-2 text-[#d1b066]/30">|</span> <span class="te
 <!--
 Slide 3: The KINTO Solution (Omamori) | Action: Show your passion. This is your core differentiator.
 
-Script: "Our solution is KINTO. We have taken medical-grade tracking and disguised it inside the traditional, culturally familiar form of an Omamori. By shifting the psychology from a 'medical necessity' to a 'family connection,' we preserve the wearer's dignity. They wear it not because they are sick, but because it connects them to their loved ones."
+[EN] "Our solution is KINTO. We have taken medical-grade tracking and disguised it inside the traditional, culturally familiar form of an Omamori. By shifting the psychology from a 'medical necessity' to a 'family connection,' we preserve the wearer's dignity. They wear it not because they are sick, but because it connects them to their loved ones."
+
+[JP] 「そこで私たちが提案するのが「KINTO」です。医療グレードのセンサーを、日本の伝統的で馴染み深い「お守り」の形に落とし込みました。「医療的な必要性」から「家族との繋がり」へと心理的な意味合いをシフトさせることで、患者様の尊厳を守ります。病気だから着けるのではなく、家族と繋がっている安心感のために身につけていただくデバイスです。」
 -->
 
 ---
@@ -213,9 +219,11 @@ Clinical-Grade Architecture <span class="px-2 text-[#d1b066]/30">|</span> <span 
 <!--
 Slide 4: Clinical-Grade Architecture | Action: Shift to serious engineering tone. Prove this isn't a toy.
 
-Script: "While the outside is cultural, the inside is clinical. We are transitioning to automated PCBA manufacturing for our V2 pod. This integrates the MAX86150 for continuous SpO2 and Spot-Check ECG, alongside a 3-axis accelerometer for instant fall detection, and digital skin temperature tracking."
+[EN] "While the outside is cultural, the inside is clinical. We are transitioning to automated PCBA manufacturing for our V2 pod. This integrates the MAX86150 for continuous SpO2 and Spot-Check ECG, alongside a 3-axis accelerometer for instant fall detection, and digital skin temperature tracking."
 
-Q&A PREP — If asked about accuracy: "You are exactly right. Wrist motion is our biggest hurdle. We use the MAX86150 (FDA-cleared), but our goal is baseline anomaly detection, not diagnostic perfection. Phase 3 is where we calibrate against your Holter monitors to define our error margins before we ever make medical claims."
+[JP] 「外見は文化的ですが、内部には本格的なテクノロジーを搭載しています。現在開発中のV2ポッドには、連続的な血中酸素（SpO2）やスポットチェック心電図（ECG）を計測するMAX86150、即時の転倒検知を行う3軸加速度センサー、そして皮膚温度センサーが統合されています。」
+
+Q&A [JP] — 精度について:「先生のご指摘の通り、手首の動きはセンサーにとって最大のハードルです。FDA認可のMAX86150を使用していますが、現時点の目的は診断レベルの完璧さではなく、ベースラインの『異常検知』です。だからこそフェーズ3での検証が重要であり、医療的な主張をする前に貴院の機器と照合し、誤差の範囲を明確にしたいと考えています。」
 -->
 
 ---
@@ -266,9 +274,11 @@ The "Amulet" UX (Spot-Check ECG) <span class="px-2 text-[#d1b066]/30">|</span> <
 </div>
 
 <!--
-Slide 5: The "Amulet" UX | Action: If you have a prototype, hold it up to the webcam and demonstrate the touch.
+Slide 5: The "Amulet" UX | Action: Hold up the prototype if available.
 
-Script: "Because a wrist-based ECG requires a closed electrical loop, the user must physically touch the top of the device with their opposite hand. We realized this perfectly mirrors the natural, comforting behavior of holding an amulet when feeling anxious. We are merging a required medical action with a deeply ingrained cultural behavior."
+[EN] "Because a wrist-based ECG requires a closed electrical loop, the user must physically touch the top of the device with their opposite hand. We realized this perfectly mirrors the natural, comforting behavior of holding an amulet when feeling anxious. We are merging a required medical action with a deeply ingrained cultural behavior."
+
+[JP] 「手首での心電図計測には閉回路を作る必要があるため、反対側の手でデバイスの上部に触れる必要があります。私たちは、この動作が「不安な時や体調が悪い時に、無意識にお守りを握りしめる」という自然な行動と完全に一致することに気づきました。医療に必要なアクションを、文化的な行動と融合させています。」
 -->
 
 ---
@@ -329,7 +339,9 @@ Our Clinical Research Strategy <span class="px-2 text-[#d1b066]/30">|</span> <sp
 <!--
 Slide 6: Clinical Research Strategy | Action: Transition into the "Ask".
 
-Script: "We want to build KINTO with patients, not just for them. To ensure we are building something they will actually tolerate, we have decoupled our hardware development from our UX testing. We are executing a 3-Phase user research study to eliminate any assumptions we have about their pain points."
+[EN] "We want to build KINTO with patients, not just for them. To ensure we are building something they will actually tolerate, we have decoupled our hardware development from our UX testing. We are executing a 3-Phase user research study to eliminate any assumptions we have about their pain points."
+
+[JP] 「私たちはKINTOを、患者様の「ために」だけでなく、患者様と「ともに」創り上げたいと考えています。高齢者が本当に無理なく着用できるものを開発するため、ハードウェアのテストとUXのテストを切り離し、推測を排除するための3フェーズからなるユーザーリサーチを計画しました。」
 -->
 
 ---
@@ -398,10 +410,12 @@ ZERO ELECTRONICS
 <!--
 Slide 7: Phase 1 | Action: Point to the screen showing the dummy bands.
 
-Script: "Phase 1 focuses entirely on physical comfort. We have 3D-printed weighted, non-functional dummy prototypes. We want to see which form factor feels most natural, if the clasps aggravate arthritic hands, and most importantly, if they remember to put it back on after bathing."
+[EN] "Phase 1 focuses entirely on physical comfort. We have 3D-printed weighted, non-functional dummy prototypes. We want to see which form factor feels most natural, if the clasps aggravate arthritic hands, and most importantly, if they remember to put it back on after bathing."
 
-Q&A PREP — Safety/liability: "Phase 1 has ZERO electronics — zero electronic or data-privacy risk. It's 5-7 days of wearing TPU plastic or fabric. We provide all consent forms and feedback surveys. Our only goal is to see if they naturally keep it on."
-Q&A PREP — Hygiene: "The pod and TPU strap are fully waterproof and alcohol-wipeable. The Omamori fabric is a removable 'sleeve' — slide out the hardware, machine-wash the fabric, slide back in."
+[JP] 「フェーズ1では、物理的な快適さに完全に焦点を当てます。電子部品を一切含まない、重さだけを再現した3Dプリントのダミーモデルを用意しました。どの形状が最も自然か、留め具が関節炎の手に負担をかけないか、そして何より「入浴後に再び着けることを忘れないか」を検証したいと考えています。」
+
+Q&A [JP] — 安全性・責任:「フェーズ1では電子部品を一切含まないダミーモデルを使用するため、電子的な発火やデータ漏洩のリスクはゼロです。患者様には5〜7日間着用していただき、物理的な不快感がないかを確認するだけです。同意書などはすべてご用意いたします。」
+Q&A [JP] — 衛生面:「内部のデバイスとTPUバンドは完全防水で、アルコール消毒が可能です。お守り袋の布カバーは取り外し可能な「スリーブ」として設計しており、衣類と同じように簡単に洗濯できます。」
 -->
 
 ---
@@ -462,10 +476,12 @@ Phase 2 & 3 <span class="px-2 text-[#d1b066]/30">|</span> <span class="text-[0.5
 <!--
 Slide 8: Phase 2 & 3 | Action: Keep this brief. Focus the meeting on Phase 1.
 
-Script: "Once we validate the physical form, Phase 2 tests our digital interface on tablets to ensure the health data reduces family anxiety rather than causing it. Finally, Phase 3 is where we deploy the functional V2 pod to validate our sensor streams against real-world clinical baselines."
+[EN] "Once we validate the physical form, Phase 2 tests our digital interface on tablets to ensure the health data reduces family anxiety rather than causing it. Finally, Phase 3 is where we deploy the functional V2 pod to validate our sensor streams against real-world clinical baselines."
 
-Q&A PREP — Fall detection liability: "KINTO is an informational tool for families, not an emergency dispatch device. Alerts go to the paired family member's smartphone. This keeps liability within the family unit while drastically reducing response time vs. a scheduled phone call."
-Q&A PREP — Battery life: "Screenless design = far lower power than an Apple Watch. ESP32 deep-sleep + intermittent polling targets 4-7 days per charge. The magnetic pogo-pin connector makes it foolproof for arthritic hands."
+[JP] 「物理的な形状が検証できた後、フェーズ2でご家族用アプリのインターフェースをテストし、健康データが家族の不安を煽るのではなく、安心感に繋がるかを確認します。そしてフェーズ3において、機能するV2ポッドを提供し、実際の臨床データと私たちのセンサーデータを照らし合わせて検証を行います。」
+
+Q&A [JP] — 転倒検知・責任:「現在のKINTOは直接救急車を呼ぶシステムではなく、ご家族向けの「通知ツール」として設計しています。転倒を検知した場合は、ペアリングされたご家族のスマートフォンに直接アラートが送信されます。責任をご家族内に留めつつ、発見までの時間を劇的に短縮できます。」
+Q&A [JP] — バッテリー:「画面のないスクリーンレス設計とESP32のディープスリープモードを活用することで、1回の充電で4〜7日間のバッテリー寿命を目指しています。充電にはマグネット式のポゴピンを採用しており、関節炎の方でも簡単に扱えます。」
 -->
 
 ---
@@ -507,9 +523,11 @@ Discussion & Partnership Ask <span class="px-2 text-[#d1b066]/30">|</span> <span
 <!--
 Slide 9: Discussion & Partnership Ask | Action: PAUSE. Look directly at the camera before speaking.
 
-Script: "Dr. Nakano, Sugishita-san mentioned that you run a Smart Device Outpatient Clinic. We would love to partner with you to facilitate Phase 1 with a small group of your patients. To start our discussion: What specific demographic variables or clinical histories do you think we should isolate for this initial materials testing group?"
+[EN] "Dr. Nakano, Sugishita-san mentioned that you run a Smart Device Outpatient Clinic. We would love to partner with you to facilitate Phase 1 with a small group of your patients. To start our discussion: What specific demographic variables or clinical histories do you think we should isolate for this initial materials testing group?"
 
-Then STOP TALKING. Let him answer. This is the most important moment of the entire pitch.
+[JP] 「中野先生、杉下様から先生がスマートデバイス外来を担当されていると伺いました。ぜひ貴院と提携し、まずは少人数の患者様を対象としたフェーズ1を実施させていただけないでしょうか。本日のディスカッションの出発点として、「この初期の素材テストには、どのような属性や病歴を持つ患者様を対象にするのが最適か」について、ぜひ先生の専門的なご意見を伺わせてください。」
+
+★ ここで話すのをやめる。先生の回答を待つ。これがプレゼン全体で最も重要な瞬間です。
 -->
 
 ---
@@ -564,25 +582,30 @@ Behind the Innovation <span class="px-2 text-[#d1b066]/30">|</span> <span class=
 </div>
 </div>
 </div>
-<!-- 
+<!--
 Slide 10: Team KINTO
-Action: Leave this slide up while Dr. Nakano answers your question from Slide 9. It shows your team's specific competencies while you transition into Q&A.
+Action: Leave this slide up while Dr. Nakano answers. It shows team competencies while transitioning to Q&A.
+[JP] 「ご清聴ありがとうございました。それでは、ぜひご意見をお聞かせください。」
 
-=== ANTICIPATED Q&A CHEAT SHEET ===
+=== ANTICIPATED Q&A CHEAT SHEET (EN + JP) ===
 
 Q1 — "ECG/SpO2 accuracy with motion artifacts?"
-Do NOT claim perfection. Acknowledge the limitation. Doctors respect founders who know their tech limits.
-Answer: "You are exactly right. Wrist motion is our biggest hurdle. We use the MAX86150 (FDA-cleared), but our goal is baseline anomaly detection, not diagnostic perfection. Phase 3 exists to calibrate against your Holter monitors and define error margins before we ever make medical claims."
+[EN] "You are exactly right. Wrist motion is our biggest hurdle. We use the MAX86150 (FDA-cleared), but our goal is baseline anomaly detection, not diagnostic perfection. Phase 3 exists to calibrate against your Holter monitors and define error margins before we ever make medical claims."
+[JP] 「先生のご指摘の通り、手首の動きはセンサーにとって最大のハードルです。FDA認可のMAX86150を使用していますが、現時点の目的は診断レベルの完璧さではなく、ベースラインの「異常検知」です。だからこそフェーズ3で貴院の機器と照合し、誤差の範囲を明確にしたいと考えています。」
 
 Q2 — "Phase 1 safety/liability?"
-Answer: "Phase 1 has ZERO electronics — zero electronic or data-privacy risk. It's 5-7 days of wearing TPU plastic or fabric. We provide all consent forms and feedback surveys. We just want to see if they naturally keep it on."
+[EN] "Phase 1 has ZERO electronics — zero electronic or data-privacy risk. It's 5-7 days of wearing TPU plastic. We provide all consent forms."
+[JP] 「フェーズ1は電子部品を一切含まないダミーモデルです。電子的なリスクはゼロ。患者様に5〜7日間着用していただき、物理的な不快感がないかを確認するだけです。同意書はすべてご用意いたします。」
 
-Q3 — "Hygiene for long-term daily wear?"
-Answer: "The pod and TPU strap are fully waterproof, alcohol-wipeable. The Omamori fabric is a removable 'sleeve' — slide out the hardware, machine-wash the fabric, slide back in."
+Q3 — "Hygiene?"
+[EN] "The pod and TPU strap are fully waterproof and alcohol-wipeable. The fabric sleeve is removable and machine-washable."
+[JP] 「内部デバイスとTPUバンドは完全防水でアルコール消毒可能。お守り袋の布カバーは取り外し可能な「スリーブ」設計で、衣類と同じように洗濯できます。」
 
-Q4 — "Fall detection → ambulance? What if it fails?"
-Answer: "KINTO is an informational tool for families, not an emergency dispatch device. Alerts go to the paired family member's smartphone. This keeps liability within the family unit while drastically reducing response time vs. a scheduled phone call."
+Q4 — "Fall detection → ambulance? Liability?"
+[EN] "KINTO alerts the family's smartphone, not a dispatch center. Liability stays within the family while dramatically cutting response time."
+[JP] 「KINTOは救急車を呼ぶシステムではなく、ご家族向けの「通知ツール」です。転倒検知時はご家族のスマートフォンにアラートを送信。責任をご家族内に留めつつ、発見までの時間を劇的に短縮できます。」
 
-Q5 — "Elderly forget to charge. Battery life?"
-Answer: "Screenless design = far lower power than an Apple Watch. ESP32 deep-sleep + intermittent sensor polling targets 4-7 days per charge. The magnetic pogo-pin connector makes it foolproof for arthritic hands."
+Q5 — "Battery life? Elderly forget to charge."
+[EN] "Screenless design + ESP32 deep-sleep targets 4-7 days per charge. Magnetic pogo-pin is foolproof for arthritic hands."
+[JP] 「スクリーンレス設計とESP32のディープスリープモードで、1回の充電で4〜7日を目指しています。充電にはマグネット式のポゴピンを採用しており、関節炎の方でも簡単に扱えます。」
 -->
