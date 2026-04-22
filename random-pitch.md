@@ -9,7 +9,7 @@ css: unocss
 fonts:
   sans: 'Outfit'
   serif: 'Playfair Display'
-title: "Raymond Borres  EPortfolio"
+title: "Raymond Borres &mdash; Portfolio"
 ---
 
 <div class="flex items-center justify-center h-full relative z-10 w-full gap-10">
@@ -17,9 +17,9 @@ title: "Raymond Borres  EPortfolio"
 <img src="/raymond.jpg" class="w-28 h-28 rounded-full object-cover object-top border-2 border-[#d1b066]/40 shadow-[0_0_30px_rgba(209,176,102,0.25)] flex-shrink-0" />
 
 <div class="flex flex-col text-left">
-<p class="text-[0.5rem] font-semibold text-[#d1b066] tracking-[0.4em] uppercase mb-1">Power Electronics · SiC & GaN · Nagoya University</p>
+<p class="text-[0.5rem] font-semibold text-[#d1b066] tracking-[0.4em] uppercase mb-1">Power Electronics &middot; SiC &amp; GaN &middot; Nagoya University</p>
 <h1 class="text-4xl font-serif text-[#E1D1AA] font-light tracking-widest mb-1">Raymond Borres</h1>
-<p class="text-sm text-[#A68A56] tracking-[0.2em] font-light mb-4">Graduate Researcher · MEng Electrical Engineering</p>
+<p class="text-sm text-[#A68A56] tracking-[0.2em] font-light mb-4">Graduate Researcher &middot; MEng Electrical Engineering</p>
 <div class="w-16 h-px bg-gradient-to-r from-[#d1b066] to-transparent mb-4"></div>
 <div class="flex items-center gap-5 text-[0.55rem] text-[#8A8F9E]">
 <a href="mailto:raymborres07@gmail.com" class="flex items-center gap-1 text-[#8A8F9E] no-underline hover:text-[#d1b066] transition-colors">
@@ -60,7 +60,7 @@ class: px-10 pt-3
 
 <div class="grid grid-cols-2 gap-2">
 <div class="bg-[#121319] border border-[#1C1E26] rounded-lg p-2.5">
-<h3 class="text-[0.55rem] font-semibold text-[#d1b066] uppercase tracking-widest mb-1.5 flex items-center gap-1"><div class="i-lucide:cpu text-[0.55rem]"></div>Circuit & Power</h3>
+<h3 class="text-[0.55rem] font-semibold text-[#d1b066] uppercase tracking-widest mb-1.5 flex items-center gap-1"><div class="i-lucide:cpu text-[0.55rem]"></div>Circuit &amp; Power</h3>
 <div class="space-y-0.5">
 <p class="text-[0.55rem] text-[#8A8F9E]">DC-DC Converters (SiC/GaN)</p>
 <p class="text-[0.55rem] text-[#8A8F9E]">Voltage Loop Control</p>
@@ -71,10 +71,10 @@ class: px-10 pt-3
 <div class="bg-[#121319] border border-[#1C1E26] rounded-lg p-2.5">
 <h3 class="text-[0.55rem] font-semibold text-[#d1b066] uppercase tracking-widest mb-1.5 flex items-center gap-1"><div class="i-lucide:code text-[0.55rem]"></div>Software</h3>
 <div class="space-y-0.5">
-<p class="text-[0.55rem] text-[#8A8F9E]">Python · C/C++</p>
+<p class="text-[0.55rem] text-[#8A8F9E]">Python &middot; C/C++</p>
 <p class="text-[0.55rem] text-[#8A8F9E]">MATLAB / Simulink</p>
-<p class="text-[0.55rem] text-[#8A8F9E]">PHP · JavaScript</p>
-<p class="text-[0.55rem] text-[#8A8F9E]">Linux · Git</p>
+<p class="text-[0.55rem] text-[#8A8F9E]">PHP &middot; JavaScript</p>
+<p class="text-[0.55rem] text-[#8A8F9E]">Linux &middot; Git</p>
 </div>
 </div>
 </div>
@@ -99,7 +99,7 @@ class: px-10 pt-3
 </div>
 </div>
 <div class="bg-[#121319] border border-[#1C1E26] rounded-lg p-2.5">
-<h3 class="text-[0.55rem] font-semibold text-[#d1b066] uppercase tracking-widest mb-1.5">Tools & Equipment</h3>
+<h3 class="text-[0.55rem] font-semibold text-[#d1b066] uppercase tracking-widest mb-1.5">Tools &amp; Equipment</h3>
 <div class="flex flex-wrap gap-1">
 <span class="text-[0.45rem] bg-[#1C1E26] text-[#8A8F9E] px-1.5 py-0.5 rounded">Oscilloscope</span>
 <span class="text-[0.45rem] bg-[#1C1E26] text-[#8A8F9E] px-1.5 py-0.5 rounded">CAD / 3D Modeling</span>
@@ -124,7 +124,7 @@ class: px-10 pt-3
 
 <div class="w-full flex flex-col h-full overflow-y-auto">
 <div class="mb-2">
-<p class="text-[0.5rem] font-semibold text-[#d1b066] tracking-[0.3em] uppercase">Research & Engineering</p>
+<p class="text-[0.5rem] font-semibold text-[#d1b066] tracking-[0.3em] uppercase">Research &amp; Engineering</p>
 <h1 class="text-xl font-serif text-[#E1D1AA] leading-tight">Key Projects</h1>
 </div>
 
@@ -194,9 +194,9 @@ class: px-10 pt-3
 <div class="flex items-start justify-between mb-0.5">
 <div>
 <h3 class="font-semibold text-[#E1D1AA] text-xs">Graduate Research Assistant</h3>
-<p class="text-[0.52rem] text-[#d1b066]">Nagoya University · Yamamoto Lab</p>
+<p class="text-[0.52rem] text-[#d1b066]">Nagoya University &middot; Yamamoto Lab</p>
 </div>
-<span class="text-[0.48rem] text-[#8A8F9E] flex-shrink-0">Oct 2025  EPresent</span>
+<span class="text-[0.48rem] text-[#8A8F9E] flex-shrink-0">Oct 2025 &ndash; Present</span>
 </div>
 <p class="text-[0.55rem] text-[#8A8F9E] leading-relaxed">Conducting collaborative power electronics research. Analyzing semiconductor characteristics and thermal management. Contributing to a digest for <strong class="text-[#E1D1AA]">ECCE submission</strong>.</p>
 </div>
@@ -204,12 +204,12 @@ class: px-10 pt-3
 <div class="bg-[#121319] border border-[#1C1E26] rounded-lg p-2.5">
 <div class="flex items-start justify-between mb-0.5">
 <div>
-<h3 class="font-semibold text-[#E1D1AA] text-xs">Teaching Assistant  EG30 Program</h3>
+<h3 class="font-semibold text-[#E1D1AA] text-xs">Teaching Assistant &mdash; G30 Program</h3>
 <p class="text-[0.52rem] text-[#d1b066]">Nagoya University</p>
 </div>
-<span class="text-[0.48rem] text-[#8A8F9E] flex-shrink-0">Oct 2023  EPresent</span>
+<span class="text-[0.48rem] text-[#8A8F9E] flex-shrink-0">Oct 2023 &ndash; Present</span>
 </div>
-<p class="text-[0.55rem] text-[#8A8F9E] leading-relaxed">Managed tutorials for <strong class="text-[#E1D1AA]">Power Electronics and NUCreations</strong> (Python & Microcomputers). Created handouts and taught lab safety to international students.</p>
+<p class="text-[0.55rem] text-[#8A8F9E] leading-relaxed">Managed tutorials for <strong class="text-[#E1D1AA]">Power Electronics and NUCreations</strong> (Python &amp; Microcomputers). Created handouts and taught lab safety to international students.</p>
 </div>
 
 <div class="grid grid-cols-2 gap-2">
@@ -217,7 +217,7 @@ class: px-10 pt-3
 <div class="flex items-start justify-between mb-0.5">
 <div>
 <h3 class="font-semibold text-[#E1D1AA] text-[0.62rem]">Electrical Engineering Intern</h3>
-<p class="text-[0.5rem] text-[#d1b066]">Goto Electric · Anjo, Aichi</p>
+<p class="text-[0.5rem] text-[#d1b066]">Goto Electric &middot; Anjo, Aichi</p>
 </div>
 <span class="text-[0.45rem] text-[#8A8F9E]">Feb 2026</span>
 </div>
@@ -227,9 +227,9 @@ class: px-10 pt-3
 <div class="flex items-start justify-between mb-0.5">
 <div>
 <h3 class="font-semibold text-[#E1D1AA] text-[0.62rem]">Software Engineer Intern</h3>
-<p class="text-[0.5rem] text-[#d1b066]">Aplus · Nagoya</p>
+<p class="text-[0.5rem] text-[#d1b066]">Aplus &middot; Nagoya</p>
 </div>
-<span class="text-[0.45rem] text-[#8A8F9E]">Jul–Sep 2024</span>
+<span class="text-[0.45rem] text-[#8A8F9E]">Jul &ndash; Sep 2024</span>
 </div>
 <p class="text-[0.52rem] text-[#8A8F9E] leading-relaxed">PHP development and ideation of a <strong class="text-[#E1D1AA]">Digitalized Model United Nations</strong> application.</p>
 </div>
@@ -238,7 +238,7 @@ class: px-10 pt-3
 <div class="bg-[#121319] border border-[#1C1E26] rounded-lg p-2.5">
 <div class="flex items-start justify-between mb-0.5">
 <div>
-<h3 class="font-semibold text-[#E1D1AA] text-[0.62rem]">Summer Research Intern  EYamamoto Lab</h3>
+<h3 class="font-semibold text-[#E1D1AA] text-[0.62rem]">Summer Research Intern &mdash; Yamamoto Lab</h3>
 <p class="text-[0.5rem] text-[#d1b066]">Nagoya University</p>
 </div>
 <span class="text-[0.45rem] text-[#8A8F9E]">Aug 2023</span>
@@ -256,8 +256,8 @@ class: px-10 pt-3
 
 <div class="w-full flex flex-col h-full overflow-y-auto">
 <div class="mb-2">
-<p class="text-[0.5rem] font-semibold text-[#d1b066] tracking-[0.3em] uppercase">Credentials & Beyond</p>
-<h1 class="text-xl font-serif text-[#E1D1AA] leading-tight">Education, Awards & Leadership</h1>
+<p class="text-[0.5rem] font-semibold text-[#d1b066] tracking-[0.3em] uppercase">Credentials &amp; Beyond</p>
+<h1 class="text-xl font-serif text-[#E1D1AA] leading-tight">Education, Awards &amp; Leadership</h1>
 </div>
 
 <div class="grid grid-cols-[1.1fr_1fr] gap-3 flex-1">
@@ -266,43 +266,43 @@ class: px-10 pt-3
 <div class="bg-[#121319] border border-[#1C1E26] rounded-lg p-2.5 border-l-2 border-l-[#d1b066]">
 <div class="flex justify-between items-start">
 <div>
-<h4 class="font-semibold text-[#E1D1AA] text-[0.62rem]">MEng  EElectrical Engineering</h4>
-<p class="text-[0.5rem] text-[#d1b066]">Nagoya University · G30 Scholarship Recipient</p>
+<h4 class="font-semibold text-[#E1D1AA] text-[0.62rem]">MEng &mdash; Electrical Engineering</h4>
+<p class="text-[0.5rem] text-[#d1b066]">Nagoya University &middot; G30 Scholarship Recipient</p>
 </div>
-<span class="text-[0.45rem] text-[#8A8F9E]">2025 E027</span>
+<span class="text-[0.45rem] text-[#8A8F9E]">2025 &ndash; 2027</span>
 </div>
 <p class="text-[0.5rem] text-[#8A8F9E] mt-0.5">Full tuition scholarship | Electrical/Electronics Engineering</p>
 </div>
 <div class="bg-[#121319] border border-[#1C1E26] rounded-lg p-2.5">
 <div class="flex justify-between items-start">
 <div>
-<h4 class="font-semibold text-[#E1D1AA] text-[0.62rem]">BEng  EAutomotive Engineering</h4>
-<p class="text-[0.5rem] text-[#d1b066]">Nagoya University · G30 Program</p>
+<h4 class="font-semibold text-[#E1D1AA] text-[0.62rem]">BEng &mdash; Automotive Engineering</h4>
+<p class="text-[0.5rem] text-[#d1b066]">Nagoya University &middot; G30 Program</p>
 </div>
-<span class="text-[0.45rem] text-[#8A8F9E]">2021 E025</span>
+<span class="text-[0.45rem] text-[#8A8F9E]">2021 &ndash; 2025</span>
 </div>
-<p class="text-[0.5rem] text-[#8A8F9E] mt-0.5">Specialization: Electrical/Electronics & Information Engineering</p>
+<p class="text-[0.5rem] text-[#8A8F9E] mt-0.5">Specialization: Electrical/Electronics &amp; Information Engineering</p>
 </div>
 <div class="bg-[#121319] border border-[#1C1E26] rounded-lg p-2.5">
 <div class="flex justify-between items-start">
 <div>
 <h4 class="font-semibold text-[#E1D1AA] text-[0.62rem]">High School Diploma</h4>
-<p class="text-[0.5rem] text-[#d1b066]">Philippine Science High School  EW. Visayas</p>
+<p class="text-[0.5rem] text-[#d1b066]">Philippine Science High School &mdash; W. Visayas</p>
 </div>
-<span class="text-[0.45rem] text-[#8A8F9E]">2015 E021</span>
+<span class="text-[0.45rem] text-[#8A8F9E]">2015 &ndash; 2021</span>
 </div>
-<p class="text-[0.5rem] text-[#8A8F9E] mt-0.5">Physics, Engineering & Computer Science track</p>
+<p class="text-[0.5rem] text-[#8A8F9E] mt-0.5">Physics, Engineering &amp; Computer Science track</p>
 </div>
 </div>
 
 <div class="flex flex-col gap-2">
 <div>
-<h3 class="text-[0.55rem] font-semibold text-[#d1b066] uppercase tracking-widest mb-1 flex items-center gap-1"><div class="i-lucide:trophy text-[0.55rem]"></div>Honors & Awards</h3>
+<h3 class="text-[0.55rem] font-semibold text-[#d1b066] uppercase tracking-widest mb-1 flex items-center gap-1"><div class="i-lucide:trophy text-[0.55rem]"></div>Honors &amp; Awards</h3>
 <div class="flex flex-col gap-1">
 <div class="bg-[#121319] border border-[#1C1E26] rounded-lg p-2 flex items-start gap-1.5">
 <div class="i-lucide:star text-[#d1b066] text-xs flex-shrink-0 mt-0.5"></div>
 <div>
-<p class="text-[0.58rem] text-[#E1D1AA] font-semibold">Winner  EEntreCamp Finland</p>
+<p class="text-[0.58rem] text-[#E1D1AA] font-semibold">Winner &mdash; EntreCamp Finland</p>
 <p class="text-[0.5rem] text-[#8A8F9E]">International entrepreneurship competition</p>
 </div>
 </div>
@@ -328,15 +328,15 @@ class: px-10 pt-3
 <div class="bg-[#121319] border border-[#1C1E26] rounded-lg p-2 flex items-start gap-1.5">
 <div class="i-lucide:globe text-[#d1b066] text-xs flex-shrink-0 mt-0.5"></div>
 <div>
-<p class="text-[0.58rem] text-[#E1D1AA] font-semibold">NUMUN  EHead of IT & Design</p>
-<p class="text-[0.5rem] text-[#8A8F9E]">Organized 200+ participant conference. Built official website (WordPress & JavaScript).</p>
+<p class="text-[0.58rem] text-[#E1D1AA] font-semibold">NUMUN &mdash; Head of IT &amp; Design</p>
+<p class="text-[0.5rem] text-[#8A8F9E]">Organized 200+ participant conference. Built official website (WordPress &amp; JavaScript).</p>
 </div>
 </div>
 <div class="bg-[#121319] border border-[#1C1E26] rounded-lg p-2 flex items-start gap-1.5">
 <div class="i-lucide:rocket text-[#d1b066] text-xs flex-shrink-0 mt-0.5"></div>
 <div>
-<p class="text-[0.58rem] text-[#E1D1AA] font-semibold">NU Aerospace & Flight Technologies</p>
-<p class="text-[0.5rem] text-[#8A8F9E]">Rocket Team + Space Balloon  Edesigned electrical systems for high-altitude balloon payload.</p>
+<p class="text-[0.58rem] text-[#E1D1AA] font-semibold">NU Aerospace &amp; Flight Technologies</p>
+<p class="text-[0.5rem] text-[#8A8F9E]">Rocket Team + Space Balloon &mdash; designed electrical systems for high-altitude balloon payload.</p>
 </div>
 </div>
 </div>
@@ -354,7 +354,7 @@ class: text-center
 <div class="flex flex-col items-center justify-center h-full relative z-10 w-full">
 <img src="/raymond.jpg" class="w-16 h-16 rounded-full object-cover object-top border-2 border-[#d1b066]/40 shadow-[0_0_20px_rgba(209,176,102,0.2)] mb-4" />
 <h1 class="text-3xl font-serif text-[#E1D1AA] font-light tracking-widest mb-1">Let's Connect</h1>
-<p class="text-[#A68A56] text-xs tracking-widest mb-4">Open to research collaborations, internships & full-time roles in Japan</p>
+<p class="text-[#A68A56] text-xs tracking-widest mb-4">Open to research collaborations, internships &amp; full-time roles in Japan</p>
 <div class="w-14 h-px bg-gradient-to-r from-transparent via-[#d1b066] to-transparent mx-auto mb-5"></div>
 <div class="grid grid-cols-3 gap-3 w-full max-w-lg mb-5">
 <a href="mailto:raymborres07@gmail.com" class="bg-[#121319] border border-[#1C1E26] rounded-xl py-3 flex flex-col items-center gap-1.5 hover:border-[#d1b066]/40 transition-colors no-underline">
