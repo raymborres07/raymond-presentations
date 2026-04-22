@@ -26,7 +26,7 @@ title: "Raymond Borres  EPortfolio"
 <div class="i-lucide:mail text-[#d1b066] text-xs"></div>raymborres07@gmail.com
 </a>
 <a href="https://www.linkedin.com/in/raymond-borres/" target="_blank" class="flex items-center gap-1 text-[#8A8F9E] no-underline hover:text-[#d1b066] transition-colors">
-<div class="i-lucide:linkedin text-[#d1b066] text-xs"></div>raymond-borres
+<div class="i-mdi:linkedin text-[#d1b066] text-xs"></div>raymond-borres
 </a>
 <span class="flex items-center gap-1"><div class="i-lucide:map-pin text-[#d1b066] text-xs"></div>Nagoya, Japan</span>
 </div>
@@ -34,7 +34,7 @@ title: "Raymond Borres  EPortfolio"
 
 </div>
 
-<div class="absolute top-0 left-0 w-full h-full overflow-y-auto -z-1 pointer-events-none">
+<div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-1 pointer-events-none">
 <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-[#d1b066] opacity-[0.04] blur-[120px]"></div>
 <div class="absolute bottom-[0%] -right-[10%] w-[60%] h-[60%] rounded-full bg-[#d1b066] opacity-[0.03] blur-[150px]"></div>
 </div>
@@ -356,18 +356,18 @@ class: text-center
 <h1 class="text-3xl font-serif text-[#E1D1AA] font-light tracking-widest mb-1">Let's Connect</h1>
 <p class="text-[#A68A56] text-xs tracking-widest mb-4">Open to research collaborations, internships & full-time roles in Japan</p>
 <div class="w-14 h-px bg-gradient-to-r from-transparent via-[#d1b066] to-transparent mx-auto mb-5"></div>
-<div class="flex gap-4 mb-5">
-<a href="mailto:raymborres07@gmail.com" class="bg-[#121319] border border-[#1C1E26] rounded-xl px-5 py-3 flex flex-col items-center gap-1.5 hover:border-[#d1b066]/40 transition-colors no-underline">
+<div class="grid grid-cols-3 gap-3 w-full max-w-lg mb-5">
+<a href="mailto:raymborres07@gmail.com" class="bg-[#121319] border border-[#1C1E26] rounded-xl py-3 flex flex-col items-center gap-1.5 hover:border-[#d1b066]/40 transition-colors no-underline">
 <div class="i-lucide:mail text-xl text-[#d1b066]"></div>
-<p class="text-[0.52rem] text-[#8A8F9E]">raymborres07@gmail.com</p>
+<p class="text-[0.48rem] text-[#8A8F9E] text-center">raymborres07@gmail.com</p>
 </a>
-<a href="https://www.linkedin.com/in/raymond-borres/" target="_blank" class="bg-[#121319] border border-[#1C1E26] rounded-xl px-5 py-3 flex flex-col items-center gap-1.5 hover:border-[#d1b066]/40 transition-colors no-underline">
-<div class="i-lucide:linkedin text-xl text-[#d1b066]"></div>
-<p class="text-[0.52rem] text-[#8A8F9E]">linkedin.com/in/raymond-borres</p>
+<a href="https://www.linkedin.com/in/raymond-borres/" target="_blank" class="bg-[#121319] border border-[#1C1E26] rounded-xl py-3 flex flex-col items-center gap-1.5 hover:border-[#d1b066]/40 transition-colors no-underline">
+<div class="i-mdi:linkedin text-xl text-[#d1b066]"></div>
+<p class="text-[0.48rem] text-[#8A8F9E] text-center">linkedin.com/in/raymond-borres</p>
 </a>
-<a href="tel:+819045886141" class="bg-[#121319] border border-[#1C1E26] rounded-xl px-5 py-3 flex flex-col items-center gap-1.5 hover:border-[#d1b066]/40 transition-colors no-underline">
+<a href="tel:+819045886141" class="bg-[#121319] border border-[#1C1E26] rounded-xl py-3 flex flex-col items-center gap-1.5 hover:border-[#d1b066]/40 transition-colors no-underline">
 <div class="i-lucide:phone text-xl text-[#d1b066]"></div>
-<p class="text-[0.52rem] text-[#8A8F9E]">+81 90-4588-6141</p>
+<p class="text-[0.48rem] text-[#8A8F9E] text-center">+81 90-4588-6141</p>
 </a>
 </div>
 <div class="flex gap-2 flex-wrap justify-center">
@@ -379,7 +379,7 @@ class: text-center
 </div>
 </div>
 
-<div class="absolute top-0 left-0 w-full h-full overflow-y-auto -z-1 pointer-events-none">
+<div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-1 pointer-events-none">
 <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-[#d1b066] opacity-[0.04] blur-[120px]"></div>
 <div class="absolute bottom-[0%] -right-[10%] w-[60%] h-[60%] rounded-full bg-[#d1b066] opacity-[0.03] blur-[150px]"></div>
 </div>
