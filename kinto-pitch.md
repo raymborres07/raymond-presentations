@@ -59,69 +59,59 @@ class: px-10 pt-4
 background: '#08090C'
 ---
 
-<div class="w-full h-full flex flex-col">
-<div class="mb-3">
-<h2 class="text-[0.6rem] font-semibold text-[#A68A56] tracking-[0.3em] uppercase mb-1 flex items-center">
+<div class="w-full h-full flex flex-col overflow-hidden">
+<div class="mb-3 flex-shrink-0">
+<div class="text-[0.6rem] font-semibold text-[#A68A56] tracking-[0.3em] uppercase mb-1 flex items-center">
 The Compliance Problem <span class="px-2 text-[#d1b066]/30">|</span> <span class="text-[0.5rem] text-[#8A8F9E] tracking-widest leading-none">コンプライアンスの問題</span>
-</h2>
-<h1 class="text-3xl font-serif text-[#F3E8C1] leading-tight">The Gap in Remote Monitoring</h1>
+</div>
+<div class="text-3xl font-serif text-[#F3E8C1] leading-tight">The Gap in Remote Monitoring</div>
 </div>
 
-<div class="grid grid-cols-[1fr_1.15fr] gap-5 items-center flex-1">
+<div class="grid grid-cols-3 gap-4 items-center flex-1 min-h-0">
 
-<!-- LEFT: Donut Chart -->
-<div class="flex flex-col items-center justify-center gap-3">
-<div class="relative">
-<svg viewBox="0 0 200 200" class="w-52 h-52 drop-shadow-[0_0_20px_rgba(209,176,102,0.2)]">
-<!-- dark background ring -->
-<circle r="70" cx="100" cy="100" fill="none" stroke="#2a2d39" stroke-width="30"/>
-<!-- gold arc: 63.8% of circumference (439.82) = 280.6 -->
-<circle r="70" cx="100" cy="100" fill="none" stroke="#d1b066" stroke-width="30"
-  stroke-dasharray="280.6 159.2"
-  stroke-linecap="butt"
-  transform="rotate(-90 100 100)"
-  style="filter: drop-shadow(0 0 6px rgba(209,176,102,0.5))"/>
-<!-- inner dark fill -->
-<circle r="55" cx="100" cy="100" fill="#08090C"/>
-<!-- center label -->
-<text x="100" y="90" text-anchor="middle" fill="#d1b066" font-size="26" font-weight="bold" font-family="serif">63.8%</text>
-<text x="100" y="108" text-anchor="middle" fill="#E1D1AA" font-size="10" font-family="sans-serif">Stigma</text>
-<text x="100" y="122" text-anchor="middle" fill="#E1D1AA" font-size="10" font-family="sans-serif">&amp; Denial</text>
-</svg>
+<!-- COL 1: CSS Donut Chart -->
+<div class="flex flex-col items-center justify-center gap-2">
+<!-- Donut using conic-gradient -->
+<div class="relative flex-shrink-0" style="width:160px;height:160px;">
+<div style="width:160px;height:160px;border-radius:50%;background:conic-gradient(#d1b066 0% 63.8%, #2a2d39 63.8% 100%);box-shadow:0 0 24px rgba(209,176,102,0.15);"></div>
+<!-- cutout center hole -->
+<div class="absolute flex flex-col items-center justify-center" style="top:22px;left:22px;width:116px;height:116px;border-radius:50%;background:#08090C;">
+<span style="color:#d1b066;font-size:1.3rem;font-weight:700;line-height:1;font-family:serif;">63.8%</span>
+<span style="color:#E1D1AA;font-size:0.5rem;text-align:center;margin-top:2px;line-height:1.3;">Stigma<br>&amp; Denial</span>
+</div>
 </div>
 <!-- Legend -->
-<div class="flex flex-col gap-1.5 w-full max-w-[13rem]">
-<div class="flex items-center gap-2">
-<div class="w-3 h-3 rounded-sm flex-shrink-0" style="background:#d1b066"></div>
-<span class="text-[0.6rem] text-[#E1D1AA] font-semibold">63.8% &mdash; Stigma &amp; Denial</span>
+<div class="flex flex-col gap-1 mt-1">
+<div class="flex items-center gap-1.5">
+<div style="width:10px;height:10px;border-radius:2px;background:#d1b066;flex-shrink:0"></div>
+<span style="font-size:0.52rem;color:#E1D1AA;font-weight:600;">63.8% &mdash; Stigma &amp; Denial</span>
 </div>
-<div class="flex items-center gap-2">
-<div class="w-3 h-3 rounded-sm flex-shrink-0" style="background:#2a2d39"></div>
-<span class="text-[0.6rem] text-[#8A8F9E]">36.2% &mdash; Cost, Complexity &amp; Other</span>
+<div class="flex items-center gap-1.5">
+<div style="width:10px;height:10px;border-radius:2px;background:#2a2d39;flex-shrink:0"></div>
+<span style="font-size:0.52rem;color:#8A8F9E;">36.2% &mdash; Cost &amp; Complexity</span>
 </div>
-<p class="text-[0.45rem] text-[#424554] mt-1 italic">Why elderly refuse to wear monitoring devices</p>
+<p style="font-size:0.4rem;color:#424554;font-style:italic;margin-top:2px;">Why elderly refuse monitoring devices</p>
 </div>
 </div>
 
-<!-- RIGHT: Two stacked problem cards -->
-<div class="flex flex-col gap-3 h-full justify-center">
-<div class="bg-[#121319]/80 backdrop-blur-md rounded-xl border border-[#1C1E26] p-4 shadow-xl flex flex-col items-center text-center group hover:border-[#d1b066]/40 transition-colors">
-<div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#1A1C24] to-[#121319] border border-[#2a2d39] flex items-center justify-center text-[#d1b066] mb-2 shadow-inner">
+<!-- COL 2: Smartphone card -->
+<div class="bg-[#121319]/80 backdrop-blur-md rounded-xl border border-[#1C1E26] p-4 shadow-xl flex flex-col items-center text-center group hover:border-[#d1b066]/40 transition-colors h-full justify-center">
+<div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#1A1C24] to-[#121319] border border-[#2a2d39] flex items-center justify-center text-[#d1b066] mb-2 shadow-inner flex-shrink-0">
 <div class="i-lucide:smartphone text-xl"></div>
 </div>
-<h3 class="text-sm font-sans font-medium text-[#E1D1AA] mb-1">Smartphone Reliance <p class="text-[0.55rem] text-[#A68A56] mt-0.5">スマートフォンへの依存</p></h3>
-<p class="text-[0.65rem] text-[#D1D5DB] font-light leading-relaxed mb-2">Elderly patients often leave phones in other rooms, missing critical events (e.g., falls in the bathroom).</p>
-<p class="text-[0.55rem] text-[#8A8F9E] border-t border-[#1C1E26] pt-2 font-light">高齢者は電話を別の部屋に置き忘れがちで、緊急事態（お風呂場での転倒など）を見逃す可能性があります。</p>
+<div class="text-sm font-sans font-medium text-[#E1D1AA] mb-1">Smartphone Reliance <p class="text-[0.55rem] text-[#A68A56] mt-0.5">スマートフォンへの依存</p></div>
+<p class="text-[0.65rem] text-[#D1D5DB] font-light leading-relaxed mb-2">Elderly patients often leave phones in other rooms, missing critical events like bathroom falls.</p>
+<p class="text-[0.55rem] text-[#8A8F9E] border-t border-[#1C1E26] pt-2 font-light">高齢者は電話を別の部屋に置き忘れ、緊急事態を見逃す可能性があります。</p>
 </div>
 
-<div class="bg-[#121319]/80 backdrop-blur-md rounded-xl border border-[#d1b066]/30 p-4 shadow-xl flex flex-col items-center text-center group hover:border-[#d1b066]/60 transition-colors">
-<div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#1A1C24] to-[#121319] border border-[#2a2d39] flex items-center justify-center text-[#d1b066] mb-2 shadow-inner">
+<!-- COL 3: Stigma card -->
+<div class="bg-[#121319]/80 backdrop-blur-md rounded-xl border border-[#d1b066]/30 p-4 shadow-xl flex flex-col items-center text-center group hover:border-[#d1b066]/60 transition-colors h-full justify-center">
+<div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#1A1C24] to-[#121319] border border-[#2a2d39] flex items-center justify-center text-[#d1b066] mb-2 shadow-inner flex-shrink-0">
 <div class="i-lucide:alert-circle text-xl"></div>
 </div>
-<h3 class="text-sm font-sans font-medium text-[#E1D1AA] mb-1">The Stigma <p class="text-[0.55rem] text-[#A68A56] mt-0.5">心理的抵抗感</p></h3>
-<p class="text-[0.65rem] text-[#D1D5DB] font-light leading-relaxed mb-2">Traditional "panic buttons" are visually stigmatizing — <strong class="text-[#d1b066]">63.8% of non-compliance</strong> is driven by stigma &amp; denial.</p>
-<p class="text-[0.55rem] text-[#8A8F9E] border-t border-[#1C1E26] pt-2 font-light">従来のボタンは視覚的な抵抗感があり、患者は「病人扱い」を嫌がります。</p>
-</div>
+<div class="text-sm font-sans font-medium text-[#E1D1AA] mb-1">The Stigma <p class="text-[0.55rem] text-[#A68A56] mt-0.5">心理的抵抗感</p></div>
+<p class="text-[0.65rem] text-[#D1D5DB] font-light leading-relaxed mb-2">Panic buttons are stigmatizing — <strong class="text-[#d1b066]">63.8% of non-compliance</strong> is driven by stigma &amp; denial alone.</p>
+<p class="text-[0.55rem] text-[#8A8F9E] border-t border-[#1C1E26] pt-2 font-light">従来のボタンは抵抗感が強く、患者は「病人扱い」を嫌がります。</p>
 </div>
 
 </div>
