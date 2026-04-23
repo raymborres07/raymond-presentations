@@ -12,10 +12,13 @@
       <polyline points="9 22 9 12 15 12 15 22"/>
     </svg>
   </a>
+  <!-- Vercel Speed Insights -->
+  <SpeedInsights />
 </template>
 
 <script setup>
 import { ref, computed } from 'vue'
+import { SpeedInsights } from '@vercel/speed-insights/vue'
 
 const homeHovered = ref(false)
 
