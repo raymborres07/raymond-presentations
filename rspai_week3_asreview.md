@@ -12,6 +12,22 @@ fonts:
 title: "Accelerating Screening with ASReview"
 ---
 
+<style>
+.slidev-layout {
+  overflow-y: auto !important;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #10B98144;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10B98188;
+}
+</style>
+
 <div class="flex flex-col items-center justify-center h-full relative z-10 w-full">
 
 <div class="w-20 h-20 rounded-full bg-gradient-to-br from-[#10B981] to-[#0EA5E9] flex items-center justify-center mb-6 shadow-[0_0_40px_rgba(16,185,129,0.5)]">
@@ -80,6 +96,14 @@ class: px-12 pt-6
 <div class="i-lucide:bar-chart-3 text-2xl text-[#10B981]"></div>
 <p class="text-xs text-[#94A3B8]">Proven to reduce workload and screening time by up to <strong class="text-white">95%</strong>.</p>
 </div>
+
+<div class="bg-[#111C24] border border-[#1E2E38] rounded-xl overflow-hidden shadow-2xl mt-auto">
+  <img src="/asreview-concept.png" class="w-full h-32 object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+  <div class="w-full h-32 bg-[#0F172A] hidden items-center justify-center flex-col gap-1 border-t border-[#1E2E38]">
+    <div class="i-lucide:image text-xl text-[#1E293B]"></div>
+    <p class="text-[0.5rem] text-[#1E293B]">Placeholder: <code>asreview-concept.png</code></p>
+  </div>
+</div>
 </div>
 </div>
 </div>
@@ -133,6 +157,14 @@ class: px-12 pt-6
 </div>
 </div>
 
+<div class="bg-[#111C24] border border-[#1E2E38] rounded-xl overflow-hidden shadow-2xl mt-4">
+  <img src="/asreview-interface.png" class="w-full h-32 object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+  <div class="w-full h-32 bg-[#0F172A] hidden items-center justify-center flex-col gap-1">
+    <div class="i-lucide:layout text-xl text-[#1E293B]"></div>
+    <p class="text-[0.5rem] text-[#1E293B]">Placeholder: <code>asreview-interface.png</code></p>
+  </div>
+</div>
+
 </div>
 
 ---
@@ -183,6 +215,16 @@ class: px-12 pt-6
 <h3 class="font-semibold text-[#6EE7B7] text-xs mb-2 flex items-center gap-2"><div class="i-lucide:lightbulb text-sm text-[#10B981]"></div>Machine Learning for Machine Learning</h3>
 <p class="text-xs text-[#64748B] italic">"It is incredibly fitting to use a Machine Learning application (Active Learning) to streamline my literature review on Machine Learning algorithms for SiC hardware."</p>
 </div>
+
+<!-- Real screenshot placeholder -->
+<div class="bg-[#111C24] border border-[#1E2E38] rounded-xl overflow-hidden shadow-2xl mt-2">
+  <img src="/asreview-my-research.png" class="w-full h-24 object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+  <div class="w-full h-24 bg-[#0F172A] hidden items-center justify-center flex-col gap-1">
+    <div class="i-lucide:microscope text-xl text-[#1E293B]"></div>
+    <p class="text-[0.5rem] text-[#1E293B]">Placeholder: <code>asreview-my-research.png</code></p>
+  </div>
+</div>
+
 </div>
 </div>
 </div>
@@ -248,6 +290,14 @@ class: px-12 pt-6
 <div class="bg-gradient-to-r from-[#10B981]/15 to-transparent border border-[#10B981]/30 rounded-xl p-4">
 <h4 class="text-xs font-semibold text-[#BAE6FD] mb-2 flex items-center gap-2"><div class="i-lucide:target text-[#0EA5E9]"></div>Impact on My Research</h4>
 <p class="text-xs text-[#64748B]">This means I spend zero time reading irrelevant abstracts about basic silicon devices, and 100% of my time analyzing the cutting-edge ML optimization techniques I actually need.</p>
+</div>
+
+<div class="bg-[#111C24] border border-[#1E2E38] rounded-xl overflow-hidden shadow-2xl mt-2">
+  <img src="/asreview-stopping-criterion.png" class="w-full h-24 object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+  <div class="w-full h-24 bg-[#0F172A] hidden items-center justify-center flex-col gap-1">
+    <div class="i-lucide:trending-up text-xl text-[#1E293B]"></div>
+    <p class="text-[0.5rem] text-[#1E293B]">Placeholder: <code>asreview-stopping-criterion.png</code></p>
+  </div>
 </div>
 
 </div>
