@@ -121,7 +121,7 @@ class: px-12 pt-6
 <div class="absolute top-0 right-0 w-16 h-16 bg-[#10B981]/5 rounded-bl-full flex items-start justify-end p-3"><div class="text-[#10B981] font-bold opacity-30">01</div></div>
 <h3 class="font-bold text-white text-xs mb-3 flex items-center gap-2"><div class="i-lucide:target text-[#10B981]"></div>Define Question</h3>
 <div class="w-full h-24 mb-3 bg-[#0F172A] rounded border border-[#1E2E38] flex items-center justify-center overflow-hidden relative">
-<img src="/asreview-step1-question.png" class="w-full h-full object-cover relative z-10" onerror="this.style.display='none'" />
+<img src="/step1-question.png" class="w-full h-full object-cover relative z-10" onerror="this.style.display='none'" />
 <p class="text-[0.45rem] text-[#334155] absolute font-mono">step1-question.png</p>
 </div>
 <ul class="text-[0.55rem] text-[#94A3B8] space-y-2 list-none p-0">
@@ -138,7 +138,7 @@ Example: How are AI and optimization methods used to design and evaluate power m
 <div class="absolute top-0 right-0 w-16 h-16 bg-[#10B981]/5 rounded-bl-full flex items-start justify-end p-3"><div class="text-[#10B981] font-bold opacity-30">02</div></div>
 <h3 class="font-bold text-white text-xs mb-3 flex items-center gap-2"><div class="i-lucide:database text-[#10B981]"></div>Build Dataset</h3>
 <div class="w-full h-24 mb-3 bg-[#0F172A] rounded border border-[#1E2E38] flex items-center justify-center overflow-hidden relative">
-<img src="/asreview-step2-dataset.png" class="w-full h-full object-cover relative z-10" onerror="this.style.display='none'" />
+<img src="/step2-dataset.png" class="w-full h-full object-cover relative z-10" onerror="this.style.display='none'" />
 <p class="text-[0.45rem] text-[#334155] absolute font-mono">step2-dataset.png</p>
 </div>
 <ul class="text-[0.55rem] text-[#94A3B8] space-y-2 list-none p-0">
@@ -160,7 +160,7 @@ title,abstract,year,doi,url,included<br>
 <div class="absolute top-0 right-0 w-16 h-16 bg-[#10B981]/10 rounded-bl-full flex items-start justify-end p-3"><div class="text-[#10B981] font-bold opacity-50">03</div></div>
 <h3 class="font-bold text-white text-xs mb-3 flex items-center gap-2"><div class="i-lucide:bot text-[#10B981]"></div>Screen (ASReview)</h3>
 <div class="w-full h-24 mb-3 bg-[#0F172A] rounded border border-[#1E2E38] flex items-center justify-center overflow-hidden relative">
-<img src="/asreview-step3-screen.png" class="w-full h-full object-cover relative z-10" onerror="this.style.display='none'" />
+<img src="/step3-screen.png" class="w-full h-full object-cover relative z-10" onerror="this.style.display='none'" />
 <p class="text-[0.45rem] text-[#334155] absolute font-mono">step3-screen.png</p>
 </div>
 <ul class="text-[0.55rem] text-[#94A3B8] space-y-2 list-none p-0">
@@ -176,7 +176,7 @@ title,abstract,year,doi,url,included<br>
 <div class="absolute top-0 right-0 w-16 h-16 bg-[#10B981]/5 rounded-bl-full flex items-start justify-end p-3"><div class="text-[#10B981] font-bold opacity-30">04</div></div>
 <h3 class="font-bold text-white text-xs mb-3 flex items-center gap-2"><div class="i-lucide:pen-tool text-[#10B981]"></div>Turn to Review</h3>
 <div class="w-full h-24 mb-3 bg-[#0F172A] rounded border border-[#1E2E38] flex items-center justify-center overflow-hidden relative">
-<img src="/asreview-step4-review.png" class="w-full h-full object-cover relative z-10" onerror="this.style.display='none'" />
+<img src="/step4-review..png" class="w-full h-full object-cover relative z-10" onerror="this.style.display='none'" />
 <p class="text-[0.45rem] text-[#334155] absolute font-mono">step4-review.png</p>
 </div>
 <p class="text-[0.5rem] text-[#38BDF8] italic mb-2">ASReview gives a ranked set of studies, not a finished review.</p>
