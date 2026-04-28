@@ -30,7 +30,8 @@ title: "Accelerating Screening with ASReview"
 
 <div class="flex flex-col items-center justify-center h-full relative z-10 w-full">
 
-<div class="w-20 h-20 rounded-full bg-gradient-to-br from-[#10B981] to-[#0EA5E9] flex items-center justify-center mb-6 shadow-[0_0_40px_rgba(16,185,129,0.5)]">
+<div class="w-20 h-20 rounded-full bg-gradient-to-br from-[#10B981] to-[#0EA5E9] flex items-center justify-center mb-6 shadow-[0_0_40px_rgba(16,185,129,0.5)] relative overflow-hidden">
+<img src="/asreview-logo.png" class="absolute inset-0 w-full h-full object-contain p-3 z-10" onerror="this.style.display='none'" />
 <div class="i-lucide:bot text-4xl text-white"></div>
 </div>
 
