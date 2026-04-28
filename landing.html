@@ -136,5 +136,37 @@
     </div>
 
     <footer>raymborres07@gmail.com · Nagoya, Japan</footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" style="display:none; position:fixed; inset:0; z-index:1000; background:rgba(0,0,0,0.9); align-items:center; justify-content:center; padding:2rem; cursor:zoom-out;">
+        <div style="position:relative; max-width:100%; max-height:100%;">
+            <img id="lightbox-img" src="" style="max-width:100%; max-height:90vh; border-radius:8px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 25px 50px -12px rgba(0,0,0,0.5);">
+            <button onclick="closeLightbox()" style="position:absolute; top:-40px; right:-10px; background:none; border:none; color:rgba(255,255,255,0.5); font-size:2rem; cursor:pointer; line-height:1;">&times;</button>
+        </div>
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        document.addEventListener('click', (e) => {
+            if (e.target.tagName === 'IMG' && !e.target.closest('a')) {
+                lightboxImg.src = e.target.src;
+                lightbox.style.display = 'flex';
+                e.preventDefault();
+            }
+        });
+
+        lightbox.addEventListener('click', closeLightbox);
+        
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+        }
+
+        // Add zoom cursor to all images
+        const style = document.createElement('style');
+        style.textContent = 'img:not(a img) { cursor: zoom-in; transition: opacity 0.2s; } img:not(a img):hover { opacity: 0.8; }';
+        document.head.appendChild(style);
+    </script>
 </body>
 </html>
