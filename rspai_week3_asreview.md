@@ -120,6 +120,10 @@ class: px-12 pt-6
 <div class="bg-[#111C24] border border-[#1E2E38] rounded-xl p-4 flex flex-col relative overflow-hidden">
 <div class="absolute top-0 right-0 w-16 h-16 bg-[#10B981]/5 rounded-bl-full flex items-start justify-end p-3"><div class="text-[#10B981] font-bold opacity-30">01</div></div>
 <h3 class="font-bold text-white text-xs mb-3 flex items-center gap-2"><div class="i-lucide:target text-[#10B981]"></div>Define Question</h3>
+<div class="w-full h-24 mb-3 bg-[#0F172A] rounded border border-[#1E2E38] flex items-center justify-center overflow-hidden relative">
+<img src="/asreview-step1-question.png" class="w-full h-full object-cover relative z-10" onerror="this.style.display='none'" />
+<p class="text-[0.45rem] text-[#334155] absolute font-mono">step1-question.png</p>
+</div>
 <ul class="text-[0.55rem] text-[#94A3B8] space-y-2 list-none p-0">
 <li><strong class="text-white">Write a precise research question.</strong></li>
 <li>Decide inclusion and exclusion criteria (what counts as "relevant" before I open ASReview).</li>
@@ -133,6 +137,10 @@ Example: How are AI and optimization methods used to design and evaluate power m
 <div class="bg-[#111C24] border border-[#1E2E38] rounded-xl p-4 flex flex-col relative overflow-hidden">
 <div class="absolute top-0 right-0 w-16 h-16 bg-[#10B981]/5 rounded-bl-full flex items-start justify-end p-3"><div class="text-[#10B981] font-bold opacity-30">02</div></div>
 <h3 class="font-bold text-white text-xs mb-3 flex items-center gap-2"><div class="i-lucide:database text-[#10B981]"></div>Build Dataset</h3>
+<div class="w-full h-24 mb-3 bg-[#0F172A] rounded border border-[#1E2E38] flex items-center justify-center overflow-hidden relative">
+<img src="/asreview-step2-dataset.png" class="w-full h-full object-cover relative z-10" onerror="this.style.display='none'" />
+<p class="text-[0.45rem] text-[#334155] absolute font-mono">step2-dataset.png</p>
+</div>
 <ul class="text-[0.55rem] text-[#94A3B8] space-y-2 list-none p-0">
 <li>Search IEEE Xplore, Scopus, or other databases with Boolean queries.</li>
 <li>Export the search results (titles, abstracts, year, DOI).</li>
@@ -151,6 +159,10 @@ title,abstract,year,doi,url,included<br>
 <div class="bg-[#111C24] border border-[#10B981]/40 rounded-xl p-4 flex flex-col relative overflow-hidden shadow-[0_0_15px_rgba(16,185,129,0.1)]">
 <div class="absolute top-0 right-0 w-16 h-16 bg-[#10B981]/10 rounded-bl-full flex items-start justify-end p-3"><div class="text-[#10B981] font-bold opacity-50">03</div></div>
 <h3 class="font-bold text-white text-xs mb-3 flex items-center gap-2"><div class="i-lucide:bot text-[#10B981]"></div>Screen (ASReview)</h3>
+<div class="w-full h-24 mb-3 bg-[#0F172A] rounded border border-[#1E2E38] flex items-center justify-center overflow-hidden relative">
+<img src="/asreview-step3-screen.png" class="w-full h-full object-cover relative z-10" onerror="this.style.display='none'" />
+<p class="text-[0.45rem] text-[#334155] absolute font-mono">step3-screen.png</p>
+</div>
 <ul class="text-[0.55rem] text-[#94A3B8] space-y-2 list-none p-0">
 <li>Upload the CSV into ASReview LAB.</li>
 <li>Label records as relevant or irrelevant based on criteria.</li>
@@ -163,6 +175,10 @@ title,abstract,year,doi,url,included<br>
 <div class="bg-[#111C24] border border-[#1E2E38] rounded-xl p-4 flex flex-col relative overflow-hidden">
 <div class="absolute top-0 right-0 w-16 h-16 bg-[#10B981]/5 rounded-bl-full flex items-start justify-end p-3"><div class="text-[#10B981] font-bold opacity-30">04</div></div>
 <h3 class="font-bold text-white text-xs mb-3 flex items-center gap-2"><div class="i-lucide:pen-tool text-[#10B981]"></div>Turn to Review</h3>
+<div class="w-full h-24 mb-3 bg-[#0F172A] rounded border border-[#1E2E38] flex items-center justify-center overflow-hidden relative">
+<img src="/asreview-step4-review.png" class="w-full h-full object-cover relative z-10" onerror="this.style.display='none'" />
+<p class="text-[0.45rem] text-[#334155] absolute font-mono">step4-review.png</p>
+</div>
 <p class="text-[0.5rem] text-[#38BDF8] italic mb-2">ASReview gives a ranked set of studies, not a finished review.</p>
 <ul class="text-[0.55rem] text-[#94A3B8] space-y-1.5 list-none p-0">
 <li>Filter to included studies.</li>
