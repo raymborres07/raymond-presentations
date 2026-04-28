@@ -55,6 +55,71 @@ class: px-12 pt-6
 
 <div class="w-full flex flex-col h-full">
 <div class="mb-5">
+<p class="text-[0.6rem] font-semibold text-[#10B981] tracking-[0.3em] uppercase mb-1">Getting Started</p>
+<h1 class="text-3xl font-bold text-white leading-tight">Simple Setup & Workflow</h1>
+</div>
+
+<div class="grid grid-cols-2 gap-8 flex-1">
+<div class="flex flex-col gap-4">
+<div class="bg-[#111C24] border border-[#1E2E38] rounded-xl p-5 shadow-xl">
+<h3 class="font-bold text-white text-sm mb-3 flex items-center gap-2"><div class="i-lucide:terminal text-[#10B981]"></div>One-Command Setup</h3>
+<p class="text-xs text-[#94A3B8] mb-3">ASReview is a Python package that can be installed via pip and runs locally in your browser.</p>
+<div class="bg-[#0F172A] rounded-lg p-3 font-mono text-[0.65rem] text-[#38BDF8] border border-[#1E2E38]">
+<p class="mb-1 text-[#64748B]"># Install the software</p>
+<p class="text-white mb-3">pip install asreview</p>
+<p class="mb-1 text-[#64748B]"># Launch the web interface</p>
+<p class="text-white">asreview lab</p>
+</div>
+</div>
+
+<div class="bg-[#111C24] border border-[#1E2E38] rounded-xl p-5 shadow-xl">
+<h3 class="font-bold text-white text-sm mb-3 flex items-center gap-2"><div class="i-lucide:layers text-[#10B981]"></div>The 4-Step Workflow</h3>
+<div class="space-y-2">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-[#10B981]/20 text-[#10B981] text-[0.5rem] flex items-center justify-center font-bold">1</div>
+<p class="text-xs text-[#94A3B8]">Import your dataset (RIS, CSV, Excel)</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-[#10B981]/20 text-[#10B981] text-[0.5rem] flex items-center justify-center font-bold">2</div>
+<p class="text-xs text-[#94A3B8]">Label a few "Prior Knowledge" papers</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-[#10B981]/20 text-[#10B981] text-[0.5rem] flex items-center justify-center font-bold">3</div>
+<p class="text-xs text-[#94A3B8]">Start screening (AI re-ranks as you go)</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-[#10B981]/20 text-[#10B981] text-[0.5rem] flex items-center justify-center font-bold">4</div>
+<p class="text-xs text-[#94A3B8]">Export your high-relevance collection</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="flex flex-col gap-4">
+<div class="bg-[#111C24] border border-[#1E2E38] rounded-xl overflow-hidden shadow-2xl flex-1">
+<div class="bg-[#15232D] px-4 py-2 flex items-center gap-2 border-b border-[#1E2E38]">
+<span class="text-[0.5rem] text-[#64748B] font-mono">Setup Terminal</span>
+</div>
+<div class="w-full h-full min-h-40 bg-[#0F172A] flex items-center justify-center flex-col gap-2 relative">
+<img src="/asreview-setup.png" class="absolute inset-0 w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+<div class="hidden flex-col items-center gap-2">
+<div class="i-lucide:terminal text-3xl text-[#1E293B]"></div>
+<p class="text-[0.5rem] text-[#1E293B]">Placeholder: <code>asreview-setup.png</code></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+---
+layout: default
+background: '#0B1319'
+class: px-12 pt-6
+---
+
+<div class="w-full flex flex-col h-full">
+<div class="mb-5">
 <p class="text-[0.6rem] font-semibold text-[#10B981] tracking-[0.3em] uppercase mb-1">What is it?</p>
 <h1 class="text-3xl font-bold text-white leading-tight">ASReview: Active Learning AI</h1>
 </div>
