@@ -6,6 +6,7 @@
     { "source": "/kinto-pitch/((?!.*\\.).*)", "destination": "/kinto-pitch/index.html" },
     { "source": "/portfolio/((?!.*\\.).*)", "destination": "/portfolio/index.html" },
     { "source": "/rspai-week2/((?!.*\\.).*)", "destination": "/rspai-week2/index.html" },
+    { "source": "/rspai-week3/((?!.*\\.).*)", "destination": "/rspai-week3/index.html" },
     { "source": "/((?!.*\\.).*)", "destination": "/index.html" }
   ]
 }
