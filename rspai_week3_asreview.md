@@ -9,7 +9,7 @@ css: unocss
 fonts:
   sans: 'Inter'
   serif: 'Playfair Display'
-title: "How I actually use ASReview to build a serious literature review"
+title: "How I can use ASReview to build a serious literature review"
 ---
 
 <style>
@@ -34,19 +34,15 @@ title: "How I actually use ASReview to build a serious literature review"
 <img src="/asreview-logo.png" class="w-full h-full object-contain p-3" />
 </div>
 
-<h1 class="text-4xl font-bold text-white mb-4 tracking-tight leading-tight">How I actually use ASReview to build a serious literature review</h1>
-<p class="text-sm text-[#94A3B8] mb-6 max-w-3xl leading-relaxed">
-  ASReview is not "AI that writes papers." It is a machine-learning screening tool that helps me sort a huge pile of search results into "relevant" and "not relevant" so I can spend my time understanding the right papers.
-</p>
+<h1 class="text-4xl font-bold text-white mb-4 tracking-tight leading-tight">How I can use ASReview to build a serious literature review</h1>
+  ASReview isn't "AI that writes papers." It's a tool that uses machine learning to help me sort through a massive pile of search results. It helps me find what's relevant so I can spend my time actually reading the papers that matter.
 
 <div class="flex flex-col gap-3 text-left w-full max-w-2xl bg-[#111C24] border border-[#1E2E38] rounded-xl p-4 shadow-xl">
   <div class="flex items-start text-xs text-[#94A3B8]">
-    <div class="i-lucide:check-circle text-[#10B981] mt-0.5 mr-3 flex-shrink-0 text-sm"></div>
-    <span><strong class="text-white">Built on active learning</strong> to rank the most promising records first while I screen.</span>
+    <span><strong class="text-white">Uses active learning</strong> to show me the most relevant papers first while I'm screening.</span>
   </div>
   <div class="flex items-start text-xs text-[#94A3B8]">
-    <div class="i-lucide:check-circle text-[#10B981] mt-0.5 mr-3 flex-shrink-0 text-sm"></div>
-    <span>Fits into a <strong class="text-white">normal systematic review workflow</strong> with search → screening → synthesis → writing.</span>
+    <span>Fits into a <strong class="text-white">regular literature review process</strong>—from searching to writing.</span>
   </div>
 </div>
 
@@ -69,23 +65,23 @@ class: px-12 pt-6
 <div class="w-full flex flex-col h-full">
 <div class="mb-5">
 <p class="text-[0.6rem] font-semibold text-[#10B981] tracking-[0.3em] uppercase mb-1">Section 1 – What ASReview actually does</p>
-<h1 class="text-3xl font-bold text-white leading-tight">ASReview = AI‑assisted screening, not auto‑writing</h1>
+<h1 class="text-3xl font-bold text-white leading-tight">ASReview helps me screen, it doesn't write for me</h1>
 </div>
 
 <div class="grid grid-cols-[1fr_1.2fr] gap-6 flex-1 items-start">
 <div class="flex flex-col gap-5">
 
 <div class="bg-[#111C24] border-l-2 border-[#10B981] rounded-r-xl p-5 shadow-xl">
-<p class="text-xs text-[#94A3B8] leading-relaxed">ASReview LAB is an <strong class="text-white">open‑source tool</strong> that uses machine learning to prioritize which titles and abstracts I should screen next.</p>
+<p class="text-xs text-[#94A3B8] leading-relaxed">ASReview LAB is an <strong class="text-white">open‑source tool</strong> that helps me decide which papers are worth reading first.</p>
 </div>
 
 <div class="bg-[#111C24] border-l-2 border-[#0EA5E9] rounded-r-xl p-5 shadow-xl">
-<p class="text-xs text-[#94A3B8] leading-relaxed"><strong class="text-white">I still make the relevance decisions myself;</strong> the model just learns from my labels and re‑orders the remaining records so the likely relevant ones come earlier.</p>
+<p class="text-xs text-[#94A3B8] leading-relaxed"><strong class="text-white">I'm still the one making the decisions;</strong> the model just learns from my choices and re-orders the list so the best matches show up earlier.</p>
 </div>
 
 <div class="bg-gradient-to-br from-[#10B981]/10 to-transparent border border-[#10B981]/30 rounded-xl p-5 shadow-xl">
 <h3 class="font-semibold text-[#6EE7B7] text-sm mb-2 flex items-center gap-2"><div class="i-lucide:compress text-[#10B981]"></div>The Bottom Line</h3>
-<p class="text-xs text-[#94A3B8] leading-relaxed">In other words, ASReview <strong class="text-white">compresses the boring part</strong> of screening a long list of search results, while keeping the final judgment with the researcher.</p>
+<p class="text-xs text-[#94A3B8] leading-relaxed">Basically, ASReview <strong class="text-white">handles the tedious part</strong> of digging through search results, while I keep the final say on what's useful.</p>
 </div>
 
 </div>
@@ -111,7 +107,7 @@ class: px-12 pt-6
 <div class="w-full flex flex-col h-full">
 <div class="mb-4">
 <p class="text-[0.6rem] font-semibold text-[#10B981] tracking-[0.3em] uppercase mb-1">Section 2</p>
-<h1 class="text-2xl font-bold text-white leading-tight">The workflow: from messy search results to a clean set of studies</h1>
+<h1 class="text-2xl font-bold text-white leading-tight">The process: how I go from a mess of search results to a solid list of studies</h1>
 </div>
 
 <div class="grid grid-cols-4 gap-4 flex-1">
@@ -125,8 +121,8 @@ class: px-12 pt-6
 <p class="text-[0.45rem] text-[#334155] absolute font-mono">step1-question.png</p>
 </div>
 <ul class="text-[0.55rem] text-[#94A3B8] space-y-2 list-none p-0">
-<li><strong class="text-white">Write a precise research question.</strong></li>
-<li>Decide inclusion and exclusion criteria (what counts as "relevant" before I open ASReview).</li>
+<li><strong class="text-white">Start with a clear research question.</strong></li>
+<li>Decide on your inclusion criteria (what counts as "relevant" before you even start).</li>
 </ul>
 <div class="mt-3 bg-[#0F172A] p-2 rounded border border-[#1E2E38] text-[0.45rem] text-[#38BDF8] italic">
 Example: How are AI and optimization methods used to design and evaluate power modules (SiC/GaN) in terms of losses, thermal performance, and reliability?
@@ -165,9 +161,9 @@ title,abstract,year,doi,url,included<br>
 </div>
 <ul class="text-[0.55rem] text-[#94A3B8] space-y-2 list-none p-0">
 <li>Upload the CSV into ASReview LAB.</li>
-<li>Label records as relevant or irrelevant based on criteria.</li>
-<li><strong class="text-white">Active learning model continuously updates</strong> and ranks unseen records.</li>
-<li>Export the labeled dataset when confident important ones are captured.</li>
+<li>Label each paper as relevant or not based on your criteria.</li>
+<li><strong class="text-white">The model gets smarter as you go,</strong> showing you the most likely matches next.</li>
+<li>Export the list once you're confident you've found the important ones.</li>
 </ul>
 </div>
 
@@ -179,14 +175,14 @@ title,abstract,year,doi,url,included<br>
 <img src="/step4-review..png" class="w-full h-full object-cover relative z-10" onerror="this.style.display='none'" />
 <p class="text-[0.45rem] text-[#334155] absolute font-mono">step4-review.png</p>
 </div>
-<p class="text-[0.5rem] text-[#38BDF8] italic mb-2">ASReview gives a ranked set of studies, not a finished review.</p>
+<p class="text-[0.5rem] text-[#38BDF8] italic mb-2">ASReview gives me a prioritized list of studies, not a finished review.</p>
 <ul class="text-[0.55rem] text-[#94A3B8] space-y-1.5 list-none p-0">
-<li>Filter to included studies.</li>
-<li>Extract key info: device type, optimization target, methods, findings.</li>
-<li>Group papers into themes (thermal design, ML tools).</li>
-<li><strong class="text-white">Structure the written review.</strong></li>
+<li>Filter to the included studies.</li>
+<li>Extract the key info: device type, optimization target, methods, and findings.</li>
+<li>Group the papers into themes (like thermal design or ML tools).</li>
+<li><strong class="text-white">Actually structure and write the review.</strong></li>
 </ul>
-<p class="text-[0.5rem] text-[#6EE7B7] mt-auto">ASReview just made getting to this set much faster.</p>
+<p class="text-[0.5rem] text-[#6EE7B7] mt-auto">ASReview just makes getting to this point a whole lot faster.</p>
 </div>
 
 </div>
@@ -201,7 +197,7 @@ class: px-12 pt-6
 <div class="w-full flex flex-col h-full">
 <div class="mb-6">
 <p class="text-[0.6rem] font-semibold text-[#10B981] tracking-[0.3em] uppercase mb-1">Section 3 – Roles of each tool</p>
-<h1 class="text-3xl font-bold text-white leading-tight">Who does what: databases, ASReview, and AI assistants</h1>
+<h1 class="text-3xl font-bold text-white leading-tight">Who's doing what: from the papers to the AI help</h1>
 </div>
 
 <div class="grid grid-cols-3 gap-6 flex-1">
@@ -221,7 +217,7 @@ class: px-12 pt-6
 <div class="i-lucide:bot text-xl text-[#10B981]"></div>
 </div>
 <h3 class="font-bold text-white text-sm mb-3 z-10">ASReview LAB</h3>
-<p class="text-xs text-[#94A3B8] leading-relaxed z-10">Ranks and presents records for title/abstract screening using active learning. It reduces workload by prioritizing likely relevant items, <strong class="text-white">but every label is still assigned by a human.</strong></p>
+<p class="text-xs text-[#94A3B8] leading-relaxed z-10">Puts the most relevant papers at the top of the list so you can find them faster. It saves a lot of time, <strong class="text-white">but you're still the one making every choice.</strong></p>
 </div>
 
 <div class="bg-[#111C24] border border-[#0EA5E9]/30 rounded-xl p-5 shadow-xl flex flex-col items-center text-center relative overflow-hidden">
@@ -231,14 +227,14 @@ class: px-12 pt-6
 </div>
 <h3 class="font-bold text-white text-sm mb-3 z-10">AI Assistants</h3>
 <p class="text-[0.6rem] text-[#64748B] mb-2 font-mono z-10">(Perplexity, ChatGPT, etc.)</p>
-<p class="text-xs text-[#94A3B8] leading-relaxed z-10">Help draft search strings, clean exports into a consistent CSV format, and later help summarize or cluster included studies—<strong class="text-[#38BDF8]">but they are not the source of evidence.</strong></p>
+<p class="text-xs text-[#94A3B8] leading-relaxed z-10">Help with drafting search strings, cleaning up data, or summarizing papers—<strong class="text-[#38BDF8]">but they don't provide the actual evidence.</strong></p>
 </div>
 
 </div>
 
 <div class="mt-6 bg-gradient-to-r from-[#10B981]/15 via-[#0EA5E9]/10 to-transparent border-l-4 border-[#10B981] p-4 rounded-r-xl">
 <p class="text-xs text-[#E2E8F0] italic leading-relaxed text-center font-medium">
-"Databases give me the papers, ASReview helps me screen them efficiently, and AI assistants help with plumbing and summaries around that process—not with fabricating results."
+"I get the papers from databases, use ASReview to sort through them quickly, and use AI to help clean up the data—not to make things up."
 </p>
 </div>
 </div>
@@ -252,7 +248,7 @@ class: px-12 pt-6
 <div class="w-full flex flex-col h-full">
 <div class="mb-5">
 <p class="text-[0.6rem] font-semibold text-[#10B981] tracking-[0.3em] uppercase mb-1">Section 4 – The "Synthesis Mode" Protocol</p>
-<h1 class="text-3xl font-bold text-white leading-tight">Moving from "Book Reports" to Real Synthesis</h1>
+<h1 class="text-3xl font-bold text-white leading-tight">Moving past simple summaries to actually connecting ideas</h1>
 </div>
 
 <div class="grid grid-cols-2 gap-8 flex-1">
@@ -270,9 +266,9 @@ class: px-12 pt-6
   <div class="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity"><div class="i-lucide:database text-6xl text-[#10B981]"></div></div>
   <h3 class="text-[#34D399] font-bold text-sm mb-3 flex items-center gap-2"><div class="i-lucide:check-circle"></div>Synthesis Mode (Professional)</h3>
   <ul class="text-[0.65rem] text-[#94A3B8] space-y-3 list-none p-0">
-    <li class="flex gap-2"><div class="i-lucide:check-circle text-[#10B981] mt-0.5"></div><span>Defining 3–5 axes you care about before AI writes a word</span></li>
-    <li class="flex gap-2"><div class="i-lucide:check-circle text-[#10B981] mt-0.5"></div><span>Turning papers into <strong>structured data</strong> (tables you can reason over)</span></li>
-    <li class="flex gap-2"><div class="i-lucide:check-circle text-[#10B981] mt-0.5"></div><span>Forcing AI to compare, contrast, and identify gaps across rows</span></li>
+    <li class="flex gap-2"><div class="i-lucide:check-circle text-[#10B981] mt-0.5"></div><span>Deciding on a few main themes you want to track before using any AI</span></li>
+    <li class="flex gap-2"><div class="i-lucide:check-circle text-[#10B981] mt-0.5"></div><span>Turning papers into <strong>organized data</strong>—like a table where you can actually compare things</span></li>
+    <li class="flex gap-2"><div class="i-lucide:check-circle text-[#10B981] mt-0.5"></div><span>Using AI to help find patterns, trends, and gaps across your data</span></li>
   </ul>
 </div>
 </div>
@@ -287,34 +283,34 @@ class: px-12 pt-6
 <div class="w-full flex flex-col h-full">
 <div class="mb-4">
 <p class="text-[0.6rem] font-semibold text-[#10B981] tracking-[0.3em] uppercase mb-1">Advanced Workflow</p>
-<h1 class="text-2xl font-bold text-white leading-tight">The 5 Pillars of High-Value AI Literature Work</h1>
+<h1 class="text-2xl font-bold text-white leading-tight">5 ways to make sure you're using AI effectively for your research</h1>
 </div>
 
 <div class="grid grid-cols-5 gap-3 flex-1 mb-4">
 <div class="bg-[#111C24] border border-[#1E2E38] rounded-lg p-3 flex flex-col items-center text-center">
   <div class="w-8 h-8 rounded-full bg-[#1E293B] flex items-center justify-center mb-2 text-[#10B981] text-sm font-bold">1</div>
-  <h4 class="text-[0.6rem] font-bold text-white mb-1 uppercase">Own the Frame</h4>
-  <p class="text-[0.5rem] text-[#94A3B8]">Define your own sections first based on tech axes (SiC/GaN, Reliability, etc.).</p>
+  <h4 class="text-[0.6rem] font-bold text-white mb-1 uppercase">Set your own structure</h4>
+  <p class="text-[0.5rem] text-[#94A3B8]">Decide on your own sections first based on the technology you're researching.</p>
 </div>
 <div class="bg-[#111C24] border border-[#1E2E38] rounded-lg p-3 flex flex-col items-center text-center">
   <div class="w-8 h-8 rounded-full bg-[#1E293B] flex items-center justify-center mb-2 text-[#10B981] text-sm font-bold">2</div>
-  <h4 class="text-[0.6rem] font-bold text-white mb-1 uppercase">Extract Data</h4>
-  <p class="text-[0.5rem] text-[#94A3B8]">Extract device types, methods, and numeric results into a table row.</p>
+  <h4 class="text-[0.6rem] font-bold text-white mb-1 uppercase">Pull out the facts</h4>
+  <p class="text-[0.5rem] text-[#94A3B8]">Extract device types, methods, and results into an organized table.</p>
 </div>
 <div class="bg-[#111C24] border border-[#1E2E38] rounded-lg p-3 flex flex-col items-center text-center">
   <div class="w-8 h-8 rounded-full bg-[#1E293B] flex items-center justify-center mb-2 text-[#10B981] text-sm font-bold">3</div>
-  <h4 class="text-[0.6rem] font-bold text-white mb-1 uppercase">Compare Rows</h4>
-  <p class="text-[0.5rem] text-[#94A3B8]">Don't summarize papers; ask AI to find patterns and trends across the table.</p>
+  <h4 class="text-[0.6rem] font-bold text-white mb-1 uppercase">Look for patterns</h4>
+  <p class="text-[0.5rem] text-[#94A3B8]">Don't just summarize; look for trends and common findings across all the papers.</p>
 </div>
 <div class="bg-[#111C24] border border-[#1E2E38] rounded-lg p-3 flex flex-col items-center text-center">
   <div class="w-8 h-8 rounded-full bg-[#1E293B] flex items-center justify-center mb-2 text-[#10B981] text-sm font-bold">4</div>
-  <h4 class="text-[0.6rem] font-bold text-white mb-1 uppercase">Stress-Test</h4>
-  <p class="text-[0.5rem] text-[#94A3B8]">Ask AI to critique its own drafts. Where is it too generic? What is missing?</p>
+  <h4 class="text-[0.6rem] font-bold text-white mb-1 uppercase">Check the work</h4>
+  <p class="text-[0.5rem] text-[#94A3B8]">Critique the drafts. Are they too generic? Is something important missing?</p>
 </div>
 <div class="bg-[#111C24] border border-[#1E2E38] rounded-lg p-3 flex flex-col items-center text-center shadow-[0_0_15px_rgba(14,165,233,0.1)]">
   <div class="w-8 h-8 rounded-full bg-[#0EA5E9]/20 flex items-center justify-center mb-2 text-[#0EA5E9] text-sm font-bold">5</div>
-  <h4 class="text-[0.6rem] font-bold text-white mb-1 uppercase">Stay in Charge</h4>
-  <p class="text-[0.5rem] text-[#94A3B8]">You verify the facts, you curate the corpus, and you write the final argument.</p>
+  <h4 class="text-[0.6rem] font-bold text-white mb-1 uppercase">You're still in charge</h4>
+  <p class="text-[0.5rem] text-[#94A3B8]">You verify the facts, pick the papers, and write the final argument yourself.</p>
 </div>
 </div>
 
@@ -334,7 +330,7 @@ class: px-12 pt-6
 <div class="w-full flex flex-col h-full">
 <div class="mb-6">
 <p class="text-[0.6rem] font-semibold text-[#10B981] tracking-[0.3em] uppercase mb-1">Section 5</p>
-<h1 class="text-3xl font-bold text-white leading-tight">Example: Applying Synthesis Mode to SiC Power Modules</h1>
+<h1 class="text-3xl font-bold text-white leading-tight">Example: Applying this to my research on SiC Power Modules</h1>
 </div>
 
 <div class="grid grid-cols-[1.2fr_1fr] gap-6 flex-1 items-start">
@@ -350,12 +346,12 @@ The search results can easily run into hundreds of records across multiple datab
 
 <div class="bg-[#111C24] border-l-2 border-[#10B981] p-4 shadow-xl">
 <p class="text-xs text-white leading-relaxed font-medium">
-By feeding the combined search results into ASReview and labeling a subset, I quickly get to the subset of studies that actually talk about optimization methods and measurable improvements in module performance.
+By putting the combined search results into ASReview and labeling a few, I quickly get to the subset of studies that actually talk about optimization methods and performance improvements.
 </p>
 </div>
 
 <p class="text-xs text-[#6EE7B7] italic leading-relaxed">
-Those selected papers then feed into a synthesis table and, ultimately, into the structured literature review chapters of my thesis/report.
+Those papers then go into my main table and, ultimately, help me write the literature review chapters of my thesis.
 </p>
 
 </div>
@@ -394,13 +390,13 @@ class: text-center px-16
 <div class="i-lucide:bot text-3xl text-white hidden"></div>
 </div>
 
-<h1 class="text-3xl font-bold text-white mb-6">Takeaways</h1>
+<h1 class="text-3xl font-bold text-white mb-6">Key Takeaways</h1>
 
 <div class="grid grid-cols-2 gap-6 w-full text-left relative z-10">
 <div class="bg-[#111C24] border border-[#1E2E38] rounded-xl p-5 shadow-2xl">
   <h3 class="text-[#10B981] font-bold text-xs mb-3 uppercase tracking-wider">ASReview's Role</h3>
   <p class="text-[0.6rem] text-[#94A3B8] leading-relaxed">
-    Compresses the screening workload by ranking relevant papers first. Keeps you in control of inclusion while saving hundreds of hours of manual sifting.
+    Saves time by putting the most relevant papers at the top of the list. It keeps you in control while saving you from hours of manual sifting.
   </p>
 </div>
 <div class="bg-[#111C24] border border-[#1E2E38] rounded-xl p-5 shadow-2xl">
@@ -411,7 +407,7 @@ class: text-center px-16
 </div>
 </div>
 
-<p class="text-[#6EE7B7] text-lg mt-8">Professionalizing the Literature Review</p>
+<p class="text-[#6EE7B7] text-lg mt-8">Making the literature review process more rigorous</p>
 
 <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-1 pointer-events-none">
 <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-[#10B981] opacity-[0.07] blur-[120px]"></div>

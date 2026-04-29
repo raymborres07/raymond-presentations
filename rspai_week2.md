@@ -42,7 +42,7 @@ class: px-10 pt-3
 </div>
 <div class="bg-gradient-to-r from-[#7C3AED]/20 to-[#4F46E5]/10 border border-[#7C3AED]/40 rounded-lg px-3 py-2 mb-2 flex items-center gap-2">
 <div class="i-lucide:target text-sm text-[#A78BFA] flex-shrink-0"></div>
-<p class="text-[0.58rem] text-[#C4B5FD] italic leading-snug"><strong class="text-white not-italic">Thesis:</strong> ResearchRabbit turns literature review from a manual linear search into an AI-assisted visual map &mdash; letting our lab find and justify research gaps in ~20 minutes.</p>
+<p class="text-[0.58rem] text-[#C4B5FD] italic leading-snug"><strong class="text-white not-italic">Thesis:</strong> ResearchRabbit changes the way we look for papers. Instead of just searching through lists, it builds a visual map that helps us find and explain research gaps in about 20 minutes.</p>
 </div>
 
 <div class="grid grid-cols-2 gap-3 flex-1">
@@ -54,7 +54,7 @@ class: px-10 pt-3
 </div>
 <h3 class="font-bold text-white text-[0.65rem]">"Spotify for Research Papers"</h3>
 </div>
-<p class="text-[0.58rem] text-[#A78BFA] leading-relaxed">A <strong class="text-white">free AI-powered academic discovery platform</strong> that transforms literature exploration &mdash; from linear keyword searches to dynamic, visual citation networks.</p>
+<p class="text-[0.58rem] text-[#A78BFA] leading-relaxed">A <strong class="text-white">free tool</strong> that changes how you explore research papers. It moves beyond just keyword searches and shows you how papers are connected visually.</p>
 </div>
 <div class="bg-[#13102B] border border-[#2D2650] rounded-lg p-3">
 <div class="flex items-center mb-1.5">
@@ -63,7 +63,7 @@ class: px-10 pt-3
 </div>
 <h3 class="font-bold text-white text-[0.65rem]">How the AI Works</h3>
 </div>
-<p class="text-[0.58rem] text-[#A78BFA] leading-relaxed">Analyzes <strong class="text-white">citation patterns, co-authorship networks, and semantic similarity</strong> to surface what keyword searches structurally cannot.</p>
+<p class="text-[0.58rem] text-[#A78BFA] leading-relaxed">It looks at <strong class="text-white">who's citing who and which authors work together</strong> to find papers that a simple keyword search would miss.</p>
 </div>
 </div>
 
@@ -106,7 +106,7 @@ class: px-10 pt-3
 <div class="i-lucide:clock text-xs text-white"></div>
 </div>
 <h3 class="font-bold text-white text-[0.62rem] mb-1">Saves Weeks of Time</h3>
-<p class="text-[0.55rem] text-[#8B8AAE] leading-relaxed">Manual "snowballing" takes days. ResearchRabbit maps hundreds of connected papers in seconds.</p>
+<p class="text-[0.55rem] text-[#8B8AAE] leading-relaxed">Searching manually takes forever. ResearchRabbit can map out hundreds of related papers in seconds.</p>
 </div>
 <div class="bg-[#13102B] border border-[#2D2650] rounded-lg p-3">
 <div class="w-7 h-7 rounded bg-[#1E1A3A] border border-[#7C3AED]/40 flex items-center justify-center mb-1.5">
@@ -147,7 +147,7 @@ class: px-10 pt-3
 <img src="/rr-logo.png" class="w-5 h-5 rounded object-cover" />
 <div>
 <p class="text-[0.45rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase leading-none">Personal Use Case</p>
-<h1 class="text-xl font-bold text-white leading-tight">How It Directly Helps Me</h1>
+<h1 class="text-xl font-bold text-white leading-tight">How I Can Use It for My Research</h1>
 </div>
 </div>
 
@@ -174,7 +174,7 @@ class: px-10 pt-3
 </div>
 <div class="bg-[#1E1A3A] border border-[#4F46E5]/30 rounded-lg p-1.5 flex items-start gap-1.5">
 <div class="i-lucide:lightbulb text-xs text-[#7C3AED] flex-shrink-0 mt-0.5"></div>
-<p class="text-[0.52rem] text-[#C4B5FD] leading-relaxed"><strong class="text-white">Reflection:</strong> This changed how I define my thesis direction &mdash; I can now visually see which sub-areas in SiC power electronics are over-saturated and where there is room for new work.</p>
+<p class="text-[0.52rem] text-[#C4B5FD] leading-relaxed"><strong class="text-white">Reflection:</strong> This really helped me see where my thesis should go. I can visually see which parts of SiC power electronics are crowded and where there's still room to do something new.</p>
 </div>
 </div>
 
@@ -330,7 +330,7 @@ class: px-10 pt-3
 </div>
 <div class="bg-[#13102B] border border-[#2D2650] rounded-lg p-2.5">
 <h4 class="text-[0.58rem] font-semibold text-white mb-1">Why This Matters for Our Lab</h4>
-<p class="text-[0.55rem] text-[#8B8AAE] leading-relaxed">Instead of <em>hoping</em> to find a gap at the end, ResearchRabbit lets us see it <strong class="text-white">visually on the map</strong> &mdash; making new research direction justifications concrete and defensible.</p>
+<p class="text-[0.55rem] text-[#8B8AAE] leading-relaxed">Instead of just hoping to find a research gap eventually, ResearchRabbit lets us actually see it on a map. This makes it much easier to explain and justify the direction of our research.</p>
 </div>
 <div class="grid grid-cols-2 gap-2">
 <div class="bg-[#1E1A3A] rounded-lg p-2 text-center">
