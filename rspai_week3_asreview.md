@@ -250,9 +250,91 @@ class: px-12 pt-6
 ---
 
 <div class="w-full flex flex-col h-full">
+<div class="mb-5">
+<p class="text-[0.6rem] font-semibold text-[#10B981] tracking-[0.3em] uppercase mb-1">Section 4 – The "Synthesis Mode" Protocol</p>
+<h1 class="text-3xl font-bold text-white leading-tight">Moving from "Book Reports" to Real Synthesis</h1>
+</div>
+
+<div class="grid grid-cols-2 gap-8 flex-1">
+<div class="bg-[#111C24] border border-[#EF4444]/30 rounded-xl p-5 relative overflow-hidden group hover:border-[#EF4444]/60 transition-all">
+  <div class="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity"><div class="i-lucide:book-open text-6xl text-[#EF4444]"></div></div>
+  <h3 class="text-[#F87171] font-bold text-sm mb-3 flex items-center gap-2"><div class="i-lucide:alert-circle"></div>Book-Report Mode (Bad)</h3>
+  <ul class="text-[0.65rem] text-[#94A3B8] space-y-3 list-none p-0">
+    <li class="flex gap-2"><div class="i-lucide:x-circle text-[#EF4444] mt-0.5"></div><span>Letting AI decide the outline (Generic "Background/Methods/Results")</span></li>
+    <li class="flex gap-2"><div class="i-lucide:x-circle text-[#EF4444] mt-0.5"></div><span>Asking for "summaries" (shallow paragraphs)</span></li>
+    <li class="flex gap-2"><div class="i-lucide:x-circle text-[#EF4444] mt-0.5"></div><span>Listing papers one by one (A said X, B said Y)</span></li>
+  </ul>
+</div>
+
+<div class="bg-[#111C24] border border-[#10B981]/30 rounded-xl p-5 relative overflow-hidden group hover:border-[#10B981]/60 transition-all shadow-[0_0_20px_rgba(16,185,129,0.05)]">
+  <div class="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity"><div class="i-lucide:database text-6xl text-[#10B981]"></div></div>
+  <h3 class="text-[#34D399] font-bold text-sm mb-3 flex items-center gap-2"><div class="i-lucide:check-circle"></div>Synthesis Mode (Professional)</h3>
+  <ul class="text-[0.65rem] text-[#94A3B8] space-y-3 list-none p-0">
+    <li class="flex gap-2"><div class="i-lucide:check-circle text-[#10B981] mt-0.5"></div><span>Defining 3–5 axes you care about before AI writes a word</span></li>
+    <li class="flex gap-2"><div class="i-lucide:check-circle text-[#10B981] mt-0.5"></div><span>Turning papers into <strong>structured data</strong> (tables you can reason over)</span></li>
+    <li class="flex gap-2"><div class="i-lucide:check-circle text-[#10B981] mt-0.5"></div><span>Forcing AI to compare, contrast, and identify gaps across rows</span></li>
+  </ul>
+</div>
+</div>
+</div>
+
+---
+layout: default
+background: '#0B1319'
+class: px-12 pt-6
+---
+
+<div class="w-full flex flex-col h-full">
+<div class="mb-4">
+<p class="text-[0.6rem] font-semibold text-[#10B981] tracking-[0.3em] uppercase mb-1">Advanced Workflow</p>
+<h1 class="text-2xl font-bold text-white leading-tight">The 5 Pillars of High-Value AI Literature Work</h1>
+</div>
+
+<div class="grid grid-cols-5 gap-3 flex-1 mb-4">
+<div class="bg-[#111C24] border border-[#1E2E38] rounded-lg p-3 flex flex-col items-center text-center">
+  <div class="w-8 h-8 rounded-full bg-[#1E293B] flex items-center justify-center mb-2 text-[#10B981] text-sm font-bold">1</div>
+  <h4 class="text-[0.6rem] font-bold text-white mb-1 uppercase">Own the Frame</h4>
+  <p class="text-[0.5rem] text-[#94A3B8]">Define your own sections first based on tech axes (SiC/GaN, Reliability, etc.).</p>
+</div>
+<div class="bg-[#111C24] border border-[#1E2E38] rounded-lg p-3 flex flex-col items-center text-center">
+  <div class="w-8 h-8 rounded-full bg-[#1E293B] flex items-center justify-center mb-2 text-[#10B981] text-sm font-bold">2</div>
+  <h4 class="text-[0.6rem] font-bold text-white mb-1 uppercase">Extract Data</h4>
+  <p class="text-[0.5rem] text-[#94A3B8]">Extract device types, methods, and numeric results into a table row.</p>
+</div>
+<div class="bg-[#111C24] border border-[#1E2E38] rounded-lg p-3 flex flex-col items-center text-center">
+  <div class="w-8 h-8 rounded-full bg-[#1E293B] flex items-center justify-center mb-2 text-[#10B981] text-sm font-bold">3</div>
+  <h4 class="text-[0.6rem] font-bold text-white mb-1 uppercase">Compare Rows</h4>
+  <p class="text-[0.5rem] text-[#94A3B8]">Don't summarize papers; ask AI to find patterns and trends across the table.</p>
+</div>
+<div class="bg-[#111C24] border border-[#1E2E38] rounded-lg p-3 flex flex-col items-center text-center">
+  <div class="w-8 h-8 rounded-full bg-[#1E293B] flex items-center justify-center mb-2 text-[#10B981] text-sm font-bold">4</div>
+  <h4 class="text-[0.6rem] font-bold text-white mb-1 uppercase">Stress-Test</h4>
+  <p class="text-[0.5rem] text-[#94A3B8]">Ask AI to critique its own drafts. Where is it too generic? What is missing?</p>
+</div>
+<div class="bg-[#111C24] border border-[#1E2E38] rounded-lg p-3 flex flex-col items-center text-center shadow-[0_0_15px_rgba(14,165,233,0.1)]">
+  <div class="w-8 h-8 rounded-full bg-[#0EA5E9]/20 flex items-center justify-center mb-2 text-[#0EA5E9] text-sm font-bold">5</div>
+  <h4 class="text-[0.6rem] font-bold text-white mb-1 uppercase">Stay in Charge</h4>
+  <p class="text-[0.5rem] text-[#94A3B8]">You verify the facts, you curate the corpus, and you write the final argument.</p>
+</div>
+</div>
+
+<div class="bg-gradient-to-r from-[#10B981]/10 to-transparent border-l-4 border-[#10B981] p-3 rounded-r-lg">
+<p class="text-[0.55rem] text-[#34D399] italic leading-tight">
+  <strong>Key Result:</strong> AI helps you <u>encode</u> the literature into data, making synthesis a logical process rather than a creative writing exercise.
+</p>
+</div>
+</div>
+
+---
+layout: default
+background: '#0B1319'
+class: px-12 pt-6
+---
+
+<div class="w-full flex flex-col h-full">
 <div class="mb-6">
-<p class="text-[0.6rem] font-semibold text-[#10B981] tracking-[0.3em] uppercase mb-1">Section 4</p>
-<h1 class="text-3xl font-bold text-white leading-tight">Example: ASReview in my AI/ML power module optimization project</h1>
+<p class="text-[0.6rem] font-semibold text-[#10B981] tracking-[0.3em] uppercase mb-1">Section 5</p>
+<h1 class="text-3xl font-bold text-white leading-tight">Example: Applying Synthesis Mode to SiC Power Modules</h1>
 </div>
 
 <div class="grid grid-cols-[1.2fr_1fr] gap-6 flex-1 items-start">
@@ -312,16 +394,24 @@ class: text-center px-16
 <div class="i-lucide:bot text-3xl text-white hidden"></div>
 </div>
 
-<h1 class="text-3xl font-bold text-white mb-6">Summary</h1>
+<h1 class="text-3xl font-bold text-white mb-6">Takeaways</h1>
 
-<div class="bg-[#111C24] border border-[#1E2E38] rounded-xl p-6 shadow-2xl relative">
-<div class="absolute -top-3 -left-3 text-[#10B981]/20 text-6xl font-serif">"</div>
-<p class="text-sm text-[#94A3B8] leading-relaxed text-left relative z-10">
-ASReview LAB is an open‑source machine learning tool that ranks my search results so that likely relevant papers appear first during screening. I still make all inclusion and exclusion decisions myself, but the active learning model continuously updates based on my labels and reorders the remaining records. This turns the hardest part of a literature review—sifting through a huge list of titles and abstracts—into a more focused, reproducible workflow.
-</p>
+<div class="grid grid-cols-2 gap-6 w-full text-left relative z-10">
+<div class="bg-[#111C24] border border-[#1E2E38] rounded-xl p-5 shadow-2xl">
+  <h3 class="text-[#10B981] font-bold text-xs mb-3 uppercase tracking-wider">ASReview's Role</h3>
+  <p class="text-[0.6rem] text-[#94A3B8] leading-relaxed">
+    Compresses the screening workload by ranking relevant papers first. Keeps you in control of inclusion while saving hundreds of hours of manual sifting.
+  </p>
+</div>
+<div class="bg-[#111C24] border border-[#1E2E38] rounded-xl p-5 shadow-2xl">
+  <h3 class="text-[#0EA5E9] font-bold text-xs mb-3 uppercase tracking-wider">Synthesis Strategy</h3>
+  <p class="text-[0.6rem] text-[#94A3B8] leading-relaxed">
+    Don't ask for summaries. Use AI to extract structured data, compare trends across papers, and critique evidence—ensuring your review has depth and rigor.
+  </p>
+</div>
 </div>
 
-<p class="text-[#6EE7B7] text-lg mt-8">Thank You</p>
+<p class="text-[#6EE7B7] text-lg mt-8">Professionalizing the Literature Review</p>
 
 <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-1 pointer-events-none">
 <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-[#10B981] opacity-[0.07] blur-[120px]"></div>
