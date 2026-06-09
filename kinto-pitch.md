@@ -567,47 +567,47 @@ background: '#08090C'
 
 <div class="flex flex-col justify-center h-full text-center">
 <div class="w-8 h-px bg-[#d1b066] mx-auto mb-2"></div>
-<h2 class="text-[0.5rem] font-semibold text-[#A68A56] tracking-[0.4em] uppercase mb-1 flex items-center justify-center">
-Behind the Innovation <span class="px-2 text-[#d1b066]/30">|</span> <span class="text-[0.45rem] text-[#8A8F9E] tracking-widest leading-none">革新の裏側</span>
+<h2 class="text-xs font-semibold text-[#A68A56] tracking-[0.4em] uppercase mb-1.5 flex items-center justify-center">
+Behind the Innovation <span class="px-2 text-[#d1b066]/30">|</span> <span class="text-[0.65rem] text-[#8A8F9E] tracking-widest leading-none">革新の裏側</span>
 </h2>
 <h1 class="text-3xl font-serif text-[#F3E8C1] tracking-tight mb-0.5">Team KINTO</h1>
-<p class="text-[0.55rem] text-[#8A8F9E] mb-6 tracking-widest">チームKINTO</p>
+<p class="text-xs text-[#8A8F9E] mb-6 tracking-widest">チームKINTO</p>
 
-<div class="grid grid-cols-4 gap-2 items-start">
+<div class="grid grid-cols-4 gap-4 items-start">
 <div class="flex flex-col items-center group">
-<div class="w-14 h-14 rounded-full border border-[#2a2d39] overflow-hidden mb-1.5 bg-[#1A1C24] flex items-center justify-center p-1 relative z-10 group-hover:border-[#d1b066] transition-colors">
-<img src="/raymond.jpg" class="w-full h-full object-cover rounded-full opacity-80 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+<div class="w-20 h-20 rounded-full border border-[#2a2d39] overflow-hidden mb-2 bg-[#1A1C24] flex items-center justify-center p-1 relative z-10 group-hover:border-[#d1b066] transition-colors">
+<img src="/raymond.jpg" class="w-full h-full object-cover rounded-full transition-transform duration-300 group-hover:scale-105" />
 </div>
-<h3 class="text-md font-serif text-[#E1D1AA] mb-0.5">Raymond Borres</h3>
-<p class="text-[0.45rem] text-[#d1b066] font-bold tracking-widest uppercase mb-0.5">Co-Founder | Electronics Specialist</p>
-<p class="text-[0.4rem] text-[#8A8F9E] mb-0.5">共同創設者 | 電子工学専門</p>
-</div>
-
-<div class="flex flex-col items-center group">
-<div class="w-14 h-14 rounded-full border border-[#2a2d39] overflow-hidden mb-1.5 bg-[#1A1C24] flex items-center justify-center p-1 relative z-10 group-hover:border-[#d1b066] transition-colors">
-<img src="/davin.jpg" class="w-full h-full object-cover rounded-full opacity-80 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
-</div>
-<h3 class="text-md font-serif text-[#E1D1AA] mb-0.5">Davin Chandra</h3>
-<p class="text-[0.45rem] text-[#9CA3AF] font-medium tracking-widest uppercase mb-0.5">Co-Founder | 3D Modeling Specialist</p>
-<p class="text-[0.4rem] text-[#8A8F9E] mb-0.5">共同創設者 | 3Dモデリング専門</p>
+<h3 class="text-xl font-serif text-[#E1D1AA] mb-1">Raymond Borres</h3>
+<p class="text-xs text-[#d1b066] font-bold tracking-widest uppercase mb-1">Co-Founder | Electronics Specialist</p>
+<p class="text-[0.9rem] text-[#8A8F9E] mb-1">共同創設者 | 電子工学専門</p>
 </div>
 
 <div class="flex flex-col items-center group">
-<div class="w-14 h-14 rounded-full border border-[#2a2d39] overflow-hidden mb-1.5 bg-[#1A1C24] flex items-center justify-center p-1 relative z-10 group-hover:border-[#d1b066] transition-colors">
-<img src="/jeffrey.jpg" class="w-full h-full object-cover rounded-full opacity-80 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+<div class="w-20 h-20 rounded-full border border-[#2a2d39] overflow-hidden mb-2 bg-[#1A1C24] flex items-center justify-center p-1 relative z-10 group-hover:border-[#d1b066] transition-colors">
+<img src="/davin.jpg" class="w-full h-full object-cover rounded-full transition-transform duration-300 group-hover:scale-105" />
 </div>
-<h3 class="text-md font-serif text-[#E1D1AA] mb-0.5">Jeffrey Zhang</h3>
-<p class="text-[0.45rem] text-[#9CA3AF] font-medium tracking-widest uppercase mb-0.5">Co-Founder | Software Engineer</p>
-<p class="text-[0.4rem] text-[#8A8F9E] mb-0.5">共同創設者 | ソフトウェアエンジニア</p>
+<h3 class="text-xl font-serif text-[#E1D1AA] mb-1">Davin Chandra</h3>
+<p class="text-xs text-[#d1b066] font-bold tracking-widest uppercase mb-1">Co-Founder | 3D Modeling Specialist</p>
+<p class="text-[0.9rem] text-[#8A8F9E] mb-1">共同創設者 | 3Dモデリング専門</p>
 </div>
 
 <div class="flex flex-col items-center group">
-<div class="w-14 h-14 rounded-full border border-[#2a2d39] overflow-hidden mb-1.5 bg-[#1A1C24] flex items-center justify-center p-1 relative z-10 group-hover:border-[#d1b066] transition-colors">
-<img src="/eric.png" class="w-full h-full object-cover rounded-full opacity-80 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+<div class="w-20 h-20 rounded-full border border-[#2a2d39] overflow-hidden mb-2 bg-[#1A1C24] flex items-center justify-center p-1 relative z-10 group-hover:border-[#d1b066] transition-colors">
+<img src="/jeffrey.jpg" class="w-full h-full object-cover rounded-full transition-transform duration-300 group-hover:scale-105" />
 </div>
-<h3 class="text-md font-serif text-[#E1D1AA] mb-0.5">Eric Syuhendra</h3>
-<p class="text-[0.45rem] text-[#9CA3AF] font-medium tracking-widest uppercase mb-0.5">Co-Founder | Algorithm Specialist</p>
-<p class="text-[0.4rem] text-[#8A8F9E] mb-0.5">共同創設者 | アルゴリズム専門</p>
+<h3 class="text-xl font-serif text-[#E1D1AA] mb-1">Jeffrey Zhang</h3>
+<p class="text-xs text-[#d1b066] font-bold tracking-widest uppercase mb-1">Co-Founder | Software Engineer</p>
+<p class="text-[0.9rem] text-[#8A8F9E] mb-1">共同創設者 | ソフトウェアエンジニア</p>
+</div>
+
+<div class="flex flex-col items-center group">
+<div class="w-20 h-20 rounded-full border border-[#2a2d39] overflow-hidden mb-2 bg-[#1A1C24] flex items-center justify-center p-1 relative z-10 group-hover:border-[#d1b066] transition-colors">
+<img src="/eric.png" class="w-full h-full object-cover rounded-full transition-transform duration-300 group-hover:scale-105" />
+</div>
+<h3 class="text-xl font-serif text-[#E1D1AA] mb-1">Eric Syuhendra</h3>
+<p class="text-xs text-[#d1b066] font-bold tracking-widest uppercase mb-1">Co-Founder | Algorithm Specialist</p>
+<p class="text-[0.9rem] text-[#8A8F9E] mb-1">共同創設者 | アルゴリズム専門</p>
 </div>
 </div>
 </div>
