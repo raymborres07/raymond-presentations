@@ -61,7 +61,7 @@ title: "KINTO — Midterm Presentation"
 </div>
 
 <div class="w-24 h-px bg-gradient-to-r from-transparent via-[#7C3AED] to-transparent mx-auto my-6"></div>
-<p class="text-xs text-[#64748B]">Presenter: Raymund Tenorio Borres</p>
+<p class="text-xs text-[#64748B]">Presenter: Raymond Tenorio Borres</p>
 
 </div>
 
