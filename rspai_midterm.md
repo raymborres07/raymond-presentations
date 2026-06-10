@@ -1485,7 +1485,7 @@ class: text-center px-16
   </div>
 </div>
 
-<p class="text-[#64748B] text-xs">Raymund Tenorio Borres · RSPAI1 Midterm · June 2026</p>
+<p class="text-[#64748B] text-xs">Raymond Tenorio Borres · RSPAI1 Midterm · June 2026</p>
 
 <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-1 pointer-events-none">
   <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-[#7C3AED] opacity-[0.08] blur-[120px]"></div>
