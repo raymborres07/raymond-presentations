@@ -325,6 +325,80 @@ class: px-12 pt-6
 
 <div class="w-full flex flex-col h-full">
 <div class="mb-5">
+  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-1">AI Tools & Methodology</p>
+  <h1 class="text-3xl font-bold text-white leading-tight">Leveraging ECC & ARS to optimize tokens and define research gaps</h1>
+</div>
+
+<div class="grid grid-cols-2 gap-6 flex-1">
+  <div class="flex flex-col gap-4">
+  
+  <div class="bg-[#0F172A] border border-[#7C3AED]/30 rounded-xl p-4 shadow-[0_0_15px_rgba(124,58,237,0.08)]">
+  <h3 class="text-[#A78BFA] font-bold text-xs mb-2 flex items-center gap-2">
+    <div class="i-lucide:zap text-[#7C3AED]"></div>ECC Repo (Everything Claude Code)
+  </h3>
+  <p class="text-[0.6rem] text-[#94A3B8] leading-relaxed mb-3">
+    Used to harness Claude Code under a strict token budget. Prevents context bloat and repetitive scanning.
+  </p>
+  <div class="space-y-1.5">
+    <div class="flex items-start gap-2">
+      <div class="i-lucide:check text-[#7C3AED] text-[0.6rem] mt-0.5"></div>
+      <p class="text-[0.55rem] text-white"><strong>Context Control:</strong> Enforced strict <code>.claudeignore</code> rules to filter out build logs, dependency trees, and unrelated assets.</p>
+    </div>
+    <div class="flex items-start gap-2">
+      <div class="i-lucide:check text-[#7C3AED] text-[0.6rem] mt-0.5"></div>
+      <p class="text-[0.55rem] text-white"><strong>CLI Optimization:</strong> Sanitized shell/compiler outputs using wrapper rules to strip token-heavy telemetry and redundant logs.</p>
+    </div>
+    <div class="flex items-start gap-2">
+      <div class="i-lucide:check text-[#7C3AED] text-[0.6rem] mt-0.5"></div>
+      <p class="text-[0.55rem] text-white"><strong>Session Discipline:</strong> Run localized subagent tasks and frequent session compaction to reset context windows.</p>
+    </div>
+  </div>
+  </div>
+
+  </div>
+
+  <div class="flex flex-col gap-4">
+
+  <div class="bg-[#0F172A] border border-[#0EA5E9]/30 rounded-xl p-4 shadow-[0_0_15px_rgba(14,165,233,0.08)]">
+  <h3 class="text-[#38BDF8] font-bold text-xs mb-2 flex items-center gap-2">
+    <div class="i-lucide:brain text-[#0EA5E9]"></div>ARS Repo (Advanced Research Skills)
+  </h3>
+  <p class="text-[0.6rem] text-[#94A3B8] leading-relaxed mb-3">
+    Adopted a 10-stage systematic research pipeline for literature search, citation mapping, and thesis structure.
+  </p>
+  <div class="space-y-1.5">
+    <div class="flex items-start gap-2">
+      <div class="i-lucide:check text-[#0EA5E9] text-[0.6rem] mt-0.5"></div>
+      <p class="text-[0.55rem] text-white"><strong>Literature Synthesis:</strong> Automated metadata scraping across databases to locate and digest prior art.</p>
+    </div>
+    <div class="flex items-start gap-2">
+      <div class="i-lucide:check text-[#0EA5E9] text-[0.6rem] mt-0.5"></div>
+      <p class="text-[0.55rem] text-white"><strong>Research Questions:</strong> Formulated targeted biophysical questions (e.g. Lorentzian entrainment, Q10 integer limits) by systematically comparing literature maps.</p>
+    </div>
+    <div class="flex items-start gap-2">
+      <div class="i-lucide:check text-[#0EA5E9] text-[0.6rem] mt-0.5"></div>
+      <p class="text-[0.55rem] text-white"><strong>Identifying Gaps:</strong> Spotted the "sparse zone" in EDA literature: <em>only 8.1% of research involves elderly cohorts</em>—which became KINTO's core thesis.</p>
+    </div>
+  </div>
+  </div>
+
+  </div>
+</div>
+</div>
+
+<!--
+Slide 5: AI Tools & Setup
+
+For this midterm, I utilized two primary open-source repositories to guide the AI workflow. First, I used the ECC (Everything Claude Code) repository to set up strict token-saving guidelines, preventing unnecessary code scans and optimizing context. Second, I used the ARS (Advanced Research Skills) repository to structure my literature reviews and formulate my core research questions, identifying a critical research gap in elderly electrodermal activity studies.
+-->
+---
+layout: default
+background: '#080E14'
+class: px-12 pt-6
+---
+
+<div class="w-full flex flex-col h-full">
+<div class="mb-5">
   <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-1">My Process — How This Was Built</p>
   <h1 class="text-3xl font-bold text-white leading-tight">I didn't write the simulation code. I directed it.</h1>
 </div>
@@ -376,10 +450,11 @@ class: px-12 pt-6
   </div>
 
 </div>
+
 </div>
 
 <!--
-Slide 5: My Process
+Slide 6: My Process
 
 To develop these studies, we followed a rigorous engineering workflow: generating synthetic signal baselines, implementing and optimizing the algorithms, running comparative test suites, validating the results against physiological models, and drafting defensible patent claims. This ensures each contribution is grounded in solid computational data.
 -->
@@ -427,7 +502,7 @@ class: px-12 pt-6
   <p class="text-[0.45rem] text-[#64748B] leading-relaxed flex-1">Computed RMSSD, HRV coherence scores, SNR in dB, p-values, mean ± SD across episode windows, and produced publication-quality multi-panel matplotlib figures.</p>
   </div>
 
-</div>
+ </div>
 
 <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4">
   <h3 class="text-white font-bold text-xs mb-3 flex items-center gap-2"><div class="i-lucide:file-code text-[#7C3AED]"></div>What a single study looked like in code terms</h3>
@@ -454,7 +529,7 @@ class: px-12 pt-6
 </div>
 
 <!--
-Slide 6: What AI Did
+Slide 7: What AI Did
 
 Generative AI played a key role as a co-developer in this project. It helped synthesize realistic PPG and accelerometer signals, implement and benchmark standard digital filters, write fixed-point integer math libraries, build the tabular Q-learning loop, and structure the prior art search for our patent claims.
 -->
@@ -552,9 +627,86 @@ class: px-12 pt-6
 </div>
 
 <!--
-Slide 7: Prompt
+Slide 8: Prompt
 
 Here is an example of the prompting methodology used. We instructed the model to act as a senior embedded DSP developer to generate a normalized LMS filter in Q10 fixed-point format, ensuring zero floating-point operations. The output code compiled successfully and met our microsecond latency constraints.
+-->
+---
+layout: default
+background: '#080E14'
+class: px-12 pt-6
+---
+
+<div class="w-full flex flex-col h-full">
+<div class="mb-5">
+  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-1">Key Learnings & Impact</p>
+  <h1 class="text-2xl font-bold text-white leading-tight">How these AI-driven workflows translate into actual academic research</h1>
+</div>
+
+<div class="grid grid-cols-2 gap-6 flex-1">
+  <div class="flex flex-col gap-4">
+  
+  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4">
+  <h3 class="text-white font-bold text-xs mb-3 flex items-center gap-2">
+    <div class="i-lucide:lightbulb text-[#F59E0B]"></div>Key Learnings
+  </h3>
+  <div class="space-y-3">
+    <div>
+      <h4 class="text-[0.55rem] font-bold text-[#A78BFA] uppercase tracking-wider">1. Token Discipline = Research Efficiency</h4>
+      <p class="text-[0.5rem] text-[#94A3B8] leading-relaxed">Treating LLM context as a resource constraint force-multiplies focus. By keeping prompts tightly scoped, AI output remains precise, reducing hallucinated code.</p>
+    </div>
+    <div>
+      <h4 class="text-[0.55rem] font-bold text-[#A78BFA] uppercase tracking-wider">2. Systematized vs. Ad-hoc Prompts</h4>
+      <p class="text-[0.5rem] text-[#94A3B8] leading-relaxed">Unstructured chat results in repetitive cycles. Using the ARS pipeline structures research into defined steps (Review → Hypothesis → Code → Patent Claim).</p>
+    </div>
+    <div>
+      <h4 class="text-[0.55rem] font-bold text-[#A78BFA] uppercase tracking-wider">3. AI Executes, Human Evaluates</h4>
+      <p class="text-[0.5rem] text-[#94A3B8] leading-relaxed">AI is excellent at generating standard boilerplate and synthesis, but the biophysical insights (Lorentzian resonance, vagal gating) must be human-derived.</p>
+    </div>
+  </div>
+  </div>
+
+  </div>
+
+  <div class="flex flex-col gap-4">
+
+  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4">
+  <h3 class="text-white font-bold text-xs mb-3 flex items-center gap-2">
+    <div class="i-lucide:flask-conical text-[#34D399]"></div>Translating to Actual Research
+  </h3>
+  <div class="space-y-3">
+    <div class="flex gap-2">
+      <div class="w-5 h-5 rounded bg-[#34D399]/20 text-[#34D399] flex items-center justify-center flex-shrink-0 mt-0.5 text-[0.5rem] font-bold">A</div>
+      <div>
+        <p class="text-[0.55rem] font-bold text-white uppercase tracking-wider">Silicon-Free Algorithm Validation</p>
+        <p class="text-[0.5rem] text-[#94A3B8] leading-relaxed">Enables verification of complex algorithms (like Q10 fixed-point NLMS) under hardware limitations before ordering custom PCBs.</p>
+      </div>
+    </div>
+    <div class="flex gap-2">
+      <div class="w-5 h-5 rounded bg-[#34D399]/20 text-[#34D399] flex items-center justify-center flex-shrink-0 mt-0.5 text-[0.5rem] font-bold">B</div>
+      <div>
+        <p class="text-[0.55rem] font-bold text-white uppercase tracking-wider">Physiological Simulation</p>
+        <p class="text-[0.5rem] text-[#94A3B8] leading-relaxed">Synthesizes and tests autonomic feedback loops (like HRV resonance), confirming mathematical boundaries before conducting human trials.</p>
+      </div>
+    </div>
+    <div class="flex gap-2">
+      <div class="w-5 h-5 rounded bg-[#34D399]/20 text-[#34D399] flex items-center justify-center flex-shrink-0 mt-0.5 text-[0.5rem] font-bold">C</div>
+      <div>
+        <p class="text-[0.55rem] font-bold text-white uppercase tracking-wider">Accelerating the Patent Pipeline</p>
+        <p class="text-[0.5rem] text-[#94A3B8] leading-relaxed">Converts proven computational performance metrics directly into high-fidelity patent claims, securing IP faster than traditional methods.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+</div>
+</div>
+
+<!--
+Slide 9: Key Learnings & Research Impact
+
+In summary, this AI-driven approach taught me that token discipline is crucial for keeping prompts precise and outputs clean. Combining ECC with the systematic pipeline in the ARS repository helped move from literature gap identification to functional simulation in record time. In actual research, this enables silicon-free algorithm validation, precise biophysical simulations, and a direct pipeline from code metrics to defensible patent claim language.
 -->
 ---
 layout: default
@@ -604,7 +756,7 @@ class: px-12 pt-6
 </div>
 
 <!--
-Slide 8: What AI Cannot Do
+Slide 10: What AI Cannot Do
 
 However, human engineering remains critical. AI cannot define the clinical requirements, make hardware trade-offs like selecting the ESP32-C3 over more expensive MCUs, verify the safety of haptic stimulation timing, or evaluate the legal strength and boundaries of our patent claims against prior art.
 -->
@@ -695,7 +847,7 @@ class: px-12 pt-6
 </div>
 
 <!--
-Slide 9: Study 1 (Filter Benchmark)
+Slide 11: Study 1 (Filter Benchmark)
 
 In Study 1, we benchmarked simple moving average, exponential smoothing, and Kalman filters for accelerometer noise reduction. While the moving average achieved the lowest mean squared error, exponential smoothing proved to be the most computationally efficient choice for real-time, low-power wearable use.
 -->
@@ -805,7 +957,7 @@ class: px-12 pt-6
 </div>
 
 <!--
-Slide 10: Study 2 (Edge ML)
+Slide 12: Study 2 (Edge ML)
 
 Study 2 benchmarked model quantization and pruning for edge deployment. Converting our physiological state classifier to INT8 quantized format reduced memory footprint by four times to just 11.3 kilobytes, while actually improving classification accuracy to 99.67% due to regularization effects.
 -->
@@ -906,7 +1058,7 @@ class: px-12 pt-6
 </div>
 
 <!--
-Slide 11: Study 3 (RL Entrainment)
+Slide 13: Study 3 (RL Entrainment)
 
 In Study 3, we modeled closed-loop reinforcement learning for autonomic entrainment. The Q-learning agent successfully discovered the optimal haptic frequency of 0.8 Hz to maximize HRV coherence and reduce heart rate, outperforming fixed-frequency baselines by 109% without prior physiological tuning.
 -->
@@ -1015,7 +1167,7 @@ class: px-12 pt-6
 </div>
 
 <!--
-Slide 12: Study 4 (Integer ANC)
+Slide 14: Study 4 (Integer ANC)
 
 Study 4 addressed noise cancellation on FPU-less hardware. Our Q10 fixed-point Normalized LMS filter successfully canceled haptic motor Back-EMF noise, recovering 18.9 dB of SNR. It ran fifteen times faster than a soft-float implementation, consuming only 0.6% CPU on the ESP32-C3.
 -->
@@ -1104,7 +1256,7 @@ class: px-12 pt-6
 </div>
 
 <!--
-Slide 13: Study 5 (Cardiac Gating)
+Slide 15: Study 5 (Cardiac Gating)
 
 Study 5 synchronized haptic pacing to the cardiac cycle. Our diastolic phase-locked pacing algorithm achieved 100% diastolic alignment in simulation, completely avoiding haptic triggers during systole which could cause sympathetic arousal and anxiety.
 -->
@@ -1194,7 +1346,7 @@ class: px-12 pt-6
 </div>
 
 <!--
-Slide 14: Results Summary
+Slide 16: Results Summary
 
 This table summarizes the results across all five studies. We successfully validated our accuracy, compression, HRV coherence, noise cancellation, and phase-locking targets, proving the computational feasibility of the KINTO architecture.
 -->
@@ -1270,7 +1422,7 @@ class: px-12 pt-6
 </div>
 
 <!--
-Slide 15: Patent Claims
+Slide 17: Patent Claims
 
 Based on these results, we have drafted three patent claims: Patent A covers on-device reinforcement learning for cardiorespiratory resonance; Patent B covers integer-native NLMS adaptive filtering; and Patent C covers diastolic phase-locked haptic actuation. Each claim directly addresses clear gaps in prior art.
 -->
@@ -1381,7 +1533,7 @@ class: px-12 pt-6
 </div>
 
 <!--
-Slide 16: System Architecture
+Slide 18: System Architecture
 
 This block diagram illustrates KINTO's full signal pipeline on the MCU. PPG and accelerometer signals are filtered in real-time, cardiac phase is estimated using a phase-locked loop, and the reinforcement learning agent selects the optimal haptic pacing frequency, driving the LRA motor solely during diastole.
 -->
@@ -1438,7 +1590,7 @@ class: px-12 pt-6
 </div>
 
 <!--
-Slide 17: Market & Regulatory
+Slide 19: Market & Regulatory
 
 KINTO qualifies as a wellness tracker under the Japan PMD Act, avoiding lengthy medical device reviews. It targets the underserved elderly demographic and high-stress workers, offering a screenless, passive alternative to existing biofeedback and monitoring-only wearables.
 -->
@@ -1495,7 +1647,7 @@ class: text-center px-16
 </div>
 
 <!--
-Slide 18: Conclusion
+Slide 20: Conclusion
 
 In conclusion, KINTO introduces three defensible innovations supported by solid simulation data. Our next steps are to manufacture our physical V2 pod, test ergonomics with a target patient cohort, and begin clinical validation of our closed-loop pacing algorithms.
 -->
