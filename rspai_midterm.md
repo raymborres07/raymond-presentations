@@ -324,60 +324,64 @@ class: px-12 pt-6
 ---
 
 <div class="w-full flex flex-col h-full">
-<div class="mb-5">
-  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-1">AI Tools & Methodology</p>
-  <h1 class="text-3xl font-bold text-white leading-tight">Leveraging ECC & ARS to optimize tokens and define research gaps</h1>
+<div class="mb-3">
+  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5">AI Tools & Methodology</p>
+  <h1 class="text-xl font-bold text-white leading-tight">Leveraging ECC & ARS to optimize tokens and define research gaps</h1>
 </div>
 
-<div class="grid grid-cols-2 gap-6 flex-1">
-  <div class="flex flex-col gap-4">
+<div class="grid grid-cols-2 gap-4 flex-1">
+  <div class="flex flex-col gap-3">
   
-  <div class="bg-[#0F172A] border border-[#7C3AED]/30 rounded-xl p-4 shadow-[0_0_15px_rgba(124,58,237,0.08)]">
-  <h3 class="text-[#A78BFA] font-bold text-xs mb-2 flex items-center gap-2">
-    <div class="i-lucide:zap text-[#7C3AED]"></div>ECC Repo (Everything Claude Code)
-  </h3>
-  <p class="text-[0.6rem] text-[#94A3B8] leading-relaxed mb-3">
-    Used to harness Claude Code under a strict token budget. Prevents context bloat and repetitive scanning.
-  </p>
-  <div class="space-y-1.5">
-    <div class="flex items-start gap-2">
-      <div class="i-lucide:check text-[#7C3AED] text-[0.6rem] mt-0.5"></div>
-      <p class="text-[0.55rem] text-white"><strong>Context Control:</strong> Enforced strict <code>.claudeignore</code> rules to filter out build logs, dependency trees, and unrelated assets.</p>
+  <div class="bg-[#0F172A] border border-[#7C3AED]/30 rounded-xl p-3 shadow-[0_0_15px_rgba(124,58,237,0.08)] flex-1 flex flex-col justify-between">
+  <div>
+    <h3 class="text-[#A78BFA] font-bold text-xs mb-1.5 flex items-center gap-1.5">
+      <div class="i-lucide:zap text-[#7C3AED]"></div>ECC (Everything Claude Code)
+    </h3>
+    <p class="text-[0.5rem] text-[#64748B] leading-relaxed mb-2">
+      Optimized agent harness configurations to prevent context bloat and minimize token consumption.
+    </p>
+  </div>
+  <div class="space-y-1">
+    <div class="flex items-start gap-1.5">
+      <div class="i-lucide:check text-[#7C3AED] text-[0.5rem] mt-0.5 flex-shrink-0"></div>
+      <p class="text-[0.5rem] text-white"><strong>Context Control:</strong> Strict <code>.claudeignore</code> blocks build/dependency trees.</p>
     </div>
-    <div class="flex items-start gap-2">
-      <div class="i-lucide:check text-[#7C3AED] text-[0.6rem] mt-0.5"></div>
-      <p class="text-[0.55rem] text-white"><strong>CLI Optimization:</strong> Sanitized shell/compiler outputs using wrapper rules to strip token-heavy telemetry and redundant logs.</p>
+    <div class="flex items-start gap-1.5">
+      <div class="i-lucide:check text-[#7C3AED] text-[0.5rem] mt-0.5 flex-shrink-0"></div>
+      <p class="text-[0.5rem] text-white"><strong>CLI Optimization:</strong> Sanitized compiler logs to strip token-heavy telemetry.</p>
     </div>
-    <div class="flex items-start gap-2">
-      <div class="i-lucide:check text-[#7C3AED] text-[0.6rem] mt-0.5"></div>
-      <p class="text-[0.55rem] text-white"><strong>Session Discipline:</strong> Run localized subagent tasks and frequent session compaction to reset context windows.</p>
+    <div class="flex items-start gap-1.5">
+      <div class="i-lucide:check text-[#7C3AED] text-[0.5rem] mt-0.5 flex-shrink-0"></div>
+      <p class="text-[0.5rem] text-white"><strong>Session Discipline:</strong> Regular compaction and focused subagents keep logs concise.</p>
     </div>
   </div>
   </div>
 
   </div>
 
-  <div class="flex flex-col gap-4">
+  <div class="flex flex-col gap-3">
 
-  <div class="bg-[#0F172A] border border-[#0EA5E9]/30 rounded-xl p-4 shadow-[0_0_15px_rgba(14,165,233,0.08)]">
-  <h3 class="text-[#38BDF8] font-bold text-xs mb-2 flex items-center gap-2">
-    <div class="i-lucide:brain text-[#0EA5E9]"></div>ARS Repo (Advanced Research Skills)
-  </h3>
-  <p class="text-[0.6rem] text-[#94A3B8] leading-relaxed mb-3">
-    Adopted a 10-stage systematic research pipeline for literature search, citation mapping, and thesis structure.
-  </p>
-  <div class="space-y-1.5">
-    <div class="flex items-start gap-2">
-      <div class="i-lucide:check text-[#0EA5E9] text-[0.6rem] mt-0.5"></div>
-      <p class="text-[0.55rem] text-white"><strong>Literature Synthesis:</strong> Automated metadata scraping across databases to locate and digest prior art.</p>
+  <div class="bg-[#0F172A] border border-[#0EA5E9]/30 rounded-xl p-3 shadow-[0_0_15px_rgba(14,165,233,0.08)] flex-1 flex flex-col justify-between">
+  <div>
+    <h3 class="text-[#38BDF8] font-bold text-xs mb-1.5 flex items-center gap-1.5">
+      <div class="i-lucide:brain text-[#0EA5E9]"></div>ARS (Advanced Research Skills)
+    </h3>
+    <p class="text-[0.5rem] text-[#64748B] leading-relaxed mb-2">
+      Structured 10-stage systematic pipeline for literature review, thesis formulation, and gap discovery.
+    </p>
+  </div>
+  <div class="space-y-1">
+    <div class="flex items-start gap-1.5">
+      <div class="i-lucide:check text-[#0EA5E9] text-[0.5rem] mt-0.5 flex-shrink-0"></div>
+      <p class="text-[0.5rem] text-white"><strong>Literature Synthesis:</strong> Automated citation searches to scrape metadata across databases.</p>
     </div>
-    <div class="flex items-start gap-2">
-      <div class="i-lucide:check text-[#0EA5E9] text-[0.6rem] mt-0.5"></div>
-      <p class="text-[0.55rem] text-white"><strong>Research Questions:</strong> Formulated targeted biophysical questions (e.g. Lorentzian entrainment, Q10 integer limits) by systematically comparing literature maps.</p>
+    <div class="flex items-start gap-1.5">
+      <div class="i-lucide:check text-[#0EA5E9] text-[0.5rem] mt-0.5 flex-shrink-0"></div>
+      <p class="text-[0.5rem] text-white"><strong>Research Questions:</strong> Extracted biophysical resonance limits from literature maps.</p>
     </div>
-    <div class="flex items-start gap-2">
-      <div class="i-lucide:check text-[#0EA5E9] text-[0.6rem] mt-0.5"></div>
-      <p class="text-[0.55rem] text-white"><strong>Identifying Gaps:</strong> Spotted the "sparse zone" in EDA literature: <em>only 8.1% of research involves elderly cohorts</em>—which became KINTO's core thesis.</p>
+    <div class="flex items-start gap-1.5">
+      <div class="i-lucide:check text-[#0EA5E9] text-[0.5rem] mt-0.5 flex-shrink-0"></div>
+      <p class="text-[0.5rem] text-white"><strong>Identifying Gaps:</strong> Spotted the "sparse zone": <em>only 8.1% of EDA studies involve elderly</em>.</p>
     </div>
   </div>
   </div>
@@ -638,62 +642,62 @@ class: px-12 pt-6
 ---
 
 <div class="w-full flex flex-col h-full">
-<div class="mb-5">
-  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-1">Key Learnings & Impact</p>
-  <h1 class="text-2xl font-bold text-white leading-tight">How these AI-driven workflows translate into actual academic research</h1>
+<div class="mb-3">
+  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5">Key Learnings & Impact</p>
+  <h1 class="text-xl font-bold text-white leading-tight">How these AI-driven workflows translate into actual academic research</h1>
 </div>
 
-<div class="grid grid-cols-2 gap-6 flex-1">
-  <div class="flex flex-col gap-4">
+<div class="grid grid-cols-2 gap-4 flex-1">
+  <div class="flex flex-col gap-3">
   
-  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4">
-  <h3 class="text-white font-bold text-xs mb-3 flex items-center gap-2">
-    <div class="i-lucide:lightbulb text-[#F59E0B]"></div>Key Learnings
+  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 flex-1 flex flex-col justify-between">
+  <h3 class="text-white font-bold text-xs mb-1.5 flex items-center gap-1.5">
+    <div class="i-lucide:lightbulb text-[#F59E0B] text-xs"></div>Key Learnings
   </h3>
-  <div class="space-y-3">
+  <div class="space-y-2">
     <div>
-      <h4 class="text-[0.55rem] font-bold text-[#A78BFA] uppercase tracking-wider">1. Token Discipline = Research Efficiency</h4>
-      <p class="text-[0.5rem] text-[#94A3B8] leading-relaxed">Treating LLM context as a resource constraint force-multiplies focus. By keeping prompts tightly scoped, AI output remains precise, reducing hallucinated code.</p>
+      <h4 class="text-[0.45rem] font-bold text-[#A78BFA] uppercase tracking-wider">1. Token Discipline = Research Efficiency</h4>
+      <p class="text-[0.42rem] text-[#94A3B8] leading-relaxed">Restricting context windows focuses the agent and cuts latency, preventing code output drift.</p>
     </div>
     <div>
-      <h4 class="text-[0.55rem] font-bold text-[#A78BFA] uppercase tracking-wider">2. Systematized vs. Ad-hoc Prompts</h4>
-      <p class="text-[0.5rem] text-[#94A3B8] leading-relaxed">Unstructured chat results in repetitive cycles. Using the ARS pipeline structures research into defined steps (Review → Hypothesis → Code → Patent Claim).</p>
+      <h4 class="text-[0.45rem] font-bold text-[#A78BFA] uppercase tracking-wider">2. Systematized Pipelines</h4>
+      <p class="text-[0.42rem] text-[#94A3B8] leading-relaxed">Moving sequentially through defined stages (ARS) avoids unproductive open-ended loops.</p>
     </div>
     <div>
-      <h4 class="text-[0.55rem] font-bold text-[#A78BFA] uppercase tracking-wider">3. AI Executes, Human Evaluates</h4>
-      <p class="text-[0.5rem] text-[#94A3B8] leading-relaxed">AI is excellent at generating standard boilerplate and synthesis, but the biophysical insights (Lorentzian resonance, vagal gating) must be human-derived.</p>
+      <h4 class="text-[0.45rem] font-bold text-[#A78BFA] uppercase tracking-wider">3. Human-Driven Insight</h4>
+      <p class="text-[0.42rem] text-[#94A3B8] leading-relaxed">AI compiles the mathematical constraints; human judgment evaluates physiological resonance.</p>
     </div>
   </div>
   </div>
 
   </div>
 
-  <div class="flex flex-col gap-4">
+  <div class="flex flex-col gap-3">
 
-  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4">
-  <h3 class="text-white font-bold text-xs mb-3 flex items-center gap-2">
-    <div class="i-lucide:flask-conical text-[#34D399]"></div>Translating to Actual Research
+  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 flex-1 flex flex-col justify-between">
+  <h3 class="text-white font-bold text-xs mb-1.5 flex items-center gap-1.5">
+    <div class="i-lucide:flask-conical text-[#34D399] text-xs"></div>Translating to Actual Research
   </h3>
-  <div class="space-y-3">
-    <div class="flex gap-2">
-      <div class="w-5 h-5 rounded bg-[#34D399]/20 text-[#34D399] flex items-center justify-center flex-shrink-0 mt-0.5 text-[0.5rem] font-bold">A</div>
+  <div class="space-y-2">
+    <div class="flex gap-1.5">
+      <div class="w-4 h-4 rounded bg-[#34D399]/20 text-[#34D399] flex items-center justify-center flex-shrink-0 mt-0.5 text-[0.45rem] font-bold">A</div>
       <div>
-        <p class="text-[0.55rem] font-bold text-white uppercase tracking-wider">Silicon-Free Algorithm Validation</p>
-        <p class="text-[0.5rem] text-[#94A3B8] leading-relaxed">Enables verification of complex algorithms (like Q10 fixed-point NLMS) under hardware limitations before ordering custom PCBs.</p>
+        <p class="text-[0.48rem] font-bold text-white uppercase tracking-wider">Silicon-Free Validation</p>
+        <p class="text-[0.42rem] text-[#94A3B8] leading-relaxed">Verify fixed-point Q10 math limits in Python simulation before fabricating custom ESP32-C3 PCBs.</p>
       </div>
     </div>
-    <div class="flex gap-2">
-      <div class="w-5 h-5 rounded bg-[#34D399]/20 text-[#34D399] flex items-center justify-center flex-shrink-0 mt-0.5 text-[0.5rem] font-bold">B</div>
+    <div class="flex gap-1.5">
+      <div class="w-4 h-4 rounded bg-[#34D399]/20 text-[#34D399] flex items-center justify-center flex-shrink-0 mt-0.5 text-[0.45rem] font-bold">B</div>
       <div>
-        <p class="text-[0.55rem] font-bold text-white uppercase tracking-wider">Physiological Simulation</p>
-        <p class="text-[0.5rem] text-[#94A3B8] leading-relaxed">Synthesizes and tests autonomic feedback loops (like HRV resonance), confirming mathematical boundaries before conducting human trials.</p>
+        <p class="text-[0.48rem] font-bold text-white uppercase tracking-wider">Autonomic Simulation</p>
+        <p class="text-[0.42rem] text-[#94A3B8] leading-relaxed">Synthesize Lorentzian entrainment systems to mathematically prove closed-loop pacing limits.</p>
       </div>
     </div>
-    <div class="flex gap-2">
-      <div class="w-5 h-5 rounded bg-[#34D399]/20 text-[#34D399] flex items-center justify-center flex-shrink-0 mt-0.5 text-[0.5rem] font-bold">C</div>
+    <div class="flex gap-1.5">
+      <div class="w-4 h-4 rounded bg-[#34D399]/20 text-[#34D399] flex items-center justify-center flex-shrink-0 mt-0.5 text-[0.45rem] font-bold">C</div>
       <div>
-        <p class="text-[0.55rem] font-bold text-white uppercase tracking-wider">Accelerating the Patent Pipeline</p>
-        <p class="text-[0.5rem] text-[#94A3B8] leading-relaxed">Converts proven computational performance metrics directly into high-fidelity patent claims, securing IP faster than traditional methods.</p>
+        <p class="text-[0.48rem] font-bold text-white uppercase tracking-wider">Accelerating Patenting</p>
+        <p class="text-[0.42rem] text-[#94A3B8] leading-relaxed">Map verified execution metrics directly to patent claim text, accelerating time-to-filing.</p>
       </div>
     </div>
   </div>
