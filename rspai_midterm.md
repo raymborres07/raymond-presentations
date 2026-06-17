@@ -16,6 +16,10 @@ title: "KINTO — Midterm Presentation"
 .slidev-layout {
   overflow-y: auto !important;
 }
+.slidev-layout p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -402,51 +406,51 @@ class: px-12 pt-6
 ---
 
 <div class="w-full flex flex-col h-full">
-<div class="mb-2.5">
+<div class="mb-1.5">
   <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5">My Process — How This Was Built</p>
-  <h1 class="text-2xl font-bold text-white leading-tight">I didn't write the simulation code. I directed it.</h1>
+  <h1 class="text-xl font-bold text-white leading-tight">I didn't write the simulation code. I directed it.</h1>
 </div>
 
-<div class="grid grid-cols-[1fr_1.4fr] gap-4 flex-1">
-  <div class="flex flex-col gap-2">
-  <div class="text-[0.55rem] text-[#94A3B8] leading-relaxed">Each of the five studies started from the same place: a research question, a hardware constraint, and a signal model I understood well enough to specify — but not well enough to code efficiently at that level of detail.</div>
-  <div class="text-[0.55rem] text-[#94A3B8] leading-relaxed">My job was to define the <strong class="text-white">physics, the edge constraints, and what a meaningful result would look like.</strong> Claude Code's job was to translate that into working Python — signal generation, algorithm implementation, simulation loop, and visualization.</div>
-  <div class="bg-gradient-to-br from-[#7C3AED]/10 to-transparent border border-[#7C3AED]/20 rounded-xl p-3">
-  <div class="text-[0.55rem] text-[#A78BFA] font-semibold mb-1">The key distinction</div>
-  <div class="text-[0.52rem] text-[#94A3B8] leading-relaxed">I was not "asking AI to do my research." I was using it the same way an engineer uses a compiler — to turn a specification I already understood into executable output, then reading and verifying the results myself.</div>
+<div class="grid grid-cols-[1fr_1.4fr] gap-3 flex-1">
+  <div class="flex flex-col gap-1.5">
+  <div class="text-[0.52rem] text-[#94A3B8] leading-relaxed">Each of the five studies started from the same place: a research question, a hardware constraint, and a signal model I understood well enough to specify — but not well enough to code efficiently at that level of detail.</div>
+  <div class="text-[0.52rem] text-[#94A3B8] leading-relaxed">My job was to define the <strong class="text-white">physics, the edge constraints, and what a meaningful result would look like.</strong> Claude Code's job was to translate that into working Python — signal generation, algorithm implementation, simulation loop, and visualization.</div>
+  <div class="bg-gradient-to-br from-[#7C3AED]/10 to-transparent border border-[#7C3AED]/20 rounded-xl p-2.5">
+  <div class="text-[0.52rem] text-[#A78BFA] font-semibold mb-0.5">The key distinction</div>
+  <div class="text-[0.48rem] text-[#94A3B8] leading-relaxed">I was not "asking AI to do my research." I was using it the same way an engineer uses a compiler — to turn a specification I already understood into executable output, then reading and verifying the results myself.</div>
   </div>
   </div>
 
-  <div class="flex flex-col gap-2">
+  <div class="flex flex-col gap-1.5">
   <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl overflow-hidden shadow-xl">
-  <div class="px-3 py-1.5 border-b border-[#1E2E38] bg-[#0A1520]"><p class="text-[0.52rem] font-bold text-[#7C3AED] uppercase tracking-wider">The Loop — repeated for all 5 studies</p></div>
+  <div class="px-3 py-1 border-b border-[#1E2E38] bg-[#0A1520]"><p class="text-[0.48rem] font-bold text-[#7C3AED] uppercase tracking-wider">The Loop — repeated for all 5 studies</p></div>
   <div class="flex flex-col divide-y divide-[#1E2E38]">
-  <div class="flex items-start gap-2.5 px-3.5 py-1.5">
-  <div class="w-5 h-5 rounded bg-[#7C3AED]/20 text-[#A78BFA] text-[0.5rem] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</div>
+  <div class="flex items-start gap-2 px-3 py-1">
+  <div class="w-4.5 h-4.5 rounded bg-[#7C3AED]/20 text-[#A78BFA] text-[0.45rem] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</div>
   <div>
-  <p class="text-[0.55rem] font-semibold text-white">I defined the signal model and constraints</p>
-  <p class="text-[0.48rem] text-[#64748B] leading-relaxed">Hardware limits (no FPU, 400 KB SRAM), sensor specs, noise sources, physiological targets</p>
+  <p class="text-[0.5rem] font-semibold text-white">I defined the signal model and constraints</p>
+  <p class="text-[0.43rem] text-[#64748B] leading-relaxed">Hardware limits (no FPU, 400 KB SRAM), sensor specs, noise sources, physiological targets</p>
   </div>
   </div>
-  <div class="flex items-start gap-2.5 px-3.5 py-1.5">
-  <div class="w-5 h-5 rounded bg-[#7C3AED]/20 text-[#A78BFA] text-[0.5rem] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</div>
+  <div class="flex items-start gap-2 px-3 py-1">
+  <div class="w-4.5 h-4.5 rounded bg-[#7C3AED]/20 text-[#A78BFA] text-[0.45rem] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</div>
   <div>
-  <p class="text-[0.55rem] font-semibold text-white">Claude Code implemented the full simulation</p>
-  <p class="text-[0.48rem] text-[#64748B] leading-relaxed">Synthetic signal generation, algorithm code, test harness, matplotlib output — typically 300–600 lines per study</p>
+  <p class="text-[0.5rem] font-semibold text-white">Claude Code implemented the full simulation</p>
+  <p class="text-[0.43rem] text-[#64748B] leading-relaxed">Synthetic signal generation, algorithm code, test harness, matplotlib output — typically 300–600 lines per study</p>
   </div>
   </div>
-  <div class="flex items-start gap-2.5 px-3.5 py-1.5">
-  <div class="w-5 h-5 rounded bg-[#7C3AED]/20 text-[#A78BFA] text-[0.5rem] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</div>
+  <div class="flex items-start gap-2 px-3 py-1">
+  <div class="w-4.5 h-4.5 rounded bg-[#7C3AED]/20 text-[#A78BFA] text-[0.45rem] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</div>
   <div>
-  <p class="text-[0.55rem] font-semibold text-white">I read the output, interpreted the numbers</p>
-  <p class="text-[0.48rem] text-[#64748B] leading-relaxed">Checked whether results matched the biophysical expectation — not just "did it run"</p>
+  <p class="text-[0.5rem] font-semibold text-white">I read the output, interpreted the numbers</p>
+  <p class="text-[0.43rem] text-[#64748B] leading-relaxed">Checked whether results matched the biophysical expectation — not just "did it run"</p>
   </div>
   </div>
-  <div class="flex items-start gap-2.5 px-3.5 py-1.5">
-  <div class="w-5 h-5 rounded bg-[#7C3AED]/20 text-[#A78BFA] text-[0.5rem] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">4</div>
+  <div class="flex items-start gap-2 px-3 py-1">
+  <div class="w-4.5 h-4.5 rounded bg-[#7C3AED]/20 text-[#A78BFA] text-[0.45rem] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">4</div>
   <div>
-  <p class="text-[0.55rem] font-semibold text-white">I identified what was patentable in the result</p>
-  <p class="text-[0.48rem] text-[#64748B] leading-relaxed">Prior art search, gap identification, claim language — required domain knowledge, not prompting</p>
+  <p class="text-[0.5rem] font-semibold text-white">I identified what was patentable in the result</p>
+  <p class="text-[0.43rem] text-[#64748B] leading-relaxed">Prior art search, gap identification, claim language — required domain knowledge, not prompting</p>
   </div>
   </div>
   </div>
@@ -469,63 +473,63 @@ class: px-12 pt-6
 ---
 
 <div class="w-full flex flex-col h-full">
-<div class="mb-2.5">
+<div class="mb-1.5">
   <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5">What AI Actually Did — Technical Breakdown</p>
   <h1 class="text-xl font-bold text-white leading-tight">Five non-trivial engineering tasks Claude Code executed per study</h1>
 </div>
 
-<div class="grid grid-cols-5 gap-2.5 mb-2">
+<div class="grid grid-cols-5 gap-2 mb-1.5">
 
-  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-2.5 flex flex-col">
-  <div class="w-6 h-6 rounded-lg bg-[#0EA5E9]/20 flex items-center justify-center mb-1.5"><lucide-activity class="text-[#38BDF8] text-xs" /></div>
-  <h4 class="text-[0.52rem] font-bold text-white mb-0.5">Synthetic Signal Generation</h4>
-  <p class="text-[0.42rem] text-[#64748B] leading-relaxed flex-1">Generated realistic PPG waveforms, accelerometer noise, LRA BEMF harmonics, and boost-converter switching ripple to match datasheets.</p>
+  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-2 flex flex-col">
+  <div class="w-5.5 h-5.5 rounded-lg bg-[#0EA5E9]/20 flex items-center justify-center mb-1"><lucide-activity class="text-[#38BDF8] text-xs" /></div>
+  <h4 class="text-[0.5rem] font-bold text-white mb-0.5">Synthetic Signal Generation</h4>
+  <p class="text-[0.4rem] text-[#64748B] leading-relaxed flex-1">Generated realistic PPG waveforms, accelerometer noise, LRA BEMF harmonics, and boost-converter switching ripple to match datasheets.</p>
   </div>
 
-  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-2.5 flex flex-col">
-  <div class="w-6 h-6 rounded-lg bg-[#7C3AED]/20 flex items-center justify-center mb-1.5"><lucide-code-2 class="text-[#A78BFA] text-xs" /></div>
-  <h4 class="text-[0.52rem] font-bold text-white mb-0.5">DSP Algorithm Implementation</h4>
-  <p class="text-[0.42rem] text-[#64748B] leading-relaxed flex-1">Wrote Kalman filter, NLMS adaptive filter, peak detector, and phase-locked loop from scratch in NumPy — no library wrappers.</p>
+  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-2 flex flex-col">
+  <div class="w-5.5 h-5.5 rounded-lg bg-[#7C3AED]/20 flex items-center justify-center mb-1"><lucide-code-2 class="text-[#A78BFA] text-xs" /></div>
+  <h4 class="text-[0.5rem] font-bold text-white mb-0.5">DSP Algorithm Implementation</h4>
+  <p class="text-[0.4rem] text-[#64748B] leading-relaxed flex-1">Wrote Kalman filter, NLMS adaptive filter, peak detector, and phase-locked loop from scratch in NumPy — no library wrappers.</p>
   </div>
 
-  <div class="bg-[#0F172A] border border-[#A78BFA]/30 rounded-xl p-2.5 flex flex-col shadow-[0_0_10px_rgba(124,58,237,0.08)]">
-  <div class="w-6 h-6 rounded-lg bg-[#7C3AED]/30 flex items-center justify-center mb-1.5"><lucide-git-branch class="text-[#A78BFA] text-xs" /></div>
-  <h4 class="text-[0.52rem] font-bold text-white mb-0.5">Tabular Q-Learning RL Agent</h4>
-  <p class="text-[0.42rem] text-[#64748B] leading-relaxed flex-1">Built the full RL loop: state discretization, ε-greedy exploration, Q-table updates, reward shaping from HRV coherence.</p>
+  <div class="bg-[#0F172A] border border-[#A78BFA]/30 rounded-xl p-2 flex flex-col shadow-[0_0_10px_rgba(124,58,237,0.08)]">
+  <div class="w-5.5 h-5.5 rounded-lg bg-[#7C3AED]/30 flex items-center justify-center mb-1"><lucide-git-branch class="text-[#A78BFA] text-xs" /></div>
+  <h4 class="text-[0.5rem] font-bold text-white mb-0.5">Tabular Q-Learning RL Agent</h4>
+  <p class="text-[0.4rem] text-[#64748B] leading-relaxed flex-1">Built the full RL loop: state discretization, ε-greedy exploration, Q-table updates, reward shaping from HRV coherence.</p>
   </div>
 
-  <div class="bg-[#0F172A] border border-[#34D399]/30 rounded-xl p-2.5 flex flex-col shadow-[0_0_10px_rgba(16,185,129,0.08)]">
-  <div class="w-6 h-6 rounded-lg bg-[#10B981]/20 flex items-center justify-center mb-1.5"><lucide-hash class="text-[#34D399] text-xs" /></div>
-  <h4 class="text-[0.52rem] font-bold text-white mb-0.5">Fixed-Point Q10 Arithmetic</h4>
-  <p class="text-[0.42rem] text-[#64748B] leading-relaxed flex-1">Simulated integer-only Q10 math in Python to mirror ESP32-C3 execution: bitshifts, overflow checks, NLMS weight updates without floats.</p>
+  <div class="bg-[#0F172A] border border-[#34D399]/30 rounded-xl p-2 flex flex-col shadow-[0_0_10px_rgba(16,185,129,0.08)]">
+  <div class="w-5.5 h-5.5 rounded-lg bg-[#10B981]/20 flex items-center justify-center mb-1"><lucide-hash class="text-[#34D399] text-xs" /></div>
+  <h4 class="text-[0.5rem] font-bold text-white mb-0.5">Fixed-Point Q10 Arithmetic</h4>
+  <p class="text-[0.4rem] text-[#64748B] leading-relaxed flex-1">Simulated integer-only Q10 math in Python to mirror ESP32-C3 execution: bitshifts, overflow checks, NLMS weight updates without floats.</p>
   </div>
 
-  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-2.5 flex flex-col">
-  <div class="w-6 h-6 rounded-lg bg-[#F59E0B]/20 flex items-center justify-center mb-1.5"><lucide-bar-chart-2 class="text-[#FCD34D] text-xs" /></div>
-  <h4 class="text-[0.52rem] font-bold text-white mb-0.5">Statistical Analysis & Figures</h4>
-  <p class="text-[0.42rem] text-[#64748B] leading-relaxed flex-1">Computed RMSSD, HRV coherence, SNR in dB, p-values, mean ± SD, and produced multi-panel publication-quality figures.</p>
+  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-2 flex flex-col">
+  <div class="w-5.5 h-5.5 rounded-lg bg-[#F59E0B]/20 flex items-center justify-center mb-1"><lucide-bar-chart-2 class="text-[#FCD34D] text-xs" /></div>
+  <h4 class="text-[0.5rem] font-bold text-white mb-0.5">Statistical Analysis & Figures</h4>
+  <p class="text-[0.4rem] text-[#64748B] leading-relaxed flex-1">Computed RMSSD, HRV coherence, SNR in dB, p-values, mean ± SD, and produced multi-panel publication-quality figures.</p>
   </div>
 
  </div>
 
-<div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3">
-  <h3 class="text-white font-bold text-[0.65rem] mb-2 flex items-center gap-1.5"><lucide-file-code class="text-[#7C3AED]" />What a single study looked like in code terms</h3>
-  <div class="grid grid-cols-4 gap-2">
-  <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-2">
-  <p class="text-[0.48rem] font-semibold text-[#7C3AED] mb-0.5">filter_benchmark.py</p>
-  <p class="text-[0.42rem] text-[#64748B] leading-relaxed">~280 lines — signal synthesis, SMA/EXP/Kalman, MSE + timing loop, 2-panel chart</p>
+<div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-2">
+  <h3 class="text-white font-bold text-[0.58rem] mb-1 flex items-center gap-1.5"><lucide-file-code class="text-[#7C3AED]" />What a single study looked like in code terms</h3>
+  <div class="grid grid-cols-4 gap-1.5">
+  <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-1.5">
+  <p class="text-[0.44rem] font-semibold text-[#7C3AED] mb-0">filter_benchmark.py</p>
+  <p class="text-[0.38rem] text-[#64748B] leading-relaxed">~280 lines — signal synthesis, SMA/EXP/Kalman, MSE + timing loop, 2-panel chart</p>
   </div>
-  <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-2">
-  <p class="text-[0.48rem] font-semibold text-[#0EA5E9] mb-0.5">kinto_edge_benchmark.py</p>
-  <p class="text-[0.42rem] text-[#64748B] leading-relaxed">~320 lines — model creation, INT8 simulation, pruning, SRAM budget checker, 3-panel chart</p>
+  <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-1.5">
+  <p class="text-[0.44rem] font-semibold text-[#0EA5E9] mb-0">kinto_edge_benchmark.py</p>
+  <p class="text-[0.38rem] text-[#64748B] leading-relaxed">~320 lines — model creation, INT8 simulation, pruning, SRAM budget checker, 3-panel chart</p>
   </div>
-  <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-2">
-  <p class="text-[0.48rem] font-semibold text-[#A78BFA] mb-0.5">kinto_simulation.py</p>
-  <p class="text-[0.42rem] text-[#64748B] leading-relaxed">~520 lines — Lorentzian model, Q-agent, 300-episode loop, Q-value heatmap, convergence analysis</p>
+  <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-1.5">
+  <p class="text-[0.44rem] font-semibold text-[#A78BFA] mb-0">kinto_simulation.py</p>
+  <p class="text-[0.38rem] text-[#64748B] leading-relaxed">~520 lines — Lorentzian model, Q-agent, 300-episode loop, Q-value heatmap, convergence analysis</p>
   </div>
-  <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-2">
-  <p class="text-[0.48rem] font-semibold text-[#34D399] mb-0.5">kinto_bemf_anc.py</p>
-  <p class="text-[0.42rem] text-[#64748B] leading-relaxed">~410 lines — BEMF noise, Q10 integer NLMS, float baseline, SNR convergence, spectrum analysis</p>
+  <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-1.5">
+  <p class="text-[0.44rem] font-semibold text-[#34D399] mb-0">kinto_bemf_anc.py</p>
+  <p class="text-[0.38rem] text-[#64748B] leading-relaxed">~410 lines — BEMF noise, Q10 integer NLMS, float baseline, SNR convergence, spectrum analysis</p>
   </div>
   </div>
 </div>
@@ -544,40 +548,40 @@ class: px-12 pt-6
 ---
 
 <div class="w-full flex flex-col h-full">
-<div class="mb-2.5">
+<div class="mb-1.5">
   <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5">Prompt → Code → Patent — A Concrete Example</p>
   <h1 class="text-xl font-bold text-white leading-tight">How one conversation became a defensible patent claim</h1>
 </div>
 
-<div class="grid grid-cols-3 gap-3 flex-1">
+<div class="grid grid-cols-3 gap-2 flex-1">
 
   <!-- Step 1: My prompt -->
-  <div class="flex flex-col gap-2">
-  <div class="flex items-center gap-1.5 mb-0.5">
-  <div class="w-5 h-5 rounded-full bg-[#7C3AED]/20 border border-[#7C3AED]/40 flex items-center justify-center text-[0.45rem] font-bold text-[#A78BFA]">1</div>
-  <p class="text-[0.55rem] font-bold text-white uppercase tracking-wider">What I gave Claude Code</p>
+  <div class="flex flex-col gap-1.5">
+  <div class="flex items-center gap-1 mb-0.5">
+  <div class="w-4.5 h-4.5 rounded-full bg-[#7C3AED]/20 border border-[#7C3AED]/40 flex items-center justify-center text-[0.4rem] font-bold text-[#A78BFA]">1</div>
+  <p class="text-[0.5rem] font-bold text-white uppercase tracking-wider">What I gave Claude Code</p>
   </div>
-  <div class="bg-[#0F172A] border border-[#7C3AED]/30 rounded-xl p-2.5 flex-1">
-  <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-2 text-[0.43rem] text-[#94A3B8] leading-relaxed font-mono italic mb-1.5">
+  <div class="bg-[#0F172A] border border-[#7C3AED]/30 rounded-xl p-2 flex-1">
+  <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-1.5 text-[0.4rem] text-[#94A3B8] leading-relaxed font-mono italic mb-1">
   "The ESP32-C3 has no FPU. The LRA motor is running at 175 Hz and producing BEMF harmonics that corrupt the PPG. I need to cancel this noise using only integer arithmetic in Q10 format. Implement normalized LMS with a 32-tap FIR, step size 0.08, and compare SNR before and after vs a float baseline. The PPG is 100 Hz, 2000 samples."
   </div>
-  <div class="space-y-1">
-  <div class="flex items-start gap-1.5"><lucide-check class="text-[#7C3AED] text-[0.55rem] mt-0.5" /><p class="text-[0.42rem] text-[#94A3B8]">Hardware constraint: RISC-V no FPU</p></div>
-  <div class="flex items-start gap-1.5"><lucide-check class="text-[#7C3AED] text-[0.55rem] mt-0.5" /><p class="text-[0.42rem] text-[#94A3B8]">Signal model: BEMF frequencies, sample rate</p></div>
-  <div class="flex items-start gap-1.5"><lucide-check class="text-[#7C3AED] text-[0.55rem] mt-0.5" /><p class="text-[0.42rem] text-[#94A3B8]">Algorithm spec: NLMS, Q10, μ = 0.08, 32-tap</p></div>
-  <div class="flex items-start gap-1.5"><lucide-check class="text-[#7C3AED] text-[0.55rem] mt-0.5" /><p class="text-[0.42rem] text-[#94A3B8]">Success criterion: SNR comparison vs float</p></div>
+  <div class="space-y-0.5">
+  <div class="flex items-start gap-1"><lucide-check class="text-[#7C3AED] text-[0.5rem] mt-0.5" /><p class="text-[0.38rem] text-[#94A3B8]">Hardware constraint: RISC-V no FPU</p></div>
+  <div class="flex items-start gap-1"><lucide-check class="text-[#7C3AED] text-[0.5rem] mt-0.5" /><p class="text-[0.38rem] text-[#94A3B8]">Signal model: BEMF frequencies, sample rate</p></div>
+  <div class="flex items-start gap-1"><lucide-check class="text-[#7C3AED] text-[0.5rem] mt-0.5" /><p class="text-[0.38rem] text-[#94A3B8]">Algorithm spec: NLMS, Q10, μ = 0.08, 32-tap</p></div>
+  <div class="flex items-start gap-1"><lucide-check class="text-[#7C3AED] text-[0.5rem] mt-0.5" /><p class="text-[0.38rem] text-[#94A3B8]">Success criterion: SNR comparison vs float</p></div>
   </div>
   </div>
   </div>
 
   <!-- Step 2: What AI did -->
-  <div class="flex flex-col gap-2">
-  <div class="flex items-center gap-1.5 mb-0.5">
-  <div class="w-5 h-5 rounded-full bg-[#10B981]/20 border border-[#10B981]/40 flex items-center justify-center text-[0.45rem] font-bold text-[#34D399]">2</div>
-  <p class="text-[0.55rem] font-bold text-white uppercase tracking-wider">What Claude Code produced</p>
+  <div class="flex flex-col gap-1.5">
+  <div class="flex items-center gap-1 mb-0.5">
+  <div class="w-4.5 h-4.5 rounded-full bg-[#10B981]/20 border border-[#10B981]/40 flex items-center justify-center text-[0.4rem] font-bold text-[#34D399]">2</div>
+  <p class="text-[0.5rem] font-bold text-white uppercase tracking-wider">What Claude Code produced</p>
   </div>
-  <div class="bg-[#0F172A] border border-[#10B981]/30 rounded-xl p-2.5 flex-1">
-  <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-2 font-mono text-[0.41rem] text-[#34D399] leading-relaxed mb-1.5">
+  <div class="bg-[#0F172A] border border-[#10B981]/30 rounded-xl p-2 flex-1">
+  <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-1.5 font-mono text-[0.38rem] text-[#34D399] leading-relaxed mb-1">
   <span class="text-[#64748B]"># Q10 fixed-point NLMS — no floats</span><br>
   SCALE = 1024  <span class="text-[#64748B]"># 2^10</span><br>
   weights = [0] * 32<br>
@@ -592,40 +596,40 @@ class: px-12 pt-6
   &nbsp;&nbsp;weights[i] += q10_mul(mu_q*err, buf[i]) // (norm+1)
   </div>
   <div class="space-y-0.5">
-  <div class="flex items-start gap-1.5"><lucide-check class="text-[#10B981] text-[0.55rem] mt-0.5" /><p class="text-[0.42rem] text-[#94A3B8]">~410 lines of working Python simulation</p></div>
-  <div class="flex items-start gap-1.5"><lucide-check class="text-[#10B981] text-[0.55rem] mt-0.5" /><p class="text-[0.42rem] text-[#94A3B8]">Synthetic BEMF + switching noise generation</p></div>
-  <div class="flex items-start gap-1.5"><lucide-check class="text-[#10B981] text-[0.55rem] mt-0.5" /><p class="text-[0.42rem] text-[#94A3B8]">Full Q10 integer NLMS with no stdlib floats</p></div>
-  <div class="flex items-start gap-1.5"><lucide-check class="text-[#10B981] text-[0.55rem] mt-0.5" /><p class="text-[0.42rem] text-[#94A3B8]">Float NLMS baseline for direct comparison</p></div>
-  <div class="flex items-start gap-1.5"><lucide-check class="text-[#10B981] text-[0.55rem] mt-0.5" /><p class="text-[0.42rem] text-[#94A3B8]">3-panel matplotlib figure, SNR numbers in output</p></div>
+  <div class="flex items-start gap-1"><lucide-check class="text-[#10B981] text-[0.5rem] mt-0.5" /><p class="text-[0.38rem] text-[#94A3B8]">~410 lines of working Python simulation</p></div>
+  <div class="flex items-start gap-1"><lucide-check class="text-[#10B981] text-[0.5rem] mt-0.5" /><p class="text-[0.38rem] text-[#94A3B8]">Synthetic BEMF + switching noise generation</p></div>
+  <div class="flex items-start gap-1"><lucide-check class="text-[#10B981] text-[0.5rem] mt-0.5" /><p class="text-[0.38rem] text-[#94A3B8]">Full Q10 integer NLMS with no stdlib floats</p></div>
+  <div class="flex items-start gap-1"><lucide-check class="text-[#10B981] text-[0.5rem] mt-0.5" /><p class="text-[0.38rem] text-[#94A3B8]">Float NLMS baseline for direct comparison</p></div>
+  <div class="flex items-start gap-1"><lucide-check class="text-[#10B981] text-[0.5rem] mt-0.5" /><p class="text-[0.38rem] text-[#94A3B8]">3-panel matplotlib figure, SNR numbers in output</p></div>
   </div>
   </div>
   </div>
 
   <!-- Step 3: What I did with the result -->
-  <div class="flex flex-col gap-2">
-  <div class="flex items-center gap-1.5 mb-0.5">
-  <div class="w-5 h-5 rounded-full bg-[#F59E0B]/20 border border-[#F59E0B]/40 flex items-center justify-center text-[0.45rem] font-bold text-[#FCD34D]">3</div>
-  <p class="text-[0.55rem] font-bold text-white uppercase tracking-wider">What I did with the result</p>
+  <div class="flex flex-col gap-1.5">
+  <div class="flex items-center gap-1 mb-0.5">
+  <div class="w-4.5 h-4.5 rounded-full bg-[#F59E0B]/20 border border-[#F59E0B]/40 flex items-center justify-center text-[0.4rem] font-bold text-[#FCD34D]">3</div>
+  <p class="text-[0.5rem] font-bold text-white uppercase tracking-wider">What I did with the result</p>
   </div>
-  <div class="bg-[#0F172A] border border-[#F59E0B]/30 rounded-xl p-2.5 flex-1">
-  <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-2 text-[0.43rem] text-[#94A3B8] leading-relaxed mb-1.5 font-mono">
+  <div class="bg-[#0F172A] border border-[#F59E0B]/30 rounded-xl p-2 flex-1">
+  <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-1.5 text-[0.4rem] text-[#94A3B8] leading-relaxed mb-1 font-mono">
   Output: Q10 SNR = +23.62 dB, Float SNR = +25.03 dB, Q10 latency = 0.600 µs/sample
   </div>
-  <div class="space-y-1 mb-1.5">
-  <div class="flex items-start gap-1.5"><lucide-brain class="text-[#FCD34D] text-[0.55rem] mt-0.5 flex-shrink-0" /><p class="text-[0.42rem] text-[#94A3B8]"><strong class="text-white">Interpreted:</strong> 1.42 dB gap is clinically negligible; latency is 15× better</p></div>
-  <div class="flex items-start gap-1.5"><lucide-search class="text-[#FCD34D] text-[0.55rem] mt-0.5 flex-shrink-0" /><p class="text-[0.42rem] text-[#94A3B8]"><strong class="text-white">Prior art:</strong> No published integer NLMS on RISC-V without soft-float</p></div>
-  <div class="flex items-start gap-1.5"><lucide-file-text class="text-[#FCD34D] text-[0.55rem] mt-0.5 flex-shrink-0" /><p class="text-[0.42rem] text-[#94A3B8]"><strong class="text-white">Wrote claim:</strong> "exclusively via integer and bitwise operations..."</p></div>
+  <div class="space-y-0.5 mb-1 bg-[#080E14]/30 p-1.5 rounded-lg border border-[#1E2E38]/50">
+  <div class="flex items-start gap-1"><lucide-brain class="text-[#FCD34D] text-[0.5rem] mt-0.5 flex-shrink-0" /><p class="text-[0.38rem] text-[#94A3B8]"><strong class="text-white">Interpreted:</strong> 1.42 dB gap is clinically negligible; latency is 15× better</p></div>
+  <div class="flex items-start gap-1"><lucide-search class="text-[#FCD34D] text-[0.5rem] mt-0.5 flex-shrink-0" /><p class="text-[0.38rem] text-[#94A3B8]"><strong class="text-white">Prior art:</strong> No published integer NLMS on RISC-V without soft-float</p></div>
+  <div class="flex items-start gap-1"><lucide-file-text class="text-[#FCD34D] text-[0.5rem] mt-0.5 flex-shrink-0" /><p class="text-[0.38rem] text-[#94A3B8]"><strong class="text-white">Wrote claim:</strong> "exclusively via integer and bitwise operations..."</p></div>
   </div>
-  <div class="bg-[#F59E0B]/10 border border-[#F59E0B]/20 rounded-lg p-1.5">
-  <p class="text-[0.42rem] text-[#FCD34D] font-semibold">→ Patent B claim language, ready to file</p>
+  <div class="bg-[#F59E0B]/10 border border-[#F59E0B]/20 rounded-lg p-1 text-center">
+  <p class="text-[0.38rem] text-[#FCD34D] font-semibold">→ Patent B claim language, ready to file</p>
   </div>
   </div>
   </div>
 
 </div>
 
-<div class="mt-2.5 bg-gradient-to-r from-[#7C3AED]/10 via-[#10B981]/10 to-[#F59E0B]/10 border border-[#1E2E38] rounded-xl p-2">
-  <p class="text-[0.52rem] text-[#94A3B8] text-center italic">The same 3-step loop repeated for all five studies. AI executed the engineering. I provided the specification and extracted the intellectual contribution.</p>
+<div class="mt-1.5 bg-gradient-to-r from-[#7C3AED]/10 via-[#10B981]/10 to-[#F59E0B]/10 border border-[#1E2E38] rounded-xl p-1.5">
+  <p class="text-[0.45rem] text-[#94A3B8] text-center italic">The same 3-step loop repeated for all five studies. AI executed the engineering. I provided the specification and extracted the intellectual contribution.</p>
 </div>
 
 </div>
@@ -719,39 +723,39 @@ class: px-12 pt-6
 ---
 
 <div class="w-full flex flex-col h-full">
-<div class="mb-2.5">
-  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-1">What AI Cannot Do — Where My Work Was</p>
+<div class="mb-1.5">
+  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5">What AI Cannot Do — Where My Work Was</p>
   <h1 class="text-xl font-bold text-white leading-tight">The parts that required domain knowledge, not prompting</h1>
 </div>
 
-<div class="grid grid-cols-2 gap-4 flex-1">
-  <div class="flex flex-col gap-3">
-  <div class="bg-[#EF4444]/8 border border-[#EF4444]/25 rounded-xl p-3 shadow-xl">
-  <h3 class="text-[#F87171] font-bold text-xs mb-2 flex items-center gap-1.5"><lucide-x-circle />AI could not tell me…</h3>
+<div class="grid grid-cols-2 gap-3 flex-1">
+  <div class="flex flex-col gap-2">
+  <div class="bg-[#EF4444]/8 border border-[#EF4444]/25 rounded-xl p-2.5 shadow-xl flex-1">
+  <h3 class="text-[#F87171] font-bold text-[0.7rem] mb-1.5 flex items-center gap-1.5"><lucide-x-circle />AI could not tell me…</h3>
   <div class="space-y-1">
-  <div class="flex items-start gap-1.5"><lucide-minus class="text-[#EF4444] text-[0.6rem] mt-0.5 flex-shrink-0" /><p class="text-[0.52rem] text-[#94A3B8]"><strong class="text-white">That diastolic-phase pacing matters</strong> — the vagal gate mechanism is cardiology, not something a prompt produces</p></div>
-  <div class="flex items-start gap-1.5"><lucide-minus class="text-[#EF4444] text-[0.6rem] mt-0.5 flex-shrink-0" /><p class="text-[0.52rem] text-[#94A3B8]"><strong class="text-white">That f* = 0.8 Hz is a Lorentzian resonance</strong> — I specified the biophysical model; AI implemented it</p></div>
-  <div class="flex items-start gap-1.5"><lucide-minus class="text-[#EF4444] text-[0.6rem] mt-0.5 flex-shrink-0" /><p class="text-[0.52rem] text-[#94A3B8]"><strong class="text-white">That no prior art uses integer NLMS on RISC-V</strong> — prior art gaps require literature search and domain judgment</p></div>
-  <div class="flex items-start gap-1.5"><lucide-minus class="text-[#EF4444] text-[0.6rem] mt-0.5 flex-shrink-0" /><p class="text-[0.52rem] text-[#94A3B8]"><strong class="text-white">Whether a result is clinically significant</strong> — a 1.42 dB SNR loss is negligible in PPG; AI doesn't know that without me saying so</p></div>
-  <div class="flex items-start gap-1.5"><lucide-minus class="text-[#EF4444] text-[0.6rem] mt-0.5 flex-shrink-0" /><p class="text-[0.52rem] text-[#94A3B8]"><strong class="text-white">The Japan PMD Act wellness classification</strong> — regulatory strategy is human judgment</p></div>
+  <div class="flex items-start gap-1"><lucide-minus class="text-[#EF4444] text-[0.5rem] mt-0.5 flex-shrink-0" /><p class="text-[0.48rem] text-[#94A3B8]"><strong class="text-white">That diastolic-phase pacing matters</strong> — the vagal gate mechanism is cardiology, not something a prompt produces</p></div>
+  <div class="flex items-start gap-1"><lucide-minus class="text-[#EF4444] text-[0.5rem] mt-0.5 flex-shrink-0" /><p class="text-[0.48rem] text-[#94A3B8]"><strong class="text-white">That f* = 0.8 Hz is a Lorentzian resonance</strong> — I specified the biophysical model; AI implemented it</p></div>
+  <div class="flex items-start gap-1"><lucide-minus class="text-[#EF4444] text-[0.5rem] mt-0.5 flex-shrink-0" /><p class="text-[0.48rem] text-[#94A3B8]"><strong class="text-white">That no prior art uses integer NLMS on RISC-V</strong> — prior art gaps require literature search and domain judgment</p></div>
+  <div class="flex items-start gap-1"><lucide-minus class="text-[#EF4444] text-[0.5rem] mt-0.5 flex-shrink-0" /><p class="text-[0.48rem] text-[#94A3B8]"><strong class="text-white">Whether a result is clinically significant</strong> — a 1.42 dB SNR loss is negligible in PPG; AI doesn't know that without me saying so</p></div>
+  <div class="flex items-start gap-1"><lucide-minus class="text-[#EF4444] text-[0.5rem] mt-0.5 flex-shrink-0" /><p class="text-[0.48rem] text-[#94A3B8]"><strong class="text-white">The Japan PMD Act wellness classification</strong> — regulatory strategy is human judgment</p></div>
   </div>
   </div>
   </div>
-  <div class="flex flex-col gap-3">
-  <div class="bg-[#34D399]/8 border border-[#34D399]/25 rounded-xl p-3 shadow-xl">
-  <h3 class="text-[#34D399] font-bold text-xs mb-2 flex items-center gap-1.5"><lucide-check-circle />AI consistently did well at…</h3>
+  <div class="flex flex-col gap-2">
+  <div class="bg-[#34D399]/8 border border-[#34D399]/25 rounded-xl p-2.5 shadow-xl">
+  <h3 class="text-[#34D399] font-bold text-[0.7rem] mb-1.5 flex items-center gap-1.5"><lucide-check-circle />AI consistently did well at…</h3>
   <div class="space-y-1">
-  <div class="flex items-start gap-1.5"><lucide-check class="text-[#10B981] text-[0.6rem] mt-0.5 flex-shrink-0" /><p class="text-[0.52rem] text-[#94A3B8]"><strong class="text-white">Implementing algorithms from a clear specification</strong> — once I said "Q10 NLMS, 32-tap, μ=0.08", the code was correct first try</p></div>
-  <div class="flex items-start gap-1.5"><lucide-check class="text-[#10B981] text-[0.6rem] mt-0.5 flex-shrink-0" /><p class="text-[0.52rem] text-[#94A3B8]"><strong class="text-white">Generating realistic synthetic signals</strong> — PPG, accelerometer, BEMF harmonics that matched sensor datasheets</p></div>
-  <div class="flex items-start gap-1.5"><lucide-check class="text-[#10B981] text-[0.6rem] mt-0.5 flex-shrink-0" /><p class="text-[0.52rem] text-[#94A3B8]"><strong class="text-white">Writing clean, readable Python across 1,500+ total lines</strong> with consistent structure across all 5 studies</p></div>
-  <div class="flex items-start gap-1.5"><lucide-check class="text-[#10B981] text-[0.6rem] mt-0.5 flex-shrink-0" /><p class="text-[0.52rem] text-[#94A3B8]"><strong class="text-white">Adapting immediately when I gave corrections</strong> — "make μ adaptive, not fixed" took one turn, not a rewrite</p></div>
-  <div class="flex items-start gap-1.5"><lucide-check class="text-[#10B981] text-[0.6rem] mt-0.5 flex-shrink-0" /><p class="text-[0.52rem] text-[#94A3B8]"><strong class="text-white">Formatting output for patent documentation</strong> — tables, unit conversions, ± notation, p-values</p></div>
+  <div class="flex items-start gap-1"><lucide-check class="text-[#10B981] text-[0.5rem] mt-0.5 flex-shrink-0" /><p class="text-[0.48rem] text-[#94A3B8]"><strong class="text-white">Implementing algorithms from a clear specification</strong> — once I said "Q10 NLMS, 32-tap, μ=0.08", the code was correct first try</p></div>
+  <div class="flex items-start gap-1"><lucide-check class="text-[#10B981] text-[0.5rem] mt-0.5 flex-shrink-0" /><p class="text-[0.48rem] text-[#94A3B8]"><strong class="text-white">Generating realistic synthetic signals</strong> — PPG, accelerometer, BEMF harmonics that matched sensor datasheets</p></div>
+  <div class="flex items-start gap-1"><lucide-check class="text-[#10B981] text-[0.5rem] mt-0.5 flex-shrink-0" /><p class="text-[0.48rem] text-[#94A3B8]"><strong class="text-white">Writing clean, readable Python across 1,500+ total lines</strong> with consistent structure across all 5 studies</p></div>
+  <div class="flex items-start gap-1"><lucide-check class="text-[#10B981] text-[0.5rem] mt-0.5 flex-shrink-0" /><p class="text-[0.48rem] text-[#94A3B8]"><strong class="text-white">Adapting immediately when I gave corrections</strong> — "make μ adaptive, not fixed" took one turn, not a rewrite</p></div>
+  <div class="flex items-start gap-1"><lucide-check class="text-[#10B981] text-[0.5rem] mt-0.5 flex-shrink-0" /><p class="text-[0.48rem] text-[#94A3B8]"><strong class="text-white">Formatting output for patent documentation</strong> — tables, unit conversions, ± notation, p-values</p></div>
   </div>
   </div>
 
-  <div class="bg-gradient-to-br from-[#7C3AED]/10 to-transparent border border-[#7C3AED]/20 rounded-xl p-3">
-  <div class="text-[0.55rem] text-[#A78BFA] font-semibold mb-0.5">The honest summary</div>
-  <div class="text-[0.52rem] text-[#94A3B8] leading-relaxed">AI compressed maybe three weeks of implementation work into a few days. The research — what to build, what it means, why it's novel — was still mine. That's exactly the right division of labor.</div>
+  <div class="bg-gradient-to-br from-[#7C3AED]/10 to-transparent border border-[#7C3AED]/20 rounded-xl p-2">
+  <div class="text-[0.5rem] text-[#A78BFA] font-semibold mb-0">The honest summary</div>
+  <div class="text-[0.45rem] text-[#94A3B8] leading-relaxed">AI compressed maybe three weeks of implementation work into a few days. The research — what to build, what it means, why it's novel — was still mine. That's exactly the right division of labor.</div>
   </div>
 
   </div>
