@@ -462,6 +462,12 @@ Slide 6: My Process
 
 To develop these studies, we followed a rigorous engineering workflow: generating synthetic signal baselines, implementing and optimizing the algorithms, running comparative test suites, validating the results against physiological models, and drafting defensible patent claims. This ensures each contribution is grounded in solid computational data.
 -->
+---
+layout: default
+background: '#080E14'
+class: px-12 pt-6
+---
+
 <div class="w-full flex flex-col h-full">
 <div class="mb-2.5">
   <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5">What AI Actually Did — Technical Breakdown</p>
