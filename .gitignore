@@ -5,3 +5,10 @@ dist
 .vite-inspect
 .remote-assets
 components.d.ts
+
+.vercel
+
+# Generated Slidev Assets
+*.pdf
+midterm-slide*.png
+index.html
