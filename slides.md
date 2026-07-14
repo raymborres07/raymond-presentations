@@ -79,7 +79,6 @@ class: px-12 pt-6
   <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">Introduction</p>
   <h1 class="text-2xl font-bold text-white leading-tight font-sans font-sans">Why this final presentation is different from my midterm</h1>
 </div>
-
 <div class="grid grid-cols-2 gap-6 flex-1 font-sans">
   <div class="flex flex-col gap-3 font-sans">
     <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 shadow-xl font-sans">
@@ -97,7 +96,6 @@ class: px-12 pt-6
         <span class="text-[#EF4444]">Ad-hoc Process</span>
       </div>
     </div>
-
     <div class="bg-[#0F172A] border border-[#7C3AED]/30 rounded-xl p-4 shadow-[0_0_20px_rgba(124,58,237,0.1)] font-sans">
       <div class="flex items-center mb-2.5">
         <div class="w-7 h-7 rounded-lg bg-[#7C3AED]/20 border border-[#7C3AED]/40 flex items-center justify-center mr-2.5">
@@ -114,7 +112,6 @@ class: px-12 pt-6
       </div>
     </div>
   </div>
-
   <div class="flex flex-col justify-between bg-gradient-to-br from-[#111C24] to-[#0F172A] border border-[#1E2E38] rounded-xl p-5 shadow-2xl font-sans">
     <div>
       <h3 class="text-xs font-bold text-white mb-2 flex items-center gap-1.5 font-sans">
@@ -237,7 +234,6 @@ class: px-12 pt-6
   <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans font-sans font-sans font-sans font-sans">The Paradigm Shift</p>
   <h1 class="text-2xl font-bold text-white leading-tight font-sans font-sans">Prompts as formal research instruments</h1>
 </div>
-
 <div class="grid grid-cols-[1.1fr_1.9fr] gap-5 flex-1 items-start font-sans">
   <div class="flex flex-col gap-3 font-sans font-sans">
     <p class="text-[0.65rem] text-[#94A3B8] leading-relaxed font-sans font-sans">
@@ -252,7 +248,6 @@ class: px-12 pt-6
       </p>
     </div>
   </div>
-
   <div class="grid grid-cols-2 gap-3.5 font-sans font-sans">
     <div class="bg-[#0F172A] border-l-2 border-[#7C3AED] p-3 rounded-r-xl font-sans font-sans font-sans">
       <h4 class="text-[0.62rem] font-bold text-[#A78BFA] uppercase mb-1 font-mono font-mono font-mono">1. Task & Context</h4>
@@ -260,21 +255,18 @@ class: px-12 pt-6
         Explicitly define the expert persona (e.g. <em>"Power Electronics Engineer"</em>), specific simulator versions (<em>"ANSYS Q3D 2023 R1"</em>), and core physical objectives.
       </p>
     </div>
-
     <div class="bg-[#0F172A] border-l-2 border-[#7C3AED] p-3 rounded-r-xl font-sans font-sans font-sans">
       <h4 class="text-[0.62rem] font-bold text-[#A78BFA] uppercase mb-1 font-mono font-mono font-mono font-mono">2. Evidence & Scope</h4>
       <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans font-sans font-sans">
         Inject direct constraints, coordinate boundaries, API syntax definitions, or literature data, forcing the model to operate within verified bounds.
       </p>
     </div>
-
     <div class="bg-[#0F172A] border-l-2 border-[#7C3AED] p-3 rounded-r-xl font-sans font-sans font-sans font-sans">
       <h4 class="text-[0.62rem] font-bold text-[#A78BFA] uppercase mb-1 font-mono font-mono font-mono font-mono font-mono">3. Step-by-Step Procedure</h4>
       <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans font-sans font-sans">
         Enforce logical decomposition. Direct the model to generate intermediate mathematical steps, coordinate calculations, or logic schemas before writing final code.
       </p>
     </div>
-
     <div class="bg-[#0F172A] border-l-2 border-[#7C3AED] p-3 rounded-r-xl font-sans font-sans font-sans font-sans">
       <h4 class="text-[0.62rem] font-bold text-[#A78BFA] uppercase mb-1 font-mono font-mono font-mono font-mono font-mono">4. Uncertainty & Schema</h4>
       <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans font-sans font-sans">
@@ -300,13 +292,11 @@ class: px-12 pt-6
   <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">Workflow Codification</p>
   <h1 class="text-2xl font-bold text-white leading-tight font-sans">From prompts to skills: codifying reusable workflows</h1>
 </div>
-
 <div class="grid grid-cols-[1fr_1.2fr] gap-6 flex-1 items-start">
   <div class="flex flex-col gap-3 font-sans">
     <p class="text-[0.62rem] text-[#94A3B8] leading-relaxed font-sans">
       A prompt is a single transaction; an <strong class="text-white">AI Skill</strong> is a formal, packageable workflow unit that encodes a research protocol into a reusable tool.
     </p>
-    
     <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 font-sans">
       <h3 class="font-bold text-white text-xs mb-2 flex items-center gap-1.5 font-sans">
         <div class="i-lucide:git-merge text-[#7C3AED] text-sm"></div> Mirroring Research Methods
@@ -316,7 +306,6 @@ class: px-12 pt-6
       </p>
     </div>
   </div>
-
   <div class="bg-[#0F172A] border border-[#7C3AED]/30 rounded-xl p-4.5 shadow-2xl font-sans">
     <h3 class="font-bold text-white text-xs mb-3 flex items-center gap-1.5 font-sans font-sans">
       <div class="i-lucide:folder-open text-[#A78BFA] text-sm"></div> Anatomy of an AI Skill (Claude's Model)
@@ -363,18 +352,16 @@ class: px-12 pt-6
   <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">Thesis Progression</p>
   <h1 class="text-2xl font-bold text-white leading-tight font-sans">Methodological transfer: how prompting progressed my thesis</h1>
 </div>
-
 <div class="grid grid-cols-2 gap-4.5 flex-1 items-stretch font-sans font-sans">
   <div class="flex flex-col gap-3 font-sans font-sans">
     <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3.5 shadow-xl font-sans">
       <h3 class="font-bold text-white text-xs mb-1.5 flex items-center gap-1.5 font-sans">
         <div class="i-lucide:book-open text-[#7C3AED] text-sm"></div> 1. Bounded Literature Queries
       </h3>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans font-sans">
+      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans font-sans font-sans">
         Moving away from open-ended search requests. Prompt designs now inject verified source PDFs as direct context, forcing the AI to synthesize only from established evidence rather than inventing answers.
       </p>
     </div>
-
     <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3.5 shadow-xl font-sans">
       <h3 class="font-bold text-white text-xs mb-1.5 flex items-center gap-1.5 font-sans">
         <div class="i-lucide:edit-3 text-[#7C3AED] text-sm"></div> 2. Decomposed Technical Writing
@@ -384,7 +371,6 @@ class: px-12 pt-6
       </p>
     </div>
   </div>
-
   <div class="flex flex-col gap-3 font-sans font-sans">
     <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3.5 shadow-xl font-sans font-sans font-sans font-sans">
       <h3 class="font-bold text-white text-xs mb-1.5 flex items-center gap-1.5 font-sans">
@@ -394,7 +380,6 @@ class: px-12 pt-6
         Using specialized prompts to generate small, unit-testable functions for PyAEDT automation. Forcing strict coordinate boundaries and specific API versions inside the prompt context.
       </p>
     </div>
-
     <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3.5 shadow-xl font-sans font-sans font-sans font-sans">
       <h3 class="font-bold text-white text-xs mb-1.5 flex items-center gap-1.5 font-sans">
         <div class="i-lucide:shield-check text-[#38BDF8] text-sm"></div> 4. Empirical Verification Habits
@@ -422,7 +407,6 @@ class: px-12 pt-6
   <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">Methodology</p>
   <h1 class="text-2xl font-bold text-white leading-tight font-sans font-sans">From vague inquiry to structured research workflow</h1>
 </div>
-
 <div class="grid grid-cols-4 gap-3.5 flex-1 items-stretch font-sans font-sans">
   <!-- Step 1 -->
   <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3.5 flex flex-col justify-between relative overflow-hidden font-sans">
@@ -511,9 +495,8 @@ class: px-12 pt-6
 <div class="w-full flex flex-col h-full font-sans font-sans">
 <div class="mb-4 font-serif font-sans font-sans">
   <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans font-sans">Workflow Design</p>
-  <h1 class="text-2xl font-bold text-white leading-tight font-sans font-sans">Literature review, organization, and decomposition</h1>
+  <h1 class="text-2xl font-bold text-white leading-tight font-sans font-sans font-sans">Literature review, organization, and decomposition</h1>
 </div>
-
 <div class="grid grid-cols-[1.2fr_0.8fr] gap-6 flex-1 items-start font-sans font-sans">
   <div class="flex flex-col gap-4 font-sans font-sans">
     <!-- Comparison Table -->
@@ -538,7 +521,7 @@ class: px-12 pt-6
             <td class="p-2 text-[#34D399] font-medium font-sans font-sans font-sans">Researcher defines themes; AI extracts paper details to fit them.</td>
           </tr>
           <tr>
-            <td class="p-2 font-semibold text-white font-sans font-sans">Screening Pile</td>
+            <td class="p-2 font-semibold text-white font-sans font-sans font-sans">Screening Pile</td>
             <td class="p-2 font-sans">Reading random papers sequentially, wasting days on low-relevance articles.</td>
             <td class="p-2 text-[#34D399] font-medium font-sans font-sans font-sans font-sans">Using ASReview ML active learning to screen search results by relevance.</td>
           </tr>
@@ -546,7 +529,6 @@ class: px-12 pt-6
       </table>
     </div>
   </div>
-
   <div class="flex flex-col gap-3 font-sans font-sans font-sans">
     <!-- ASReview Highlight -->
     <div class="bg-gradient-to-br from-[#10B981]/10 to-transparent border border-[#10B981]/30 rounded-xl p-4 shadow-xl font-sans font-sans font-sans">
@@ -560,7 +542,6 @@ class: px-12 pt-6
         Prioritized Screening → 80% Time Reduction
       </div>
     </div>
-    
     <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 flex items-start gap-2 font-sans font-sans">
       <div class="i-lucide:lightbulb text-[#A78BFA] text-xs mt-0.5 flex-shrink-0"></div>
       <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans font-sans">
@@ -586,7 +567,6 @@ class: px-12 pt-6
   <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans font-sans font-sans">Proof of Transfer · Case Study</p>
   <h1 class="text-2xl font-bold text-white leading-tight font-sans font-sans">Thesis case study: wirebond optimization for parasitic inductance</h1>
 </div>
-
 <div class="grid grid-cols-[1.2fr_0.8fr] gap-6 flex-1 items-start font-sans font-sans">
   <div class="flex flex-col gap-3 font-sans font-sans">
     <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 shadow-xl font-sans font-sans font-sans">
@@ -600,7 +580,6 @@ class: px-12 pt-6
         Workflow: Python Scripting → PyAEDT Automation → ANSYS Q3D Solver → NN Surrogate Model → Genetic Algorithm Optimization
       </div>
     </div>
-
     <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 flex items-start gap-2 font-sans font-sans font-sans">
       <div class="i-lucide:info text-[#A78BFA] text-xs mt-0.5 flex-shrink-0"></div>
       <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans font-sans">
@@ -608,23 +587,19 @@ class: px-12 pt-6
       </p>
     </div>
   </div>
-
   <div class="grid grid-cols-2 gap-3.5 font-sans font-sans font-sans">
     <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 text-center flex flex-col justify-center font-sans font-sans font-sans">
       <p class="text-2xl font-extrabold text-[#A78BFA]">139</p>
       <p class="text-[0.5rem] text-[#64748B] uppercase tracking-wider mt-1 font-mono font-mono font-mono">Simulations</p>
     </div>
-    
     <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 text-center flex flex-col justify-center font-sans font-sans font-sans font-sans">
       <p class="text-2xl font-extrabold text-[#EF4444]">8.194 nH</p>
       <p class="text-[0.5rem] text-[#64748B] uppercase tracking-wider mt-1 font-mono font-mono font-mono">Baseline</p>
     </div>
-
     <div class="bg-[#0F172A] border border-[#34D399]/30 rounded-xl p-4 text-center flex flex-col justify-center shadow-[0_0_15px_rgba(52,211,153,0.05)] font-sans font-sans font-sans font-sans">
       <p class="text-2xl font-extrabold text-[#34D399]">6.651 nH</p>
       <p class="text-[0.5rem] text-[#64748B] uppercase tracking-wider mt-1 font-mono font-mono font-mono">Optimized</p>
     </div>
-
     <div class="bg-[#0F172A] border border-[#38BDF8]/30 rounded-xl p-4 text-center flex flex-col justify-center shadow-[0_0_15px_rgba(56,189,248,0.05)] font-sans font-sans font-sans font-sans">
       <p class="text-2xl font-extrabold text-[#38BDF8]">-18.8%</p>
       <p class="text-[0.5rem] text-[#64748B] uppercase tracking-wider mt-1 font-mono font-mono font-mono">Loop Inductance</p>
@@ -648,7 +623,6 @@ class: px-12 pt-6
   <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans font-sans font-sans font-sans font-sans font-sans font-sans font-sans">Application of Learning</p>
   <h1 class="text-2xl font-bold text-white leading-tight font-sans font-sans font-sans">How course lessons saved my thesis scripting workflow</h1>
 </div>
-
 <div class="grid grid-cols-2 gap-6 flex-1 font-sans font-sans">
   <div class="flex flex-col gap-3 font-sans font-sans">
     <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 shadow-xl font-sans font-sans font-sans">
@@ -666,7 +640,6 @@ class: px-12 pt-6
       </ol>
     </div>
   </div>
-
   <div class="flex flex-col gap-3 font-sans font-sans font-sans">
     <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 shadow-xl font-sans font-sans font-sans">
       <h3 class="font-bold text-white text-xs mb-2 flex items-center gap-1.5 font-sans font-sans">
@@ -680,7 +653,6 @@ class: px-12 pt-6
         "Using PyAEDT v0.6 syntax. Do not use legacy methods like 'add_wirebond'. Refer to the attached PyAEDT Q3D documentation schema. Generate only the setup_excitation function."
       </div>
     </div>
-
     <div class="bg-gradient-to-r from-[#10B981]/15 to-transparent border-l-2 border-[#10B981] p-3 rounded-r-lg font-sans font-sans">
       <p class="text-[0.52rem] text-[#34D399] leading-relaxed font-semibold font-sans font-sans font-sans">
         Outcome: Moving to modular decomposition and version-constrained prompts reduced script debugging cycles from days of manual searching to minutes.
