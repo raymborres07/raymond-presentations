@@ -3,12 +3,13 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build kinto-pitch.md --base /kinto-pitch/ --out dist/kinto-pitch && slidev build random-pitch.md --base /portfolio/ --out dist/portfolio && slidev build rspai_week2.md --base /rspai-week2/ --out dist/rspai-week2 && slidev build rspai_week3_asreview.md --base /rspai-week3/ --out dist/rspai-week3 && slidev build rspai_midterm.md --base /rspai-midterm/ --out dist/rspai-midterm && node -e \"const fs=require('fs'); fs.copyFileSync('landing.html','dist/index.html'); fs.copyFileSync('public/kinto-pitch.pdf','dist/kinto-pitch/kinto-pitch.pdf'); ['rr-logo.png','rr-network.png','rr-deepdive.png'].forEach(f=>{try{fs.copyFileSync('public/'+f,'dist/rspai-week2/'+f); fs.copyFileSync('public/'+f,'dist/rspai-week3/'+f);}catch(e){}});\"",
+    "build": "slidev build kinto-pitch.md --base /kinto-pitch/ --out dist/kinto-pitch && slidev build random-pitch.md --base /portfolio/ --out dist/portfolio && slidev build rspai_week2.md --base /rspai-week2/ --out dist/rspai-week2 && slidev build rspai_week3_asreview.md --base /rspai-week3/ --out dist/rspai-week3 && slidev build rspai_midterm.md --base /rspai-midterm/ --out dist/rspai-midterm && slidev build slides.md --base /rspai-final/ --out dist/rspai-final && node -e \"const fs=require('fs'); fs.copyFileSync('landing.html','dist/index.html'); fs.copyFileSync('public/kinto-pitch.pdf','dist/kinto-pitch/kinto-pitch.pdf'); ['rr-logo.png','rr-network.png','rr-deepdive.png'].forEach(f=>{try{fs.copyFileSync('public/'+f,'dist/rspai-week2/'+f); fs.copyFileSync('public/'+f,'dist/rspai-week3/'+f);}catch(e){}});\"",
     "dev": "slidev kinto-pitch.md --open",
     "dev:random": "slidev random-pitch.md --open",
     "dev:week2": "slidev rspai_week2.md --open",
     "dev:week3": "slidev rspai_week3_asreview.md --open",
     "dev:midterm": "slidev rspai_midterm.md --open",
+    "dev:final": "slidev slides.md --open",
     "export": "slidev export kinto-pitch.md random-pitch.md"
   },
   "dependencies": {
