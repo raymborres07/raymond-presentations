@@ -561,48 +561,101 @@ layout: default
 background: '#080E14'
 class: px-12 pt-6
 ---
+<div class="w-full flex flex-col h-full font-sans">
+<div class="mb-3 font-serif">
+  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">Literature Tooling</p>
+  <h1 class="text-2xl font-bold text-white leading-tight font-sans">ResearchRabbit & ASReview in action</h1>
+</div>
+<div class="grid grid-cols-2 gap-6 flex-1 items-stretch">
+  <!-- ResearchRabbit -->
+  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 shadow-xl flex flex-col justify-between">
+    <div>
+      <h3 class="font-bold text-white text-xs mb-2 flex items-center gap-1.5 font-sans">
+        <div class="i-lucide:network text-[#7C3AED] text-sm"></div> ResearchRabbit: Citation Mapping
+      </h3>
+      <p class="text-[0.55rem] text-[#94A3B8] leading-relaxed mb-3">
+        Allows visual exploration of the power module layout optimization literature. Instead of linear lists, it maps relational co-citations and helps discover overlooked papers.
+      </p>
+    </div>
+    <div class="flex-1 min-h-[130px] rounded-lg overflow-hidden border border-[#1E2E38] relative bg-[#080E14] flex items-center justify-center">
+      <img src="/rr-network.png" class="object-cover w-full h-full" alt="ResearchRabbit Network" />
+    </div>
+  </div>
+  <!-- ASReview -->
+  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 shadow-xl flex flex-col justify-between">
+    <div>
+      <h3 class="font-bold text-white text-xs mb-2 flex items-center gap-1.5 font-sans">
+        <div class="i-lucide:compress text-[#10B981] text-sm font-sans"></div> ASReview: Machine-Learning Screening
+      </h3>
+      <p class="text-[0.55rem] text-[#94A3B8] leading-relaxed mb-3">
+        Active learning ranks the gathered dataset by relevance based on user feedback. In this setup, 34 out of 60 records were dynamically labeled relevant, yielding an 80% time reduction.
+      </p>
+    </div>
+    <div class="flex-1 min-h-[130px] rounded-lg overflow-hidden border border-[#1E2E38] relative bg-[#080E14] flex items-center justify-center">
+      <img src="/step4-review..png" class="object-cover w-full h-full" alt="ASReview Screening Progress" />
+    </div>
+  </div>
+</div>
+</div>
 
+<!--
+To make this process concrete, here are the actual interfaces I used. On the left is ResearchRabbit, which creates a visual map of the citation network around power module packaging. This helped me find papers that were highly relevant but didn't show up in keyword searches. On the right is ASReview, showing the screening of my gathered database. Out of 60 records, the active learning model quickly sorted 34 relevant ones, letting me bypass irrelevant literature and reduce my reading workload significantly.
+-->
+
+---
+layout: default
+background: '#080E14'
+class: px-12 pt-6
+---
 <div class="w-full flex flex-col h-full font-sans font-sans">
 <div class="mb-4 font-serif font-sans font-sans">
   <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans font-sans font-sans">Proof of Transfer · Case Study</p>
   <h1 class="text-2xl font-bold text-white leading-tight font-sans font-sans">Thesis case study: wirebond optimization for parasitic inductance</h1>
 </div>
-<div class="grid grid-cols-[1.2fr_0.8fr] gap-6 flex-1 items-start font-sans font-sans">
-  <div class="flex flex-col gap-3 font-sans font-sans">
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 shadow-xl font-sans font-sans font-sans">
-      <h3 class="font-bold text-white text-xs mb-2 flex items-center gap-1.5 font-sans font-sans font-sans">
-        <div class="i-lucide:cpu text-[#38BDF8] text-sm font-sans"></div> Physical Domain: iTreePack Power Module
+<div class="grid grid-cols-[1.1fr_1fr_0.9fr] gap-4 flex-1 items-stretch font-sans font-sans">
+  <div class="flex flex-col gap-3 font-sans font-sans font-sans">
+    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 shadow-xl font-sans font-sans font-sans">
+      <h3 class="font-bold text-white text-[0.62rem] mb-1.5 flex items-center gap-1.5 font-sans font-sans font-sans">
+        <div class="i-lucide:cpu text-[#38BDF8] text-sm font-sans"></div> iTreePack Power Module
       </h3>
-      <p class="text-[0.55rem] text-[#94A3B8] leading-relaxed mb-3 font-sans font-sans font-sans">
+      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed mb-2 font-sans font-sans font-sans">
         The research focuses on optimizing the wirebond interconnect geometry in a <strong class="text-white">1.7 kV 100 A SiC Half-Bridge Power Module</strong>. High parasitic loop inductance leads to severe switching overvoltage spikes and high losses.
       </p>
-      <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-2.5 font-mono text-[0.48rem] text-[#38BDF8] leading-relaxed">
+      <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-2 font-mono text-[0.45rem] text-[#38BDF8] leading-relaxed">
         Workflow: Python Scripting → PyAEDT Automation → ANSYS Q3D Solver → NN Surrogate Model → Genetic Algorithm Optimization
       </div>
     </div>
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 flex items-start gap-2 font-sans font-sans font-sans">
+    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-2.5 flex items-start gap-2 font-sans font-sans font-sans">
       <div class="i-lucide:info text-[#A78BFA] text-xs mt-0.5 flex-shrink-0"></div>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans font-sans">
-        <strong class="text-white">Key Insight:</strong> Arc height dominates parasitic inductance, while ribbon width is secondary. Loop resistance was also reduced alongside inductance.
+      <p class="text-[0.48rem] text-[#94A3B8] leading-relaxed font-sans font-sans">
+        <strong class="text-white">Key Insight:</strong> Arc height dominates parasitic inductance, while ribbon width is secondary.
       </p>
     </div>
   </div>
-  <div class="grid grid-cols-2 gap-3.5 font-sans font-sans font-sans">
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 text-center flex flex-col justify-center font-sans font-sans font-sans">
-      <p class="text-2xl font-extrabold text-[#A78BFA]">139</p>
-      <p class="text-[0.5rem] text-[#64748B] uppercase tracking-wider mt-1 font-mono font-mono font-mono">Simulations</p>
+  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 shadow-xl flex flex-col justify-between h-full font-sans font-sans">
+    <h3 class="font-bold text-white text-[0.62rem] mb-1.5 flex items-center gap-1.5 font-sans font-sans">
+      <div class="i-lucide:activity text-[#10B981] text-xs"></div> 3D Simulation Model
+    </h3>
+    <div class="flex-1 rounded-lg overflow-hidden border border-[#1E2E38] relative bg-[#080E14] flex items-center justify-center min-h-[140px] font-sans">
+      <img src="/sic_module_simulation.png" class="object-cover w-full h-full" alt="SiC Module Simulation" />
     </div>
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 text-center flex flex-col justify-center font-sans font-sans font-sans font-sans">
-      <p class="text-2xl font-extrabold text-[#EF4444]">8.194 nH</p>
-      <p class="text-[0.5rem] text-[#64748B] uppercase tracking-wider mt-1 font-mono font-mono font-mono">Baseline</p>
+  </div>
+  <div class="grid grid-cols-2 gap-3 font-sans font-sans font-sans">
+    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 text-center flex flex-col justify-center font-sans font-sans font-sans">
+      <p class="text-xl font-extrabold text-[#A78BFA]">139</p>
+      <p class="text-[0.45rem] text-[#64748B] uppercase tracking-wider mt-1 font-mono font-mono font-mono">Simulations</p>
     </div>
-    <div class="bg-[#0F172A] border border-[#34D399]/30 rounded-xl p-4 text-center flex flex-col justify-center shadow-[0_0_15px_rgba(52,211,153,0.05)] font-sans font-sans font-sans font-sans">
-      <p class="text-2xl font-extrabold text-[#34D399]">6.651 nH</p>
-      <p class="text-[0.5rem] text-[#64748B] uppercase tracking-wider mt-1 font-mono font-mono font-mono">Optimized</p>
+    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 text-center flex flex-col justify-center font-sans font-sans font-sans font-sans">
+      <p class="text-xl font-extrabold text-[#EF4444]">8.194 nH</p>
+      <p class="text-[0.45rem] text-[#64748B] uppercase tracking-wider mt-1 font-mono font-mono font-mono">Baseline</p>
     </div>
-    <div class="bg-[#0F172A] border border-[#38BDF8]/30 rounded-xl p-4 text-center flex flex-col justify-center shadow-[0_0_15px_rgba(56,189,248,0.05)] font-sans font-sans font-sans font-sans">
-      <p class="text-2xl font-extrabold text-[#38BDF8]">-18.8%</p>
-      <p class="text-[0.5rem] text-[#64748B] uppercase tracking-wider mt-1 font-mono font-mono font-mono">Loop Inductance</p>
+    <div class="bg-[#0F172A] border border-[#34D399]/30 rounded-xl p-3 text-center flex flex-col justify-center shadow-[0_0_15px_rgba(52,211,153,0.05)] font-sans font-sans font-sans font-sans">
+      <p class="text-xl font-extrabold text-[#34D399]">6.651 nH</p>
+      <p class="text-[0.45rem] text-[#64748B] uppercase tracking-wider mt-1 font-mono font-mono font-mono">Optimized</p>
+    </div>
+    <div class="bg-[#0F172A] border border-[#38BDF8]/30 rounded-xl p-3 text-center flex flex-col justify-center shadow-[0_0_15px_rgba(56,189,248,0.05)] font-sans font-sans font-sans font-sans">
+      <p class="text-xl font-extrabold text-[#38BDF8]">-18.8%</p>
+      <p class="text-[0.45rem] text-[#64748B] uppercase tracking-wider mt-1 font-mono font-mono font-mono">Loop Induct.</p>
     </div>
   </div>
 </div>
