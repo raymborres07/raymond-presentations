@@ -27,7 +27,7 @@ title: "Rebuilding a Research Process"
 </div>
 
 <!--
-Good morning. This talk is a review of how my research process changed over the course. It is not a talk about a tool. It is a talk about scoping, evidence, experimentation and judgment. I'll walk through six habits the course taught, then show them applied in two unrelated research projects from this same semester: my thesis on SiC wirebond optimization and a separate wearable-health-device project called KINTO. We have about thirty minutes, so I'll go through this in some depth.
+Good morning, everyone, and thank you for being here. Today I want to walk you through something a little different from a typical results recap. Over this course I did not just pick up new AI tools. I changed how I actually do research, from the way I scope a question, to how I judge evidence, to how I decide whether a result is trustworthy. To show this was a real change in how I think and not just a habit tied to one project, I'm going to walk through it using two completely different pieces of work from this same semester: my thesis on wirebond optimization for a SiC power module, and a separate project called KINTO, a wearable health monitor for elderly patients. We have about thirty minutes, so let's get into it.
 -->
 
 ---
@@ -66,7 +66,7 @@ class: px-20 py-14
 </div>
 
 <!--
-My midterm was a status report on the wirebond optimization. This talk is different: it asks what changed about how I arrived at those results, so that the process is repeatable on the next problem. I'll show it was, on a second, unrelated project.
+At my midterm, I stood up here and reported numbers: the parameters I swept, how I set up the optimization and what the final inductance value came out to. That was the what. Today is the how. I want to walk through the habits that changed over this course, the ones that actually produced those numbers reliably, and then show that those same habits show up again in a second project that has almost nothing else in common with the thesis. If the process really changed, it should not be tied to one simulation pipeline. That is the claim I am going to try to prove today.
 -->
 
 ---
@@ -129,7 +129,7 @@ class: px-20 py-14
 </div>
 
 <!--
-I want to be specific about the baseline. My habits were undisciplined across the board, not just when I happened to be using an AI tool. Scoping was loose, literature was organized late and I trusted outputs because they sounded right, not because I had checked them.
+Before I get into what changed, I want to be honest about where I started, because it makes the contrast meaningful. My research questions were vague enough that almost any answer would technically satisfy them. My literature review was organized after the fact instead of before I started reading. I did not have a consistent standard for what counted as good enough evidence to support a claim. And, maybe most importantly, I judged outputs, including AI output, by how convincing they sounded rather than by actually checking them. I want to stress that last point. None of this was a story about AI specifically. This was just how I did research, full stop.
 -->
 
 ---
@@ -166,7 +166,7 @@ class: px-20 py-14
 </div>
 
 <!--
-Before going through each of these in detail, here is the map: six habits, not one tool. I'll walk through each, then show how all six show up identically in two very different research projects from this same period: my thesis and a separate wearable-device project called KINTO.
+Rather than walking through this course topic by topic, I want to give you the map up front, because it is really six habits, not one tool: question scoping, tools for discovering and synthesizing literature, evaluating whether a source is actually credible, designing experiments in verifiable stages, a habit of verifying any output before trusting it, and turning a habit that works into a documented, reusable protocol. I'll walk through each of these briefly, then spend the rest of the talk showing all six of them at work in two very different research projects.
 -->
 
 ---
@@ -222,7 +222,7 @@ class: px-20 py-14
 </div>
 
 <!--
-Before, my research questions were broad: "how do I optimize power modules." That admits almost any answer. This course taught me to fix the metric, the domain and the constraints first, so every subsequent step has something concrete to be measured against.
+The single biggest change was scoping discipline. Before this course, I would start with something like "how do I optimize power modules," which is not really a question, it is an invitation to wander. Now I fix three things before I touch a single tool: the exact question, the target metric I am optimizing, and the boundary of what is in scope and what is not. For the thesis, that meant committing to a specific module, a specific metric (loop inductance in nanohenries), and a specific simulation stack I was not going to deviate from. Everything downstream, every script, every sweep, gets measured against that fixed target.
 -->
 
 ---
@@ -272,7 +272,7 @@ class: px-20 py-14
 </div>
 
 <!--
-My midterm-era literature review was book-report style: paper by paper, in reading order. This course introduced a set of tools for discovery and screening, and taught me to build a synthesis matrix instead: fixed variables across sources, so I could see which parameters the field actually agreed and disagreed on.
+Literature review used to mean reading papers in whatever order I found them and summarizing each one individually, book report style. This course pushed me toward building an actual synthesis matrix, a table where every source gets encoded against the same fixed variables, so I can see patterns across the field instead of a pile of individual summaries. To build that table efficiently, I leaned on real tools: database search through IEEE Xplore and Scopus, citation mapping through ResearchRabbit, and active learning screening through ASReview, which ranks incoming papers by relevance so I am not reading low value material just because it showed up in a search.
 -->
 
 ---
@@ -329,7 +329,7 @@ class: px-20 py-14
 </div>
 
 <!--
-This is a skill I did not have before the course: a fixed checklist for whether a journal or paper is worth citing at all, independent of how well-written or convincing its abstract sounds. It runs before synthesis, not after.
+Finding a paper is not the same as trusting it, and this is a skill I genuinely did not have before this course. I now run a credibility check on a source before it is allowed anywhere near my synthesis matrix, not after I have already cited it. On the credible side, I am looking for real indexing in a recognized database, verifiable peer review, a named and credentialed editorial board, and enough methodological detail to actually reproduce the work. On the warning side, things like unindexed journals, unsolicited invitations to publish and vague editorial boards are all signals to walk away. In practice this means checking a journal's DOAJ listing and running it against the Think, Check, Submit checklist before it earns a citation.
 -->
 
 ---
@@ -397,7 +397,7 @@ class: px-20 py-14
 </div>
 
 <!--
-My earlier scripting attempts tried to do everything in one pass (geometry, meshing and solving in a single script) and failed for exactly that reason. Decomposing the pipeline into four independently testable stages and rebuilding the model itself as a single merged net was a direct application of the same scoping discipline from the literature review.
+Experimentation used to mean one large attempt, everything in a single script, geometry, meshing and solving all at once, and it failed constantly because any one part breaking took down the whole run. Now every experiment gets decomposed into independent, testable stages with parameter bounds fixed in advance. For the thesis, that meant four stages: build the geometry, configure the boundaries and materials, mesh and solve, then extract the data. On screen you can see the actual model rebuild this enabled, going from three separate nets in the original design to a single merged net that lets me pull the loop inductance directly out of one matrix.
 -->
 
 ---
@@ -447,7 +447,7 @@ class: px-20 py-14
 </div>
 
 <!--
-This is the habit I'd call the biggest mindset shift. I stopped asking "does this sound right" and started asking these three questions, every time, for every kind of output, including a neural-network surrogate model I trained myself. The clearest example of what this habit caught is coming up in the case study.
+This is the habit I would call the biggest mindset shift out of everything in this course. Every output now gets treated as a hypothesis, not a fact, whether it is a claim from a paper, a simulation result, a prediction from a neural network I trained myself, or a script an AI model wrote for me. Three questions, every time: does it violate a known physical law, does it actually match how the tool is documented to behave rather than just sounding plausible, and does it hold up if I run it again independently. The parity plot on the right is a direct example, checking my own surrogate model's predictions against real simulated data before I let it guide an optimization.
 -->
 
 ---
@@ -488,7 +488,7 @@ class: px-20 py-14
 </div>
 
 <!--
-This is the one slide where AI is the specific subject, and it is deliberately narrow. Writing a habit down as a reusable protocol is the point; a structured prompt template is simply one example of that, alongside the other non-AI protocols already shown.
+Once a habit proves reliable, it is worth writing down once instead of reinventing it every time, which is exactly the logic behind a lab protocol. Most of these protocols in my work do not involve AI at all, they are just documented steps. But one good example that does involve AI was a literature extraction step: feed in a verified source PDF and a fixed extraction schema, pull out the parameter, method and result, cross check those values against the source text, and the output is one clean row added to the synthesis matrix. The point is not the AI part. The point is that a reliable habit becomes something repeatable and checkable, not something I redo from memory.
 -->
 
 ---
@@ -529,7 +529,7 @@ class: px-20 py-14
 </div>
 
 <!--
-I want to be honest about why I'm including a second project: it's the strongest test of the claim that this course changed my research process, not just my thesis. Wirebond optimization and elderly-compliance research have almost nothing in common except the researcher.
+I want to pause here and be upfront about something. Everything so far has come from my thesis, which means you could reasonably ask whether I am really describing a change in how I do research, or just describing getting better at one specific simulation workflow. To actually test that, I want to bring in a second project from this same semester that has almost nothing in common with the thesis except me: KINTO, a wearable health monitoring device for elderly patients. The thesis is quantitative and simulation driven, where evidence comes from a field solver. KINTO is qualitative and human centered, where evidence comes from a physical prototype in someone's actual hands. If the same six habits show up in both, that is real evidence the process changed.
 -->
 
 ---
@@ -582,7 +582,7 @@ class: px-20 py-14
 </div>
 
 <!--
-This is the physical problem underneath everything I've described: minimizing parasitic loop inductance in a SiC half-bridge module by optimizing wirebond geometry, using an automated pipeline from Python scripting through to genetic-algorithm optimization.
+So, the thesis itself. This is a 1.7 kilovolt, 100 amp silicon carbide half bridge power module, the iTreePack geometry you can see on the right. The problem is parasitic loop inductance in the wirebond interconnect, which at these switching speeds causes overvoltage spikes and added losses. The automated pipeline runs from Python scripting through PyAEDT, into the ANSYS Q3D solver, through a neural network surrogate model, and finally a genetic algorithm optimizer. Everything I have described about scoping and structured experimentation was applied directly to this pipeline.
 -->
 
 ---
@@ -623,7 +623,7 @@ class: px-20 py-14
 </div>
 
 <!--
-This table is the process changes from the last several slides, applied specifically to the wirebond study. The geometry comparison on screen is the physical consequence: a taller, wider wirebond arc, arrived at by disciplined sweeping rather than guesswork.
+This table is really just the last several methodology slides applied concretely to this one study. The question scoping became a fixed target metric and simulation boundary set before any run. The structured experiment habit became four independent, testable script modules instead of one large script. Parameter bounds got fixed and documented in advance instead of adjusted on the fly. And every output got checked against documentation and known physical behavior instead of just being accepted because the script ran without error. What you see on screen is the physical result: the wirebond arc went from a flat, tight baseline to a taller, wider optimized shape, arrived at through disciplined sweeping rather than guesswork.
 -->
 
 ---
@@ -671,7 +671,7 @@ class: px-20 py-14
 </div>
 
 <!--
-Across nine sweep phases and 483 simulated points, expanding from a seven- to a ten-dimensional parameter space, the validated best design reduced loop inductance by 19.5 percent and resistance by 32.1 percent. Notice the third bar on the chart, though: an "invalid" 10D result. That's the next slide.
+Across nine sweep phases and 483 simulated points, expanding the parameter space from seven to ten dimensions, the validated best design reduced loop inductance by nineteen and a half percent, from 8.194 down to 6.596 nanohenries. Resistance dropped alongside it by thirty two percent. Arc height turned out to be the dominant lever, with ribbon width as a secondary one. I want you to notice the third bar in that chart though, the one labeled invalid. That result is not a mistake I am hiding. It is actually the best example I have of the verification habit in action, and it is the next slide.
 -->
 
 ---
@@ -719,7 +719,7 @@ class: px-20 py-14
 </div>
 
 <!--
-This is the concrete version of the verification habit from Methodology V. It would have been easy to report 5.713 nanohenries as the result: the tool ran without error, and the number kept improving in a way that looked like a real trend. Checking the geometry directly, rather than trusting that the tool's silent success meant a valid result, is what caught it.
+Here is what happened. Five sweep phases in a row each reported a new best result, and each one landed right at the edge of its search window: 0.90, 1.26, 1.95, 2.43, 2.86. That pattern looks exactly like a real optimization gradient. It was not. When I went back and directly checked the geometry, I found the wirebond was physically overhanging its pad by as much as 2.6 millimeters, which is not something you could actually manufacture. The solver's Boolean join only required partial overlap to accept the geometry as valid, so it silently let this through. Forty six percent of my entire dataset turned out to be affected. Once I fixed the validation and reran it properly, the real optimum was 6.596 nanohenries, not the 5.713 the invalid sweep had suggested. This is the clearest, most concrete proof I have that the verification habit is not academic. It caught something that would have been very easy to just report as a result.
 -->
 
 ---
@@ -753,7 +753,7 @@ class: px-20 py-14
 </div>
 
 <!--
-This is the same scoping habit from the thesis, applied before any hardware existed: the initial engineering framing wasn't wrong exactly, it was premature. Evidence about why patients disengage came first, and it changed what we built.
+Now to KINTO. This project addresses remote health monitoring for elderly patients. The very first version of the question was a pure engineering one: build a wrist sensor that reliably reads vital signs. That framing got reframed once we actually looked at the evidence. It turns out 63.8% of non-compliance with these devices is driven by stigma and denial, not by the sensor failing. So the real question became why elderly patients abandon monitoring devices in the first place, and what it would take for one to actually stay on someone's wrist. The resulting design uses a closed loop ECG that requires the wearer to touch the device with their other hand, deliberately built to mirror the familiar, comforting gesture of holding an amulet.
 -->
 
 ---
@@ -814,7 +814,7 @@ class: px-20 py-14
 </div>
 
 <!--
-This maps directly onto the four-stage simulation pipeline from earlier: independent, testable stages, verified before moving on. Here the "solver" is a small group of elderly patients wearing a plastic dummy for a week.
+Just like the thesis pipeline, hardware development here was deliberately decoupled from user testing and broken into three gated phases. Phase one is physical comfort only, using non-functional, weighted 3D-printed dummies to test form factor, clasp fit for arthritic hands, and whether people actually remember to put it back on, with zero electronics and therefore zero data privacy risk. Phase two is the digital interface, the actual health dashboard you see on screen here, tested to make sure it reduces family anxiety instead of causing it. Phase three is functional validation, where the real sensor pod gets checked against clinical Holter monitor baselines before any medical claim is made. No phase starts until the one before it has produced real evidence.
 -->
 
 ---
@@ -852,7 +852,7 @@ class: px-20 py-14
 </div>
 
 <!--
-Same table structure as the thesis comparison, different domain. The direction of every change is identical: scope earlier, gather evidence deliberately, defer claims until verified.
+This table mirrors the thesis comparison almost exactly, just in a completely different domain. Problem framing moved from build a more reliable sensor to understand why patients disengage before building anything. Evidence source moved from assumed comfort to physical prototypes used as actual evidence gathering instruments. Risk scoping moved from testing electronics early and informally to phase one having zero electronics by design. And claims moved from being made off a spec sheet to being deferred until they are validated against a real clinical baseline. Phase one itself has not run yet, so I am not going to show you fabricated results. What I can tell you is exactly what it is scoped to measure once it does: comfort ratings, clasp issues and reattachment rate, all from non-electronic dummies before a single sensor is ever worn.
 -->
 
 ---
@@ -890,7 +890,7 @@ class: px-20 py-14
 </div>
 
 <!--
-This is really the thesis of the whole talk. If I'd only shown the wirebond study, you could reasonably ask whether this was really about research habits or just about getting better at one simulation pipeline. Showing the same structure in a clinical UX study is the answer.
+This slide is really the thesis of the whole talk. If I had only shown you the wirebond study, you could fairly push back and say this sounds like getting good at one simulation pipeline, not a real change in how I think. So look at this table: scope before tooling, deliberate evidence gathering, staged decomposition, verification before any claim. Every single row shows up in both projects, in the exact same order, despite the fact that a power module and an elderly compliance device share basically nothing else. The overlap itself is the evidence. The same researcher, applying the same discipline, produced structurally identical research designs in two fields that have almost nothing else in common.
 -->
 
 ---
@@ -950,7 +950,7 @@ class: px-20 py-14
 </div>
 
 <!--
-Tools, AI included, are reliable for execution but not for judgment. The thesis results are still simulation-only, and KINTO has only completed Phase 1. In both cases, the next steps are fabrication and testing, not more automation.
+I want to be clear about where tools, AI included, are actually reliable and where they are not. Boilerplate scripting, parsing simulation logs into clean tables, re-ranking literature by relevance, tools handle all of that well. But whether a result is physically plausible, which model or mesh setup actually fits the problem, and whether you need real hardware or human subjects testing instead of just simulation, that is still judgment, and it is still mine to make. Concretely, the thesis results are still simulation-only, with no busbar or thermal model yet, so the next steps are fabrication and double-pulse testing. KINTO has only completed Phase 1, so Phases 2 and 3, the digital interface and the clinical validation, are still ahead.
 -->
 
 ---
@@ -981,5 +981,5 @@ The nineteen-point-five percent reduction in loop inductance, the invalid result
 </div>
 
 <!--
-To close: this course did not just change how I use one tool. It changed how I scope questions, judge evidence, structure experiments and check outputs. Both the thesis result and the KINTO study design are evidence for that. Thank you, I'm happy to take questions.
+To close, this course did not just change how I use one tool. It changed how I scope a question, how I judge evidence, how I structure an experiment and how I check an output before I am willing to trust it, whether that output came from a person, a simulation or an AI model. The 19.5% reduction in loop inductance is a real result. The invalid result I caught before it became a false claim is arguably a more important one. And a KINTO study design built to actually withstand clinical scrutiny is evidence this generalizes beyond one project. The most durable outcome from this course is not any single number. It is a research process I can now repeat, defend and improve on whatever problem comes next. Thank you, and I am happy to take questions.
 -->
