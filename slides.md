@@ -1,952 +1,627 @@
 ---
 theme: default
-colorSchema: 'dark'
+colorSchema: 'light'
 layout: cover
-background: '#080E14'
-class: text-center
+background: '#FAF9F5'
+class: text-left
 transition: fade
 css: unocss
 fonts:
   sans: 'Inter'
-  serif: 'Playfair Display'
-title: "What This Course Changed in My Research: Applying Prompt Engineering to My Thesis Workflow"
+  serif: 'Source Serif 4'
+title: "Rebuilding a Research Process"
 ---
 
 <style>
+:root {
+  --paper: #FAF9F5;
+  --ink: #1A1A1A;
+  --muted: #6B6B63;
+  --line: #DCD8CE;
+  --accent: #3B5169;
+}
 .slidev-layout {
+  background: var(--paper) !important;
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
   overflow-y: auto !important;
 }
-.slidev-layout p {
+.slidev-layout p, .slidev-layout li {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
-::-webkit-scrollbar {
-  width: 6px;
+.slidev-layout h1, .slidev-layout h2, .slidev-layout h3 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 500;
 }
-::-webkit-scrollbar-thumb {
-  background: #7C3AED44;
-  border-radius: 10px;
+.serif { font-family: 'Source Serif 4', Georgia, serif; }
+.ink { color: var(--ink); }
+.muted { color: var(--muted); }
+.accent { color: var(--accent); }
+.rule { height: 1px; background: var(--line); }
+.eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #7C3AED88;
+.slidev-layout table {
+  border-collapse: collapse;
+  width: 100%;
 }
+.slidev-layout th, .slidev-layout td {
+  border-bottom: 1px solid var(--line);
+  padding: 9px 10px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+.slidev-layout th {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+  border-bottom: 1px solid var(--ink);
+}
+.footer-note {
+  position: absolute;
+  bottom: 1.4rem;
+  right: 2.2rem;
+  font-size: 0.62rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  font-family: 'Inter', sans-serif;
+}
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-thumb { background: var(--line); border-radius: 4px; }
 </style>
 
-<div class="flex flex-col items-center justify-center h-full relative z-10 w-full px-8">
+<div class="w-full h-full flex flex-col justify-center px-20">
 
-<div class="flex items-center gap-3 mb-6">
-  <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#7C3AED] to-[#0EA5E9] flex items-center justify-center shadow-[0_0_40px_rgba(124,58,237,0.4)] overflow-hidden">
-    <div class="i-lucide:brain text-3xl text-white"></div>
-  </div>
-</div>
+<p class="eyebrow mb-4">Research Skills P: AI &nbsp;·&nbsp; Final Presentation &nbsp;·&nbsp; Summer 2026</p>
 
-<div class="text-[0.55rem] font-bold text-[#A78BFA] tracking-[0.4em] uppercase mb-3">
-  Research Skills P: AI · Final Presentation · July 2026
-</div>
+<h1 class="serif text-4xl leading-tight max-w-3xl ink" style="font-weight:500">Rebuilding a Research Process</h1>
+<p class="serif text-lg mt-4 max-w-2xl muted" style="font-style:italic">A methodological review of one thesis in power electronics</p>
 
-<h1 class="text-4xl font-bold text-white mb-3 tracking-tight leading-tight max-w-3xl font-sans">
-  What This Course Changed in My Research
-</h1>
-<p class="text-xl text-[#38BDF8] mb-2 font-medium font-serif italic">
-  Applying Prompt Engineering to My Thesis Workflow
-</p>
-<p class="text-xs text-[#94A3B8] max-w-xl leading-relaxed mb-8 font-sans">
-  Moving from conversational AI usage to prompts as disciplined research instruments. A case study in machine-learning-driven wirebond optimization.
-</p>
+<div class="rule w-24 mt-10 mb-6"></div>
 
-<div class="w-24 h-px bg-gradient-to-r from-transparent via-[#7C3AED] to-transparent mx-auto my-4"></div>
-<p class="text-xs text-[#64748B] font-sans">Presenter: Raymond Tenorio Borres</p>
+<p class="text-sm muted">Raymond Tenorio Borres</p>
+<p class="text-sm muted">Machine-Learning-Driven Wirebond Optimization for SiC Power Modules</p>
 
-</div>
-
-<div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-1 pointer-events-none">
-  <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-[#7C3AED] opacity-[0.08] blur-[120px]"></div>
-  <div class="absolute bottom-[0%] -right-[10%] w-[60%] h-[60%] rounded-full bg-[#0EA5E9] opacity-[0.05] blur-[150px]"></div>
 </div>
 
 <!--
-Good morning, colleagues and members of the faculty. Today, I am presenting my final synthesis for the Research Skills P: AI course. Rather than a standard recap of my midterm results on the KINTO haptic wearable project, this presentation reflects on the methodological transformation that this course brought to my thesis. Specifically, it details how I transitioned from treating artificial intelligence as a casual conversational search engine to designing prompts as disciplined, structured, and auditable research instruments. I will demonstrate this paradigm shift using my actual thesis—Machine-Learning-Driven Wirebond Optimization—as the primary case study that proves this transfer of learning.
+Good morning. This talk is a review of how my research process changed over the course, using my thesis as the evidence. It is not a talk about a tool — it is a talk about scoping, evidence, experimentation, and judgment, illustrated through a study of parasitic loop inductance in a SiC half-bridge power module.
 -->
 
 ---
 layout: default
-background: '#080E14'
-class: px-12 pt-6
+background: '#FAF9F5'
+class: px-20 py-14
 ---
 
-<div class="w-full flex flex-col h-full font-sans">
-<div class="mb-4 font-serif font-sans">
-  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">Introduction</p>
-  <h1 class="text-2xl font-bold text-white leading-tight font-sans">Why this final presentation is different from my midterm</h1>
+<div class="w-full h-full flex flex-col">
+
+<div class="mb-10">
+<p class="eyebrow mb-2">Introduction</p>
+<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">From results to process</h1>
+<div class="rule w-14 mt-4"></div>
 </div>
-<div class="grid grid-cols-2 gap-6 flex-1 font-sans">
-  <div class="flex flex-col gap-3 font-sans">
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 shadow-xl font-sans">
-      <div class="flex items-center mb-2.5">
-        <div class="w-7 h-7 rounded-lg bg-[#EF4444]/20 border border-[#EF4444]/40 flex items-center justify-center mr-2.5">
-          <div class="i-lucide:activity text-xs text-[#F87171]"></div>
-        </div>
-        <h3 class="font-bold text-white text-xs font-sans">The Midterm: Product-Centric</h3>
-      </div>
-      <p class="text-[0.58rem] text-[#94A3B8] leading-relaxed mb-2 font-sans">
-        Focused on the KINTO haptic wearable project, presenting 5 computational studies (HRV coherence, integer active noise cancellation, cardiac gating) and high-level product performance.
-      </p>
-      <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-2 font-mono text-[0.5rem] text-[#64748B] flex justify-between">
-        <span>Target: Autonomic Pacing & DSP</span>
-        <span class="text-[#EF4444]">Product-Focused</span>
-      </div>
-    </div>
-    <div class="bg-[#0F172A] border border-[#7C3AED]/30 rounded-xl p-4 shadow-[0_0_20px_rgba(124,58,237,0.1)] font-sans">
-      <div class="flex items-center mb-2.5">
-        <div class="w-7 h-7 rounded-lg bg-[#7C3AED]/20 border border-[#7C3AED]/40 flex items-center justify-center mr-2.5">
-          <div class="i-lucide:git-branch text-xs text-[#A78BFA]"></div>
-        </div>
-        <h3 class="font-bold text-white text-xs font-sans">The Final: Methodological Transfer</h3>
-      </div>
-      <p class="text-[0.58rem] text-[#94A3B8] leading-relaxed mb-2 font-sans">
-        Demonstrates the transfer of structured prompting (task decomposition, version constraints, AI skills, ASReview) to a new engineering domain: wirebond loop inductance optimization.
-      </p>
-      <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-2 font-mono text-[0.5rem] text-[#7C3AED] flex justify-between">
-        <span>Focus: Core Thesis & Method Transfer</span>
-        <span class="text-[#A78BFA]">Systematic Workflow</span>
-      </div>
-    </div>
+
+<div class="flex-1 grid grid-cols-2 gap-16 items-center">
+  <div class="pr-8" style="border-right: 1px solid var(--line)">
+    <p class="eyebrow mb-3 accent">Midterm</p>
+    <p class="serif text-lg leading-relaxed ink mb-3">Engineering outputs.</p>
+    <p class="text-sm muted leading-relaxed">The midterm reported the physical results of the wirebond loop inductance study — the parameters, the optimization setup, and the final numbers.</p>
   </div>
-  <div class="flex flex-col justify-between bg-gradient-to-br from-[#111C24] to-[#0F172A] border border-[#1E2E38] rounded-xl p-5 shadow-2xl font-sans">
-    <div>
-      <h3 class="text-xs font-bold text-white mb-2 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:target text-[#38BDF8]"></div> Core Narrative Theme
-      </h3>
-      <p class="text-[0.62rem] text-[#94A3B8] leading-relaxed mb-3 font-sans">
-        This deck presents my thesis not as an isolated project, but as a <strong class="text-white">proof of transfer</strong>. It demonstrates how prompt engineering concepts and systematic literature workflows practiced on KINTO were applied to restructure my everyday thesis research.
-      </p>
-    </div>
-    <div class="bg-[#0F172A] border border-[#1E2E38] p-3 rounded-lg font-sans">
-      <p class="text-[0.58rem] text-[#38BDF8] font-semibold italic leading-relaxed text-center font-sans">
-        "This course did not just teach me how to prompt. It taught me how to transfer systematic AI-driven workflows to my core thesis research."
-      </p>
-    </div>
+  <div class="pl-8">
+    <p class="eyebrow mb-3 accent">Today</p>
+    <p class="serif text-lg leading-relaxed ink mb-3">The process behind them.</p>
+    <p class="text-sm muted leading-relaxed">This talk reviews the research habits that changed over the course, and that made those results possible to produce reliably and reproduce on demand.</p>
   </div>
 </div>
+
+<div class="mt-10 pt-8" style="border-top:1px solid var(--line)">
+  <p class="serif text-base ink leading-relaxed max-w-2xl">The through line is not a tool. It is a change in how the research itself was conducted.</p>
+</div>
+
+<p class="footer-note">Final Presentation · 2 / 13</p>
+
 </div>
 
 <!--
-To begin, I want to clarify the distinction between this presentation and my midterm. In the midterm, my focus was product-centric, showcasing the computational studies, DSP, and reinforcement learning outputs for the KINTO haptic wearable. Today, my focus is on methodological transfer. I will demonstrate how the systematic literature review methods and prompt engineering practices we learned in this course were transferred to my actual master's thesis—machine-learning-driven wirebond loop inductance optimization.
+My midterm was a status report on the wirebond optimization. This talk is different: it asks what changed about how I arrived at those results, so that the process is repeatable on the next problem, not just this one.
 -->
 
 ---
 layout: default
-background: '#080E14'
-class: px-12 pt-6
+background: '#FAF9F5'
+class: px-20 py-14
 ---
 
-<div class="w-full flex flex-col h-full font-sans">
-<div class="mb-4 font-serif">
-  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">The Retrospective</p>
-  <h1 class="text-2xl font-bold text-white leading-tight font-sans">My starting point: ad-hoc AI in research</h1>
+<div class="w-full h-full flex flex-col">
+
+<div class="mb-10">
+<p class="eyebrow mb-2">Retrospective</p>
+<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Starting point: research habits before this course</h1>
+<div class="rule w-14 mt-4"></div>
 </div>
 
-<div class="grid grid-cols-4 gap-3.5 flex-1 items-stretch font-sans">
-  <!-- Card 1 -->
-  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 flex flex-col justify-between font-sans">
-    <div>
-      <div class="w-6 h-6 rounded-lg bg-[#EF4444]/10 border border-[#EF4444]/30 flex items-center justify-center mb-2.5">
-        <div class="i-lucide:search text-xs text-[#F87171]"></div>
-      </div>
-      <h4 class="text-[0.65rem] font-bold text-white uppercase tracking-wider mb-1.5 font-mono font-sans">Vague Scoping</h4>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans">
-        Asking general, conversational questions like <em>"how do I optimize power modules?"</em> which returned broad, non-actionable textbook definitions.
-      </p>
-    </div>
-    <div class="mt-2 text-[0.45rem] font-mono text-[#F87171] bg-[#EF4444]/5 p-1.5 rounded border border-[#EF4444]/20 text-center font-sans">
-      Conversational Querying
-    </div>
+<div class="flex-1 grid grid-cols-2 gap-x-16 gap-y-10 content-center">
+  <div>
+    <p class="text-xs muted mb-1">01</p>
+    <p class="ink font-medium mb-1">Loosely scoped questions</p>
+    <p class="text-sm muted leading-relaxed">Research questions were broad enough to admit almost any answer, which made it hard to tell relevant evidence from noise.</p>
   </div>
-
-  <!-- Card 2 -->
-  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 flex flex-col justify-between font-sans">
-    <div>
-      <div class="w-6 h-6 rounded-lg bg-[#EF4444]/10 border border-[#EF4444]/30 flex items-center justify-center mb-2.5">
-        <div class="i-lucide:git-merge text-xs text-[#F87171]"></div>
-      </div>
-      <h4 class="text-[0.65rem] font-bold text-white uppercase tracking-wider mb-1.5 font-mono font-sans">Late Organization</h4>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans">
-        Mapping literature sequentially as a checklist. Storing findings late in the process, resulting in missed structural connections and research gaps.
-      </p>
-    </div>
-    <div class="mt-2 text-[0.45rem] font-mono text-[#F87171] bg-[#EF4444]/5 p-1.5 rounded border border-[#EF4444]/20 text-center font-sans">
-      Linear Synthesizing
-    </div>
+  <div>
+    <p class="text-xs muted mb-1">02</p>
+    <p class="ink font-medium mb-1">Literature organized late</p>
+    <p class="text-sm muted leading-relaxed">Papers were read and summarized sequentially, with structure imposed only after most of the reading was already done.</p>
   </div>
-
-  <!-- Card 3 -->
-  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 flex flex-col justify-between font-sans">
-    <div>
-      <div class="w-6 h-6 rounded-lg bg-[#EF4444]/10 border border-[#EF4444]/30 flex items-center justify-center mb-2.5">
-        <div class="i-lucide:eye-off text-xs text-[#F87171]"></div>
-      </div>
-      <h4 class="text-[0.65rem] font-bold text-white uppercase tracking-wider mb-1.5 font-mono font-sans">Fluency Bias</h4>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans">
-        Judging AI usefulness by the articulate, confident phrasing of the output rather than systematically checking the correctness of formulas or code.
-      </p>
-    </div>
-    <div class="mt-2 text-[0.45rem] font-mono text-[#F87171] bg-[#EF4444]/5 p-1.5 rounded border border-[#EF4444]/20 text-center font-sans">
-      Passive Trust
-    </div>
+  <div>
+    <p class="text-xs muted mb-1">03</p>
+    <p class="ink font-medium mb-1">No explicit evidence criteria</p>
+    <p class="text-sm muted leading-relaxed">There was no fixed standard for what counted as sufficient support for a claim, physical or otherwise.</p>
   </div>
-
-  <!-- Card 4 -->
-  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 flex flex-col justify-between font-sans">
-    <div>
-      <div class="w-6 h-6 rounded-lg bg-[#EF4444]/10 border border-[#EF4444]/30 flex items-center justify-center mb-2.5">
-        <div class="i-lucide:cpu text-xs text-[#F87171]"></div>
-      </div>
-      <h4 class="text-[0.65rem] font-bold text-white uppercase tracking-wider mb-1.5 font-mono font-sans">Monolithic Coding</h4>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans">
-        Prompting for massive, multi-step scripts (e.g. <em>"write a python script to run ANSYS Q3D and train an NN"</em>), leading to immediate hallucinations.
-      </p>
-    </div>
-    <div class="mt-2 text-[0.45rem] font-mono text-[#F87171] bg-[#EF4444]/5 p-1.5 rounded border border-[#EF4444]/20 text-center font-sans">
-      Single-Prompt Attempts
-    </div>
+  <div>
+    <p class="text-xs muted mb-1">04</p>
+    <p class="ink font-medium mb-1">Outputs judged by fluency</p>
+    <p class="text-sm muted leading-relaxed">Explanations, scripts, and search results — including from AI tools — were trusted in proportion to how convincing they sounded, not how well they were checked.</p>
   </div>
 </div>
 
-<div class="mt-4 bg-gradient-to-r from-[#EF4444]/10 to-transparent border-l-2 border-[#EF4444] p-2 rounded-r-lg font-sans">
-  <p class="text-[0.58rem] text-[#F87171] italic leading-tight text-center font-sans">
-    Before the course, my research process was bottlenecked by unstructured interaction, placing too much trust in the fluency of the model rather than its verifiable logic.
+<p class="text-sm muted serif mt-6" style="font-style:italic">None of this was specific to working with AI. It described the whole research process.</p>
+
+<p class="footer-note">Final Presentation · 3 / 13</p>
+
+</div>
+
+<!--
+I want to be specific about the baseline. My habits were undisciplined across the board — not just when I happened to be using an AI tool. Scoping was loose, literature was organized late, and I trusted outputs because they sounded right, not because I had checked them.
+-->
+
+---
+layout: default
+background: '#FAF9F5'
+class: px-20 py-14
+---
+
+<div class="w-full h-full flex flex-col">
+
+<div class="mb-10">
+<p class="eyebrow mb-2">Methodology I</p>
+<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Formulating the research question</h1>
+<div class="rule w-14 mt-4"></div>
+</div>
+
+<div class="flex-1 flex flex-col justify-center gap-8 max-w-3xl">
+
+<p class="text-sm muted leading-relaxed">The first and most consequential change was scoping discipline: fixing the question, the target metric, and the boundary of the study before any tool was used.</p>
+
+<div class="pl-6" style="border-left: 2px solid var(--accent)">
+  <p class="serif text-base ink leading-relaxed" style="font-style:italic">
+   "How does wirebond interconnect geometry affect parasitic loop inductance in a 1.7 kV, 100 A SiC half-bridge power module, within the existing PyAEDT–ANSYS Q3D simulation stack?"
   </p>
 </div>
+
+<div class="grid grid-cols-3 gap-8">
+  <div>
+    <p class="eyebrow mb-1">Target metric</p>
+    <p class="text-sm ink">Loop inductance (nH)</p>
+  </div>
+  <div>
+    <p class="eyebrow mb-1">Domain boundary</p>
+    <p class="text-sm ink">SiC half-bridge, iTreePack geometry</p>
+  </div>
+  <div>
+    <p class="eyebrow mb-1">Fixed constraint</p>
+    <p class="text-sm ink">Existing simulation and solver stack</p>
+  </div>
+</div>
+
+</div>
+
+<p class="footer-note">Final Presentation · 4 / 13</p>
+
 </div>
 
 <!--
-Let's look back at my starting point. When I first began integrating generative AI into my thesis workflow, my habits were unstructured. I would write vague, conversational prompts, asking for broad assistance on 'how to optimize power modules.' This inevitably resulted in generic explanations of EM theory that didn't help my coding. I organized my literature late, and suffered from 'fluency bias'—mistaking a beautifully written AI explanation for technical validity. Furthermore, I fell into the trap of monolithic prompting, asking the model to write entire PyAEDT automation scripts in a single shot, which failed immediately due to API mismatches and logic errors.
+Before, my research questions were broad: "how do I optimize power modules." That admits almost any answer. This course taught me to fix the metric, the domain, and the constraints first, so every subsequent step has something concrete to be measured against.
 -->
 
 ---
 layout: default
-background: '#080E14'
-class: px-12 pt-6
+background: '#FAF9F5'
+class: px-20 py-14
 ---
 
-<div class="w-full flex flex-col h-full font-sans">
-<div class="mb-4 font-serif">
-  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">The Paradigm Shift</p>
-  <h1 class="text-2xl font-bold text-white leading-tight font-sans">Prompts as formal research instruments</h1>
+<div class="w-full h-full flex flex-col">
+
+<div class="mb-10">
+<p class="eyebrow mb-2">Methodology II</p>
+<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Literature review as systematic synthesis</h1>
+<div class="rule w-14 mt-4"></div>
 </div>
-<div class="grid grid-cols-[1.1fr_1.9fr] gap-5 flex-1 items-start font-sans">
-  <div class="flex flex-col gap-3 font-sans">
-    <p class="text-[0.65rem] text-[#94A3B8] leading-relaxed font-sans">
-      A prompt is not a simple query; it is a <strong class="text-white">highly specified instrument</strong> designed to extract auditable, reproducible, and bounded technical output.
-    </p>
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 font-sans">
-      <h4 class="text-xs font-bold text-white mb-2 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:settings text-[#7C3AED] text-xs font-sans"></div> Empirical Evaluation
-      </h4>
-      <p class="text-[0.58rem] text-[#94A3B8] leading-relaxed font-sans">
-        Prompt designs should be evaluated empirically just like hardware setups. We test prompt variations across multiple iterations to evaluate stability, correctness, and adherence to constraints.
-      </p>
-    </div>
-  </div>
-  <div class="grid grid-cols-2 gap-3.5 font-sans">
-    <div class="bg-[#0F172A] border-l-2 border-[#7C3AED] p-3 rounded-r-xl font-sans">
-      <h4 class="text-[0.62rem] font-bold text-[#A78BFA] uppercase mb-1 font-mono">1. Task & Context</h4>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans">
-        Explicitly define the expert persona (e.g. <em>"Power Electronics Engineer"</em>), specific simulator versions (<em>"ANSYS Q3D 2023 R1"</em>), and core physical objectives.
-      </p>
-    </div>
-    <div class="bg-[#0F172A] border-l-2 border-[#7C3AED] p-3 rounded-r-xl font-sans">
-      <h4 class="text-[0.62rem] font-bold text-[#A78BFA] uppercase mb-1 font-mono">2. Evidence & Scope</h4>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans">
-        Inject direct constraints, coordinate boundaries, API syntax definitions, or literature data, forcing the model to operate within verified bounds.
-      </p>
-    </div>
-    <div class="bg-[#0F172A] border-l-2 border-[#7C3AED] p-3 rounded-r-xl font-sans">
-      <h4 class="text-[0.62rem] font-bold text-[#A78BFA] uppercase mb-1 font-mono">3. Step-by-Step Procedure</h4>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans">
-        Enforce logical decomposition. Direct the model to generate intermediate mathematical steps, coordinate calculations, or logic schemas before writing final code.
-      </p>
-    </div>
-    <div class="bg-[#0F172A] border-l-2 border-[#7C3AED] p-3 rounded-r-xl font-sans">
-      <h4 class="text-[0.62rem] font-bold text-[#A78BFA] uppercase mb-1 font-mono">4. Uncertainty & Schema</h4>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans">
-        Demand structured outputs (e.g., JSON schemas or markdown tables) and explicitly instruct the model to state its assumptions, bounds, and confidence limits.
-      </p>
-    </div>
-  </div>
+
+<div class="flex-1 grid grid-cols-[1.3fr_1fr] gap-14 items-start">
+
+<div>
+<p class="text-sm muted leading-relaxed mb-5">Literature review moved from summarizing papers one at a time to building a synthesis matrix — a table where each source is encoded against the same variables, so patterns across the field become visible rather than anecdotal.</p>
+
+<table>
+<thead><tr><th>Source</th><th>Parameter studied</th><th>Reported effect</th></tr></thead>
+<tbody>
+<tr><td class="ink">Liu et al.</td><td class="muted">Wirebond arc height</td><td class="muted">Dominant driver of loop inductance</td></tr>
+<tr><td class="ink">Chen &amp; Park</td><td class="muted">Ribbon width</td><td class="muted">Secondary, non-linear effect</td></tr>
+<tr><td class="ink">Kumar et al.</td><td class="muted">Substrate spacing</td><td class="muted">Minor, context-dependent</td></tr>
+</tbody>
+</table>
 </div>
+
+<div class="flex flex-col gap-6">
+<div>
+<p class="ink font-medium mb-1 text-sm">Themes set first</p>
+<p class="text-sm muted leading-relaxed">The researcher defines the synthesis columns; tools are used only to extract data into a structure that was already decided.</p>
+</div>
+<div>
+<p class="ink font-medium mb-1 text-sm">Screening by relevance</p>
+<p class="text-sm muted leading-relaxed">Active-learning screening (ASReview), alongside IEEE Xplore and Scopus search and Zotero-based reference management, cut down time spent reading low-relevance papers.</p>
+</div>
+</div>
+
+</div>
+
+<p class="footer-note">Final Presentation · 5 / 13</p>
+
 </div>
 
 <!--
-The fundamental turning point in the course was learning to view prompts as formal research instruments. A prompt is not a conversation starter; it is a technical specification. If we look at the anatomy on the right, a robust prompt outlines the precise task and expert context, inputs exact evidence or syntax constraints, dictates a step-by-step reasoning procedure, and enforces a structured output schema that includes boundary uncertainties. We must evaluate prompt quality empirically—just as we would calibrate physical sensors—testing prompt variations to see if they yield stable, correct code across multiple execution runs.
+My midterm-era literature review was book-report style — paper by paper, in reading order. This course taught me to build a synthesis matrix instead: fixed variables across sources, so I could see which parameters the field actually agreed and disagreed on.
 -->
 
 ---
 layout: default
-background: '#080E14'
-class: px-12 pt-6
+background: '#FAF9F5'
+class: px-20 py-14
 ---
 
-<div class="w-full flex flex-col h-full font-sans">
-<div class="mb-4">
-  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">Workflow Codification</p>
-  <h1 class="text-2xl font-bold text-white leading-tight font-sans">From prompts to skills: codifying reusable workflows</h1>
+<div class="w-full h-full flex flex-col">
+
+<div class="mb-10">
+<p class="eyebrow mb-2">Methodology III</p>
+<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Designing structured experiments</h1>
+<div class="rule w-14 mt-4"></div>
 </div>
-<div class="grid grid-cols-[1fr_1.2fr] gap-6 flex-1 items-start">
-  <div class="flex flex-col gap-3 font-sans">
-    <p class="text-[0.62rem] text-[#94A3B8] leading-relaxed font-sans">
-      A prompt is a single transaction; an <strong class="text-white">AI Skill</strong> is a formal, packageable workflow unit that encodes a research protocol into a reusable tool.
-    </p>
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 font-sans">
-      <h3 class="font-bold text-white text-xs mb-2 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:git-merge text-[#7C3AED] text-sm"></div> Mirroring Research Methods
-      </h3>
-      <p class="text-[0.58rem] text-[#94A3B8] leading-relaxed font-sans">
-        Just as we define an experimental testing protocol once and apply it repeatedly to physical devices, we codify our AI interactions into modular skills to guarantee reproducibility and auditability.
-      </p>
-    </div>
+
+<div class="flex-1 flex flex-col justify-center gap-10">
+
+<p class="text-sm muted leading-relaxed max-w-2xl">Experimentation shifted from single, large attempts to a documented sequence of independent stages, each with parameter bounds fixed before any run.</p>
+
+<div class="grid grid-cols-4 gap-4">
+  <div class="pt-4" style="border-top: 2px solid var(--ink)">
+    <p class="text-xs muted mb-1">Stage 1</p>
+    <p class="ink text-sm font-medium">Geometry setup</p>
+    <p class="text-xs muted mt-1 leading-relaxed">Wirebond and ribbon layout in PyAEDT</p>
   </div>
-  <div class="bg-[#0F172A] border border-[#7C3AED]/30 rounded-xl p-4.5 shadow-2xl font-sans">
-    <h3 class="font-bold text-white text-xs mb-3 flex items-center gap-1.5 font-sans">
-      <div class="i-lucide:folder-open text-[#A78BFA] text-sm"></div> Anatomy of an AI Skill (Claude's Model)
-    </h3>
-    <div class="space-y-3 font-sans">
-      <div class="flex items-start gap-2.5 border-b border-[#1E2E38] pb-2 font-sans">
-        <div class="w-5 h-5 rounded bg-[#7C3AED]/20 flex items-center justify-center flex-shrink-0 mt-0.5 font-sans"><div class="i-lucide:file-code text-[#A78BFA] text-[0.65rem]"></div></div>
-        <div>
-          <p class="text-[0.58rem] font-semibold text-white font-sans">YAML Frontmatter (SKILL.md)</p>
-          <p class="text-[0.5rem] text-[#94A3B8] font-sans">Contains the unique name and description. The description is critical because the AI uses it to match user intent and auto-activate the skill.</p>
-        </div>
-      </div>
-      <div class="flex items-start gap-2.5 border-b border-[#1E2E38] pb-2 font-sans">
-        <div class="w-5 h-5 rounded bg-[#7C3AED]/20 flex items-center justify-center flex-shrink-0 mt-0.5 font-sans"><div class="i-lucide:text-quote text-[#A78BFA] text-[0.65rem]"></div></div>
-        <div>
-          <p class="text-[0.58rem] font-semibold text-white font-sans">Markdown Instructions & Examples</p>
-          <p class="text-[0.5rem] text-[#94A3B8] font-sans">Specifies detailed rules, edge cases, and typical inputs/outputs. Includes test cases to evaluate performance before and after uploading.</p>
-        </div>
-      </div>
-      <div class="flex items-start gap-2.5 font-sans">
-        <div class="w-5 h-5 rounded bg-[#7C3AED]/20 flex items-center justify-center flex-shrink-0 mt-0.5 font-sans"><div class="i-lucide:terminal text-[#A78BFA] text-[0.65rem]"></div></div>
-        <div>
-          <p class="text-[0.58rem] font-semibold text-white font-sans">Supporting Resources & Custom Scripts</p>
-          <p class="text-[0.5rem] text-[#94A3B8] font-sans">Optional code templates or data files packaged alongside instructions in a ZIP folder to extend the model's physical execution capabilities.</p>
-        </div>
-      </div>
-    </div>
+  <div class="pt-4" style="border-top: 2px solid var(--ink)">
+    <p class="text-xs muted mb-1">Stage 2</p>
+    <p class="ink text-sm font-medium">Boundary configuration</p>
+    <p class="text-xs muted mt-1 leading-relaxed">Materials, excitation, solver bounds</p>
+  </div>
+  <div class="pt-4" style="border-top: 2px solid var(--ink)">
+    <p class="text-xs muted mb-1">Stage 3</p>
+    <p class="ink text-sm font-medium">Mesh and solve</p>
+    <p class="text-xs muted mt-1 leading-relaxed">ANSYS Q3D adaptive meshing</p>
+  </div>
+  <div class="pt-4" style="border-top: 2px solid var(--accent)">
+    <p class="text-xs muted mb-1">Stage 4</p>
+    <p class="ink text-sm font-medium">Data extraction</p>
+    <p class="text-xs muted mt-1 leading-relaxed">Loop inductance matrix, logged per run</p>
   </div>
 </div>
+
+<p class="text-sm muted leading-relaxed max-w-2xl">Each stage was written, tested, and verified on its own, rather than as one script expected to work end to end on the first attempt.</p>
+
+</div>
+
+<p class="footer-note">Final Presentation · 6 / 13</p>
+
 </div>
 
 <!--
-A major milestone in this course was learning to formalize one-off prompts into reusable AI skills. In Anthropic's model, a skill is a packageable directory containing a SKILL.md file. It starts with YAML frontmatter including a name and description, which is used by the system to dynamically activate the skill when needed. It contains markdown instructions, test examples, and optional scripts. This structured approach directly mirrors physical research: instead of setting up a new test bench every day, we write a standard testing protocol once, package it, and execute it reproducibly across our runs.
+My earlier scripting attempts tried to do everything in one pass — geometry, meshing, and solving in a single script — and failed for exactly that reason. Decomposing the pipeline into four independently testable stages was a direct application of the same scoping discipline from the literature review.
 -->
 
 ---
 layout: default
-background: '#080E14'
-class: px-12 pt-6
+background: '#FAF9F5'
+class: px-20 py-14
 ---
 
-<div class="w-full flex flex-col h-full font-sans">
-<div class="mb-4">
-  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">Thesis Progression</p>
-  <h1 class="text-2xl font-bold text-white leading-tight font-sans">Methodological transfer: how prompting progressed my thesis</h1>
+<div class="w-full h-full flex flex-col">
+
+<div class="mb-10">
+<p class="eyebrow mb-2">Methodology IV</p>
+<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">A habit of verification</h1>
+<div class="rule w-14 mt-4"></div>
 </div>
-<div class="grid grid-cols-2 gap-4.5 flex-1 items-stretch font-sans">
-  <div class="flex flex-col gap-3 font-sans">
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3.5 shadow-xl font-sans">
-      <h3 class="font-bold text-white text-xs mb-1.5 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:book-open text-[#7C3AED] text-sm"></div> 1. Bounded Literature Queries
-      </h3>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans">
-        Moving away from open-ended search requests. Prompt designs now inject verified source PDFs as direct context, forcing the AI to synthesize only from established evidence rather than inventing answers.
-      </p>
-    </div>
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3.5 shadow-xl font-sans">
-      <h3 class="font-bold text-white text-xs mb-1.5 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:edit-3 text-[#7C3AED] text-sm"></div> 2. Decomposed Technical Writing
-      </h3>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans">
-        Deconstructing complex theoretical writing tasks (e.g. explaining parasitic loop inductance variations) into modular outline drafting, physical equations verification, and prose editing.
-      </p>
-    </div>
-  </div>
-  <div class="flex flex-col gap-3 font-sans">
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3.5 shadow-xl font-sans">
-      <h3 class="font-bold text-white text-xs mb-1.5 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:code text-[#38BDF8] text-sm"></div> 3. Bounded Script Generation
-      </h3>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans">
-        Using specialized prompts to generate small, unit-testable functions for PyAEDT automation. Forcing strict coordinate boundaries and specific API versions inside the prompt context.
-      </p>
-    </div>
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3.5 shadow-xl font-sans">
-      <h3 class="font-bold text-white text-xs mb-1.5 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:shield-check text-[#38BDF8] text-sm"></div> 4. Empirical Verification Habits
-      </h3>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans">
-        Treating AI-generated formulas, scripts, or summaries as draft hypotheses. Systematically verifying outputs against physical electromagnetic laws and simulator manuals before adoption.
-      </p>
-    </div>
-  </div>
+
+<div class="flex-1 flex flex-col justify-center gap-8 max-w-2xl">
+
+<p class="text-sm muted leading-relaxed">Every output is now treated as a hypothesis rather than a fact — regardless of whether it came from a paper, a simulation, or an AI-generated script.</p>
+
+<div class="flex flex-col gap-5">
+<div class="flex gap-5 items-baseline">
+<p class="text-xs muted" style="width:1.5rem">1</p>
+<p class="text-sm ink"><span class="font-medium">Physical consistency</span> — does the result violate a known law, such as conservation of energy?</p>
 </div>
+<div class="flex gap-5 items-baseline">
+<p class="text-xs muted" style="width:1.5rem">2</p>
+<p class="text-sm ink"><span class="font-medium">Documented behavior</span> — does it match the tool or API's own documentation, not just plausible-sounding usage?</p>
+</div>
+<div class="flex gap-5 items-baseline">
+<p class="text-xs muted" style="width:1.5rem">3</p>
+<p class="text-sm ink"><span class="font-medium">Reproducibility</span> — does it hold up across repeated, independent runs?</p>
+</div>
+</div>
+
+</div>
+
+<p class="footer-note">Final Presentation · 7 / 13</p>
+
 </div>
 
 <!--
-To show how this directly progressed my thesis work, let's look at the four research activities. First, I established bounded queries: instead of asking broad questions, I inject specific literature as evidence. Second, I decomposed my technical writing, splitting draft generation from mathematical verification. Third, I wrote modular prompts with coordinate bounds for PyAEDT scripting. Finally, I built empirical verification habits, treating every AI output as a draft hypothesis that must be validated against physics.
+This is the habit I'd call the biggest mindset shift. I stopped asking "does this sound right" and started asking these three questions, every time, for every kind of output — not only AI output.
 -->
 
 ---
 layout: default
-background: '#080E14'
-class: px-12 pt-6
+background: '#FAF9F5'
+class: px-20 py-14
 ---
 
-<div class="w-full flex flex-col h-full font-sans">
-<div class="mb-4">
-  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">Methodology</p>
-  <h1 class="text-2xl font-bold text-white leading-tight font-sans">From vague inquiry to structured research workflow</h1>
+<div class="w-full h-full flex flex-col">
+
+<div class="mb-10">
+<p class="eyebrow mb-2">Methodology V</p>
+<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Formalizing habits into protocols</h1>
+<div class="rule w-14 mt-4"></div>
 </div>
-<div class="grid grid-cols-4 gap-3.5 flex-1 items-stretch font-sans">
-  <!-- Step 1 -->
-  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3.5 flex flex-col justify-between relative overflow-hidden font-sans">
-    <div class="absolute top-0 right-0 w-12 h-12 bg-[#7C3AED]/5 rounded-bl-full flex items-start justify-end p-2 font-sans">
-      <div class="text-[#A78BFA] font-bold opacity-30 text-xs font-mono">01</div>
-    </div>
-    <div>
-      <h3 class="font-bold text-white text-[0.65rem] mb-2 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:target text-[#7C3AED] text-xs font-sans"></div> Define Criteria
-      </h3>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans">
-        Define the research boundary first. Establish explicit <strong class="text-white font-sans">inclusion and exclusion criteria</strong> for the domain parameters, code dependencies, and target metrics.
-      </p>
-    </div>
-    <div class="mt-2 bg-[#080E14] p-1.5 rounded border border-[#1E2E38] text-[0.45rem] font-mono text-[#38BDF8] font-sans">
-      Parameters: Parasitics, Inductance (nH), Geometry
-    </div>
-  </div>
 
-  <!-- Step 2 -->
-  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3.5 flex flex-col justify-between relative overflow-hidden font-sans">
-    <div class="absolute top-0 right-0 w-12 h-12 bg-[#7C3AED]/5 rounded-bl-full flex items-start justify-end p-2 font-sans">
-      <div class="text-[#A78BFA] font-bold opacity-30 text-xs font-mono">02</div>
-    </div>
-    <div>
-      <h3 class="font-bold text-white text-[0.65rem] mb-2 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:database text-[#7C3AED] text-xs font-sans"></div> Seed & Gather
-      </h3>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans">
-        Query databases (IEEE Xplore, Scopus). Use citation mapping (ResearchRabbit) and reference managers (Zotero) to establish the <strong class="text-white">ground truth dataset</strong>.
-      </p>
-    </div>
-    <div class="mt-2 bg-[#080E14] p-1.5 rounded border border-[#1E2E38] text-[0.45rem] font-mono text-[#38BDF8]">
-      IEEE search strings + Zotero collection export
-    </div>
-  </div>
+<div class="flex-1 grid grid-cols-[1fr_1.1fr] gap-14 items-start">
 
-  <!-- Step 3 -->
-  <div class="bg-[#0F172A] border border-[#7C3AED]/40 rounded-xl p-3.5 flex flex-col justify-between relative overflow-hidden shadow-[0_0_15px_rgba(124,58,237,0.1)] font-sans">
-    <div class="absolute top-0 right-0 w-12 h-12 bg-[#7C3AED]/10 rounded-bl-full flex items-start justify-end p-2 font-sans">
-      <div class="text-[#A78BFA] font-bold opacity-50 text-xs font-mono">03</div>
-    </div>
-    <div>
-      <h3 class="font-bold text-white text-[0.65rem] mb-2 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:git-branch text-[#7C3AED] text-xs font-sans"></div> Decomposed Prompting
-      </h3>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans">
-        Deconstruct research questions into <strong class="text-white">discrete, auditable steps</strong>. Use specialized templates to prompt for modular code blocks or semantic synthesis matrices.
-      </p>
-    </div>
-    <div class="mt-2 bg-[#080E14] p-1.5 rounded border border-[#7C3AED]/20 text-[0.45rem] font-mono text-[#A78BFA]">
-      Sequential micro-prompts for specific API modules
-    </div>
-  </div>
-
-  <!-- Step 4 -->
-  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3.5 flex flex-col justify-between relative overflow-hidden font-sans">
-    <div class="absolute top-0 right-0 w-12 h-12 bg-[#7C3AED]/5 rounded-bl-full flex items-start justify-end p-2 font-sans">
-      <div class="text-[#A78BFA] font-bold opacity-30 text-xs font-mono">04</div>
-    </div>
-    <div>
-      <h3 class="font-bold text-white text-[0.65rem] mb-2 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:shield-check text-[#7C3AED] text-xs font-sans"></div> Empirical Verification
-      </h3>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans">
-        Cross-check outputs against <strong class="text-white">physical laws, software API bounds, and simulation results</strong>. Never assume correctness based on verbal fluency.
-      </p>
-    </div>
-    <div class="mt-2 bg-[#080E14] p-1.5 rounded border border-[#1E2E38] text-[0.45rem] font-mono text-[#34D399] font-sans">
-      Python code validation + Q3D simulation run
-    </div>
-  </div>
+<div class="flex flex-col gap-4">
+<p class="text-sm muted leading-relaxed">A habit that proved reliable was worth writing down once and reusing, rather than reinvented for every new task — the same reasoning behind any lab protocol.</p>
+<p class="text-sm muted leading-relaxed">In one case this took the form of a documented prompt template for a recurring literature-extraction step. The principle mattered more than the tool — this is one of several protocols developed over the course, and the only one that involved AI directly.</p>
 </div>
+
+<div class="p-6" style="border: 1px solid var(--line)">
+<p class="eyebrow mb-4">Example protocol</p>
+<div class="flex flex-col gap-3">
+<div class="flex gap-4"><p class="text-sm muted" style="width:5rem; flex-shrink:0">Input</p><p class="text-sm ink">A verified source PDF and a fixed extraction schema</p></div>
+<div class="flex gap-4"><p class="text-sm muted" style="width:5rem; flex-shrink:0">Steps</p><p class="text-sm ink">Extract parameter, method, and reported result into the schema</p></div>
+<div class="flex gap-4"><p class="text-sm muted" style="width:5rem; flex-shrink:0">Check</p><p class="text-sm ink">Cross-reference extracted values against the source text</p></div>
+<div class="flex gap-4"><p class="text-sm muted" style="width:5rem; flex-shrink:0">Output</p><p class="text-sm ink">One row added to the synthesis matrix</p></div>
+</div>
+</div>
+
+</div>
+
+<p class="footer-note">Final Presentation · 8 / 13</p>
+
 </div>
 
 <!--
-To apply this paradigm shift, I designed the four-step structured research workflow shown here. We start by explicitly defining parameters and bounds before touching any AI tool. In Step 2, we gather verified data from academic databases to act as the source of evidence. In Step 3, we decompose the core task—for instance, writing python script functions to control ANSYS Q3D—into discrete, small prompting blocks. Finally, in Step 4, we verify the output, cross-checking the generated code against API syntax limits and physical simulation behaviors to guarantee validity.
+This is the one slide where AI is the specific subject, and it is deliberately narrow. Writing a habit down as a reusable protocol is the point; a structured prompt template is simply one example of that, alongside the other non-AI protocols already shown.
 -->
 
 ---
 layout: default
-background: '#080E14'
-class: px-12 pt-6
+background: '#FAF9F5'
+class: px-20 py-14
 ---
 
-<div class="w-full flex flex-col h-full font-sans">
-<div class="mb-4 font-serif font-sans">
-  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">Workflow Design</p>
-  <h1 class="text-2xl font-bold text-white leading-tight font-sans">Literature review, organization, and decomposition</h1>
+<div class="w-full h-full flex flex-col">
+
+<div class="mb-10">
+<p class="eyebrow mb-2">Case Study I</p>
+<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">The engineering problem</h1>
+<div class="rule w-14 mt-4"></div>
 </div>
-<div class="grid grid-cols-[1.2fr_0.8fr] gap-6 flex-1 items-start font-sans">
-  <div class="flex flex-col gap-4 font-sans">
-    <!-- Comparison Table -->
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl overflow-hidden shadow-xl font-sans">
-      <table class="w-full border-collapse text-left font-sans">
-        <thead>
-          <tr class="bg-[#1E2E38]/50 border-b border-[#1E2E38] text-[#A78BFA] text-[0.55rem] font-mono uppercase tracking-wider">
-            <th class="p-2 w-1/4">Research Activity</th>
-            <th class="p-2 w-3/8 font-sans">Traditional/Ad-hoc Approach</th>
-            <th class="p-2 w-3/8 text-[#34D399] font-bold font-sans">Course-Taught Workflow</th>
-          </tr>
-        </thead>
-        <tbody class="text-[0.52rem] text-[#94A3B8] divide-y divide-[#1E2E38]/40">
-          <tr>
-            <td class="p-2 font-semibold text-white font-sans">Literature Map</td>
-            <td class="p-2 font-sans">Linear book reports summarizing papers individually (A said X, B said Y).</td>
-            <td class="p-2 text-[#34D399] font-medium font-sans">Multi-dimensional matrix mapping parameters, methods, and results.</td>
-          </tr>
-          <tr>
-            <td class="p-2 font-semibold text-white font-sans">Thematic Outline</td>
-            <td class="p-2 font-sans">Asking AI to generate outline, leading to generic "Introduction/Methods" templates.</td>
-            <td class="p-2 text-[#34D399] font-medium font-sans">Researcher defines themes; AI extracts paper details to fit them.</td>
-          </tr>
-          <tr>
-            <td class="p-2 font-semibold text-white font-sans">Screening Pile</td>
-            <td class="p-2 font-sans">Reading random papers sequentially, wasting days on low-relevance articles.</td>
-            <td class="p-2 text-[#34D399] font-medium font-sans">Using ASReview ML active learning to screen search results by relevance.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="flex flex-col gap-3 font-sans">
-    <!-- ASReview Highlight -->
-    <div class="bg-gradient-to-br from-[#10B981]/10 to-transparent border border-[#10B981]/30 rounded-xl p-4 shadow-xl font-sans">
-      <h3 class="font-bold text-[#6EE7B7] text-xs mb-2 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:compress text-[#10B981] text-sm font-sans"></div> Active Learning with ASReview
-      </h3>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed mb-2 font-sans">
-        Active learning algorithms rank papers based on live user feedback, shifting the human researcher's role from <em>brute-force reading</em> to <em>supervising the sorting model</em>.
-      </p>
-      <div class="bg-[#080E14] border border-[#1E2E38] p-2 rounded text-[0.48rem] font-mono text-[#10B981] text-center">
-        Prioritized Screening → 80% Time Reduction
-      </div>
-    </div>
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 flex items-start gap-2 font-sans">
-      <div class="i-lucide:lightbulb text-[#A78BFA] text-xs mt-0.5 flex-shrink-0"></div>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed font-sans">
-        <strong class="text-white">Decomposition first:</strong> Break complex research hypotheses into smaller, matrix-compatible questions before attempting synthesis.
-      </p>
-    </div>
-  </div>
+
+<div class="flex-1 flex flex-col justify-center gap-10">
+
+<p class="text-sm muted leading-relaxed max-w-2xl">The case study is a 1.7 kV, 100 A SiC half-bridge power module (iTreePack geometry). High parasitic loop inductance in the wirebond interconnect causes switching overvoltage spikes and increased losses.</p>
+
+<div class="flex items-center gap-3 flex-wrap">
+<div class="px-3 py-2 text-xs ink" style="border:1px solid var(--line)">Python</div>
+<p class="muted text-xs">&rarr;</p>
+<div class="px-3 py-2 text-xs ink" style="border:1px solid var(--line)">PyAEDT automation</div>
+<p class="muted text-xs">&rarr;</p>
+<div class="px-3 py-2 text-xs ink" style="border:1px solid var(--line)">ANSYS Q3D solver</div>
+<p class="muted text-xs">&rarr;</p>
+<div class="px-3 py-2 text-xs ink" style="border:1px solid var(--line)">Neural network surrogate</div>
+<p class="muted text-xs">&rarr;</p>
+<div class="px-3 py-2 text-xs accent" style="border:1px solid var(--accent)">Genetic algorithm optimization</div>
 </div>
+
+</div>
+
+<p class="footer-note">Final Presentation · 9 / 13</p>
+
 </div>
 
 <!--
-Let's zoom into literature review design. Before taking this course, I mapped literature using what I call 'book-report mode'—summarizing papers one by one in text. This course taught me a far more professional protocol. I now build multi-dimensional synthesis matrices where papers are encoded as data based on concrete variables. Instead of letting AI decide the outline, I define the themes myself, and use AI solely to extract data. By incorporating active learning tools like ASReview, I reduced literature screening times by up to eighty percent, allowing me to focus on actual synthesis.
+This is the physical problem underneath everything I've described: minimizing parasitic loop inductance in a SiC half-bridge module by optimizing wirebond geometry, using an automated pipeline from Python scripting through to genetic-algorithm optimization.
 -->
 
 ---
 layout: default
-background: '#080E14'
-class: px-12 pt-6
+background: '#FAF9F5'
+class: px-20 py-14
 ---
-<div class="w-full flex flex-col h-full font-sans">
-<div class="mb-3 font-serif">
-  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">Literature Tooling</p>
-  <h1 class="text-2xl font-bold text-white leading-tight font-sans">ResearchRabbit & ASReview in action</h1>
+
+<div class="w-full h-full flex flex-col">
+
+<div class="mb-10">
+<p class="eyebrow mb-2">Case Study II</p>
+<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Applying the revised process</h1>
+<div class="rule w-14 mt-4"></div>
 </div>
-<div class="grid grid-cols-2 gap-6 flex-1 items-stretch">
-  <!-- ResearchRabbit -->
-  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 shadow-xl flex flex-col justify-between">
-    <div>
-      <h3 class="font-bold text-white text-xs mb-2 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:network text-[#7C3AED] text-sm"></div> ResearchRabbit: Citation Mapping
-      </h3>
-      <p class="text-[0.55rem] text-[#94A3B8] leading-relaxed mb-3">
-        Allows visual exploration of the power module layout optimization literature. Instead of linear lists, it maps relational co-citations and helps discover overlooked papers.
-      </p>
-    </div>
-    <div class="flex-1 min-h-[130px] rounded-lg overflow-hidden border border-[#1E2E38] relative bg-[#080E14] flex items-center justify-center">
-      <img src="/rr-network.png" class="object-cover w-full h-full" alt="ResearchRabbit Network" />
-    </div>
-  </div>
-  <!-- ASReview -->
-  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 shadow-xl flex flex-col justify-between">
-    <div>
-      <h3 class="font-bold text-white text-xs mb-2 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:compress text-[#10B981] text-sm font-sans"></div> ASReview: Machine-Learning Screening
-      </h3>
-      <p class="text-[0.55rem] text-[#94A3B8] leading-relaxed mb-3">
-        Active learning ranks the gathered dataset by relevance based on user feedback. In this setup, 34 out of 60 records were dynamically labeled relevant, yielding an 80% time reduction.
-      </p>
-    </div>
-    <div class="flex-1 min-h-[130px] rounded-lg overflow-hidden border border-[#1E2E38] relative bg-[#080E14] flex items-center justify-center">
-      <img src="/step4-review..png" class="object-cover w-full h-full" alt="ASReview Screening Progress" />
-    </div>
-  </div>
+
+<div class="flex-1 flex flex-col justify-center">
+
+<table>
+<thead><tr><th>Research dimension</th><th>Before</th><th>After</th></tr></thead>
+<tbody>
+<tr><td class="ink font-medium">Question scoping</td><td class="muted">General optimization goal, no fixed boundary</td><td class="accent">Fixed target metric and simulation scope, defined first</td></tr>
+<tr><td class="ink font-medium">Script design</td><td class="muted">One large script covering geometry through solve</td><td class="accent">Four independent, testable modules</td></tr>
+<tr><td class="ink font-medium">Parameter bounds</td><td class="muted">Set informally, adjusted mid-run</td><td class="accent">Fixed in advance, documented per stage</td></tr>
+<tr><td class="ink font-medium">Output checking</td><td class="muted">Accepted if the script ran without error</td><td class="accent">Checked against Q3D documentation and known field behavior</td></tr>
+<tr><td class="ink font-medium">Debugging</td><td class="muted">Repeated ad-hoc re-prompting and manual search</td><td class="accent">Stack traces and bounds fed back together, systematically</td></tr>
+</tbody>
+</table>
+
 </div>
+
+<p class="footer-note">Final Presentation · 10 / 13</p>
+
 </div>
 
 <!--
-To make this process concrete, here are the actual interfaces I used. On the left is ResearchRabbit, which creates a visual map of the citation network around power module packaging. This helped me find papers that were highly relevant but didn't show up in keyword searches. On the right is ASReview, showing the screening of my gathered database. Out of 60 records, the active learning model quickly sorted 34 relevant ones, letting me bypass irrelevant literature and reduce my reading workload significantly.
+This table is the process changes from the last several slides, applied specifically to the wirebond study. Every row is a concrete change in how I worked, not an abstract principle.
 -->
 
 ---
 layout: default
-background: '#080E14'
-class: px-12 pt-6
+background: '#FAF9F5'
+class: px-20 py-14
 ---
-<div class="w-full flex flex-col h-full font-sans">
-<div class="mb-4 font-serif font-sans">
-  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">Proof of Transfer · Case Study</p>
-  <h1 class="text-2xl font-bold text-white leading-tight font-sans">Thesis case study: wirebond optimization for parasitic inductance</h1>
+
+<div class="w-full h-full flex flex-col">
+
+<div class="mb-10">
+<p class="eyebrow mb-2">Case Study III</p>
+<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Results</h1>
+<div class="rule w-14 mt-4"></div>
 </div>
-<div class="grid grid-cols-[1.1fr_1fr_0.9fr] gap-4 flex-1 items-stretch font-sans">
-  <div class="flex flex-col gap-3 font-sans">
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 shadow-xl font-sans">
-      <h3 class="font-bold text-white text-[0.62rem] mb-1.5 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:cpu text-[#38BDF8] text-sm font-sans"></div> iTreePack Power Module
-      </h3>
-      <p class="text-[0.52rem] text-[#94A3B8] leading-relaxed mb-2 font-sans">
-        The research focuses on optimizing the wirebond interconnect geometry in a <strong class="text-white">1.7 kV 100 A SiC Half-Bridge Power Module</strong>. High parasitic loop inductance leads to severe switching overvoltage spikes and high losses.
-      </p>
-      <div class="bg-[#080E14] border border-[#1E2E38] rounded-lg p-2 font-mono text-[0.45rem] text-[#38BDF8] leading-relaxed">
-        Workflow: Python Scripting → PyAEDT Automation → ANSYS Q3D Solver → NN Surrogate Model → Genetic Algorithm Optimization
-      </div>
-    </div>
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-2.5 flex items-start gap-2 font-sans">
-      <div class="i-lucide:info text-[#A78BFA] text-xs mt-0.5 flex-shrink-0"></div>
-      <p class="text-[0.48rem] text-[#94A3B8] leading-relaxed font-sans">
-        <strong class="text-white">Key Insight:</strong> Arc height dominates parasitic inductance, while ribbon width is secondary.
-      </p>
-    </div>
-  </div>
-  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 shadow-xl flex flex-col justify-between h-full font-sans">
-    <h3 class="font-bold text-white text-[0.62rem] mb-1.5 flex items-center gap-1.5 font-sans">
-      <div class="i-lucide:activity text-[#10B981] text-xs"></div> 3D Simulation Model
-    </h3>
-    <div class="flex-1 rounded-lg overflow-hidden border border-[#1E2E38] relative bg-[#080E14] flex items-center justify-center min-h-[140px] font-sans">
-      <img src="/sic_module_simulation.png" class="object-cover w-full h-full" alt="SiC Module Simulation" />
-    </div>
-  </div>
-  <div class="grid grid-cols-2 gap-3 font-sans">
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 text-center flex flex-col justify-center font-sans">
-      <p class="text-xl font-extrabold text-[#A78BFA]">139</p>
-      <p class="text-[0.45rem] text-[#64748B] uppercase tracking-wider mt-1 font-mono">Simulations</p>
-    </div>
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-3 text-center flex flex-col justify-center font-sans">
-      <p class="text-xl font-extrabold text-[#EF4444]">8.194 nH</p>
-      <p class="text-[0.45rem] text-[#64748B] uppercase tracking-wider mt-1 font-mono">Baseline</p>
-    </div>
-    <div class="bg-[#0F172A] border border-[#34D399]/30 rounded-xl p-3 text-center flex flex-col justify-center shadow-[0_0_15px_rgba(52,211,153,0.05)] font-sans">
-      <p class="text-xl font-extrabold text-[#34D399]">6.651 nH</p>
-      <p class="text-[0.45rem] text-[#64748B] uppercase tracking-wider mt-1 font-mono">Optimized</p>
-    </div>
-    <div class="bg-[#0F172A] border border-[#38BDF8]/30 rounded-xl p-3 text-center flex flex-col justify-center shadow-[0_0_15px_rgba(56,189,248,0.05)] font-sans">
-      <p class="text-xl font-extrabold text-[#38BDF8]">-18.8%</p>
-      <p class="text-[0.45rem] text-[#64748B] uppercase tracking-wider mt-1 font-mono">Loop Induct.</p>
-    </div>
-  </div>
+
+<div class="flex-1 flex flex-col justify-center gap-10">
+
+<div class="grid grid-cols-3 gap-10">
+<div>
+<p class="serif text-3xl ink" style="font-weight:500">139</p>
+<p class="eyebrow mt-2">Simulation runs</p>
+</div>
+<div>
+<p class="serif text-3xl ink" style="font-weight:500">8.194 &rarr; 6.651 nH</p>
+<p class="eyebrow mt-2">Baseline to optimized</p>
+</div>
+<div>
+<p class="serif text-3xl accent" style="font-weight:500">&minus;18.8%</p>
+<p class="eyebrow mt-2">Loop inductance reduction</p>
 </div>
 </div>
 
+<div class="pt-6" style="border-top:1px solid var(--line)">
+<p class="text-sm muted leading-relaxed max-w-2xl">Arc height was identified as the dominant factor in parasitic inductance, with ribbon width a secondary effect. Loop resistance was reduced alongside inductance.</p>
+</div>
+
+</div>
+
+<p class="footer-note">Final Presentation · 11 / 13</p>
+
+</div>
+
 <!--
-To prove the transfer of these course concepts, I will use my actual thesis as a case study. The goal of this research is to minimize the parasitic loop inductance in a 1.7 kV, 100 A SiC Half-Bridge power module. High loop inductance causes high overvoltage spikes, risking device failure. I built an automated loop linking Python, PyAEDT, and ANSYS Q3D to train a surrogate neural network. Across 139 simulations, the optimized design reduced loop inductance by eighteen point eight percent, shifting it from eight point one nine four nanohenries to six point six five one nanohenries.
+Across 139 simulation runs, the optimized geometry reduced loop inductance from 8.194 to 6.651 nanohenries, an 18.8 percent reduction, with arc height confirmed as the dominant parameter — consistent with what the literature synthesis matrix had already suggested.
 -->
 
 ---
 layout: default
-background: '#080E14'
-class: px-12 pt-6
+background: '#FAF9F5'
+class: px-20 py-14
 ---
 
-<div class="w-full flex flex-col h-full font-sans">
-<div class="mb-4 font-serif font-sans">
-  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">Application of Learning</p>
-  <h1 class="text-2xl font-bold text-white leading-tight font-sans">How course lessons saved my thesis scripting workflow</h1>
+<div class="w-full h-full flex flex-col">
+
+<div class="mb-10">
+<p class="eyebrow mb-2">Limitations</p>
+<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Limits of the process, and the role of judgment</h1>
+<div class="rule w-14 mt-4"></div>
 </div>
-<div class="grid grid-cols-2 gap-6 flex-1 font-sans">
-  <div class="flex flex-col gap-3 font-sans">
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 shadow-xl font-sans">
-      <h3 class="font-bold text-white text-xs mb-2 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:git-pull-request text-[#7C3AED] text-sm font-sans"></div> Task Decomposition in Python/PyAEDT
-      </h3>
-      <p class="text-[0.58rem] text-[#94A3B8] leading-relaxed mb-2.5 font-sans">
-        Instead of prompting for a single monolithic script to build, mesh, and solve the wirebond module (which failed repeatedly), I decomposed the code design into four independent modules:
-      </p>
-      <ol class="text-[0.52rem] text-[#A78BFA] space-y-1.5 list-none pl-0 font-sans">
-        <li class="flex gap-2 font-sans"><span class="text-[#7C3AED] font-bold font-mono">①</span> <strong>3D Geometry Layout</strong> (drawing ribbon/wirebonds in PyAEDT)</li>
-        <li class="flex gap-2 font-sans"><span class="text-[#7C3AED] font-bold font-mono">②</span> <strong>Material & Boundary Config</strong> (assigning copper/substrate, setting excitation)</li>
-        <li class="flex gap-2 font-sans"><span class="text-[#7C3AED] font-bold font-mono">③</span> <strong>Mesh & Solver Setup</strong> (configuring adaptive meshes in Q3D)</li>
-        <li class="flex gap-2 font-sans"><span class="text-[#7C3AED] font-bold font-mono">④</span> <strong>Data Extraction</strong> (exporting loop inductance matrix)</li>
-      </ol>
-    </div>
-  </div>
-  <div class="flex flex-col gap-3 font-sans">
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 shadow-xl font-sans">
-      <h3 class="font-bold text-white text-xs mb-2 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:sliders text-[#38BDF8] text-sm font-sans"></div> Explicit Prompt Constraints & API Versioning
-      </h3>
-      <p class="text-[0.58rem] text-[#94A3B8] leading-relaxed mb-2 font-sans">
-        I designed prompts that explicitly injected the specific version limits of the PyAEDT library (v0.6+) and the target COM port structure.
-      </p>
-      <div class="bg-[#080E14] border border-[#1E2E38] p-2 rounded font-mono text-[0.45rem] text-[#94A3B8] leading-relaxed">
-        <span class="text-[#64748B] font-mono">// Explicit evidence inject in prompt</span><br>
-        "Using PyAEDT v0.6 syntax. Do not use legacy methods like 'add_wirebond'. Refer to the attached PyAEDT Q3D documentation schema. Generate only the setup_excitation function."
-      </div>
-    </div>
-    <div class="bg-gradient-to-r from-[#10B981]/15 to-transparent border-l-2 border-[#10B981] p-3 rounded-r-lg font-sans">
-      <p class="text-[0.52rem] text-[#34D399] leading-relaxed font-semibold font-sans">
-        Outcome: Moving to modular decomposition and version-constrained prompts reduced script debugging cycles from days of manual searching to minutes.
-      </p>
-    </div>
-  </div>
+
+<div class="flex-1 flex flex-col justify-between">
+
+<div class="grid grid-cols-2 gap-16">
+<div class="pr-8" style="border-right:1px solid var(--line)">
+<p class="eyebrow mb-3">Tools reliably handle</p>
+<div class="flex flex-col gap-2 text-sm ink">
+<p>Boilerplate scripting and file I/O</p>
+<p>Parsing simulation logs into structured tables</p>
+<p>Re-ranking literature by relevance</p>
 </div>
+</div>
+<div class="pl-8">
+<p class="eyebrow mb-3">Judgment still required</p>
+<div class="flex flex-col gap-2 text-sm ink">
+<p>Whether a result is physically plausible</p>
+<p>Which model or mesh setup fits the problem</p>
+<p>Whether hardware testing, not just simulation, is needed</p>
+</div>
+</div>
+</div>
+
+<div class="pt-6 mt-6" style="border-top:1px solid var(--line)">
+<p class="eyebrow mb-3">Current limits, and what comes next</p>
+<div class="grid grid-cols-3 gap-8">
+<p class="text-sm muted leading-relaxed"><span class="ink font-medium">Simulation-only</span> — next: fabricate the module and run double-pulse tests</p>
+<p class="text-sm muted leading-relaxed"><span class="ink font-medium">No busbar or thermal model</span> — next: extend geometry and add coupled thermal analysis</p>
+<p class="text-sm muted leading-relaxed"><span class="ink font-medium">Unpublished</span> — next: submit to IEEE Transactions on Power Electronics</p>
+</div>
+</div>
+
+</div>
+
+<p class="footer-note">Final Presentation · 12 / 13</p>
+
 </div>
 
 <!--
-Let's discuss how the course lessons saved my scripting workflow. In my early thesis coding attempts, I tried to write this PyAEDT automation script in one large chunk. The LLM regularly hallucinated API methods and failed to configure the solver. Under the new workflow, I decomposed this complex scripting task. I requested separate, modular functions for geometry creation, boundary assignment, solver setup, and data export. By specifying version bounds—like forcing PyAEDT version zero point six syntax—and providing exact coordinate inputs, I reduced my debugging cycle from days to minutes.
--->
-
----
-layout: default
-background: '#080E14'
-class: px-12 pt-6
----
-
-<div class="w-full flex flex-col h-full font-sans">
-<div class="mb-4 font-serif">
-  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">Rethinking Habits</p>
-  <h1 class="text-2xl font-bold text-white leading-tight font-sans">Methodological transformation: before vs. after</h1>
-</div>
-
-<div class="flex-1 bg-[#0F172A] border border-[#1E2E38] rounded-xl overflow-hidden shadow-xl mb-4 font-sans">
-  <table class="w-full border-collapse text-left font-sans">
-    <thead>
-      <tr class="bg-[#1E2E38]/50 border-b border-[#1E2E38] text-[#A78BFA] text-[0.55rem] font-mono uppercase tracking-wider">
-        <th class="p-2.5 w-1/5">Research Dimension</th>
-        <th class="p-2.5 w-2/5">Before the Course (Conversational Mindset)</th>
-        <th class="p-2.5 w-2/5 text-[#34D399] font-bold font-sans">After the Course (Structured Instrument Mindset)</th>
-      </tr>
-    </thead>
-    <tbody class="text-[0.52rem] text-[#94A3B8] divide-y divide-[#1E2E38]/40 font-medium font-sans">
-      <tr>
-        <td class="p-2.5 font-bold text-white font-sans">Task Scoping</td>
-        <td class="p-2.5">Monolithic, broad requests (<em>"write a python script to run ANSYS Q3D"</em>).</td>
-        <td class="p-2.5 text-[#34D399] font-semibold font-sans">Decomposed, modular tasks with explicit API constraints.</td>
-      </tr>
-      <tr>
-        <td class="p-2.5 font-bold text-white font-sans">AI Output Evaluation</td>
-        <td class="p-2.5">Accepted outputs as authority, relying on the fluency of English prose.</td>
-        <td class="p-2.5 text-[#34D399] font-semibold font-sans">Treated outputs as hypothetical; verified against physics and documentation.</td>
-      </tr>
-      <tr>
-        <td class="p-2.5 font-bold text-white font-sans">API Version Control</td>
-        <td class="p-2.5">Vague context assumptions (<em>"use python for ANSYS"</em>).</td>
-        <td class="p-2.5 text-[#34D399] font-semibold font-sans">Explicitly defined library boundaries (<em>"PyAEDT v0.6 syntax limits only"</em>).</td>
-      </tr>
-      <tr>
-        <td class="p-2.5 font-bold text-white font-sans">Error Handling</td>
-        <td class="p-2.5">Frustrated, repetitive re-prompting (<em>"that code is broken, fix it"</em>).</td>
-        <td class="p-2.5 text-[#34D399] font-semibold font-sans">Systematic stack trace injection paired with boundary parameters.</td>
-      </tr>
-      <tr>
-        <td class="p-2.5 font-bold text-white font-sans">Literature Workflow</td>
-        <td class="p-2.5">Ad-hoc searching. Writing summaries late. Missing structural connections.</td>
-        <td class="p-2.5 text-[#34D399] font-semibold font-sans">Active screening (ASReview) paired with early multi-dimensional tables or codified AI skills.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</div>
-
-<!--
-To make the change clear, I've constructed a comparison table of my research habits before and after the course. Previously, I was scoping tasks in huge monolithic requests, accepting AI outputs as facts, ignoring API versions, and blindly re-prompting when errors occurred. Today, I decompose every task, treat AI outputs purely as hypotheses that must be verified, specify exact API version limits, and systematically feed stack traces back into the model along with physical parameters. I also front-load my literature review using systematic screening tables.
--->
-
----
-layout: default
-background: '#080E14'
-class: px-12 pt-6
----
-
-<div class="w-full flex flex-col h-full font-sans">
-<div class="mb-4 font-serif font-sans">
-  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">Epistemic Limits</p>
-  <h1 class="text-2xl font-bold text-white leading-tight font-sans">Where AI helps and where human judgment is absolute</h1>
-</div>
-
-<div class="grid grid-cols-2 gap-6 flex-1 font-sans">
-  <!-- AI Role -->
-  <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 shadow-xl relative overflow-hidden font-sans">
-    <div class="absolute inset-0 bg-gradient-to-b from-[#7C3AED]/5 to-transparent pointer-events-none"></div>
-    <div class="flex items-center mb-3">
-      <div class="w-7 h-7 rounded-lg bg-[#7C3AED]/20 border border-[#7C3AED]/40 flex items-center justify-center mr-2.5">
-        <div class="i-lucide:cpu text-xs text-[#A78BFA]"></div>
-      </div>
-      <h3 class="font-bold text-white text-xs font-sans">The AI Role: Speed & Synthesis Assistant</h3>
-    </div>
-    <ul class="text-[0.55rem] text-[#94A3B8] space-y-2.5 list-none pl-0 font-sans">
-      <li class="flex items-start gap-2">
-        <div class="i-lucide:check-circle text-[#A78BFA] text-xs mt-0.5 flex-shrink-0"></div>
-        <span><strong>Boilerplate Generation:</strong> Writing standard Python classes, basic loop iterators, and file I/O operations for data storage.</span>
-      </li>
-      <li class="flex items-start gap-2 font-sans">
-        <div class="i-lucide:check-circle text-[#A78BFA] text-xs mt-0.5 flex-shrink-0"></div>
-        <span><strong>Log Parsing:</strong> Converting raw simulation logs and text output matrices from ANSYS Q3D into structured CSV tables.</span>
-      </li>
-      <li class="flex items-start gap-2 font-sans">
-        <div class="i-lucide:check-circle text-[#A78BFA] text-xs mt-0.5 flex-shrink-0"></div>
-        <span><strong>Search Re-ordering:</strong> Prioritizing candidate paper listings based on relevance feedback (ASReview active learning).</span>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Human Role -->
-  <div class="bg-[#0F172A] border border-[#EF4444]/20 rounded-xl p-4 shadow-xl relative overflow-hidden font-sans">
-    <div class="absolute inset-0 bg-gradient-to-b from-[#EF4444]/5 to-transparent pointer-events-none"></div>
-    <div class="flex items-center mb-3">
-      <div class="w-7 h-7 rounded-lg bg-[#EF4444]/20 border border-[#EF4444]/40 flex items-center justify-center mr-2.5">
-        <div class="i-lucide:shield-alert text-xs text-[#F87171]"></div>
-      </div>
-      <h3 class="font-bold text-white text-xs font-sans">The Human Role: Veracity & Physical Judgment</h3>
-    </div>
-    <ul class="text-[0.55rem] text-[#94A3B8] space-y-2.5 list-none pl-0 font-sans">
-      <li class="flex items-start gap-2 font-sans">
-        <div class="i-lucide:alert-circle text-[#F87171] text-xs mt-0.5 flex-shrink-0"></div>
-        <span><strong>Physics Validation:</strong> Checking if neural network predictions violate fundamental electromagnetic laws (e.g. conservation of energy).</span>
-      </li>
-      <li class="flex items-start gap-2 font-sans">
-        <div class="i-lucide:alert-circle text-[#F87171] text-xs mt-0.5 flex-shrink-0"></div>
-        <span><strong>Model Selection:</strong> Deciding which physical inputs (geometry parameters, meshing densities) are appropriate to solve the problem.</span>
-      </li>
-      <li class="flex items-start gap-2 font-sans">
-        <div class="i-lucide:alert-circle text-[#F87171] text-xs mt-0.5 flex-shrink-0"></div>
-        <span><strong>Experimental Testing:</strong> Conducting double-pulse hardware tests. No simulation can validate hardware without physical confirmation.</span>
-      </li>
-    </ul>
-  </div>
-</div>
-</div>
-
-<!--
-A major realization in this course was identifying the boundaries of AI capabilities. We must be highly clear about where AI helps and where human judgment is absolute. As shown on the left, AI is exceptional for boilerplate scripting, log parsing, and search ranking. However, it cannot replace human expertise on the right. AI cannot validate whether surrogate neural network outputs violate electromagnetic field theory. It cannot make decisions on mesh setups. And it cannot run double-pulse hardware tests. Physical validation remains a purely human responsibility.
--->
-
----
-layout: default
-background: '#080E14'
-class: px-12 pt-6
----
-
-<div class="w-full flex flex-col h-full font-sans">
-<div class="mb-4">
-  <p class="text-[0.6rem] font-semibold text-[#7C3AED] tracking-[0.3em] uppercase mb-0.5 font-sans">Future Direction</p>
-  <h1 class="text-2xl font-bold text-white leading-tight font-sans">Future use in thesis, publications, and experiments</h1>
-</div>
-
-<div class="grid grid-cols-[1fr_1.3fr] gap-6 flex-1 items-start font-sans">
-  <div class="flex flex-col gap-3 bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 shadow-xl font-sans">
-    <h3 class="font-bold text-white text-xs mb-2 flex items-center gap-1.5 font-sans">
-      <div class="i-lucide:git-commit text-[#38BDF8] text-sm"></div> Current Limitations
-    </h3>
-    <ul class="text-[0.52rem] text-[#94A3B8] space-y-2 list-none pl-0 font-sans">
-      <li class="flex items-start gap-2 font-sans">
-        <div class="w-1.5 h-1.5 rounded-full bg-[#EF4444] mt-1.5 flex-shrink-0 font-sans"></div>
-        <span><strong>Simulation-Only:</strong> Results are based entirely on 3D finite-element electromagnetic field solver models.</span>
-      </li>
-      <li class="flex items-start gap-2 font-sans">
-        <div class="w-1.5 h-1.5 rounded-full bg-[#EF4444] mt-1.5 flex-shrink-0 font-sans"></div>
-        <span><strong>No Busbar:</strong> The current geometry model does not include the external busbar and parasitic package connections.</span>
-      </li>
-      <li class="flex items-start gap-2 font-sans">
-        <div class="w-1.5 h-1.5 rounded-full bg-[#EF4444] mt-1.5 flex-shrink-0 font-sans"></div>
-        <span><strong>No Thermal Model:</strong> High switching frequencies cause high heat generation; thermal feedback loops are currently unmodeled.</span>
-      </li>
-    </ul>
-  </div>
-
-  <div class="flex flex-col gap-3 font-sans">
-    <!-- Timeline of Future Work -->
-    <div class="bg-[#0F172A] border border-[#1E2E38] rounded-xl p-4 shadow-xl font-sans">
-      <h3 class="font-bold text-white text-xs mb-3 flex items-center gap-1.5 font-sans">
-        <div class="i-lucide:clock text-[#A78BFA] text-sm font-sans"></div> Roadmap: Moving to Physical Validation
-      </h3>
-      <div class="space-y-3 font-sans">
-        <div class="flex items-start gap-3">
-          <div class="w-6 h-6 rounded-full bg-[#7C3AED]/20 border border-[#7C3AED]/40 flex items-center justify-center flex-shrink-0 text-[0.5rem] font-bold text-[#A78BFA] mt-0.5 font-mono">1</div>
-          <div>
-            <h4 class="text-[0.58rem] font-semibold text-white font-sans">Fabrication & Testing</h4>
-            <p class="text-[0.5rem] text-[#94A3B8]">Manufacture the optimized ribbon iTreePack module and conduct double-pulse testing to validate simulated parasitics.</p>
-          </div>
-        </div>
-        <div class="flex items-start gap-3 font-sans">
-          <div class="w-6 h-6 rounded-full bg-[#7C3AED]/20 border border-[#7C3AED]/40 flex items-center justify-center flex-shrink-0 text-[0.5rem] font-bold text-[#A78BFA] mt-0.5 font-mono">2</div>
-          <div>
-            <h4 class="text-[0.58rem] font-semibold text-white font-sans">Geometry Expansion & Thermal Loops</h4>
-            <p class="text-[0.5rem] text-[#94A3B8]">Integrate external busbars into the geometry model. Add transient thermal models via structured prompt workflows.</p>
-          </div>
-        </div>
-        <div class="flex items-start gap-3 font-sans">
-          <div class="w-6 h-6 rounded-full bg-[#7C3AED]/20 border border-[#7C3AED]/40 flex items-center justify-center flex-shrink-0 text-[0.5rem] font-bold text-[#A78BFA] mt-0.5 font-mono">3</div>
-          <div>
-            <h4 class="text-[0.58rem] font-semibold text-white font-sans">Peer-Reviewed Publication</h4>
-            <p class="text-[0.5rem] text-[#94A3B8]">Submit the complete optimization and experimental results to IEEE Transactions on Power Electronics.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!--
-Looking forward, I must address the current limitations of my thesis work. The optimization is simulation-only, does not account for external busbar connections, and has no thermal model yet. My roadmap addresses these gaps. First, I will manufacture the optimized module and conduct experimental double-pulse tests. Second, I will expand the simulation geometry to include busbars and model thermal coupling. Third, I will submit these findings to IEEE Transactions on Power Electronics. In all these phases, I will apply this structured, decomposed research workflow to ensure code and analysis are rigorously verified.
+Tools, AI included, are reliable for execution but not for judgment. My results are still simulation-only, exclude the busbar, and have no thermal model — the next steps are fabrication and testing, not more automation.
 -->
 
 ---
 layout: center
-background: '#080E14'
-class: text-center px-16
+background: '#FAF9F5'
+class: px-24 text-left
 ---
 
-<div class="flex flex-col items-center justify-center h-full relative z-10 font-sans">
-  <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#7C3AED] to-[#0EA5E9] flex items-center justify-center mb-6 shadow-[0_0_40px_rgba(124,58,237,0.4)] font-sans">
-    <div class="i-lucide:check-circle text-3xl text-white"></div>
-  </div>
+<div class="w-full max-w-2xl">
 
-  <h1 class="text-3xl font-bold text-white mb-6">Closing Reflection</h1>
+<p class="eyebrow mb-6">Closing Reflection</p>
 
-  <div class="w-full max-w-2xl bg-[#0F172A] border border-[#7C3AED]/30 rounded-xl p-6 shadow-2xl mb-8 font-sans">
-    <p class="text-lg text-[#38BDF8] font-semibold leading-relaxed mb-4 font-serif italic">
-      "This course did not just teach me how to prompt."
-    </p>
-    <p class="text-sm text-white font-light leading-relaxed font-sans">
-      I did not only learn better prompts; I learned how to encode parts of my research workflow into reusable, testable AI skills.
-    </p>
-  </div>
+<p class="serif text-xl ink leading-relaxed mb-8" style="font-weight:500">
+This course changed how research is conducted at every stage — how a question gets scoped, how evidence gets organized, how an experiment gets built, and how any output, AI-generated or not, gets checked before it is trusted.
+</p>
 
-  <div class="w-20 h-px bg-gradient-to-r from-transparent via-[#7C3AED] to-transparent mx-auto mb-6"></div>
-  <p class="text-xs text-[#64748B] font-sans">Research Skills P: AI · Summer 2026</p>
-  <p class="text-[#A78BFA] text-sm mt-2 font-medium font-sans">Thank You · Questions & Discussion</p>
+<p class="text-sm muted leading-relaxed mb-10">
+The eighteen-point-eight percent reduction in loop inductance is one measurable result. The more durable outcome is a research process I can now repeat, defend, and improve on the next problem.
+</p>
 
-  <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-1 pointer-events-none font-sans">
-    <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-[#7C3AED] opacity-[0.06] blur-[120px] font-sans"></div>
-    <div class="absolute bottom-[0%] -right-[10%] w-[60%] h-[60%] rounded-full bg-[#0EA5E9] opacity-[0.04] blur-[150px] font-sans"></div>
-  </div>
+<div class="rule w-16 mb-6"></div>
+
+<p class="text-sm muted">Raymond Tenorio Borres &middot; Research Skills P: AI &middot; Summer 2026</p>
+<p class="text-sm ink mt-1">Thank you. Questions and discussion welcome.</p>
+
 </div>
 
 <!--
-To conclude, this course has represented a major step forward in my research maturity. The main lesson is that prompt engineering is not simply a trick to generate quick code; it is a discipline that demands structured thinking, logical decomposition, and strict verification. By applying these lessons to my thesis, I was able to build an automated optimization workflow that successfully reduced wirebond loop inductance by eighteen point eight percent while ensuring my code remains clean, auditable, and reproducible. Thank you very much for your time. I am open to any questions or discussion.
+To close: this course did not just change how I use one tool. It changed how I scope questions, organize evidence, structure experiments, and check outputs — and the thesis result is the evidence for that. Thank you, I'm happy to take questions.
 -->
