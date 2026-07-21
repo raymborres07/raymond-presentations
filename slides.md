@@ -736,9 +736,8 @@ class: px-20 py-14
 <div class="title-rule w-14 mt-4"></div>
 </div>
 
-<div class="flex-1 grid grid-cols-[1.3fr_1fr] gap-14 items-center">
+<div class="flex-1 flex flex-col justify-center gap-6 max-w-3xl">
 
-<div class="flex flex-col gap-6">
 <p class="text-sm muted leading-relaxed">KINTO addresses remote health monitoring for elderly patients. The first version of the question was an engineering one: build a wrist sensor that reliably reads vital signs. That question was reframed after evidence suggested it was the wrong one.</p>
 
 <div class="pl-6" style="border-left: 2px solid var(--accent)">
@@ -746,14 +745,6 @@ class: px-20 py-14
 </div>
 
 <p class="text-sm muted leading-relaxed">Existing evidence pointed away from a sensor problem: 63.8% of non-compliance was attributed to stigma and denial, not device failure. The resulting design (a closed-loop ECG requiring the wearer to touch the device with their other hand) was built to mirror the familiar, comforting gesture of holding an amulet.</p>
-</div>
-
-<div class="flex flex-col gap-2">
-<div class="placeholder w-full" style="aspect-ratio:4/3;">
-<p class="eyebrow">Figure placeholder</p>
-</div>
-<p class="text-xs muted text-center">Photo of the wrist-worn prototype and its closed-loop touch gesture</p>
-</div>
 
 </div>
 
@@ -773,13 +764,13 @@ class: px-20 py-14
 
 <div class="w-full h-full flex flex-col">
 
-<div class="mb-6">
+<div class="mb-4">
 <p class="eyebrow mb-2">Case Study B · KINTO II</p>
 <h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">A staged, evidence-gated study design</h1>
 <div class="title-rule w-14 mt-4"></div>
 </div>
 
-<div class="flex-1 flex flex-col justify-center gap-6">
+<div class="flex-1 flex flex-col justify-center gap-4">
 
 <p class="text-sm muted leading-relaxed max-w-2xl">Hardware development was deliberately decoupled from user testing and structured into three phases, each gating the next.</p>
 
@@ -799,6 +790,10 @@ class: px-20 py-14
 </div>
 <p class="ink text-sm font-medium">Digital interface</p>
 <p class="text-xs muted mt-1 leading-relaxed">Tablet-based testing of the family-facing health dashboard, checked for whether it reduces anxiety rather than causing it.</p>
+<div class="flex items-center gap-2 mt-2">
+<div class="fig-frame flex-shrink-0" style="height:56px;"><img src="/kinto/dashboard.jpg" style="height:100%; width:auto;" /></div>
+<p class="text-[0.6rem] muted leading-tight">Actual health dashboard screen used in Phase 2</p>
+</div>
 </div>
 <div class="pt-4" style="border-top: 2px solid var(--accent)">
 <div class="flex items-center gap-1.5 mb-1">
@@ -848,12 +843,7 @@ class: px-20 py-14
 </tbody>
 </table>
 
-<div class="flex flex-col gap-2 items-center">
-<div class="placeholder w-full max-w-xl" style="height:100px;">
-<p class="eyebrow">Figure placeholder</p>
-</div>
-<p class="text-xs muted text-center">Summary chart of Phase 1 findings: comfort ratings, clasp issues, reattachment rate</p>
-</div>
+<p class="text-sm muted leading-relaxed max-w-2xl pt-2">Phase 1 is scoped to run before any of this is measured against real patients: comfort ratings, clasp issues and reattachment rate, collected from non-electronic dummies before a single sensor is worn.</p>
 
 </div>
 
