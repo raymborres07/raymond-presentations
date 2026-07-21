@@ -12,84 +12,6 @@ fonts:
 title: "Rebuilding a Research Process"
 ---
 
-<style>
-:root {
-  --paper: #FAF9F5;
-  --ink: #1A1A1A;
-  --muted: #6B6B63;
-  --line: #DCD8CE;
-  --accent: #3B5169;
-}
-.slidev-layout {
-  background: var(--paper) !important;
-  color: var(--ink);
-  font-family: 'Inter', sans-serif;
-  overflow-y: auto !important;
-}
-.slidev-layout p, .slidev-layout li {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-.slidev-layout h1, .slidev-layout h2, .slidev-layout h3 {
-  font-family: 'Source Serif 4', Georgia, serif;
-  font-weight: 500;
-}
-.serif { font-family: 'Source Serif 4', Georgia, serif; }
-.ink { color: var(--ink); }
-.muted { color: var(--muted); }
-.accent { color: var(--accent); }
-.rule { height: 1px; background: var(--line); }
-.eyebrow {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.68rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--muted);
-  font-weight: 500;
-}
-.placeholder {
-  border: 1px dashed var(--line);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.25rem;
-  padding: 0.75rem;
-}
-.slidev-layout table {
-  border-collapse: collapse;
-  width: 100%;
-}
-.slidev-layout th, .slidev-layout td {
-  border-bottom: 1px solid var(--line);
-  padding: 9px 10px;
-  text-align: left;
-  vertical-align: top;
-  font-size: 0.8rem;
-  line-height: 1.5;
-}
-.slidev-layout th {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.62rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-  font-weight: 600;
-  border-bottom: 1px solid var(--ink);
-}
-.footer-note {
-  position: absolute;
-  bottom: 1.4rem;
-  right: 2.2rem;
-  font-size: 0.62rem;
-  color: var(--muted);
-  letter-spacing: 0.02em;
-  font-family: 'Inter', sans-serif;
-}
-::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-thumb { background: var(--line); border-radius: 4px; }
-</style>
-
 <div class="w-full h-full flex flex-col justify-center px-20">
 
 <p class="eyebrow mb-4">Research Skills P: AI &nbsp;·&nbsp; Final Presentation &nbsp;·&nbsp; Summer 2026</p>
@@ -118,8 +40,8 @@ class: px-20 py-14
 
 <div class="mb-10">
 <p class="eyebrow mb-2">Introduction</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">From results to process</h1>
-<div class="rule w-14 mt-4"></div>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">From results to process</h1>
+<div class="title-rule w-14 mt-4"></div>
 </div>
 
 <div class="flex-1 grid grid-cols-2 gap-16 items-center">
@@ -139,7 +61,7 @@ class: px-20 py-14
   <p class="serif text-base ink leading-relaxed max-w-2xl">The through line is not a tool. It is a change in how the research itself was conducted.</p>
 </div>
 
-<p class="footer-note">Final Presentation · 2 / 20</p>
+<p class="footer-note">Final Presentation · 2 / 21</p>
 
 </div>
 
@@ -157,11 +79,13 @@ class: px-20 py-14
 
 <div class="mb-10">
 <p class="eyebrow mb-2">Retrospective</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Starting point: research habits before this course</h1>
-<div class="rule w-14 mt-4"></div>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">Starting point</h1>
+<div class="title-rule w-14 mt-4"></div>
 </div>
 
-<div class="flex-1 grid grid-cols-2 gap-x-16 gap-y-10 content-center">
+<div class="flex-1 flex flex-col justify-center gap-5">
+
+<div class="grid grid-cols-2 gap-x-16 gap-y-6">
   <div>
     <p class="text-xs muted mb-1">01</p>
     <p class="ink font-medium mb-1">Loosely scoped questions</p>
@@ -180,13 +104,15 @@ class: px-20 py-14
   <div>
     <p class="text-xs muted mb-1">04</p>
     <p class="ink font-medium mb-1">Outputs judged by fluency</p>
-    <p class="text-sm muted leading-relaxed">Explanations, scripts, and search results — including from AI tools — were trusted in proportion to how convincing they sounded, not how well they were checked.</p>
+    <p class="text-sm muted leading-relaxed">Explanations, scripts, and search results — including AI output — were trusted for how convincing they sounded, not how well they were checked.</p>
   </div>
 </div>
 
-<p class="text-sm muted serif mt-6" style="font-style:italic">None of this was specific to working with AI. It described the whole research process.</p>
+<p class="text-sm muted serif" style="font-style:italic">None of this was specific to working with AI. It described the whole research process.</p>
 
-<p class="footer-note">Final Presentation · 3 / 20</p>
+</div>
+
+<p class="footer-note">Final Presentation · 3 / 21</p>
 
 </div>
 
@@ -202,17 +128,17 @@ class: px-20 py-14
 
 <div class="w-full h-full flex flex-col">
 
-<div class="mb-10">
-<p class="eyebrow mb-2">Course Overview</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">What this course covered: a map of tools and habits</h1>
-<div class="rule w-14 mt-4"></div>
+<div class="mb-6">
+<p class="eyebrow accent mb-2">Course Overview</p>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">What this course covered</h1>
+<div class="title-rule w-20 mt-4" style="opacity:1"></div>
 </div>
 
-<div class="flex-1 flex flex-col justify-center gap-8">
+<div class="flex-1 flex flex-col justify-center gap-6">
 
 <p class="text-sm muted leading-relaxed max-w-2xl">Beyond any single tool, the course covered six categories of research practice. Each reappears in the case studies that follow.</p>
 
-<div class="grid grid-cols-2 gap-x-16 gap-y-6">
+<div class="grid grid-cols-2 gap-x-16 gap-y-5">
 <div class="flex gap-4"><p class="serif text-lg accent" style="width:1.5rem">1</p><div><p class="ink font-medium text-sm">Question scoping</p><p class="text-xs muted mt-0.5">Fixing a question's target and boundary before touching a tool</p></div></div>
 <div class="flex gap-4"><p class="serif text-lg accent" style="width:1.5rem">2</p><div><p class="ink font-medium text-sm">Discovery and synthesis tools</p><p class="text-xs muted mt-0.5">Database search, citation mapping, active-learning screening</p></div></div>
 <div class="flex gap-4"><p class="serif text-lg accent" style="width:1.5rem">3</p><div><p class="ink font-medium text-sm">Source-quality evaluation</p><p class="text-xs muted mt-0.5">Separating credible journals from predatory or unverifiable ones</p></div></div>
@@ -223,7 +149,7 @@ class: px-20 py-14
 
 </div>
 
-<p class="footer-note">Final Presentation · 4 / 20</p>
+<p class="footer-note">Final Presentation · 4 / 21</p>
 
 </div>
 
@@ -239,14 +165,15 @@ class: px-20 py-14
 
 <div class="w-full h-full flex flex-col">
 
-<div class="mb-10">
+<div class="mb-8">
 <p class="eyebrow mb-2">Methodology I</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Formulating the research question</h1>
-<div class="rule w-14 mt-4"></div>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">Formulating the research question</h1>
+<div class="title-rule w-14 mt-4"></div>
 </div>
 
-<div class="flex-1 flex flex-col justify-center gap-8 max-w-3xl">
+<div class="flex-1 grid grid-cols-[1.3fr_1fr] gap-14 items-center">
 
+<div class="flex flex-col gap-6">
 <p class="text-sm muted leading-relaxed">The first and most consequential change was scoping discipline: fixing the question, the target metric, and the boundary of the study before any tool was used.</p>
 
 <div class="pl-6" style="border-left: 2px solid var(--accent)">
@@ -255,7 +182,7 @@ class: px-20 py-14
   </p>
 </div>
 
-<div class="grid grid-cols-3 gap-8">
+<div class="grid grid-cols-3 gap-6">
   <div>
     <p class="eyebrow mb-1">Target metric</p>
     <p class="text-sm ink">Loop inductance (nH)</p>
@@ -266,13 +193,19 @@ class: px-20 py-14
   </div>
   <div>
     <p class="eyebrow mb-1">Fixed constraint</p>
-    <p class="text-sm ink">Existing simulation and solver stack</p>
+    <p class="text-sm ink">Existing simulation stack</p>
   </div>
 </div>
+</div>
+
+<div class="flex flex-col items-center">
+<div class="fig-frame w-full" style="height:160px;"><img src="/thesis/schematic.png" style="height:100%; width:auto; max-width:100%;" /></div>
+<p class="fig-cap">Figure — the commutation loop being minimised: DC+ &rarr; high-side die &rarr; output &rarr; low-side die &rarr; DC&minus;.</p>
+</div>
 
 </div>
 
-<p class="footer-note">Final Presentation · 5 / 20</p>
+<p class="footer-note">Final Presentation · 5 / 21</p>
 
 </div>
 
@@ -290,8 +223,8 @@ class: px-20 py-14
 
 <div class="mb-10">
 <p class="eyebrow mb-2">Methodology II</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Tools for literature discovery and synthesis</h1>
-<div class="rule w-14 mt-4"></div>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">Tools for literature discovery and synthesis</h1>
+<div class="title-rule w-14 mt-4"></div>
 </div>
 
 <div class="flex-1 grid grid-cols-[1.3fr_1fr] gap-14 items-start">
@@ -322,7 +255,7 @@ class: px-20 py-14
 
 </div>
 
-<p class="footer-note">Final Presentation · 6 / 20</p>
+<p class="footer-note">Final Presentation · 6 / 21</p>
 
 </div>
 
@@ -338,13 +271,13 @@ class: px-20 py-14
 
 <div class="w-full h-full flex flex-col">
 
-<div class="mb-10">
+<div class="mb-6">
 <p class="eyebrow mb-2">Methodology III</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Evaluating source quality: separating strong evidence from weak</h1>
-<div class="rule w-14 mt-4"></div>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">Evaluating source quality</h1>
+<div class="title-rule w-14 mt-4"></div>
 </div>
 
-<div class="flex-1 flex flex-col justify-center gap-8">
+<div class="flex-1 flex flex-col justify-center gap-4">
 
 <p class="text-sm muted leading-relaxed max-w-2xl">Finding papers is not the same as trusting them. A recurring skill from this course was screening a source's credibility before it was allowed into the synthesis matrix — not after.</p>
 
@@ -369,11 +302,11 @@ class: px-20 py-14
   </div>
 </div>
 
-<p class="text-sm muted leading-relaxed max-w-2xl pt-4" style="border-top:1px solid var(--line)">Checked in practice against a journal's DOAJ listing status and the Think. Check. Submit. checklist before a source entered the review.</p>
+<p class="text-sm muted leading-relaxed max-w-2xl pt-3" style="border-top:1px solid var(--line)">Checked in practice against a journal's DOAJ listing and the Think. Check. Submit. checklist.</p>
 
 </div>
 
-<p class="footer-note">Final Presentation · 7 / 20</p>
+<p class="footer-note">Final Presentation · 7 / 21</p>
 
 </div>
 
@@ -389,13 +322,13 @@ class: px-20 py-14
 
 <div class="w-full h-full flex flex-col">
 
-<div class="mb-10">
+<div class="mb-6">
 <p class="eyebrow mb-2">Methodology IV</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Designing structured experiments</h1>
-<div class="rule w-14 mt-4"></div>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">Designing structured experiments</h1>
+<div class="title-rule w-14 mt-4"></div>
 </div>
 
-<div class="flex-1 flex flex-col justify-center gap-8">
+<div class="flex-1 flex flex-col justify-center gap-6">
 
 <p class="text-sm muted leading-relaxed max-w-2xl">Experimentation shifted from single, large attempts to a documented sequence of independent stages, each with parameter bounds fixed before any run.</p>
 
@@ -422,22 +355,19 @@ class: px-20 py-14
   </div>
 </div>
 
-<div class="flex items-center gap-6">
-  <div class="placeholder flex-shrink-0" style="width:220px; aspect-ratio:16/9;">
-    <p class="eyebrow">Figure placeholder</p>
-    <p class="text-xs muted text-center">Process diagram or script screenshot</p>
-  </div>
-  <p class="text-sm muted leading-relaxed">Each stage was written, tested, and verified on its own, rather than as one script expected to work end to end on the first attempt.</p>
+<div class="flex flex-col items-center">
+<div class="fig-frame" style="height:95px;"><img src="/thesis/aedt-models.png" style="height:100%; width:auto; max-width:100%;" /></div>
+<p class="fig-cap">Figure — from the original three-net design (left) to the full-loop, single-net model (right) used to extract L<sub>loop</sub> directly.</p>
 </div>
 
 </div>
 
-<p class="footer-note">Final Presentation · 8 / 20</p>
+<p class="footer-note">Final Presentation · 8 / 21</p>
 
 </div>
 
 <!--
-My earlier scripting attempts tried to do everything in one pass — geometry, meshing, and solving in a single script — and failed for exactly that reason. Decomposing the pipeline into four independently testable stages was a direct application of the same scoping discipline from the literature review.
+My earlier scripting attempts tried to do everything in one pass — geometry, meshing, and solving in a single script — and failed for exactly that reason. Decomposing the pipeline into four independently testable stages, and rebuilding the model itself as a single merged net, was a direct application of the same scoping discipline from the literature review.
 -->
 
 ---
@@ -448,39 +378,46 @@ class: px-20 py-14
 
 <div class="w-full h-full flex flex-col">
 
-<div class="mb-10">
+<div class="mb-8">
 <p class="eyebrow mb-2">Methodology V</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">A habit of verification</h1>
-<div class="rule w-14 mt-4"></div>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">A habit of verification</h1>
+<div class="title-rule w-14 mt-4"></div>
 </div>
 
-<div class="flex-1 flex flex-col justify-center gap-8 max-w-2xl">
+<div class="flex-1 grid grid-cols-[1.2fr_1fr] gap-14 items-center">
 
-<p class="text-sm muted leading-relaxed">Every output is now treated as a hypothesis rather than a fact — regardless of whether it came from a paper, a simulation, or an AI-generated script.</p>
+<div class="flex flex-col gap-6">
+<p class="text-sm muted leading-relaxed">Every output is now treated as a hypothesis rather than a fact — a paper's claim, a simulation result, a neural-network prediction, or an AI-generated script.</p>
 
-<div class="flex flex-col gap-5">
+<div class="flex flex-col gap-4">
 <div class="flex gap-5 items-baseline">
 <p class="text-xs muted" style="width:1.5rem">1</p>
 <p class="text-sm ink"><span class="font-medium">Physical consistency</span> — does the result violate a known law, such as conservation of energy?</p>
 </div>
 <div class="flex gap-5 items-baseline">
 <p class="text-xs muted" style="width:1.5rem">2</p>
-<p class="text-sm ink"><span class="font-medium">Documented behavior</span> — does it match the tool or API's own documentation, not just plausible-sounding usage?</p>
+<p class="text-sm ink"><span class="font-medium">Documented behavior</span> — does it match the tool's own documentation, not just plausible-sounding usage?</p>
 </div>
 <div class="flex gap-5 items-baseline">
 <p class="text-xs muted" style="width:1.5rem">3</p>
 <p class="text-sm ink"><span class="font-medium">Reproducibility</span> — does it hold up across repeated, independent runs?</p>
 </div>
 </div>
+</div>
+
+<div class="flex flex-col items-center">
+<div class="fig-frame w-full" style="height:150px;"><img src="/thesis/nn-parity.png" style="height:100%; width:auto; max-width:100%;" /></div>
+<p class="fig-cap">Figure — the surrogate model's own predictions, checked against simulated ground truth before being trusted for optimization.</p>
+</div>
 
 </div>
 
-<p class="footer-note">Final Presentation · 9 / 20</p>
+<p class="footer-note">Final Presentation · 9 / 21</p>
 
 </div>
 
 <!--
-This is the habit I'd call the biggest mindset shift. I stopped asking "does this sound right" and started asking these three questions, every time, for every kind of output — not only AI output.
+This is the habit I'd call the biggest mindset shift. I stopped asking "does this sound right" and started asking these three questions, every time, for every kind of output — including a neural-network surrogate model I trained myself. The clearest example of what this habit caught is coming up in the case study.
 -->
 
 ---
@@ -493,8 +430,8 @@ class: px-20 py-14
 
 <div class="mb-10">
 <p class="eyebrow mb-2">Methodology VI</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Formalizing habits into protocols</h1>
-<div class="rule w-14 mt-4"></div>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">Formalizing habits into protocols</h1>
+<div class="title-rule w-14 mt-4"></div>
 </div>
 
 <div class="flex-1 grid grid-cols-[1fr_1.1fr] gap-14 items-start">
@@ -516,7 +453,7 @@ class: px-20 py-14
 
 </div>
 
-<p class="footer-note">Final Presentation · 10 / 20</p>
+<p class="footer-note">Final Presentation · 10 / 21</p>
 
 </div>
 
@@ -533,9 +470,9 @@ class: px-20 py-14
 <div class="w-full h-full flex flex-col">
 
 <div class="mb-10">
-<p class="eyebrow mb-2">Case Studies</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Two projects, one process</h1>
-<div class="rule w-14 mt-4"></div>
+<p class="eyebrow accent mb-2">Case Studies</p>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">Two projects, one process</h1>
+<div class="title-rule w-20 mt-4" style="opacity:1"></div>
 </div>
 
 <div class="flex-1 flex flex-col justify-center gap-10">
@@ -557,7 +494,7 @@ class: px-20 py-14
 
 </div>
 
-<p class="footer-note">Final Presentation · 11 / 20</p>
+<p class="footer-note">Final Presentation · 11 / 21</p>
 
 </div>
 
@@ -573,40 +510,44 @@ class: px-20 py-14
 
 <div class="w-full h-full flex flex-col">
 
-<div class="mb-10">
+<div class="mb-6">
 <p class="eyebrow mb-2">Case Study A · Thesis I</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">The engineering problem</h1>
-<div class="rule w-14 mt-4"></div>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">The engineering problem</h1>
+<div class="title-rule w-14 mt-4"></div>
 </div>
 
 <div class="flex-1 grid grid-cols-[1.3fr_1fr] gap-14 items-center">
 
-<div class="flex flex-col gap-8">
+<div class="flex flex-col gap-6">
 <p class="text-sm muted leading-relaxed">The case study is a 1.7 kV, 100 A SiC half-bridge power module (iTreePack geometry). High parasitic loop inductance in the wirebond interconnect causes switching overvoltage spikes and increased losses.</p>
 
-<div class="flex items-center gap-3 flex-wrap">
+<div class="flex items-center gap-2 flex-wrap">
 <div class="px-3 py-2 text-xs ink" style="border:1px solid var(--line)">Python</div>
 <p class="muted text-xs">&rarr;</p>
-<div class="px-3 py-2 text-xs ink" style="border:1px solid var(--line)">PyAEDT automation</div>
+<div class="px-3 py-2 text-xs ink" style="border:1px solid var(--line)">PyAEDT</div>
 <p class="muted text-xs">&rarr;</p>
-<div class="px-3 py-2 text-xs ink" style="border:1px solid var(--line)">ANSYS Q3D solver</div>
+<div class="px-3 py-2 text-xs ink" style="border:1px solid var(--line)">Q3D solver</div>
 <p class="muted text-xs">&rarr;</p>
-<div class="px-3 py-2 text-xs ink" style="border:1px solid var(--line)">Neural network surrogate</div>
+<div class="px-3 py-2 text-xs ink" style="border:1px solid var(--line)">NN surrogate</div>
 <p class="muted text-xs">&rarr;</p>
-<div class="px-3 py-2 text-xs accent" style="border:1px solid var(--accent)">Genetic algorithm optimization</div>
+<div class="px-3 py-2 text-xs accent" style="border:1px solid var(--accent)">Genetic algorithm</div>
 </div>
 </div>
 
-<div class="flex flex-col gap-2">
-  <div class="placeholder w-full" style="aspect-ratio:4/3;">
-    <p class="eyebrow">Figure placeholder</p>
-  </div>
-  <p class="text-xs muted text-center">Photo or CAD render of the SiC half-bridge module and wirebond geometry</p>
+<div class="flex flex-col gap-3">
+<div>
+<div class="fig-frame" style="height:130px;"><img src="/thesis/topology.png" style="height:100%; width:auto; max-width:100%;" /></div>
+<p class="fig-cap">Module top view, coloured by net</p>
+</div>
+<div>
+<div class="fig-frame" style="height:80px;"><img src="/thesis/layerstack.png" style="height:100%; width:auto; max-width:100%;" /></div>
+<p class="fig-cap">Z-stack cross-section</p>
+</div>
 </div>
 
 </div>
 
-<p class="footer-note">Final Presentation · 12 / 20</p>
+<p class="footer-note">Final Presentation · 12 / 21</p>
 
 </div>
 
@@ -622,13 +563,13 @@ class: px-20 py-14
 
 <div class="w-full h-full flex flex-col">
 
-<div class="mb-10">
+<div class="mb-6">
 <p class="eyebrow mb-2">Case Study A · Thesis II</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Applying the revised process</h1>
-<div class="rule w-14 mt-4"></div>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">Applying the revised process</h1>
+<div class="title-rule w-14 mt-4"></div>
 </div>
 
-<div class="flex-1 flex flex-col justify-center">
+<div class="flex-1 flex flex-col justify-center gap-6">
 
 <table>
 <thead><tr><th>Research dimension</th><th>Before</th><th>After</th></tr></thead>
@@ -636,19 +577,23 @@ class: px-20 py-14
 <tr><td class="ink font-medium">Question scoping</td><td class="muted">General optimization goal, no fixed boundary</td><td class="accent">Fixed target metric and simulation scope, defined first</td></tr>
 <tr><td class="ink font-medium">Script design</td><td class="muted">One large script covering geometry through solve</td><td class="accent">Four independent, testable modules</td></tr>
 <tr><td class="ink font-medium">Parameter bounds</td><td class="muted">Set informally, adjusted mid-run</td><td class="accent">Fixed in advance, documented per stage</td></tr>
-<tr><td class="ink font-medium">Output checking</td><td class="muted">Accepted if the script ran without error</td><td class="accent">Checked against Q3D documentation and known field behavior</td></tr>
-<tr><td class="ink font-medium">Debugging</td><td class="muted">Repeated ad-hoc re-prompting and manual search</td><td class="accent">Stack traces and bounds fed back together, systematically</td></tr>
+<tr><td class="ink font-medium">Output checking</td><td class="muted">Accepted if the script ran without error</td><td class="accent">Checked against documentation and known field behavior</td></tr>
 </tbody>
 </table>
 
+<div class="flex flex-col items-center">
+<div class="fig-frame" style="height:100px;"><img src="/thesis/geometry.png" style="height:100%; width:auto; max-width:100%;" /></div>
+<p class="fig-cap">Baseline wirebond geometry (R = 0.2 mm) versus the optimized arc (R = 5.47 mm) — the physical result of the process change.</p>
 </div>
 
-<p class="footer-note">Final Presentation · 13 / 20</p>
+</div>
+
+<p class="footer-note">Final Presentation · 13 / 21</p>
 
 </div>
 
 <!--
-This table is the process changes from the last several slides, applied specifically to the wirebond study. Every row is a concrete change in how I worked, not an abstract principle.
+This table is the process changes from the last several slides, applied specifically to the wirebond study. The geometry comparison on screen is the physical consequence: a taller, wider wirebond arc, arrived at by disciplined sweeping rather than guesswork.
 -->
 
 ---
@@ -659,48 +604,44 @@ class: px-20 py-14
 
 <div class="w-full h-full flex flex-col">
 
-<div class="mb-10">
+<div class="mb-6">
 <p class="eyebrow mb-2">Case Study A · Thesis III</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Results</h1>
-<div class="rule w-14 mt-4"></div>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">Results</h1>
+<div class="title-rule w-14 mt-4"></div>
 </div>
 
 <div class="flex-1 flex flex-col justify-center gap-6">
 
 <div class="grid grid-cols-3 gap-10">
 <div>
-<p class="serif text-3xl ink" style="font-weight:500">139</p>
-<p class="eyebrow mt-2">Simulation runs</p>
+<p class="serif text-3xl ink" style="font-weight:500">483</p>
+<p class="eyebrow mt-2">Simulated points, 9 phases</p>
 </div>
 <div>
-<p class="serif text-3xl ink" style="font-weight:500">8.194 &rarr; 6.651 nH</p>
-<p class="eyebrow mt-2">Baseline to optimized</p>
+<p class="serif text-3xl ink" style="font-weight:500">8.194 &rarr; 6.596 nH</p>
+<p class="eyebrow mt-2">Baseline to validated best</p>
 </div>
 <div>
-<p class="serif text-3xl accent" style="font-weight:500">&minus;18.8%</p>
+<p class="serif text-3xl accent" style="font-weight:500">&minus;19.5%</p>
 <p class="eyebrow mt-2">Loop inductance reduction</p>
 </div>
 </div>
 
-<div class="flex flex-col gap-2 items-center">
-  <div class="placeholder w-full max-w-xl" style="aspect-ratio:21/9;">
-    <p class="eyebrow">Figure placeholder</p>
-  </div>
-  <p class="text-xs muted text-center">Bar chart or optimization convergence plot — baseline vs. optimized loop inductance across 139 runs</p>
+<div class="flex flex-col items-center">
+<div class="fig-frame" style="height:160px;"><img src="/thesis/bar-comparison.png" style="height:100%; width:auto; max-width:100%;" /></div>
+<p class="fig-cap">Baseline, 7D result, an invalid 10D result, and the corrected 10D result — loop inductance and resistance.</p>
 </div>
 
-<div class="pt-4" style="border-top:1px solid var(--line)">
-<p class="text-sm muted leading-relaxed max-w-2xl">Arc height was identified as the dominant factor in parasitic inductance, with ribbon width a secondary effect. Loop resistance was reduced alongside inductance.</p>
-</div>
+<p class="text-sm muted leading-relaxed max-w-2xl">Loop resistance fell 32.1% alongside inductance (4.056 &rarr; 2.754 m&Omega;). Arc height is the dominant parameter; ribbon width is the second lever.</p>
 
 </div>
 
-<p class="footer-note">Final Presentation · 14 / 20</p>
+<p class="footer-note">Final Presentation · 14 / 21</p>
 
 </div>
 
 <!--
-Across 139 simulation runs, the optimized geometry reduced loop inductance from 8.194 to 6.651 nanohenries, an 18.8 percent reduction, with arc height confirmed as the dominant parameter — consistent with what the literature synthesis matrix had already suggested.
+Across nine sweep phases and 483 simulated points, expanding from a seven- to a ten-dimensional parameter space, the validated best design reduced loop inductance by 19.5 percent and resistance by 32.1 percent. Notice the third bar on the chart, though — an "invalid" 10D result. That's the next slide.
 -->
 
 ---
@@ -711,10 +652,58 @@ class: px-20 py-14
 
 <div class="w-full h-full flex flex-col">
 
-<div class="mb-10">
+<div class="mb-4">
+<p class="eyebrow mb-2">Case Study A · Thesis IV</p>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">Catching an invalid result</h1>
+<div class="title-rule w-14 mt-4"></div>
+</div>
+
+<div class="flex-1 grid grid-cols-[1.3fr_1fr] gap-10 items-center">
+
+<div class="flex flex-col gap-3">
+<p class="text-sm muted leading-relaxed">Five sweep phases each reported a new "best" — each sitting at the edge of its search window, a pattern that looks like a real gradient.</p>
+
+<table class="tight-table">
+<thead><tr><th>Phase</th><th>Search window (mm)</th><th>Best found (mm)</th></tr></thead>
+<tbody>
+<tr><td class="muted">4</td><td class="muted">0.0 – 1.0</td><td class="warn">0.90</td></tr>
+<tr><td class="muted">5</td><td class="muted">0.5 – 1.5</td><td class="warn">1.26</td></tr>
+<tr><td class="muted">6</td><td class="muted">1.0 – 2.0</td><td class="warn">1.95</td></tr>
+<tr><td class="muted">7</td><td class="muted">1.5 – 2.5</td><td class="warn">2.43</td></tr>
+<tr><td class="muted">8</td><td class="muted">2.0 – 3.0</td><td class="warn">2.86</td></tr>
+</tbody>
+</table>
+
+<p class="text-sm muted leading-relaxed">A geometry check found the wirebond overhanging its pad by up to 2.6 mm. The solver's Boolean join only required partial overlap, so it silently accepted the invalid geometry — <span class="ink font-medium">affecting 46% of the dataset.</span> Corrected optimum: <span class="accent font-medium">6.596 nH</span>, not the 5.713 nH the invalid sweep suggested.</p>
+</div>
+
+<div class="flex flex-col items-center">
+<div class="fig-frame w-full" style="height:170px;"><img src="/thesis/landscape.png" style="height:100%; width:auto; max-width:100%;" /></div>
+<p class="fig-cap">The valid landscape — the corrected optimum sits inside it, not at the invalid boundary Phases 4–8 chased.</p>
+</div>
+
+</div>
+
+<p class="footer-note">Final Presentation · 15 / 21</p>
+
+</div>
+
+<!--
+This is the concrete version of the verification habit from Methodology V. It would have been easy to report 5.713 nanohenries as the result — the tool ran without error, and the number kept improving in a way that looked like a real trend. Checking the geometry directly, rather than trusting that the tool's silent success meant a valid result, is what caught it.
+-->
+
+---
+layout: default
+background: '#FAF9F5'
+class: px-20 py-14
+---
+
+<div class="w-full h-full flex flex-col">
+
+<div class="mb-6">
 <p class="eyebrow mb-2">Case Study B · KINTO I</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Reframing the research question</h1>
-<div class="rule w-14 mt-4"></div>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">Reframing the research question</h1>
+<div class="title-rule w-14 mt-4"></div>
 </div>
 
 <div class="flex-1 grid grid-cols-[1.3fr_1fr] gap-14 items-center">
@@ -738,7 +727,7 @@ class: px-20 py-14
 
 </div>
 
-<p class="footer-note">Final Presentation · 15 / 20</p>
+<p class="footer-note">Final Presentation · 16 / 21</p>
 
 </div>
 
@@ -754,13 +743,13 @@ class: px-20 py-14
 
 <div class="w-full h-full flex flex-col">
 
-<div class="mb-10">
+<div class="mb-6">
 <p class="eyebrow mb-2">Case Study B · KINTO II</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">A staged, evidence-gated study design</h1>
-<div class="rule w-14 mt-4"></div>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">A staged, evidence-gated study design</h1>
+<div class="title-rule w-14 mt-4"></div>
 </div>
 
-<div class="flex-1 flex flex-col justify-center gap-8">
+<div class="flex-1 flex flex-col justify-center gap-6">
 
 <p class="text-sm muted leading-relaxed max-w-2xl">Hardware development was deliberately decoupled from user testing, and structured into three phases, each gating the next.</p>
 
@@ -786,7 +775,7 @@ class: px-20 py-14
 
 </div>
 
-<p class="footer-note">Final Presentation · 16 / 20</p>
+<p class="footer-note">Final Presentation · 17 / 21</p>
 
 </div>
 
@@ -802,13 +791,13 @@ class: px-20 py-14
 
 <div class="w-full h-full flex flex-col">
 
-<div class="mb-10">
+<div class="mb-6">
 <p class="eyebrow mb-2">Case Study B · KINTO III</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">What research discipline changed in the study design</h1>
-<div class="rule w-14 mt-4"></div>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">What changed in the study design</h1>
+<div class="title-rule w-14 mt-4"></div>
 </div>
 
-<div class="flex-1 flex flex-col justify-center gap-8">
+<div class="flex-1 flex flex-col justify-center gap-6">
 
 <table>
 <thead><tr><th>Research dimension</th><th>Before</th><th>After</th></tr></thead>
@@ -821,7 +810,7 @@ class: px-20 py-14
 </table>
 
 <div class="flex flex-col gap-2 items-center">
-<div class="placeholder w-full max-w-xl" style="aspect-ratio:21/9;">
+<div class="placeholder w-full max-w-xl" style="height:100px;">
 <p class="eyebrow">Figure placeholder</p>
 </div>
 <p class="text-xs muted text-center">Summary chart of Phase 1 findings — comfort ratings, clasp issues, reattachment rate</p>
@@ -829,7 +818,7 @@ class: px-20 py-14
 
 </div>
 
-<p class="footer-note">Final Presentation · 17 / 20</p>
+<p class="footer-note">Final Presentation · 18 / 21</p>
 
 </div>
 
@@ -845,10 +834,10 @@ class: px-20 py-14
 
 <div class="w-full h-full flex flex-col">
 
-<div class="mb-10">
-<p class="eyebrow mb-2">Synthesis</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">The same habits, two unrelated domains</h1>
-<div class="rule w-14 mt-4"></div>
+<div class="mb-6">
+<p class="eyebrow accent mb-2">Synthesis</p>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">The same habits, two unrelated domains</h1>
+<div class="title-rule w-20 mt-4" style="opacity:1"></div>
 </div>
 
 <div class="flex-1 flex flex-col justify-center gap-6">
@@ -859,7 +848,7 @@ class: px-20 py-14
 <tr><td class="ink font-medium">Scope before tooling</td><td class="muted">Fixed target metric and simulation boundary first</td><td class="muted">Reframed to root cause before any prototype</td></tr>
 <tr><td class="ink font-medium">Deliberate evidence</td><td class="muted">Literature synthesis matrix, screened sources</td><td class="muted">Physical dummies as evidence instruments</td></tr>
 <tr><td class="ink font-medium">Staged decomposition</td><td class="muted">Four-stage simulation pipeline</td><td class="muted">Three-phase study, hardware decoupled from UX</td></tr>
-<tr><td class="ink font-medium">Verify before claiming</td><td class="muted">Checked against physical law and documentation</td><td class="muted">Deferred claims until Holter-baseline validation</td></tr>
+<tr><td class="ink font-medium">Verify before claiming</td><td class="muted">Caught an invalid 10D result via direct geometry check</td><td class="muted">Deferred claims until Holter-baseline validation</td></tr>
 </tbody>
 </table>
 
@@ -867,7 +856,7 @@ class: px-20 py-14
 
 </div>
 
-<p class="footer-note">Final Presentation · 18 / 20</p>
+<p class="footer-note">Final Presentation · 19 / 21</p>
 
 </div>
 
@@ -883,10 +872,10 @@ class: px-20 py-14
 
 <div class="w-full h-full flex flex-col">
 
-<div class="mb-10">
+<div class="mb-8">
 <p class="eyebrow mb-2">Limitations</p>
-<h1 class="serif text-[1.65rem] ink leading-snug max-w-3xl" style="font-weight:500">Limits of the process, and the role of judgment</h1>
-<div class="rule w-14 mt-4"></div>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">Limits of the process, and the role of judgment</h1>
+<div class="title-rule w-14 mt-4"></div>
 </div>
 
 <div class="flex-1 flex flex-col justify-between">
@@ -921,7 +910,7 @@ class: px-20 py-14
 
 </div>
 
-<p class="footer-note">Final Presentation · 19 / 20</p>
+<p class="footer-note">Final Presentation · 20 / 21</p>
 
 </div>
 
@@ -935,22 +924,24 @@ background: '#FAF9F5'
 class: px-24 text-left
 ---
 
-<div class="w-full max-w-2xl">
+<div class="w-full max-w-2xl flex flex-col gap-6">
 
-<p class="eyebrow mb-6">Closing Reflection</p>
+<p class="eyebrow">Closing Reflection</p>
 
-<p class="serif text-xl ink leading-relaxed mb-8" style="font-weight:500">
+<p class="serif text-xl ink leading-relaxed" style="font-weight:500">
 This course changed how research is conducted at every stage — how a question gets scoped, how evidence gets organized and judged, how an experiment gets built, and how any output, AI-generated or not, gets checked before it is trusted. The same six habits produced a working simulation pipeline and a clinical-grade study design, in two fields that otherwise share nothing.
 </p>
 
-<p class="text-sm muted leading-relaxed mb-10">
-The eighteen-point-eight percent reduction in loop inductance, and a study design built to withstand clinical scrutiny, are two measurable results. The more durable outcome is a research process I can now repeat, defend, and improve on the next problem — whatever field it's in.
+<p class="text-sm muted leading-relaxed">
+The nineteen-point-five percent reduction in loop inductance, the invalid result caught before it became a claim, and a study design built to withstand clinical scrutiny, are measurable outcomes. The more durable one is a research process I can now repeat, defend, and improve on the next problem — whatever field it's in.
 </p>
 
-<div class="rule w-16 mb-6"></div>
+<div class="rule w-16"></div>
 
+<div class="flex flex-col gap-1">
 <p class="text-sm muted">Raymond Tenorio Borres &middot; Research Skills P: AI &middot; Summer 2026</p>
-<p class="text-sm ink mt-1">Thank you. Questions and discussion welcome.</p>
+<p class="text-sm ink">Thank you. Questions and discussion welcome.</p>
+</div>
 
 </div>
 
