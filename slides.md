@@ -87,22 +87,34 @@ class: px-20 py-14
 
 <div class="grid grid-cols-2 gap-x-16 gap-y-6">
   <div>
-    <p class="text-xs muted mb-1">01</p>
+    <div class="flex items-center gap-1.5 mb-1">
+      <div class="i-lucide:search text-xs muted"></div>
+      <p class="text-xs muted">01</p>
+    </div>
     <p class="ink font-medium mb-1">Loosely scoped questions</p>
     <p class="text-sm muted leading-relaxed">Research questions were broad enough to admit almost any answer, which made it hard to tell relevant evidence from noise.</p>
   </div>
   <div>
-    <p class="text-xs muted mb-1">02</p>
+    <div class="flex items-center gap-1.5 mb-1">
+      <div class="i-lucide:clock text-xs muted"></div>
+      <p class="text-xs muted">02</p>
+    </div>
     <p class="ink font-medium mb-1">Literature organized late</p>
     <p class="text-sm muted leading-relaxed">Papers were read and summarized sequentially, with structure imposed only after most of the reading was already done.</p>
   </div>
   <div>
-    <p class="text-xs muted mb-1">03</p>
+    <div class="flex items-center gap-1.5 mb-1">
+      <div class="i-lucide:list-checks text-xs muted"></div>
+      <p class="text-xs muted">03</p>
+    </div>
     <p class="ink font-medium mb-1">No explicit evidence criteria</p>
     <p class="text-sm muted leading-relaxed">There was no fixed standard for what counted as sufficient support for a claim, physical or otherwise.</p>
   </div>
   <div>
-    <p class="text-xs muted mb-1">04</p>
+    <div class="flex items-center gap-1.5 mb-1">
+      <div class="i-lucide:ear text-xs muted"></div>
+      <p class="text-xs muted">04</p>
+    </div>
     <p class="ink font-medium mb-1">Outputs judged by fluency</p>
     <p class="text-sm muted leading-relaxed">Explanations, scripts and search results, including AI output, were trusted for how convincing they sounded, not how well they were checked.</p>
   </div>
@@ -283,7 +295,10 @@ class: px-20 py-14
 
 <div class="grid grid-cols-2 gap-16">
   <div class="pr-8" style="border-right:1px solid var(--line)">
-    <p class="eyebrow mb-3">Signals of a credible source</p>
+    <div class="flex items-center gap-1.5 mb-3">
+      <div class="i-lucide:circle-check text-xs accent"></div>
+      <p class="eyebrow">Signals of a credible source</p>
+    </div>
     <div class="flex flex-col gap-2 text-sm ink">
       <p>Indexed in a recognized database (Scopus, Web of Science, IEEE Xplore)</p>
       <p>Verifiable peer review and a named, credentialed editorial board</p>
@@ -292,7 +307,10 @@ class: px-20 py-14
     </div>
   </div>
   <div class="pl-8">
-    <p class="eyebrow mb-3">Warning signs</p>
+    <div class="flex items-center gap-1.5 mb-3">
+      <div class="i-lucide:triangle-alert text-xs warn"></div>
+      <p class="eyebrow">Warning signs</p>
+    </div>
     <div class="flex flex-col gap-2 text-sm ink">
       <p>No verifiable review process or unusually fast acceptance</p>
       <p>Not indexed anywhere reputable; unsolicited invitations to publish</p>
@@ -334,22 +352,34 @@ class: px-20 py-14
 
 <div class="grid grid-cols-4 gap-4">
   <div class="pt-4" style="border-top: 2px solid var(--ink)">
-    <p class="text-xs muted mb-1">Stage 1</p>
+    <div class="flex items-center gap-1.5 mb-1">
+      <div class="i-lucide:box text-xs muted"></div>
+      <p class="text-xs muted">Stage 1</p>
+    </div>
     <p class="ink text-sm font-medium">Geometry setup</p>
     <p class="text-xs muted mt-1 leading-relaxed">Wirebond and ribbon layout in PyAEDT</p>
   </div>
   <div class="pt-4" style="border-top: 2px solid var(--ink)">
-    <p class="text-xs muted mb-1">Stage 2</p>
+    <div class="flex items-center gap-1.5 mb-1">
+      <div class="i-lucide:sliders-horizontal text-xs muted"></div>
+      <p class="text-xs muted">Stage 2</p>
+    </div>
     <p class="ink text-sm font-medium">Boundary configuration</p>
     <p class="text-xs muted mt-1 leading-relaxed">Materials, excitation, solver bounds</p>
   </div>
   <div class="pt-4" style="border-top: 2px solid var(--ink)">
-    <p class="text-xs muted mb-1">Stage 3</p>
+    <div class="flex items-center gap-1.5 mb-1">
+      <div class="i-lucide:cpu text-xs muted"></div>
+      <p class="text-xs muted">Stage 3</p>
+    </div>
     <p class="ink text-sm font-medium">Mesh and solve</p>
     <p class="text-xs muted mt-1 leading-relaxed">ANSYS Q3D adaptive meshing</p>
   </div>
   <div class="pt-4" style="border-top: 2px solid var(--accent)">
-    <p class="text-xs muted mb-1">Stage 4</p>
+    <div class="flex items-center gap-1.5 mb-1">
+      <div class="i-lucide:database text-xs muted"></div>
+      <p class="text-xs muted">Stage 4</p>
+    </div>
     <p class="ink text-sm font-medium">Data extraction</p>
     <p class="text-xs muted mt-1 leading-relaxed">Loop inductance matrix, logged per run</p>
   </div>
@@ -390,16 +420,16 @@ class: px-20 py-14
 <p class="text-sm muted leading-relaxed">Every output is now treated as a hypothesis rather than a fact: a paper's claim, a simulation result, a neural-network prediction or an AI-generated script.</p>
 
 <div class="flex flex-col gap-4">
-<div class="flex gap-5 items-baseline">
-<p class="text-xs muted" style="width:1.5rem">1</p>
+<div class="flex gap-5 items-center">
+<div class="i-lucide:scale text-sm muted" style="width:1.5rem; flex-shrink:0;"></div>
 <p class="text-sm ink"><span class="font-medium">Physical consistency</span>: does the result violate a known law, such as conservation of energy?</p>
 </div>
-<div class="flex gap-5 items-baseline">
-<p class="text-xs muted" style="width:1.5rem">2</p>
+<div class="flex gap-5 items-center">
+<div class="i-lucide:book-open text-sm muted" style="width:1.5rem; flex-shrink:0;"></div>
 <p class="text-sm ink"><span class="font-medium">Documented behavior</span>: does it match the tool's own documentation, not just plausible-sounding usage?</p>
 </div>
-<div class="flex gap-5 items-baseline">
-<p class="text-xs muted" style="width:1.5rem">3</p>
+<div class="flex gap-5 items-center">
+<div class="i-lucide:repeat text-sm muted" style="width:1.5rem; flex-shrink:0;"></div>
 <p class="text-sm ink"><span class="font-medium">Reproducibility</span>: does it hold up across repeated, independent runs?</p>
 </div>
 </div>
@@ -755,17 +785,26 @@ class: px-20 py-14
 
 <div class="grid grid-cols-3 gap-6">
 <div class="pt-4" style="border-top: 2px solid var(--ink)">
-<p class="text-xs muted mb-1">Phase 1</p>
+<div class="flex items-center gap-1.5 mb-1">
+  <div class="i-lucide:hand text-xs muted"></div>
+  <p class="text-xs muted">Phase 1</p>
+</div>
 <p class="ink text-sm font-medium">Physical comfort</p>
 <p class="text-xs muted mt-1 leading-relaxed">Non-functional, weighted 3D-printed dummies. Tests form factor, clasp fit for arthritic hands and whether patients remember to put it back on. Zero electronics, zero data-privacy risk.</p>
 </div>
 <div class="pt-4" style="border-top: 2px solid var(--ink)">
-<p class="text-xs muted mb-1">Phase 2</p>
+<div class="flex items-center gap-1.5 mb-1">
+  <div class="i-lucide:tablet-smartphone text-xs muted"></div>
+  <p class="text-xs muted">Phase 2</p>
+</div>
 <p class="ink text-sm font-medium">Digital interface</p>
 <p class="text-xs muted mt-1 leading-relaxed">Tablet-based testing of the family-facing health dashboard, checked for whether it reduces anxiety rather than causing it.</p>
 </div>
 <div class="pt-4" style="border-top: 2px solid var(--accent)">
-<p class="text-xs muted mb-1">Phase 3</p>
+<div class="flex items-center gap-1.5 mb-1">
+  <div class="i-lucide:heart-pulse text-xs muted"></div>
+  <p class="text-xs muted">Phase 3</p>
+</div>
 <p class="ink text-sm font-medium">Functional validation</p>
 <p class="text-xs muted mt-1 leading-relaxed">Working sensor pod validated against clinical Holter-monitor baselines before any medical claim is made.</p>
 </div>
@@ -882,7 +921,10 @@ class: px-20 py-14
 
 <div class="grid grid-cols-2 gap-16">
 <div class="pr-8" style="border-right:1px solid var(--line)">
-<p class="eyebrow mb-3">Tools reliably handle</p>
+<div class="flex items-center gap-1.5 mb-3">
+  <div class="i-lucide:circle-check text-xs accent"></div>
+  <p class="eyebrow">Tools reliably handle</p>
+</div>
 <div class="flex flex-col gap-2 text-sm ink">
 <p>Boilerplate scripting and file I/O</p>
 <p>Parsing simulation logs into structured tables</p>
@@ -890,7 +932,10 @@ class: px-20 py-14
 </div>
 </div>
 <div class="pl-8">
-<p class="eyebrow mb-3">Judgment still required</p>
+<div class="flex items-center gap-1.5 mb-3">
+  <div class="i-lucide:user-check text-xs ink"></div>
+  <p class="eyebrow">Judgment still required</p>
+</div>
 <div class="flex flex-col gap-2 text-sm ink">
 <p>Whether a result is physically plausible</p>
 <p>Which model or mesh setup fits the problem</p>
