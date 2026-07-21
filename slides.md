@@ -27,7 +27,7 @@ title: "Rebuilding a Research Process"
 </div>
 
 <!--
-Good morning, everyone, and thank you for being here. Today I want to walk you through something a little different from a typical results recap. Over this course I did not just pick up new AI tools. I changed how I actually do research, from the way I scope a question, to how I judge evidence, to how I decide whether a result is trustworthy. To show this was a real change in how I think and not just a habit tied to one project, I'm going to walk through it using two completely different pieces of work from this same semester: my thesis on wirebond optimization for a SiC power module, and a separate project called KINTO, a wearable health monitor for elderly patients. We have about thirty minutes, so let's get into it.
+Good afternoon, everyone, and thank you for being here. Today I want to walk you through something a little different from a typical results recap. Over this course I did not just pick up new AI tools. I changed how I actually do research, from the way I scope a question, to how I judge evidence, to how I decide whether a result is trustworthy. My midterm for this course applied that shift to one assigned project, KINTO, a wearable health monitor for elderly patients. Today I want to show it did not stop there. I have also been applying the same habits to my actual thesis on wirebond optimization for a SiC power module, work this course never assigned. We have about thirty minutes, so let's get into it.
 -->
 
 ---
@@ -47,13 +47,13 @@ class: px-20 py-14
 <div class="flex-1 grid grid-cols-2 gap-16 items-center">
   <div class="pr-8" style="border-right: 1px solid var(--line)">
     <p class="eyebrow mb-3 accent">Midterm</p>
-    <p class="serif text-lg leading-relaxed ink mb-3">Engineering outputs.</p>
-    <p class="text-sm muted leading-relaxed">The midterm reported the physical results of the wirebond loop inductance study: the parameters, the optimization setup and the final numbers.</p>
+    <p class="serif text-lg leading-relaxed ink mb-3">One assigned project.</p>
+    <p class="text-sm muted leading-relaxed">The midterm for this course applied these habits to KINTO, a wearable health-monitoring device: the project this course assigned.</p>
   </div>
   <div class="pl-8">
     <p class="eyebrow mb-3 accent">Today</p>
-    <p class="serif text-lg leading-relaxed ink mb-3">The process behind them.</p>
-    <p class="text-sm muted leading-relaxed">This talk reviews the research habits that changed over the course, and shows those same habits at work in two different projects, not just one.</p>
+    <p class="serif text-lg leading-relaxed ink mb-3">A habit, not an assignment.</p>
+    <p class="text-sm muted leading-relaxed">This talk shows the same habits still at work in KINTO, and now also applied to a separate thesis this course never assigned.</p>
   </div>
 </div>
 
@@ -66,7 +66,7 @@ class: px-20 py-14
 </div>
 
 <!--
-At my midterm, I stood up here and reported numbers: the parameters I swept, how I set up the optimization and what the final inductance value came out to. That was the what. Today is the how. I want to walk through the habits that changed over this course, the ones that actually produced those numbers reliably, and then show that those same habits show up again in a second project that has almost nothing else in common with the thesis. If the process really changed, it should not be tied to one simulation pipeline. That is the claim I am going to try to prove today.
+My midterm for this course was KINTO. I applied the habits we had covered so far to that one assigned project and reported on it. Today I want to go further and show that those habits did not stay confined to the assignment. I have been applying them independently to my actual thesis on wirebond optimization for a SiC power module, work this course never touched. If the process really changed, it should show up even somewhere nobody assigned it to. That is the claim I am going to try to prove today.
 -->
 
 ---
@@ -507,7 +507,7 @@ class: px-20 py-14
 
 <div class="flex-1 flex flex-col justify-center gap-10">
 
-<p class="text-sm muted leading-relaxed max-w-2xl">The same semester also involved a second research effort, in a different domain: KINTO, a wearable health-monitoring device for elderly patients. If the six habits just described are genuinely a change in how I do research, not a technique specific to simulation work, they should show up here too.</p>
+<p class="text-sm muted leading-relaxed max-w-2xl">You already saw KINTO once, at the midterm for this course. What you have not seen is my actual thesis, wirebond optimization for a SiC power module, work this course never assigned. If the six habits just described are genuinely a change in how I do research, not a technique specific to one project, they should show up in both.</p>
 
 <div class="grid grid-cols-2 gap-16">
 <div class="pr-8" style="border-right:1px solid var(--line)">
@@ -529,7 +529,7 @@ class: px-20 py-14
 </div>
 
 <!--
-I want to pause here and be upfront about something. Everything so far has come from my thesis, which means you could reasonably ask whether I am really describing a change in how I do research, or just describing getting better at one specific simulation workflow. To actually test that, I want to bring in a second project from this same semester that has almost nothing in common with the thesis except me: KINTO, a wearable health monitoring device for elderly patients. The thesis is quantitative and simulation driven, where evidence comes from a field solver. KINTO is qualitative and human centered, where evidence comes from a physical prototype in someone's actual hands. If the same six habits show up in both, that is real evidence the process changed.
+I want to pause here and be upfront about something. Everything so far in this talk has been about habits and principles, not evidence, and you already saw KINTO once, at the midterm for this course. Revisiting it alone would not prove much. What actually tests the claim is a project this course never touched: my thesis on wirebond optimization for a SiC power module. The thesis is quantitative and simulation driven, where evidence comes from a field solver. KINTO is qualitative and human centered, where evidence comes from a physical prototype in someone's actual hands. If the same six habits show up in both, especially in the one nobody assigned, that is real evidence the process changed.
 -->
 
 ---
