@@ -14,7 +14,7 @@ title: "Rebuilding a Research Process"
 
 <div class="w-full h-full flex flex-col justify-center px-20">
 
-<p class="eyebrow mb-4">Research Skills P: AI &nbsp;·&nbsp; Final Presentation &nbsp;·&nbsp; Summer 2026</p>
+<p class="eyebrow mb-4">Research Skills P: AI &nbsp;·&nbsp; Final Presentation &nbsp;·&nbsp; Spring 2026</p>
 
 <h1 class="serif text-4xl leading-tight max-w-3xl ink" style="font-weight:500">Rebuilding a Research Process</h1>
 <p class="serif text-lg mt-4 max-w-2xl muted" style="font-style:italic">A methodological review, across two research projects</p>
@@ -27,7 +27,7 @@ title: "Rebuilding a Research Process"
 </div>
 
 <!--
-Good morning. This talk is a review of how my research process changed over the course. It is not a talk about a tool — it is a talk about scoping, evidence, experimentation, and judgment. I'll walk through six habits the course taught, then show them applied in two unrelated research projects from this same semester: my thesis on SiC wirebond optimization, and a separate wearable-health-device project called KINTO. We have about thirty minutes, so I'll go through this in some depth.
+Good morning. This talk is a review of how my research process changed over the course. It is not a talk about a tool. It is a talk about scoping, evidence, experimentation and judgment. I'll walk through six habits the course taught, then show them applied in two unrelated research projects from this same semester: my thesis on SiC wirebond optimization and a separate wearable-health-device project called KINTO. We have about thirty minutes, so I'll go through this in some depth.
 -->
 
 ---
@@ -48,7 +48,7 @@ class: px-20 py-14
   <div class="pr-8" style="border-right: 1px solid var(--line)">
     <p class="eyebrow mb-3 accent">Midterm</p>
     <p class="serif text-lg leading-relaxed ink mb-3">Engineering outputs.</p>
-    <p class="text-sm muted leading-relaxed">The midterm reported the physical results of the wirebond loop inductance study — the parameters, the optimization setup, and the final numbers.</p>
+    <p class="text-sm muted leading-relaxed">The midterm reported the physical results of the wirebond loop inductance study: the parameters, the optimization setup and the final numbers.</p>
   </div>
   <div class="pl-8">
     <p class="eyebrow mb-3 accent">Today</p>
@@ -66,7 +66,7 @@ class: px-20 py-14
 </div>
 
 <!--
-My midterm was a status report on the wirebond optimization. This talk is different: it asks what changed about how I arrived at those results, so that the process is repeatable on the next problem — and I'll show it was, on a second, unrelated project.
+My midterm was a status report on the wirebond optimization. This talk is different: it asks what changed about how I arrived at those results, so that the process is repeatable on the next problem. I'll show it was, on a second, unrelated project.
 -->
 
 ---
@@ -104,7 +104,7 @@ class: px-20 py-14
   <div>
     <p class="text-xs muted mb-1">04</p>
     <p class="ink font-medium mb-1">Outputs judged by fluency</p>
-    <p class="text-sm muted leading-relaxed">Explanations, scripts, and search results — including AI output — were trusted for how convincing they sounded, not how well they were checked.</p>
+    <p class="text-sm muted leading-relaxed">Explanations, scripts and search results, including AI output, were trusted for how convincing they sounded, not how well they were checked.</p>
   </div>
 </div>
 
@@ -117,7 +117,7 @@ class: px-20 py-14
 </div>
 
 <!--
-I want to be specific about the baseline. My habits were undisciplined across the board — not just when I happened to be using an AI tool. Scoping was loose, literature was organized late, and I trusted outputs because they sounded right, not because I had checked them.
+I want to be specific about the baseline. My habits were undisciplined across the board, not just when I happened to be using an AI tool. Scoping was loose, literature was organized late and I trusted outputs because they sounded right, not because I had checked them.
 -->
 
 ---
@@ -154,7 +154,7 @@ class: px-20 py-14
 </div>
 
 <!--
-Before going through each of these in detail, here is the map: six habits, not one tool. I'll walk through each, then show how all six show up identically in two very different research projects from this same period — my thesis, and a separate wearable-device project called KINTO.
+Before going through each of these in detail, here is the map: six habits, not one tool. I'll walk through each, then show how all six show up identically in two very different research projects from this same period: my thesis and a separate wearable-device project called KINTO.
 -->
 
 ---
@@ -174,7 +174,7 @@ class: px-20 py-14
 <div class="flex-1 grid grid-cols-[1.3fr_1fr] gap-14 items-center">
 
 <div class="flex flex-col gap-6">
-<p class="text-sm muted leading-relaxed">The first and most consequential change was scoping discipline: fixing the question, the target metric, and the boundary of the study before any tool was used.</p>
+<p class="text-sm muted leading-relaxed">The first and most consequential change was scoping discipline: fixing the question, the target metric and the boundary of the study before any tool was used.</p>
 
 <div class="pl-6" style="border-left: 2px solid var(--accent)">
   <p class="serif text-base ink leading-relaxed" style="font-style:italic">
@@ -200,7 +200,7 @@ class: px-20 py-14
 
 <div class="flex flex-col items-center">
 <div class="fig-frame w-full" style="height:160px;"><img src="/thesis/schematic.png" style="height:100%; width:auto; max-width:100%;" /></div>
-<p class="fig-cap">Figure — the commutation loop being minimised: DC+ &rarr; high-side die &rarr; output &rarr; low-side die &rarr; DC&minus;.</p>
+<p class="fig-cap">Figure. The commutation loop being minimised: DC+ &rarr; high-side die &rarr; output &rarr; low-side die &rarr; DC&minus;.</p>
 </div>
 
 </div>
@@ -210,7 +210,7 @@ class: px-20 py-14
 </div>
 
 <!--
-Before, my research questions were broad: "how do I optimize power modules." That admits almost any answer. This course taught me to fix the metric, the domain, and the constraints first, so every subsequent step has something concrete to be measured against.
+Before, my research questions were broad: "how do I optimize power modules." That admits almost any answer. This course taught me to fix the metric, the domain and the constraints first, so every subsequent step has something concrete to be measured against.
 -->
 
 ---
@@ -230,7 +230,7 @@ class: px-20 py-14
 <div class="flex-1 grid grid-cols-[1.3fr_1fr] gap-14 items-start">
 
 <div>
-<p class="text-sm muted leading-relaxed mb-5">Literature review moved from summarizing papers one at a time to building a synthesis matrix — a table where each source is encoded against the same variables, so patterns across the field become visible rather than anecdotal.</p>
+<p class="text-sm muted leading-relaxed mb-5">Literature review moved from summarizing papers one at a time to building a synthesis matrix: a table where each source is encoded against the same variables, so patterns across the field become visible rather than anecdotal.</p>
 
 <table>
 <thead><tr><th>Source</th><th>Parameter studied</th><th>Reported effect</th></tr></thead>
@@ -245,7 +245,7 @@ class: px-20 py-14
 <div class="flex flex-col gap-6">
 <div>
 <p class="ink font-medium mb-1 text-sm">Search and discovery tools</p>
-<p class="text-sm muted leading-relaxed">Database search (IEEE Xplore, Scopus), citation mapping (ResearchRabbit), and reference management (Zotero) replaced ad-hoc web search as the entry point for evidence.</p>
+<p class="text-sm muted leading-relaxed">Database search (IEEE Xplore, Scopus), citation mapping (ResearchRabbit) and reference management (Zotero) replaced ad-hoc web search as the entry point for evidence.</p>
 </div>
 <div>
 <p class="ink font-medium mb-1 text-sm">Screening by relevance</p>
@@ -260,7 +260,7 @@ class: px-20 py-14
 </div>
 
 <!--
-My midterm-era literature review was book-report style — paper by paper, in reading order. This course introduced a set of tools for discovery and screening, and taught me to build a synthesis matrix instead: fixed variables across sources, so I could see which parameters the field actually agreed and disagreed on.
+My midterm-era literature review was book-report style: paper by paper, in reading order. This course introduced a set of tools for discovery and screening, and taught me to build a synthesis matrix instead: fixed variables across sources, so I could see which parameters the field actually agreed and disagreed on.
 -->
 
 ---
@@ -279,7 +279,7 @@ class: px-20 py-14
 
 <div class="flex-1 flex flex-col justify-center gap-4">
 
-<p class="text-sm muted leading-relaxed max-w-2xl">Finding papers is not the same as trusting them. A recurring skill from this course was screening a source's credibility before it was allowed into the synthesis matrix — not after.</p>
+<p class="text-sm muted leading-relaxed max-w-2xl">Finding papers is not the same as trusting them. A recurring skill from this course was screening a source's credibility before it was allowed into the synthesis matrix, not after.</p>
 
 <div class="grid grid-cols-2 gap-16">
   <div class="pr-8" style="border-right:1px solid var(--line)">
@@ -294,9 +294,9 @@ class: px-20 py-14
   <div class="pl-8">
     <p class="eyebrow mb-3">Warning signs</p>
     <div class="flex flex-col gap-2 text-sm ink">
-      <p>No verifiable review process, or unusually fast acceptance</p>
+      <p>No verifiable review process or unusually fast acceptance</p>
       <p>Not indexed anywhere reputable; unsolicited invitations to publish</p>
-      <p>Vague scope, or an editorial board that cannot be verified</p>
+      <p>Vague scope or an editorial board that cannot be verified</p>
       <p>Publication fees with little transparency about review</p>
     </div>
   </div>
@@ -357,7 +357,7 @@ class: px-20 py-14
 
 <div class="flex flex-col items-center">
 <div class="fig-frame" style="height:95px;"><img src="/thesis/aedt-models.png" style="height:100%; width:auto; max-width:100%;" /></div>
-<p class="fig-cap">Figure — from the original three-net design (left) to the full-loop, single-net model (right) used to extract L<sub>loop</sub> directly.</p>
+<p class="fig-cap">Figure. From the original three-net design (left) to the full-loop, single-net model (right) used to extract L<sub>loop</sub> directly.</p>
 </div>
 
 </div>
@@ -367,7 +367,7 @@ class: px-20 py-14
 </div>
 
 <!--
-My earlier scripting attempts tried to do everything in one pass — geometry, meshing, and solving in a single script — and failed for exactly that reason. Decomposing the pipeline into four independently testable stages, and rebuilding the model itself as a single merged net, was a direct application of the same scoping discipline from the literature review.
+My earlier scripting attempts tried to do everything in one pass (geometry, meshing and solving in a single script) and failed for exactly that reason. Decomposing the pipeline into four independently testable stages and rebuilding the model itself as a single merged net was a direct application of the same scoping discipline from the literature review.
 -->
 
 ---
@@ -387,27 +387,27 @@ class: px-20 py-14
 <div class="flex-1 grid grid-cols-[1.2fr_1fr] gap-14 items-center">
 
 <div class="flex flex-col gap-6">
-<p class="text-sm muted leading-relaxed">Every output is now treated as a hypothesis rather than a fact — a paper's claim, a simulation result, a neural-network prediction, or an AI-generated script.</p>
+<p class="text-sm muted leading-relaxed">Every output is now treated as a hypothesis rather than a fact: a paper's claim, a simulation result, a neural-network prediction or an AI-generated script.</p>
 
 <div class="flex flex-col gap-4">
 <div class="flex gap-5 items-baseline">
 <p class="text-xs muted" style="width:1.5rem">1</p>
-<p class="text-sm ink"><span class="font-medium">Physical consistency</span> — does the result violate a known law, such as conservation of energy?</p>
+<p class="text-sm ink"><span class="font-medium">Physical consistency</span>: does the result violate a known law, such as conservation of energy?</p>
 </div>
 <div class="flex gap-5 items-baseline">
 <p class="text-xs muted" style="width:1.5rem">2</p>
-<p class="text-sm ink"><span class="font-medium">Documented behavior</span> — does it match the tool's own documentation, not just plausible-sounding usage?</p>
+<p class="text-sm ink"><span class="font-medium">Documented behavior</span>: does it match the tool's own documentation, not just plausible-sounding usage?</p>
 </div>
 <div class="flex gap-5 items-baseline">
 <p class="text-xs muted" style="width:1.5rem">3</p>
-<p class="text-sm ink"><span class="font-medium">Reproducibility</span> — does it hold up across repeated, independent runs?</p>
+<p class="text-sm ink"><span class="font-medium">Reproducibility</span>: does it hold up across repeated, independent runs?</p>
 </div>
 </div>
 </div>
 
 <div class="flex flex-col items-center">
 <div class="fig-frame w-full" style="height:150px;"><img src="/thesis/nn-parity.png" style="height:100%; width:auto; max-width:100%;" /></div>
-<p class="fig-cap">Figure — the surrogate model's own predictions, checked against simulated ground truth before being trusted for optimization.</p>
+<p class="fig-cap">Figure. The surrogate model's own predictions, checked against simulated ground truth before being trusted for optimization.</p>
 </div>
 
 </div>
@@ -417,7 +417,7 @@ class: px-20 py-14
 </div>
 
 <!--
-This is the habit I'd call the biggest mindset shift. I stopped asking "does this sound right" and started asking these three questions, every time, for every kind of output — including a neural-network surrogate model I trained myself. The clearest example of what this habit caught is coming up in the case study.
+This is the habit I'd call the biggest mindset shift. I stopped asking "does this sound right" and started asking these three questions, every time, for every kind of output, including a neural-network surrogate model I trained myself. The clearest example of what this habit caught is coming up in the case study.
 -->
 
 ---
@@ -437,15 +437,15 @@ class: px-20 py-14
 <div class="flex-1 grid grid-cols-[1fr_1.1fr] gap-14 items-start">
 
 <div class="flex flex-col gap-4">
-<p class="text-sm muted leading-relaxed">A habit that proved reliable was worth writing down once and reusing, rather than reinvented for every new task — the same reasoning behind any lab protocol.</p>
-<p class="text-sm muted leading-relaxed">In one case this took the form of a documented prompt template for a recurring literature-extraction step. The principle mattered more than the tool — this is one of several protocols developed over the course, and the only one that involved AI directly.</p>
+<p class="text-sm muted leading-relaxed">A habit that proved reliable was worth writing down once and reusing, rather than reinvented for every new task: the same reasoning behind any lab protocol.</p>
+<p class="text-sm muted leading-relaxed">In one case this took the form of a documented prompt template for a recurring literature-extraction step. The principle mattered more than the tool: this is one of several protocols developed over the course and the only one that involved AI directly.</p>
 </div>
 
 <div class="p-6" style="border: 1px solid var(--line)">
 <p class="eyebrow mb-4">Example protocol</p>
 <div class="flex flex-col gap-3">
 <div class="flex gap-4"><p class="text-sm muted" style="width:5rem; flex-shrink:0">Input</p><p class="text-sm ink">A verified source PDF and a fixed extraction schema</p></div>
-<div class="flex gap-4"><p class="text-sm muted" style="width:5rem; flex-shrink:0">Steps</p><p class="text-sm ink">Extract parameter, method, and reported result into the schema</p></div>
+<div class="flex gap-4"><p class="text-sm muted" style="width:5rem; flex-shrink:0">Steps</p><p class="text-sm ink">Extract parameter, method and reported result into the schema</p></div>
 <div class="flex gap-4"><p class="text-sm muted" style="width:5rem; flex-shrink:0">Check</p><p class="text-sm ink">Cross-reference extracted values against the source text</p></div>
 <div class="flex gap-4"><p class="text-sm muted" style="width:5rem; flex-shrink:0">Output</p><p class="text-sm ink">One row added to the synthesis matrix</p></div>
 </div>
@@ -477,7 +477,7 @@ class: px-20 py-14
 
 <div class="flex-1 flex flex-col justify-center gap-10">
 
-<p class="text-sm muted leading-relaxed max-w-2xl">The same semester also involved a second research effort, in a different domain: KINTO, a wearable health-monitoring device for elderly patients. If the six habits just described are genuinely a change in how I do research — not a technique specific to simulation work — they should show up here too.</p>
+<p class="text-sm muted leading-relaxed max-w-2xl">The same semester also involved a second research effort, in a different domain: KINTO, a wearable health-monitoring device for elderly patients. If the six habits just described are genuinely a change in how I do research, not a technique specific to simulation work, they should show up here too.</p>
 
 <div class="grid grid-cols-2 gap-16">
 <div class="pr-8" style="border-right:1px solid var(--line)">
@@ -583,7 +583,7 @@ class: px-20 py-14
 
 <div class="flex flex-col items-center">
 <div class="fig-frame" style="height:100px;"><img src="/thesis/geometry.png" style="height:100%; width:auto; max-width:100%;" /></div>
-<p class="fig-cap">Baseline wirebond geometry (R = 0.2 mm) versus the optimized arc (R = 5.47 mm) — the physical result of the process change.</p>
+<p class="fig-cap">Baseline wirebond geometry (R = 0.2 mm) versus the optimized arc (R = 5.47 mm): the physical result of the process change.</p>
 </div>
 
 </div>
@@ -629,7 +629,7 @@ class: px-20 py-14
 
 <div class="flex flex-col items-center">
 <div class="fig-frame" style="height:160px;"><img src="/thesis/bar-comparison.png" style="height:100%; width:auto; max-width:100%;" /></div>
-<p class="fig-cap">Baseline, 7D result, an invalid 10D result, and the corrected 10D result — loop inductance and resistance.</p>
+<p class="fig-cap">Baseline, 7D result, an invalid 10D result and the corrected 10D result: loop inductance and resistance.</p>
 </div>
 
 <p class="text-sm muted leading-relaxed max-w-2xl">Loop resistance fell 32.1% alongside inductance (4.056 &rarr; 2.754 m&Omega;). Arc height is the dominant parameter; ribbon width is the second lever.</p>
@@ -641,7 +641,7 @@ class: px-20 py-14
 </div>
 
 <!--
-Across nine sweep phases and 483 simulated points, expanding from a seven- to a ten-dimensional parameter space, the validated best design reduced loop inductance by 19.5 percent and resistance by 32.1 percent. Notice the third bar on the chart, though — an "invalid" 10D result. That's the next slide.
+Across nine sweep phases and 483 simulated points, expanding from a seven- to a ten-dimensional parameter space, the validated best design reduced loop inductance by 19.5 percent and resistance by 32.1 percent. Notice the third bar on the chart, though: an "invalid" 10D result. That's the next slide.
 -->
 
 ---
@@ -661,7 +661,7 @@ class: px-20 py-14
 <div class="flex-1 grid grid-cols-[1.3fr_1fr] gap-10 items-center">
 
 <div class="flex flex-col gap-3">
-<p class="text-sm muted leading-relaxed">Five sweep phases each reported a new "best" — each sitting at the edge of its search window, a pattern that looks like a real gradient.</p>
+<p class="text-sm muted leading-relaxed">Five sweep phases each reported a new "best." Each sat at the edge of its search window, a pattern that looks like a real gradient.</p>
 
 <table class="tight-table">
 <thead><tr><th>Phase</th><th>Search window (mm)</th><th>Best found (mm)</th></tr></thead>
@@ -674,12 +674,12 @@ class: px-20 py-14
 </tbody>
 </table>
 
-<p class="text-sm muted leading-relaxed">A geometry check found the wirebond overhanging its pad by up to 2.6 mm. The solver's Boolean join only required partial overlap, so it silently accepted the invalid geometry — <span class="ink font-medium">affecting 46% of the dataset.</span> Corrected optimum: <span class="accent font-medium">6.596 nH</span>, not the 5.713 nH the invalid sweep suggested.</p>
+<p class="text-sm muted leading-relaxed">A geometry check found the wirebond overhanging its pad by up to 2.6 mm. The solver's Boolean join only required partial overlap, so it silently accepted the invalid geometry, <span class="ink font-medium">affecting 46% of the dataset.</span> Corrected optimum: <span class="accent font-medium">6.596 nH</span>, not the 5.713 nH the invalid sweep suggested.</p>
 </div>
 
 <div class="flex flex-col items-center">
 <div class="fig-frame w-full" style="height:170px;"><img src="/thesis/landscape.png" style="height:100%; width:auto; max-width:100%;" /></div>
-<p class="fig-cap">The valid landscape — the corrected optimum sits inside it, not at the invalid boundary Phases 4–8 chased.</p>
+<p class="fig-cap">The valid landscape. The corrected optimum sits inside it, not at the invalid boundary Phases 4–8 chased.</p>
 </div>
 
 </div>
@@ -689,7 +689,7 @@ class: px-20 py-14
 </div>
 
 <!--
-This is the concrete version of the verification habit from Methodology V. It would have been easy to report 5.713 nanohenries as the result — the tool ran without error, and the number kept improving in a way that looked like a real trend. Checking the geometry directly, rather than trusting that the tool's silent success meant a valid result, is what caught it.
+This is the concrete version of the verification habit from Methodology V. It would have been easy to report 5.713 nanohenries as the result: the tool ran without error, and the number kept improving in a way that looked like a real trend. Checking the geometry directly, rather than trusting that the tool's silent success meant a valid result, is what caught it.
 -->
 
 ---
@@ -715,7 +715,7 @@ class: px-20 py-14
 <p class="serif text-base ink leading-relaxed" style="font-style:italic">"Why do elderly patients abandon monitoring devices, and what would it take for one to actually stay on their wrist?"</p>
 </div>
 
-<p class="text-sm muted leading-relaxed">Existing evidence pointed away from a sensor problem: 63.8% of non-compliance was attributed to stigma and denial, not device failure. The resulting design — a closed-loop ECG requiring the wearer to touch the device with their other hand — was built to mirror the familiar, comforting gesture of holding an amulet.</p>
+<p class="text-sm muted leading-relaxed">Existing evidence pointed away from a sensor problem: 63.8% of non-compliance was attributed to stigma and denial, not device failure. The resulting design (a closed-loop ECG requiring the wearer to touch the device with their other hand) was built to mirror the familiar, comforting gesture of holding an amulet.</p>
 </div>
 
 <div class="flex flex-col gap-2">
@@ -751,13 +751,13 @@ class: px-20 py-14
 
 <div class="flex-1 flex flex-col justify-center gap-6">
 
-<p class="text-sm muted leading-relaxed max-w-2xl">Hardware development was deliberately decoupled from user testing, and structured into three phases, each gating the next.</p>
+<p class="text-sm muted leading-relaxed max-w-2xl">Hardware development was deliberately decoupled from user testing and structured into three phases, each gating the next.</p>
 
 <div class="grid grid-cols-3 gap-6">
 <div class="pt-4" style="border-top: 2px solid var(--ink)">
 <p class="text-xs muted mb-1">Phase 1</p>
 <p class="ink text-sm font-medium">Physical comfort</p>
-<p class="text-xs muted mt-1 leading-relaxed">Non-functional, weighted 3D-printed dummies. Tests form factor, clasp fit for arthritic hands, and whether patients remember to put it back on. Zero electronics, zero data-privacy risk.</p>
+<p class="text-xs muted mt-1 leading-relaxed">Non-functional, weighted 3D-printed dummies. Tests form factor, clasp fit for arthritic hands and whether patients remember to put it back on. Zero electronics, zero data-privacy risk.</p>
 </div>
 <div class="pt-4" style="border-top: 2px solid var(--ink)">
 <p class="text-xs muted mb-1">Phase 2</p>
@@ -771,7 +771,7 @@ class: px-20 py-14
 </div>
 </div>
 
-<p class="text-sm muted leading-relaxed max-w-2xl">No phase proceeds until the prior one produces evidence, not assumption — the same decomposition and verification logic as the simulation pipeline, applied to a human-subjects study.</p>
+<p class="text-sm muted leading-relaxed max-w-2xl">No phase proceeds until the prior one produces evidence, not assumption: the same decomposition and verification logic as the simulation pipeline, applied to a human-subjects study.</p>
 
 </div>
 
@@ -780,7 +780,7 @@ class: px-20 py-14
 </div>
 
 <!--
-This maps directly onto the four-stage simulation pipeline from earlier — independent, testable stages, verified before moving on. Here the "solver" is a small group of elderly patients wearing a plastic dummy for a week.
+This maps directly onto the four-stage simulation pipeline from earlier: independent, testable stages, verified before moving on. Here the "solver" is a small group of elderly patients wearing a plastic dummy for a week.
 -->
 
 ---
@@ -813,7 +813,7 @@ class: px-20 py-14
 <div class="placeholder w-full max-w-xl" style="height:100px;">
 <p class="eyebrow">Figure placeholder</p>
 </div>
-<p class="text-xs muted text-center">Summary chart of Phase 1 findings — comfort ratings, clasp issues, reattachment rate</p>
+<p class="text-xs muted text-center">Summary chart of Phase 1 findings: comfort ratings, clasp issues, reattachment rate</p>
 </div>
 
 </div>
@@ -843,7 +843,7 @@ class: px-20 py-14
 <div class="flex-1 flex flex-col justify-center gap-6">
 
 <table>
-<thead><tr><th>Habit</th><th>Thesis — wirebond optimization</th><th>KINTO — elderly monitoring</th></tr></thead>
+<thead><tr><th>Habit</th><th>Thesis: wirebond optimization</th><th>KINTO: elderly monitoring</th></tr></thead>
 <tbody>
 <tr><td class="ink font-medium">Scope before tooling</td><td class="muted">Fixed target metric and simulation boundary first</td><td class="muted">Reframed to root cause before any prototype</td></tr>
 <tr><td class="ink font-medium">Deliberate evidence</td><td class="muted">Literature synthesis matrix, screened sources</td><td class="muted">Physical dummies as evidence instruments</td></tr>
@@ -874,7 +874,7 @@ class: px-20 py-14
 
 <div class="mb-8">
 <p class="eyebrow mb-2">Limitations</p>
-<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">Limits of the process, and the role of judgment</h1>
+<h1 class="serif text-[1.7rem] ink leading-snug max-w-3xl" style="font-weight:500">Limits of the process and the role of judgment</h1>
 <div class="title-rule w-14 mt-4"></div>
 </div>
 
@@ -900,11 +900,11 @@ class: px-20 py-14
 </div>
 
 <div class="pt-6 mt-6" style="border-top:1px solid var(--line)">
-<p class="eyebrow mb-3">Current limits, and what comes next</p>
+<p class="eyebrow mb-3">Current limits and what comes next</p>
 <div class="grid grid-cols-3 gap-8">
-<p class="text-sm muted leading-relaxed"><span class="ink font-medium">Thesis is simulation-only</span> — next: fabricate the module and run double-pulse tests</p>
-<p class="text-sm muted leading-relaxed"><span class="ink font-medium">No busbar or thermal model</span> — next: extend geometry and add coupled thermal analysis</p>
-<p class="text-sm muted leading-relaxed"><span class="ink font-medium">KINTO Phases 2–3 pending</span> — next: digital interface testing, then clinical baseline validation</p>
+<p class="text-sm muted leading-relaxed"><span class="ink font-medium">Thesis is simulation-only</span>; next: fabricate the module and run double-pulse tests</p>
+<p class="text-sm muted leading-relaxed"><span class="ink font-medium">No busbar or thermal model</span>; next: extend geometry and add coupled thermal analysis</p>
+<p class="text-sm muted leading-relaxed"><span class="ink font-medium">KINTO Phases 2–3 pending</span>; next: digital interface testing, then clinical baseline validation</p>
 </div>
 </div>
 
@@ -915,7 +915,7 @@ class: px-20 py-14
 </div>
 
 <!--
-Tools, AI included, are reliable for execution but not for judgment. The thesis results are still simulation-only, and KINTO has only completed Phase 1 — in both cases, the next steps are fabrication and testing, not more automation.
+Tools, AI included, are reliable for execution but not for judgment. The thesis results are still simulation-only, and KINTO has only completed Phase 1. In both cases, the next steps are fabrication and testing, not more automation.
 -->
 
 ---
@@ -929,22 +929,22 @@ class: px-24 text-left
 <p class="eyebrow">Closing Reflection</p>
 
 <p class="serif text-xl ink leading-relaxed" style="font-weight:500">
-This course changed how research is conducted at every stage — how a question gets scoped, how evidence gets organized and judged, how an experiment gets built, and how any output, AI-generated or not, gets checked before it is trusted. The same six habits produced a working simulation pipeline and a clinical-grade study design, in two fields that otherwise share nothing.
+This course changed how research is conducted at every stage: how a question gets scoped, how evidence gets organized and judged, how an experiment gets built and how any output, AI-generated or not, gets checked before it is trusted. The same six habits produced a working simulation pipeline and a clinical-grade study design, in two fields that otherwise share nothing.
 </p>
 
 <p class="text-sm muted leading-relaxed">
-The nineteen-point-five percent reduction in loop inductance, the invalid result caught before it became a claim, and a study design built to withstand clinical scrutiny, are measurable outcomes. The more durable one is a research process I can now repeat, defend, and improve on the next problem — whatever field it's in.
+The nineteen-point-five percent reduction in loop inductance, the invalid result caught before it became a claim and a study design built to withstand clinical scrutiny are measurable outcomes. The more durable one is a research process I can now repeat, defend and improve on the next problem, whatever field it's in.
 </p>
 
 <div class="rule w-16"></div>
 
 <div class="flex flex-col gap-1">
-<p class="text-sm muted">Raymond Tenorio Borres &middot; Research Skills P: AI &middot; Summer 2026</p>
+<p class="text-sm muted">Raymond Tenorio Borres &middot; Research Skills P: AI &middot; Spring 2026</p>
 <p class="text-sm ink">Thank you. Questions and discussion welcome.</p>
 </div>
 
 </div>
 
 <!--
-To close: this course did not just change how I use one tool. It changed how I scope questions, judge evidence, structure experiments, and check outputs — and both the thesis result and the KINTO study design are evidence for that. Thank you, I'm happy to take questions.
+To close: this course did not just change how I use one tool. It changed how I scope questions, judge evidence, structure experiments and check outputs. Both the thesis result and the KINTO study design are evidence for that. Thank you, I'm happy to take questions.
 -->
